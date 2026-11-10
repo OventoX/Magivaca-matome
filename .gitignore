@@ -1,0 +1,16 @@
+# OS & editor
+.DS_Store
+Thumbs.db
+*.swp
+*.bak
+
+# Temporary HTML cache
+*.html
+!index.html
+
+# Ignore py in root only
+/*.py
+test_*.js
+
+# System generated logs
+.system_generated/

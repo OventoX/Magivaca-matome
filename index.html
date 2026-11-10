@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>マジカルバケーション 攻略サポート - 精霊データベース＆チェックリスト</title>
+  <meta name="description" content="GBAソフト『マジカルバケーション』の精霊全112体データベース＆コンプリート支援チェックリスト。属性・プレーン絞り込み、取り返しのつかない要素の警告、金貨銀貨稼ぎメモ。">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Sticky App Header -->
+  <header class="app-header">
+    <div class="header-container">
+      <div class="header-top">
+        <div class="brand-title">
+          <h1>マジカルバケーション 攻略サポート</h1>
+          <span class="brand-badge">GBA / 非公式</span>
+        </div>
+        <div class="header-actions">
+          <button type="button" class="btn" id="btn-backup" title="チェック進捗のエクスポート / インポート">
+            <span>💾 データのバックアップ</span>
+          </button>
+          <button type="button" class="btn btn-danger" id="btn-reset-checklist" title="全チェックの解除">
+            <span>🔄 リセット</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Overall Progress Bar -->
+      <div class="progress-section">
+        <div class="progress-info">
+          <span>精霊コンプリート進捗</span>
+          <span class="progress-count" id="overall-progress-count">0 / 112 (0%)</span>
+        </div>
+        <div class="progress-bar-bg" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar-fill" id="overall-progress-bar"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation Tabs -->
+    <nav class="nav-tabs" aria-label="メインナビゲーション">
+      <div class="header-container" style="padding:0; display:flex; flex-direction:row;">
+        <button type="button" class="tab-btn active" data-tab="tab-spirits">
+          <span>🧚 精霊一覧・チェックリスト</span>
+        </button>
+        <button type="button" class="tab-btn" data-tab="tab-complete-guide">
+          <span>⚠️ コンプリート手順・警告</span>
+        </button>
+        <button type="button" class="tab-btn" data-tab="tab-guides">
+          <span>🐟 稼ぎ・寿命ガイド</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-container">
+
+    <!-- Tab 1: Spirits Database & Checklist -->
+    <section id="tab-spirits" class="tab-content active" aria-labelledby="tab-spirits-btn">
+      
+      <!-- Element Tracker Mini-Grid -->
+      <div class="element-grid" id="element-tracker-grid" aria-label="属性別進捗・絞り込み">
+        <!-- Injected by app.js -->
+      </div>
+
+      <!-- Filters & Search -->
+      <div class="filter-card">
+        <div class="search-box-row">
+          <div class="search-input-wrapper">
+            <input type="text" id="search-input" class="search-input" placeholder="🔍 居場所・要求アイテム・備考で検索... (例: 銀貨, ドワーフ, アクアビット)" autocomplete="off">
+          </div>
+          <div style="display:flex; gap:16px; align-items:center; flex-wrap:wrap;">
+            <label class="checkbox-toggle-label">
+              <input type="checkbox" id="filter-warning-only">
+              <span>⚠️ 取り返しのつかない要素のみ</span>
+            </label>
+            <label class="checkbox-toggle-label">
+              <input type="checkbox" id="filter-hide-completed">
+              <span>仲間済みを非表示</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Plane Filter -->
+        <div class="filter-group-row">
+          <span class="filter-label">プレーン:</span>
+          <div class="filter-chips">
+            <button type="button" class="filter-btn plane-filter-btn active" data-plane="all">すべて</button>
+            <button type="button" class="filter-btn plane-filter-btn" data-plane="光">光のプレーン</button>
+            <button type="button" class="filter-btn plane-filter-btn" data-plane="闇">闇のプレーン</button>
+            <button type="button" class="filter-btn plane-filter-btn" data-plane="死">死のプレーン</button>
+          </div>
+        </div>
+
+        <!-- Requirement Tag Filter -->
+        <div class="filter-group-row">
+          <span class="filter-label">要求種別:</span>
+          <div class="filter-chips">
+            <button type="button" class="filter-btn tag-filter-btn active" data-tag="all">すべて</button>
+            <button type="button" class="filter-btn tag-filter-btn" data-tag="金貨・銀貨">金貨・銀貨</button>
+            <button type="button" class="filter-btn tag-filter-btn" data-tag="グミ関連">グミ関連</button>
+            <button type="button" class="filter-btn tag-filter-btn" data-tag="まつぼっくり">まつぼっくり</button>
+            <button type="button" class="filter-btn tag-filter-btn" data-tag="しっぽ">しっぽ</button>
+            <button type="button" class="filter-btn tag-filter-btn" data-tag="戦闘">戦闘</button>
+            <button type="button" class="filter-btn tag-filter-btn" data-tag="なし">なし（イベント等）</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Spirits List Header -->
+      <div class="results-summary">
+        <span id="filter-results-summary">表示中: 112 体 / 全 112 体</span>
+        <span style="font-size:0.8rem; color:var(--text-muted);">※カードまたはチェック枠をタップで進捗を記録</span>
+      </div>
+
+      <!-- Spirits Grid -->
+      <div class="spirits-grid" id="spirits-container">
+        <!-- Injected by app.js -->
+      </div>
+    </section>
+
+    <!-- Tab 2: Complete Guide & Warnings -->
+    <section id="tab-complete-guide" class="tab-content" aria-labelledby="tab-complete-btn">
+      <div id="complete-guide-tab-content">
+        <!-- Injected by app.js -->
+      </div>
+    </section>
+
+    <!-- Tab 3: Piranha & Lifespan Guides -->
+    <section id="tab-guides" class="tab-content" aria-labelledby="tab-guides-btn">
+      <div id="guides-tab-content">
+        <!-- Injected by app.js -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Backup / Restore Modal -->
+  <div class="modal-overlay" id="backup-modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>データのバックアップ / 復元</h3>
+        <button type="button" class="close-btn" id="modal-close-btn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p>進捗データ（JSON）をコピーして保存するか、過去のバックアップデータを貼り付けて復元できます。</p>
+        <textarea id="backup-textarea" class="modal-textarea" placeholder="JSONデータがここに表示されます"></textarea>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn" id="btn-copy-backup">📋 コピー</button>
+        <button type="button" class="btn btn-primary" id="btn-import-backup">📥 復元する</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- App Footer -->
+  <footer class="app-footer">
+    <div class="footer-container">
+      <p>
+        一次情報出典: <a href="https://wikiwiki.jp/magivaca/" target="_blank" rel="noopener noreferrer">マジカルバケーション攻略Wiki</a>（<a href="https://wikiwiki.jp/magivaca/%E7%B2%BE%E9%9C%8A" target="_blank" rel="noopener noreferrer">精霊ページ</a>）
+      </p>
+      <p>
+        本サイトは任天堂・ブラウニーブラウン公式とは無関係のファンメイド支援ツールです。<br>
+        プレイヤーのチェック進捗データはすべてお使いのブラウザ内（localStorage）にのみ保存され、外部サーバへ送信されることはありません。
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
