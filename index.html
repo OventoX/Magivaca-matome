@@ -19,10 +19,10 @@
         </div>
         <div class="header-actions">
           <button type="button" class="btn" id="btn-backup" title="チェック進捗のエクスポート / インポート">
-            <span>💾 データ管理</span>
+            <span>💾</span><span class="btn-text-full"> データ管理</span><span class="btn-text-short"> データ</span>
           </button>
           <button type="button" class="btn btn-danger" id="btn-reset-checklist" title="全チェックの解除">
-            <span>🔄 リセット</span>
+            <span>🔄</span><span class="btn-text-full"> リセット</span><span class="btn-text-short"> リセット</span>
           </button>
         </div>
       </div>
@@ -30,7 +30,8 @@
       <!-- Overall Progress Bar -->
       <div class="progress-section">
         <div class="progress-info">
-          <span>精霊コンプリート進捗（端末内保存）</span>
+          <span class="progress-label-full">精霊コンプリート進捗（端末内保存）</span>
+          <span class="progress-label-short">精霊進捗</span>
           <span class="progress-count" id="overall-progress-count">0 / 112 (0%)</span>
         </div>
         <div class="progress-bar-bg" role="progressbar" aria-valuemin="0" aria-valuemax="100">
@@ -87,9 +88,18 @@
 
     <!-- Tab 1: Spirits Database & Checklist -->
     <section id="tab-spirits" class="tab-content active" aria-labelledby="tab-spirits">
-      <!-- Element Tracker Mini-Grid -->
-      <div class="element-grid" id="element-tracker-grid" aria-label="属性別進捗・絞り込み">
-        <!-- Injected by app.js -->
+      <!-- Element Tracker Accordion & Grid -->
+      <div class="element-filter-accordion" id="element-filter-accordion">
+        <div class="element-filter-toggle" id="element-filter-toggle" role="button" tabindex="0" aria-expanded="false" title="属性フィルターを開閉">
+          <div class="element-filter-summary">
+            <span class="elem-filter-icon">🧚</span>
+            <span class="elem-filter-current" id="elem-filter-current-label">属性フィルター: すべて (0 / 112)</span>
+          </div>
+          <span class="elem-filter-arrow" id="elem-filter-arrow">▼ 属性を選択</span>
+        </div>
+        <div class="element-grid" id="element-tracker-grid" aria-label="属性別進捗・絞り込み">
+          <!-- Injected by app.js -->
+        </div>
       </div>
 
       <!-- Filters & Search -->

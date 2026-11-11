@@ -55,9 +55,11 @@
   // Tab switching helper
   window.switchTab = function(tabId) {
     const tabBtns = document.querySelectorAll('.tab-btn');
+    let activeBtn = null;
     tabBtns.forEach(b => {
       if (b.dataset.tab === tabId) {
         b.classList.add('active');
+        activeBtn = b;
       } else {
         b.classList.remove('active');
       }
@@ -70,6 +72,13 @@
         tc.classList.remove('active');
       }
     });
+
+    // スマホの横スクロールタブバーで選択中タブが見える位置へスムーズスクロール
+    if (activeBtn && activeBtn.scrollIntoView) {
+      try {
+        activeBtn.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' });
+      } catch (e) {}
+    }
 
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -313,12 +322,33 @@
       });
       grid.appendChild(chip);
     }
+
+    // アコーディオン要約ラベルの更新 (スマホ表示用)
+    const accordionLabel = document.getElementById('elem-filter-current-label');
+    if (accordionLabel) {
+      if (currentFilters.element === 'all') {
+        accordionLabel.textContent = `属性フィルター: すべて (${prog.checkedCount} / ${prog.total})`;
+      } else {
+        const counts = prog.elemCounts[currentFilters.element] || { total: 7, checked: 0 };
+        const meta = ELEMENT_META[currentFilters.element];
+        const icon = meta ? meta.icon : '✨';
+        accordionLabel.textContent = `属性フィルター: ${icon} ${currentFilters.element} (${counts.checked} / ${counts.total})`;
+      }
+    }
   }
 
   function setElementFilter(elem) {
     currentFilters.element = elem;
     updateProgressUI();
     renderSpiritsList();
+
+    // スマホ幅の場合、選択後にアコーディオンを自動で閉じる
+    if (typeof window !== 'undefined' && window.innerWidth < 768) {
+      const accordion = document.getElementById('element-filter-accordion');
+      if (accordion) accordion.classList.remove('expanded');
+      const toggle = document.getElementById('element-filter-toggle');
+      if (toggle) toggle.setAttribute('aria-expanded', 'false');
+    }
   }
 
   // Filter Spirits (including Phase 5 Plane Progress Linked Filter)
@@ -2256,6 +2286,22 @@
         window.switchTab(btn.dataset.tab);
       });
     });
+
+    // Element Filter Accordion Toggle (スマホ向け)
+    const elemFilterToggle = document.getElementById('element-filter-toggle');
+    const elemFilterAccordion = document.getElementById('element-filter-accordion');
+    if (elemFilterToggle && elemFilterAccordion) {
+      elemFilterToggle.addEventListener('click', () => {
+        const isExp = elemFilterAccordion.classList.toggle('expanded');
+        elemFilterToggle.setAttribute('aria-expanded', isExp ? 'true' : 'false');
+      });
+      elemFilterToggle.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          elemFilterToggle.click();
+        }
+      });
+    }
 
     // Search input (Spirits)
     const searchInput = document.getElementById('search-input');

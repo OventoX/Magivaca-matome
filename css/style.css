@@ -1187,16 +1187,216 @@ a:hover {
 }
 
 
-/* Mobile Optimization for Navigation Tabs & Controls */
-@media (max-width: 480px) {
-  .nav-tabs-wrapper {
+/* Responsive Helper Classes for Header & Controls */
+.btn-text-full {
+  display: inline;
+}
+.btn-text-short {
+  display: none;
+}
+.progress-label-full {
+  display: inline;
+}
+.progress-label-short {
+  display: none;
+}
+
+/* Element Filter Accordion (Desktop: Toggle hidden, Grid always shown) */
+.element-filter-accordion {
+  margin-bottom: 16px;
+}
+.element-filter-toggle {
+  display: none;
+}
+
+/* ==========================================================================
+   Mobile Optimization (< 768px): Header, Tab Bar & Element Filter
+   ========================================================================== */
+@media (max-width: 767px) {
+  /* 1. Header: Ultra-compact single row + slim progress */
+  .header-container {
+    padding: 6px 12px;
     gap: 4px;
-    padding: 6px 8px;
   }
-  .tab-btn {
-    padding: 6px 10px;
-    font-size: 0.82rem;
+
+  .header-top {
+    gap: 8px;
+    flex-wrap: nowrap;
+  }
+
+  .brand-title {
+    min-width: 0;
+    gap: 6px;
+  }
+
+  .brand-title h1 {
+    font-size: 0.95rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .brand-badge {
+    display: none;
+  }
+
+  .header-actions {
     gap: 4px;
+    flex-shrink: 0;
+  }
+
+  .header-actions .btn {
+    padding: 4px 8px;
+    font-size: 0.76rem;
+    gap: 3px;
+    border-radius: var(--radius-sm);
+  }
+
+  .btn-text-full {
+    display: none;
+  }
+  .btn-text-short {
+    display: inline;
+  }
+
+  .progress-section {
+    gap: 2px;
+  }
+
+  .progress-info {
+    font-size: 0.72rem;
+  }
+
+  .progress-label-full {
+    display: none;
+  }
+  .progress-label-short {
+    display: inline;
+  }
+
+  .progress-bar-bg {
+    height: 4px;
+    border-radius: 2px;
+  }
+
+  /* 2. Navigation Tabs: 1-row smooth horizontal scroll with visible scrollbar & end fade */
+  .nav-tabs {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: var(--border-medium) transparent;
+    border-top: 1px solid var(--border-light);
+    border-bottom: 1px solid var(--border-light);
+    mask-image: linear-gradient(to right, black calc(100% - 24px), transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, black calc(100% - 24px), transparent 100%);
+  }
+
+  .nav-tabs::-webkit-scrollbar {
+    height: 3px;
+    display: block;
+  }
+
+  .nav-tabs::-webkit-scrollbar-thumb {
+    background-color: var(--border-medium);
+    border-radius: 3px;
+  }
+
+  .nav-tabs-wrapper {
+    flex-wrap: nowrap;
+    gap: 4px;
+    padding: 5px 8px;
+    width: max-content;
+  }
+
+  .tab-btn {
+    padding: 5px 11px;
+    font-size: 0.8rem;
+    gap: 4px;
+    flex-shrink: 0;
+    border-radius: var(--radius-sm);
+  }
+
+  /* 3. Element Filter Accordion (Compact collapsed bar by default on mobile) */
+  .element-filter-accordion {
+    margin-bottom: 12px;
+  }
+
+  .element-filter-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 12px;
+    background: var(--bg-surface);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    user-select: none;
+    font-size: 0.84rem;
+    font-weight: 600;
+    box-shadow: var(--shadow-sm);
+    transition: background-color 0.15s ease;
+  }
+
+  .element-filter-toggle:hover {
+    background-color: var(--bg-subtle);
+  }
+
+  .element-filter-summary {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--text-primary);
+  }
+
+  .elem-filter-arrow {
+    font-size: 0.78rem;
+    color: var(--accent);
+    transition: transform 0.2s ease;
+  }
+
+  .element-filter-accordion:not(.expanded) .element-grid {
+    display: none;
+  }
+
+  .element-filter-accordion.expanded .element-grid {
+    display: grid;
+    margin-top: 8px;
+    grid-template-columns: repeat(auto-fill, minmax(105px, 1fr));
+    gap: 6px;
+  }
+
+  .element-filter-accordion.expanded .elem-filter-arrow {
+    transform: rotate(180deg);
+  }
+
+  .element-chip {
+    padding: 4px 8px;
+  }
+
+  .elem-name {
+    font-size: 0.78rem;
+  }
+
+  .chip-count {
+    font-size: 0.75rem;
+  }
+
+  /* 4. Main container & Filter card compact padding */
+  .main-container {
+    padding: 10px 10px 32px;
+  }
+
+  .filter-card {
+    padding: 10px 12px;
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+
+  .search-input {
+    padding: 6px 10px;
+    font-size: 0.84rem;
   }
 }
 
