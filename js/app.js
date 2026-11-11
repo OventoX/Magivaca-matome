@@ -1754,159 +1754,164 @@ let collapsedMaps = new Set();
     return svg;
   }
 
-  // Area Map & Schematic Section Renderer
+  // Garam Masala Dynamic Floor Schematic Generator (100% Original SVG)
+  function renderGaramFloorSvg(floor, floorChests, checkedChests) {
+    const isTreasureFloor = (floor % 3 === 1);
+    const totalChests = floorChests.length;
+    const openedChests = floorChests.filter(c => checkedChests.has(c.id)).length;
+    const allOpened = (totalChests > 0 && openedChests === totalChests);
+
+    const width = 360;
+    const height = 150;
+
+    let statusBg = isTreasureFloor ? (allOpened ? '#dcfce7' : '#fef3c7') : '#f1f5f9';
+    let statusStroke = isTreasureFloor ? (allOpened ? '#10b981' : '#f59e0b') : '#cbd5e1';
+    let statusTextColor = isTreasureFloor ? (allOpened ? '#15803d' : '#b45309') : '#64748b';
+    let statusText = isTreasureFloor ? (allOpened ? '✅ 宝箱 3/3個 開封済' : `🎁 宝箱 ${openedChests}/3個`) : '🛡️ 通路フロア（宝箱なし）';
+
+    let svg = `<svg class="area-schematic-svg" viewBox="0 0 ${width} ${height}" width="${width}" height="${height}" xmlns="http://www.w3.org/2000/svg">`;
+    svg += `<defs>
+      <filter id="shadow-garam" x="-5%" y="-5%" width="110%" height="110%"><feDropShadow dx="0" dy="1" stdDeviation="2" flood-opacity="0.06"/></filter>
+    </defs>`;
+
+    // Background
+    svg += `<rect x="0" y="0" width="${width}" height="${height}" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>`;
+
+    // Header row
+    svg += `<text x="16" y="25" font-size="12" font-weight="bold" fill="#1e293b">ガラムマサラ ${floor}F 模式図</text>`;
+    svg += `<rect x="${width - 150}" y="11" width="136" height="20" rx="10" fill="${statusBg}" stroke="${statusStroke}" stroke-width="1"/>`;
+    svg += `<text x="${width - 82}" y="25" font-size="10" font-weight="bold" fill="${statusTextColor}" text-anchor="middle">${statusText}</text>`;
+
+    // Previous Floor / Downstairs
+    svg += `<rect x="24" y="52" width="80" height="72" rx="6" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5" filter="url(#shadow-garam)"/>`;
+    svg += `<text x="64" y="76" font-size="10" font-weight="bold" fill="#3b82f6" text-anchor="middle">${floor === 1 ? '入口' : `${floor - 1}Fへ`}</text>`;
+    svg += `<text x="64" y="94" font-size="9" fill="#64748b" text-anchor="middle">▲ 階段</text>`;
+
+    // Center / Treasure room
+    let centerFill = isTreasureFloor ? '#fefce8' : '#f8fafc';
+    let centerStroke = isTreasureFloor ? '#facc15' : '#cbd5e1';
+    svg += `<rect x="136" y="46" width="88" height="82" rx="6" fill="${centerFill}" stroke="${centerStroke}" stroke-width="1.8" filter="url(#shadow-garam)"/>`;
+    svg += `<text x="180" y="70" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">${isTreasureFloor ? '宝箱フロア' : '連絡通路'}</text>`;
+    if (isTreasureFloor) {
+      svg += `<text x="180" y="88" font-size="9.5" font-weight="bold" fill="#b45309" text-anchor="middle">🎁 宝箱 3個</text>`;
+      svg += `<text x="180" y="106" font-size="8.5" fill="#64748b" text-anchor="middle">モンスター警戒</text>`;
+    } else {
+      svg += `<text x="180" y="92" font-size="9" fill="#64748b" text-anchor="middle">通常フロア</text>`;
+    }
+
+    // Next Floor / Upstairs
+    svg += `<rect x="256" y="52" width="80" height="72" rx="6" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5" filter="url(#shadow-garam)"/>`;
+    svg += `<text x="296" y="76" font-size="10" font-weight="bold" fill="#10b981" text-anchor="middle">${floor === 50 ? '最深部(ボス)' : `${floor + 1}Fへ`}</text>`;
+    svg += `<text x="296" y="94" font-size="9" fill="#64748b" text-anchor="middle">▼ 階段</text>`;
+
+    // Passage lines
+    svg += `<line x1="104" y1="88" x2="136" y2="88" stroke="#94a3b8" stroke-width="3" stroke-linecap="round"/>`;
+    svg += `<line x1="224" y1="88" x2="256" y2="88" stroke="#94a3b8" stroke-width="3" stroke-linecap="round"/>`;
+
+    svg += `</svg>`;
+    return svg;
+  }
+
+  // Area Map & Schematic Section Renderer (100% Original SVG + Direct Source Links)
   function renderAreaMapSection(areaName, planeName, areaChests, allChestsInArea) {
     if (typeof CHEST_MAP_ASSETS === 'undefined') return '';
     const areaKey = planeName + '_' + areaName;
     const isMapCollapsed = collapsedMaps.has(areaKey);
     const planeUrl = CHESTS_META && CHESTS_META.sourceUrls ? CHESTS_META.sourceUrls[planeName] : 'https://wikiwiki.jp/magivaca/';
+    const sourceLinks = (CHEST_MAP_ASSETS.sourceLinks && CHEST_MAP_ASSETS.sourceLinks[areaName]) || {};
 
-    // 1. Real map areas
-    if (CHEST_MAP_ASSETS.real && CHEST_MAP_ASSETS.real[areaName]) {
-      const realMeta = CHEST_MAP_ASSETS.real[areaName];
+    // 1. Garam Masala: Dynamic Floor Schematics (50 Floors)
+    if (areaName === 'ガラムマサラ') {
+      const floorStr = String(garamSelectedFloor);
+      const floorTargetName = 'ガラムマサラ' + floorStr;
+      const floorChests = allChestsInArea.filter(c => c.mapName === floorTargetName);
+      const floorOpened = floorChests.filter(c => checkedChests.has(c.id)).length;
 
-      if (areaName === 'ガラムマサラ') {
-        const floorStr = String(garamSelectedFloor);
-        const floorMapImg = (realMeta.floorMaps && realMeta.floorMaps[floorStr]) ? realMeta.floorMaps[floorStr] : `img/maps/map-garam${floorStr.padStart(2, '0')}-0.png`;
-        const floorTargetName = 'ガラムマサラ' + floorStr;
-        const floorChests = allChestsInArea.filter(c => c.mapName === floorTargetName);
-        const floorOpened = floorChests.filter(c => checkedChests.has(c.id)).length;
-        
-        let floorOptions = '';
-        for (let f = 1; f <= 50; f++) {
-          const fc = allChestsInArea.filter(c => c.mapName === 'ガラムマサラ' + f);
-          const fo = fc.filter(c => checkedChests.has(c.id)).length;
-          const statusLabel = fc.length === 0 ? '(宝箱なし)' : (fo === fc.length ? `(3/3個済)` : `(${fo}/${fc.length}個)`);
-          floorOptions += `<option value="${f}" ${f === garamSelectedFloor ? 'selected' : ''}>${f}F ${statusLabel}</option>`;
-        }
-
-        return `
-          <div class="chest-area-map-container" id="map-container-${areaKey.replace(/[^a-zA-Z0-9_]/g, '_')}">
-            <div class="chest-map-header">
-              <div class="chest-map-title-row">
-                <span class="badge-map-real">🗺️ 実マップ画像</span>
-                <span class="chest-map-title-text">${escapeHtml(realMeta.title)}</span>
-              </div>
-              <button type="button" class="btn btn-xs btn-outline" onclick="window.toggleMapCollapse('${areaKey}')">
-                ${isMapCollapsed ? '🗺️ マップを表示' : '▲ マップを折りたたむ'}
-              </button>
-            </div>
-            ${!isMapCollapsed ? `
-              <div class="chest-map-desc">${escapeHtml(realMeta.desc)}</div>
-              <div class="chest-floor-controls">
-                <button type="button" class="btn btn-sm btn-outline" onclick="window.setGaramFloor(${garamSelectedFloor - 1})" ${garamSelectedFloor <= 1 ? 'disabled' : ''}>◀ 前の階</button>
-                <select class="chest-floor-select" onchange="window.setGaramFloor(this.value)">
-                  ${floorOptions}
-                </select>
-                <button type="button" class="btn btn-sm btn-outline" onclick="window.setGaramFloor(${garamSelectedFloor + 1})" ${garamSelectedFloor >= 50 ? 'disabled' : ''}>次の階 ▶</button>
-                <button type="button" class="btn btn-sm btn-outline" onclick="window.setGaramViewMode('${garamViewMode === 'floor' ? 'all' : 'floor'}')">
-                  ${garamViewMode === 'floor' ? '📄 全階層を一括表示' : '🔍 フロア個別表示に戻す'}
-                </button>
-              </div>
-              <div class="chest-real-map-wrapper">
-                <img src="${floorMapImg}" alt="ガラムマサラ ${garamSelectedFloor}F マップ" class="chest-real-map-img" loading="lazy">
-              </div>
-              <div class="map-credit-box">
-                ${realMeta.credit}
-                | <a href="${realMeta.sourceUrl}" target="_blank" rel="noopener noreferrer">Wikiページを開く ↗</a>
-              </div>
-            ` : ''}
-          </div>
-        `;
+      let floorOptions = '';
+      for (let f = 1; f <= 50; f++) {
+        const fc = allChestsInArea.filter(c => c.mapName === 'ガラムマサラ' + f);
+        const fo = fc.filter(c => checkedChests.has(c.id)).length;
+        const statusLabel = fc.length === 0 ? '(宝箱なし)' : (fo === fc.length ? '(3/3個済)' : `(${fo}/${fc.length}個)`);
+        floorOptions += `<option value="${f}" ${f === garamSelectedFloor ? 'selected' : ''}>${f}F ${statusLabel}</option>`;
       }
 
-      if (areaName === 'リドナヒー') {
-        const activeSubmap = realMeta.submaps.find(s => s.name === lidonahySelectedSubmap) || realMeta.submaps[0];
-        const tabsHtml = realMeta.submaps.map(sm => {
-          const isAct = sm.name === activeSubmap.name;
-          return `<button type="button" class="map-subtab-btn ${isAct ? 'active' : ''}" onclick="window.setLidonahySubmap('${sm.name}')">${escapeHtml(sm.name)}</button>`;
-        }).join('');
+      const floorSvg = renderGaramFloorSvg(garamSelectedFloor, floorChests, checkedChests);
 
-        return `
-          <div class="chest-area-map-container" id="map-container-${areaKey.replace(/[^a-zA-Z0-9_]/g, '_')}">
-            <div class="chest-map-header">
-              <div class="chest-map-title-row">
-                <span class="badge-map-real">🗺️ 実マップ画像</span>
-                <span class="chest-map-title-text">${escapeHtml(realMeta.title)}</span>
-              </div>
-              <button type="button" class="btn btn-xs btn-outline" onclick="window.toggleMapCollapse('${areaKey}')">
-                ${isMapCollapsed ? '🗺️ マップを表示' : '▲ マップを折りたたむ'}
+      return `
+        <div class="chest-area-map-container" id="map-container-${areaKey.replace(/[^a-zA-Z0-9_]/g, '_')}">
+          <div class="chest-map-header">
+            <div class="chest-map-title-row">
+              <span class="badge-map-schematic">📐 フロア接続模式図</span>
+              <span class="chest-map-title-text">ガラムマサラ ${garamSelectedFloor}F / 全50フロア</span>
+            </div>
+            <button type="button" class="btn btn-xs btn-outline" onclick="window.toggleMapCollapse('${areaKey}')">
+              ${isMapCollapsed ? '🗺️ 模式図を表示' : '▲ 模式図を折りたたむ'}
+            </button>
+          </div>
+          ${!isMapCollapsed ? `
+            <div class="chest-map-desc">
+              全50フロアのタワーダンジョン。3フロアごと（1F, 4F, 7F...49F）に各3個の宝箱（計150個）が出現します。自作SVG模式図でフロア接続と宝箱状況を確認できます。
+            </div>
+            <div class="chest-floor-controls">
+              <button type="button" class="btn btn-sm btn-outline" onclick="window.setGaramFloor(${garamSelectedFloor - 1})" ${garamSelectedFloor <= 1 ? 'disabled' : ''}>◀ 前の階</button>
+              <select class="chest-floor-select" onchange="window.setGaramFloor(this.value)">
+                ${floorOptions}
+              </select>
+              <button type="button" class="btn btn-sm btn-outline" onclick="window.setGaramFloor(${garamSelectedFloor + 1})" ${garamSelectedFloor >= 50 ? 'disabled' : ''}>次の階 ▶</button>
+              <button type="button" class="btn btn-sm btn-outline" onclick="window.setGaramViewMode('${garamViewMode === 'floor' ? 'all' : 'floor'}')">
+                ${garamViewMode === 'floor' ? '📄 全階層を一括表示' : '🔍 フロア個別表示に戻す'}
               </button>
             </div>
-            ${!isMapCollapsed ? `
-              <div class="chest-map-desc">${escapeHtml(realMeta.desc)}</div>
-              <div class="map-subtabs">${tabsHtml}</div>
-              <div class="chest-real-map-wrapper">
-                <img src="${activeSubmap.file}" alt="${escapeHtml(activeSubmap.name)} マップ" class="chest-real-map-img" loading="lazy">
-              </div>
-              <div style="font-size:0.8rem; color:var(--text-secondary); margin:4px 0 8px 0; background:#fff; padding:6px 10px; border-radius:4px; border-left:3px solid var(--accent);">
-                📍 <strong>ルート・分岐案内:</strong> ${escapeHtml(activeSubmap.desc)}
-              </div>
-              <div class="map-credit-box">
-                ${realMeta.credit}
-                | <a href="${realMeta.sourceUrl}" target="_blank" rel="noopener noreferrer">Wikiページを開く ↗</a>
-              </div>
-            ` : ''}
-          </div>
-        `;
-      }
-
-      if (areaName === 'リギニオ密林' && (!CHEST_MAP_ASSETS.shanil || !CHEST_MAP_ASSETS.shanil[areaName])) {
-        return `
-          <div class="chest-area-map-container" id="map-container-${areaKey.replace(/[^a-zA-Z0-9_]/g, '_')}">
-            <div class="chest-map-header">
-              <div class="chest-map-title-row">
-                <span class="badge-map-real">🗺️ 実マップ画像</span>
-                <span class="chest-map-title-text">${escapeHtml(realMeta.title)}</span>
-              </div>
-              <button type="button" class="btn btn-xs btn-outline" onclick="window.toggleMapCollapse('${areaKey}')">
-                ${isMapCollapsed ? '🗺️ マップを表示' : '▲ マップを折りたたむ'}
-              </button>
+            <div class="area-schematic-svg-wrap">
+              ${floorSvg}
             </div>
-            ${!isMapCollapsed ? `
-              <div class="chest-map-desc">${escapeHtml(realMeta.desc)}</div>
-              <div class="chest-real-map-wrapper">
-                <img src="${realMeta.file}" alt="リギニオ密林 概略マップ" class="chest-real-map-img" loading="lazy">
-              </div>
-              <div class="map-credit-box">
-                ${realMeta.credit}
-                | <a href="${realMeta.sourceUrl}" target="_blank" rel="noopener noreferrer">Wikiページを開く ↗</a>
-              </div>
-            ` : ''}
-          </div>
-        `;
-      }
+            <div class="map-external-links-bar">
+              <a href="https://wikiwiki.jp/magivaca/%E3%82%AC%E3%83%A9%E3%83%A0%E3%83%9E%E3%82%B5%E3%83%A9" target="_blank" rel="noopener noreferrer" class="btn-ext-link wiki">
+                📖 Wikiで有志作成ガラムマサラ実マップを見る ↗
+              </a>
+              <span class="ext-link-note">※他者著作物への配慮のため、実マップ画像の自サイトへの複製掲載は行わず、Wiki直接リンクでご案内しています。</span>
+            </div>
+          ` : ''}
+        </div>
+      `;
     }
 
-    // 2. Shanil map areas (相川ともき氏のマジカルバケーション攻略サイト出典マップ)
-    if (CHEST_MAP_ASSETS.shanil && CHEST_MAP_ASSETS.shanil[areaName]) {
-      const shanilMeta = CHEST_MAP_ASSETS.shanil[areaName];
-      const viewMode = shanilViewModes[areaKey] || 'map'; // 'map' or 'schematic'
+    // 2. All other 34 areas: Original SVG Schematics + Direct External Source Links
+    if (CHEST_MAP_ASSETS.schematic && CHEST_MAP_ASSETS.schematic[areaName]) {
+      const defn = CHEST_MAP_ASSETS.schematic[areaName];
+      const svgCode = renderSchematicSvg(defn, allChestsInArea, areaKey);
 
-      // Submap selection
-      const activeSubmapId = selectedShanilSubmaps[areaKey] || (shanilMeta.maps && shanilMeta.maps[0] ? shanilMeta.maps[0].id : '');
-      const activeSubmap = (shanilMeta.maps && shanilMeta.maps.find(m => m.id === activeSubmapId)) || (shanilMeta.maps ? shanilMeta.maps[0] : null);
+      // Build source link buttons
+      let extLinksHtml = '';
+      if (sourceLinks.shanilUrl) {
+        let subLinksHtml = '';
+        if (sourceLinks.subpages && sourceLinks.subpages.length > 0) {
+          subLinksHtml = sourceLinks.subpages.map(sp =>
+            `<a href="${escapeHtml(sp.url)}" target="_blank" rel="noopener noreferrer" class="btn-ext-link sub">🗺️ ${escapeHtml(sp.name)} ↗</a>`
+          ).join(' ');
+        } else {
+          subLinksHtml = `<a href="${escapeHtml(sourceLinks.shanilUrl)}" target="_blank" rel="noopener noreferrer" class="btn-ext-link">🗺️ 相川ともき氏サイトでダンジョン実マップを見る ↗</a>`;
+        }
 
-      // Submap tabs (if more than 1 map)
-      let tabsHtml = '';
-      if (shanilMeta.maps && shanilMeta.maps.length > 1) {
-        tabsHtml = `
-          <div class="map-subtabs" style="margin-bottom:8px;">
-            ${shanilMeta.maps.map(sm => {
-              const isAct = sm.id === activeSubmap.id;
-              return `<button type="button" class="map-subtab-btn ${isAct ? 'active' : ''}" onclick="window.setShanilSubmap('${escapeHtml(areaKey)}', '${escapeHtml(sm.id)}')">${escapeHtml(sm.label)}</button>`;
-            }).join('')}
+        extLinksHtml = `
+          <div class="map-external-links-bar">
+            <div class="ext-links-row">
+              ${subLinksHtml}
+              <a href="${escapeHtml(sourceLinks.wikiUrl || planeUrl)}" target="_blank" rel="noopener noreferrer" class="btn-ext-link wiki">📖 Wiki拾得物ページ ↗</a>
+            </div>
+            <span class="ext-link-note">※著作権配慮のため他サイトの実マップ画像は自サイト内にコピー・掲載しておりません。詳細な実物マップは上記リンク先にて直接ご覧いただけます。</span>
+          </div>
+        `;
+      } else {
+        extLinksHtml = `
+          <div class="map-external-links-bar">
+            <div class="ext-links-row">
+              <a href="${escapeHtml(sourceLinks.wikiUrl || planeUrl)}" target="_blank" rel="noopener noreferrer" class="btn-ext-link wiki">📖 Wiki拾得物詳細ページ ↗</a>
+            </div>
+            <span class="ext-link-note">※フロア部屋接続・宝箱配置は自作SVG模式図で掲載しています。</span>
           </div>
         `;
       }
-
-      // View mode toggle button (if schematic also exists)
-      const hasSchematic = CHEST_MAP_ASSETS.schematic && CHEST_MAP_ASSETS.schematic[areaName];
-      const viewToggleBtn = hasSchematic ? `
-        <button type="button" class="btn btn-xs btn-outline" style="margin-left:6px;" onclick="window.setShanilViewMode('${escapeHtml(areaKey)}', '${viewMode === 'map' ? 'schematic' : 'map'}')">
-          ${viewMode === 'map' ? '📊 模式図(SVG)に切替' : '🗺️ 相川氏マップに切替'}
-        </button>
-      ` : '';
 
       // Red circle reference table (赤丸番号と宝箱対応表)
       const markGroups = new Map();
@@ -1921,11 +1926,13 @@ let collapsedMaps = new Set();
       });
 
       let markTableRows = '';
+      let hasShanilMarks = false;
       markGroups.forEach((grp) => {
+        if (grp.mark !== '-') hasShanilMarks = true;
         const openedCount = grp.chests.filter(c => checkedChests.has(c.id)).length;
         const allDone = openedCount === grp.chests.length && grp.chests.length > 0;
         const markBadge = grp.mark !== '-' ? `<span class="badge-shanil-circle">${escapeHtml(grp.mark)}</span>` : '<span class="badge-shanil-circle none">-</span>';
-        
+
         const chestBadges = grp.chests.map(c => {
           const isOp = checkedChests.has(c.id);
           return `<label class="mark-chest-item ${isOp ? 'is-opened' : ''}">
@@ -1947,98 +1954,48 @@ let collapsedMaps = new Set();
         `;
       });
 
-      return `
-        <div class="chest-area-map-container" id="map-container-${areaKey.replace(/[^a-zA-Z0-9_]/g, '_')}">
-          <div class="chest-map-header">
-            <div class="chest-map-title-row">
-              <span class="badge-map-shanil">🗺️ ダンジョンマップ</span>
-              <span class="chest-map-title-text">${escapeHtml(activeSubmap ? activeSubmap.label : areaName)}</span>
-              <span class="badge-shanil-source" title="相川ともき氏の攻略サイト出典">相川ともき氏サイト出典</span>
-            </div>
-            <div style="display:flex; gap:6px; align-items:center;">
-              ${viewToggleBtn}
-              <button type="button" class="btn btn-xs btn-outline" onclick="window.toggleMapCollapse('${areaKey}')">
-                ${isMapCollapsed ? '🗺️ マップを表示' : '▲ 折りたたむ'}
-              </button>
-            </div>
+      const tableHtml = hasShanilMarks ? `
+        <div class="shanil-mark-table-container">
+          <div class="shanil-table-header">
+            <strong>📍 相川氏チャート赤丸番号・場所と宝箱の対応表</strong>
+            <span class="shanil-table-note">（外部マップの赤丸番号順 / チェックボックスで開封記録可能）</span>
           </div>
-          ${!isMapCollapsed ? `
-            ${viewMode === 'map' && activeSubmap ? `
-              <div class="chest-map-desc">
-                ${escapeHtml(activeSubmap.desc || 'マップ上の赤い○＋数字が各場所に対応しています。')}
-              </div>
-              ${tabsHtml}
-              <div class="chest-real-map-wrapper">
-                <a href="${activeSubmap.file}" target="_blank" title="クリックして原寸表示">
-                  <img src="${activeSubmap.file}" alt="${escapeHtml(activeSubmap.label)} マップ" class="chest-real-map-img" loading="lazy">
-                </a>
-              </div>
-              <div class="map-zoom-tip">🔍 クリックまたはタップで画像を別タブで原寸拡大表示できます</div>
-            ` : `
-              <div class="chest-map-desc">模式図（部屋のつながりと宝箱数）を表示中</div>
-              ${hasSchematic ? renderSchematicSvg(CHEST_MAP_ASSETS.schematic[areaName], allChestsInArea, areaKey) : ''}
-            `}
-
-            <!-- 赤丸番号・場所・宝箱対応表 -->
-            <div class="shanil-mark-table-container">
-              <div class="shanil-table-header">
-                <strong>📍 マップ赤丸番号と宝箱の対応表</strong>
-                <span class="shanil-table-note">（マップ上の赤丸番号順 / チェックボックスで開封記録可能）</span>
-              </div>
-              <div class="table-responsive">
-                <table class="shanil-mark-table">
-                  <thead>
-                    <tr>
-                      <th style="width:50px;">番号</th>
-                      <th style="width:140px;">場所</th>
-                      <th>宝箱アイテム</th>
-                      <th style="width:75px;">状態</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    ${markTableRows}
-                  </tbody>
-                </table>
-              </div>
-            </div>
-
-            <!-- 出典・クレジット表記 -->
-            <div class="map-credit-box">
-              出典: <a href="${escapeHtml(activeSubmap && activeSubmap.sourceUrl ? activeSubmap.sourceUrl : shanilMeta.sourceUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(shanilMeta.sourceName)} ↗</a>
-              | ${escapeHtml(shanilMeta.credit)}
-              | <a href="${escapeHtml(planeUrl)}" target="_blank" rel="noopener noreferrer">Wiki拾得物ページ ↗</a>
-            </div>
-          ` : ''}
+          <div class="table-responsive">
+            <table class="shanil-mark-table">
+              <thead>
+                <tr>
+                  <th style="width:50px;">番号</th>
+                  <th style="width:140px;">場所</th>
+                  <th>宝箱アイテム</th>
+                  <th style="width:75px;">状態</th>
+                </tr>
+              </thead>
+              <tbody>
+                ${markTableRows}
+              </tbody>
+            </table>
+          </div>
         </div>
-      `;
-    }
-
-    // 2. Schematic areas (32 areas)
-    if (CHEST_MAP_ASSETS.schematic && CHEST_MAP_ASSETS.schematic[areaName]) {
-      const defn = CHEST_MAP_ASSETS.schematic[areaName];
-      const svgCode = renderSchematicSvg(defn, allChestsInArea, areaKey);
+      ` : '';
 
       return `
         <div class="chest-area-map-container" id="map-container-${areaKey.replace(/[^a-zA-Z0-9_]/g, '_')}">
           <div class="chest-map-header">
             <div class="chest-map-title-row">
               <span class="badge-map-schematic">📐 エリア模式図</span>
-              <span class="chest-map-title-text">${escapeHtml(defn.title)}</span>
+              <span class="chest-map-title-text">${escapeHtml(defn.title || areaName)}</span>
             </div>
             <button type="button" class="btn btn-xs btn-outline" onclick="window.toggleMapCollapse('${areaKey}')">
               ${isMapCollapsed ? '🗺️ 模式図を表示' : '▲ 模式図を折りたたむ'}
             </button>
           </div>
           ${!isMapCollapsed ? `
-            <div class="schematic-notice">
-              ※本図はWikiの「マップ位置 概略」データに基づく部屋接続模式図です（ゲーム画面の画像ではありません）。各部屋の宝箱個数・開封状況をリアルタイムで示しています。
-            </div>
+            <div class="chest-map-desc">${escapeHtml(defn.desc || '部屋のつながりと宝箱の配置を示す自作模式図です。')}</div>
             <div class="area-schematic-svg-wrap">
               ${svgCode}
             </div>
-            <div class="map-credit-box">
-              一次情報出典: <a href="${planeUrl}" target="_blank" rel="noopener noreferrer">マジカルバケーション攻略Wiki (${escapeHtml(planeName)})</a>（マップ位置概略に準拠）
-            </div>
+            ${extLinksHtml}
+            ${tableHtml}
           ` : ''}
         </div>
       `;

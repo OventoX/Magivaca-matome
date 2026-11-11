@@ -19542,630 +19542,6 @@ if (typeof module !== 'undefined' && module.exports) {
 
 // === CHEST MAP ASSETS ===
 const CHEST_MAP_ASSETS = {
-  "shanil": {
-    "キャンプ場（ウィルオウィスプ・ヴァレンシア海岸）": {
-        "sourceType": "shanil",
-        "sourceName": "相川ともき氏のマジカルバケーション攻略サイト",
-        "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_1.html",
-        "credit": "相川ともき氏のマジカルバケーション攻略サイト（許諾/情報提供に基づく攻略マップ引用）",
-        "maps": [
-            {
-                "id": "willowisp",
-                "label": "ウィルオウィスプ",
-                "file": "img/maps/shanil/map_willowisp.gif",
-                "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_1.html",
-                "desc": "キャンプ場・ウィルオウィスプ周辺マップ（①ヴァレンシア海岸方面、②学校）"
-            },
-            {
-                "id": "varensia",
-                "label": "ヴァレンシア海岸",
-                "file": "img/maps/shanil/map_varensia.gif",
-                "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_2.html",
-                "desc": "ヴァレンシア海岸マップ（①ウィルオウィスプ方面、②海岸洞窟）"
-            }
-        ]
-    },
-    "ミモレットの森": {
-        "sourceType": "shanil",
-        "sourceName": "相川ともき氏のマジカルバケーション攻略サイト",
-        "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_3.html",
-        "credit": "相川ともき氏のマジカルバケーション攻略サイト（許諾/情報提供に基づく攻略マップ引用）",
-        "maps": [
-            {
-                "id": "mimorett",
-                "label": "ミモレットの森〜森の洞窟",
-                "file": "img/maps/shanil/map_mimorett.gif",
-                "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_3.html",
-                "desc": "ミモレットの森・森の洞窟ダンジョンマップ（①〜③ミモレットの森、④森の洞窟入口）"
-            }
-        ]
-    },
-    "森の洞窟": {
-        "sourceType": "shanil",
-        "sourceName": "相川ともき氏のマジカルバケーション攻略サイト",
-        "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_3.html",
-        "credit": "相川ともき氏のマジカルバケーション攻略サイト（許諾/情報提供に基づく攻略マップ引用）",
-        "maps": [
-            {
-                "id": "mimorett_cave",
-                "label": "森の洞窟",
-                "file": "img/maps/shanil/map_mimorett.gif",
-                "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_3.html",
-                "desc": "森の洞窟ダンジョンマップ（⑤森の洞窟西、⑥小部屋、⑦森の洞窟東）"
-            }
-        ]
-    },
-    "トルーナ村": {
-        "sourceType": "shanil",
-        "sourceName": "相川ともき氏のマジカルバケーション攻略サイト",
-        "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_4.html",
-        "credit": "相川ともき氏のマジカルバケーション攻略サイト（許諾/情報提供に基づく攻略マップ引用）",
-        "maps": [
-            {
-                "id": "toruna",
-                "label": "トルーナ村（地下洞窟）",
-                "file": "img/maps/shanil/map_toruna.gif",
-                "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_4.html",
-                "desc": "トルーナ村地下洞窟マップ（①森の洞窟東出口、②トルーナ村入口、③村地下小部屋）"
-            }
-        ]
-    },
-    "ベナコンチャ遺跡": {
-        "sourceType": "shanil",
-        "sourceName": "相川ともき氏のマジカルバケーション攻略サイト",
-        "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_5.html",
-        "credit": "相川ともき氏のマジカルバケーション攻略サイト（許諾/情報提供に基づく攻略マップ引用）",
-        "maps": [
-            {
-                "id": "benakoncha",
-                "label": "ベナコンチャ遺跡 全域",
-                "file": "img/maps/shanil/map_benakoncha.gif",
-                "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_5.html",
-                "desc": "ベナコンチャ遺跡全域マップ（①遺跡中央、②東、③西、④北、⑤南西、⑥南、⑦南東）"
-            }
-        ]
-    },
-    "レーミッツ宮殿外": {
-        "sourceType": "shanil",
-        "sourceName": "相川ともき氏のマジカルバケーション攻略サイト",
-        "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_7.html",
-        "credit": "相川ともき氏のマジカルバケーション攻略サイト（許諾/情報提供に基づく攻略マップ引用）",
-        "maps": [
-            {
-                "id": "remitu_outer",
-                "label": "レーミッツ宮殿外・トピアリー",
-                "file": "img/maps/shanil/map_remitu.gif",
-                "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_7.html",
-                "desc": "レーミッツ全域マップ（①北東、②東、③南東、④宮殿門、⑤西、⑥南西、⑦トピアリーの迷宮）"
-            }
-        ]
-    },
-    "レーミッツ宮殿内": {
-        "sourceType": "shanil",
-        "sourceName": "相川ともき氏のマジカルバケーション攻略サイト",
-        "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_7.html",
-        "credit": "相川ともき氏のマジカルバケーション攻略サイト（許諾/情報提供に基づく攻略マップ引用）",
-        "maps": [
-            {
-                "id": "remitu_inner",
-                "label": "レーミッツ宮殿内部",
-                "file": "img/maps/shanil/map_remitu.gif",
-                "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_7.html",
-                "desc": "レーミッツ宮殿内部マップ（⑧入口、⑨応接間、⑩小部屋、⑪客間、⑫廊下、⑬西階段、⑭東階段、⑮東階段下、⑯西階段下、⑰西広場、⑱鳥の間、⑲地下入口、⑳休憩所、㉑地下）"
-            }
-        ]
-    },
-    "～ピップルスタウン": {
-        "sourceType": "shanil",
-        "sourceName": "相川ともき氏のマジカルバケーション攻略サイト",
-        "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_8.html",
-        "credit": "相川ともき氏のマジカルバケーション攻略サイト（許諾/情報提供に基づく攻略マップ引用）",
-        "maps": [
-            {
-                "id": "ibense",
-                "label": "イベンセ岩場〜ピップルスタウン",
-                "file": "img/maps/shanil/map_ibense.gif",
-                "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_8.html",
-                "desc": "イベンセ岩場〜ピップルスタウン道中マップ（①イベンセ岩場1、②ロッシュの川べり、③ロッシュの1本橋）"
-            }
-        ]
-    },
-    "ラ・ロッシュの塔": {
-        "sourceType": "shanil",
-        "sourceName": "相川ともき氏のマジカルバケーション攻略サイト",
-        "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_9.html",
-        "credit": "相川ともき氏のマジカルバケーション攻略サイト（許諾/情報提供に基づく攻略マップ引用）",
-        "maps": [
-            {
-                "id": "rosh",
-                "label": "ラ・ロッシュの塔",
-                "file": "img/maps/shanil/map_rosh.gif",
-                "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_9.html",
-                "desc": "ラ・ロッシュの塔マップ（①1F〜2F、②3F〜5F、③6F最上階）"
-            }
-        ]
-    },
-    "～ゲアラヴァ村": {
-        "sourceType": "shanil",
-        "sourceName": "相川ともき氏のマジカルバケーション攻略サイト",
-        "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_10.html",
-        "credit": "相川ともき氏のマジカルバケーション攻略サイト（許諾/情報提供に基づく攻略マップ引用）",
-        "maps": [
-            {
-                "id": "gearava",
-                "label": "ロッシュの1本橋〜ゲアラヴァ村",
-                "file": "img/maps/shanil/map_gearava.gif",
-                "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_10.html",
-                "desc": "ロッシュの1本橋〜ゲアラヴァ村マップ（①ロッシュの1本橋、②イベンセ岩場1、③ゲアラヴァ村）"
-            }
-        ]
-    },
-    "キードモンガ": {
-        "sourceType": "shanil",
-        "sourceName": "相川ともき氏のマジカルバケーション攻略サイト",
-        "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_11.html",
-        "credit": "相川ともき氏のマジカルバケーション攻略サイト（許諾/情報提供に基づく攻略マップ引用）",
-        "maps": [
-            {
-                "id": "kido",
-                "label": "キード・モンガ",
-                "file": "img/maps/shanil/map_kido.gif",
-                "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_11.html",
-                "desc": "キード・モンガダンジョンマップ（①〜⑫各フロア・洞穴）"
-            }
-        ]
-    },
-    "氷の島・ジェラ風穴": {
-        "sourceType": "shanil",
-        "sourceName": "相川ともき氏のマジカルバケーション攻略サイト",
-        "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_2.html",
-        "credit": "相川ともき氏のマジカルバケーション攻略サイト（許諾/情報提供に基づく攻略マップ引用）",
-        "maps": [
-            {
-                "id": "jyera",
-                "label": "ジェラ風穴",
-                "file": "img/maps/shanil/map_jyera.gif",
-                "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_2.html",
-                "desc": "ジェラ風穴マップ（①〜⑤風穴各層）"
-            },
-            {
-                "id": "masara",
-                "label": "マサラティ村・氷の島",
-                "file": "img/maps/shanil/map_masara.gif",
-                "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_2.html",
-                "desc": "マサラティ村〜氷の島周辺マップ"
-            }
-        ]
-    },
-    "タピオカティ村": {
-        "sourceType": "shanil",
-        "sourceName": "相川ともき氏のマジカルバケーション攻略サイト",
-        "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_3.html",
-        "credit": "相川ともき氏のマジカルバケーション攻略サイト（許諾/情報提供に基づく攻略マップ引用）",
-        "maps": [
-            {
-                "id": "rehi7",
-                "label": "レヒカフ沼周辺７",
-                "file": "img/maps/shanil/map_rehi7.png",
-                "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_3.html",
-                "desc": "レヒカフ沼周辺７マップ（タピオカティ村手前）"
-            },
-            {
-                "id": "tapioka",
-                "label": "タピオカティ村",
-                "file": "img/maps/shanil/map_tapioka.png",
-                "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_3.html",
-                "desc": "タピオカティ村集落マップ"
-            }
-        ]
-    },
-    "リギニオ密林": {
-        "sourceType": "shanil",
-        "sourceName": "相川ともき氏のマジカルバケーション攻略サイト",
-        "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_4.html",
-        "credit": "相川ともき氏のマジカルバケーション攻略サイト（許諾/情報提供に基づく攻略マップ引用）",
-        "maps": [
-            {
-                "id": "riginio_shanil",
-                "label": "リギニオ密林（相川ともき氏マップ）",
-                "file": "img/maps/shanil/map_riginio.png",
-                "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_4.html",
-                "desc": "リギニオ密林ダンジョンマップ（①〜⑧各ルートと宝箱配置）"
-            },
-            {
-                "id": "riginio_wiki",
-                "label": "リギニオ密林（Wikiマップ）",
-                "file": "img/maps/map_riginio.png",
-                "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%AA%E3%82%AE%E3%83%8B%E3%82%AA%E5%AF%86%E6%9E%97",
-                "desc": "Wiki掲載のリギニオ密林フロア図"
-            }
-        ]
-    },
-    "クムヤムト砂漠": {
-        "sourceType": "shanil",
-        "sourceName": "相川ともき氏のマジカルバケーション攻略サイト",
-        "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_5.html",
-        "credit": "相川ともき氏のマジカルバケーション攻略サイト（許諾/情報提供に基づく攻略マップ引用）",
-        "maps": [
-            {
-                "id": "kumuyamuto",
-                "label": "クムヤムト砂漠",
-                "file": "img/maps/shanil/map_kumuyamuto.png",
-                "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_5.html",
-                "desc": "クムヤムト砂漠全域マップ（①〜③砂漠各所、ずんどこ穴入口）"
-            }
-        ]
-    },
-    "ずんどこ穴": {
-        "sourceType": "shanil",
-        "sourceName": "相川ともき氏のマジカルバケーション攻略サイト",
-        "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_5.html",
-        "credit": "相川ともき氏のマジカルバケーション攻略サイト（許諾/情報提供に基づく攻略マップ引用）",
-        "maps": [
-            {
-                "id": "zundoko",
-                "label": "クムヤムト砂漠（ずんどこ穴）",
-                "file": "img/maps/shanil/map_kumuyamuto.png",
-                "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_5.html",
-                "desc": "クムヤムト砂漠マップ（ずんどこ穴は砂漠内地下洞穴、ドワーフの救出人数で宝箱入手）"
-            }
-        ]
-    },
-    "アクアビット城": {
-        "sourceType": "shanil",
-        "sourceName": "相川ともき氏のマジカルバケーション攻略サイト",
-        "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_5.html",
-        "credit": "相川ともき氏のマジカルバケーション攻略サイト（許諾/情報提供に基づく攻略マップ引用）",
-        "maps": [
-            {
-                "id": "aquabit",
-                "label": "アクアビット城",
-                "file": "img/maps/shanil/map_aquabit.png",
-                "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_5.html",
-                "desc": "アクアビット城ダンジョンマップ（①〜④各フロア）"
-            }
-        ]
-    },
-    "エニグマの森": {
-        "sourceType": "shanil",
-        "sourceName": "相川ともき氏のマジカルバケーション攻略サイト",
-        "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_6.html",
-        "credit": "相川ともき氏のマジカルバケーション攻略サイト（許諾/情報提供に基づく攻略マップ引用）",
-        "maps": [
-            {
-                "id": "eniguma",
-                "label": "エニグマの森",
-                "file": "img/maps/shanil/map_eniguma.png",
-                "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_6.html",
-                "desc": "エニグマの森全域マップ（①カエル沼、②森北、③森沼、ツリーマン集落）"
-            }
-        ]
-    },
-    "東の森": {
-        "sourceType": "shanil",
-        "sourceName": "相川ともき氏のマジカルバケーション攻略サイト",
-        "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_7.html",
-        "credit": "相川ともき氏のマジカルバケーション攻略サイト（許諾/情報提供に基づく攻略マップ引用）",
-        "maps": [
-            {
-                "id": "higasinomori",
-                "label": "東の森",
-                "file": "img/maps/shanil/map_higasinomori.png",
-                "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_7.html",
-                "desc": "東の森ダンジョンマップ（①クガンテ村南、②ヒトデ花の原っぱ、③文鳥の里、④東の森2、⑤謎の遺跡、⑥モルビエ火山手前）"
-            }
-        ]
-    },
-    "モルビエ火山": {
-        "sourceType": "shanil",
-        "sourceName": "相川ともき氏のマジカルバケーション攻略サイト",
-        "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_8.html",
-        "credit": "相川ともき氏のマジカルバケーション攻略サイト（許諾/情報提供に基づく攻略マップ引用）",
-        "maps": [
-            {
-                "id": "morubie",
-                "label": "モルビエ火山",
-                "file": "img/maps/shanil/map_morubie.gif",
-                "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_8.html",
-                "desc": "モルビエ火山ダンジョンマップ（①火口入口、②〜④火道各層）"
-            }
-        ]
-    },
-    "バソリモ村": {
-        "sourceType": "shanil",
-        "sourceName": "相川ともき氏のマジカルバケーション攻略サイト",
-        "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_9.html",
-        "credit": "相川ともき氏のマジカルバケーション攻略サイト（許諾/情報提供に基づく攻略マップ引用）",
-        "maps": [
-            {
-                "id": "basorimo",
-                "label": "バソリモ村",
-                "file": "img/maps/shanil/map_basorimo.png",
-                "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_9.html",
-                "desc": "バソリモ村集落マップ（①村入口、②村広場、③民家、④キスニカ鉱山入口）"
-            }
-        ]
-    },
-    "ブラウニーの穴": {
-        "sourceType": "shanil",
-        "sourceName": "相川ともき氏のマジカルバケーション攻略サイト",
-        "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_9.html",
-        "credit": "相川ともき氏のマジカルバケーション攻略サイト（許諾/情報提供に基づく攻略マップ引用）",
-        "maps": [
-            {
-                "id": "brownie",
-                "label": "ブラウニーの穴",
-                "file": "img/maps/shanil/map_brownie.png",
-                "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_9.html",
-                "desc": "ブラウニーの穴ダンジョンマップ（①〜⑥各層）"
-            }
-        ]
-    },
-    "キスニカ鉱山": {
-        "sourceType": "shanil",
-        "sourceName": "相川ともき氏のマジカルバケーション攻略サイト",
-        "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_10.html",
-        "credit": "相川ともき氏のマジカルバケーション攻略サイト（許諾/情報提供に基づく攻略マップ引用）",
-        "maps": [
-            {
-                "id": "kisunika",
-                "label": "キスニカ鉱山",
-                "file": "img/maps/shanil/map_kisunika.png",
-                "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_10.html",
-                "desc": "キスニカ鉱山ダンジョンマップ（①〜⑪各坑道）"
-            }
-        ]
-    },
-    "タンドーリ": {
-        "sourceType": "shanil",
-        "sourceName": "相川ともき氏のマジカルバケーション攻略サイト",
-        "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_2.html",
-        "credit": "相川ともき氏のマジカルバケーション攻略サイト（許諾/情報提供に基づく攻略マップ引用）",
-        "maps": [
-            {
-                "id": "tandori",
-                "label": "タンドーリ",
-                "file": "img/maps/shanil/map_tandori.png",
-                "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_2.html",
-                "desc": "タンドーリ集落・周辺マップ（①〜⑤各区画）"
-            }
-        ]
-    },
-    "荒廃の地(～モイロロト村)": {
-        "sourceType": "shanil",
-        "sourceName": "相川ともき氏のマジカルバケーション攻略サイト",
-        "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_3.html",
-        "credit": "相川ともき氏のマジカルバケーション攻略サイト（許諾/情報提供に基づく攻略マップ引用）",
-        "maps": [
-            {
-                "id": "moiroroto",
-                "label": "荒廃の地２〜モイロロト村",
-                "file": "img/maps/shanil/map_moiroroto.png",
-                "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_3.html",
-                "desc": "荒廃の地２〜モイロロト村マップ（①荒廃の地2、②荒廃の地3、③モイロロト村、④荒廃の地4）"
-            }
-        ]
-    },
-    "ピラミッド": {
-        "sourceType": "shanil",
-        "sourceName": "相川ともき氏のマジカルバケーション攻略サイト",
-        "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_4.html",
-        "credit": "相川ともき氏のマジカルバケーション攻略サイト（許諾/情報提供に基づく攻略マップ引用）",
-        "maps": [
-            {
-                "id": "piramido",
-                "label": "ピラミッド 全域",
-                "file": "img/maps/shanil/map_piramido.png",
-                "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_4.html",
-                "desc": "ピラミッド階層マップ（①〜⑭各フロア・迷宮）"
-            }
-        ]
-    },
-    "荒廃の地(～ラキューオ)": {
-        "sourceType": "shanil",
-        "sourceName": "相川ともき氏のマジカルバケーション攻略サイト",
-        "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_5.html",
-        "credit": "相川ともき氏のマジカルバケーション攻略サイト（許諾/情報提供に基づく攻略マップ引用）",
-        "maps": [
-            {
-                "id": "rakyuo_ruins",
-                "label": "ラキューオ周辺",
-                "file": "img/maps/shanil/map_rakyuo.png",
-                "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_5.html",
-                "desc": "ラキューオ周辺荒廃の地マップ"
-            }
-        ]
-    },
-    "ラキューオ": {
-        "sourceType": "shanil",
-        "sourceName": "相川ともき氏のマジカルバケーション攻略サイト",
-        "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_5.html",
-        "credit": "相川ともき氏のマジカルバケーション攻略サイト（許諾/情報提供に基づく攻略マップ引用）",
-        "maps": [
-            {
-                "id": "rakyuo",
-                "label": "ラキューオ",
-                "file": "img/maps/shanil/map_rakyuo.png",
-                "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_5.html",
-                "desc": "ラキューオ集落マップ（①〜⑤各フロア・施設）"
-            }
-        ]
-    },
-    "死の回廊": {
-        "sourceType": "shanil",
-        "sourceName": "相川ともき氏のマジカルバケーション攻略サイト",
-        "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_6.html",
-        "credit": "相川ともき氏のマジカルバケーション攻略サイト（許諾/情報提供に基づく攻略マップ引用）",
-        "maps": [
-            {
-                "id": "sinokairou",
-                "label": "死の回廊",
-                "file": "img/maps/shanil/map_sinokairou.gif",
-                "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_6.html",
-                "desc": "死の回廊マップ（①〜③回廊各階、出口）"
-            }
-        ]
-    },
-    "暗闇の地": {
-        "sourceType": "shanil",
-        "sourceName": "相川ともき氏のマジカルバケーション攻略サイト",
-        "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_7.html",
-        "credit": "相川ともき氏のマジカルバケーション攻略サイト（許諾/情報提供に基づく攻略マップ引用）",
-        "maps": [
-            {
-                "id": "kurayami_land",
-                "label": "暗闇の地・失意の沼",
-                "file": "img/maps/shanil/map_kurayami.gif",
-                "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_7.html",
-                "desc": "暗闇の地・失意の沼マップ（①〜⑤暗闇の地各所、⑥〜⑦失意の沼）"
-            }
-        ]
-    },
-    "失意の沼": {
-        "sourceType": "shanil",
-        "sourceName": "相川ともき氏のマジカルバケーション攻略サイト",
-        "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_7.html",
-        "credit": "相川ともき氏のマジカルバケーション攻略サイト（許諾/情報提供に基づく攻略マップ引用）",
-        "maps": [
-            {
-                "id": "situi_swamp",
-                "label": "失意の沼",
-                "file": "img/maps/shanil/map_kurayami.gif",
-                "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_7.html",
-                "desc": "失意の沼マップ（⑥〜⑦沼各所）"
-            }
-        ]
-    },
-    "モギナス魔窟": {
-        "sourceType": "shanil",
-        "sourceName": "相川ともき氏のマジカルバケーション攻略サイト",
-        "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_8.html",
-        "credit": "相川ともき氏のマジカルバケーション攻略サイト（許諾/情報提供に基づく攻略マップ引用）",
-        "maps": [
-            {
-                "id": "moginasu1",
-                "label": "モギナス魔窟 階層1",
-                "file": "img/maps/shanil/map_moginasu1.png",
-                "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_8.html",
-                "desc": "モギナス魔窟 第1フロアマップ"
-            },
-            {
-                "id": "moginasu2",
-                "label": "モギナス魔窟 階層2",
-                "file": "img/maps/shanil/map_moginasu2.png",
-                "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_8.html",
-                "desc": "モギナス魔窟 第2フロアマップ"
-            },
-            {
-                "id": "moginasu3",
-                "label": "モギナス魔窟 階層3",
-                "file": "img/maps/shanil/map_moginasu3.png",
-                "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_8.html",
-                "desc": "モギナス魔窟 第3フロアマップ（最奥）"
-            }
-        ]
-    }
-},
-  "real": {
-    "ガラムマサラ": {
-      "type": "real",
-      "area": "ガラムマサラ",
-      "plane": "ガラムマサラ",
-      "title": "ガラムマサラ 1F〜50F 実マップ画像",
-      "desc": "Wiki有志作成の全50フロア実マップ画像。フロアごとの宝箱配置と順路を確認できます。",
-      "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%82%AC%E3%83%A9%E3%83%A0%E3%83%9E%E3%82%B5%E3%83%A9",
-      "credit": "一次情報出典: マジカルバケーション攻略Wiki ガラムマサラ (画像: Wiki有志作成フロアマップ)",
-      "totalFloors": 50,
-      "floorMaps": {
-        "1": "img/maps/map-garam01-0.png",
-        "2": "img/maps/map-garam02-0.png",
-        "3": "img/maps/map-garam03-0.png",
-        "4": "img/maps/map-garam04-0.png",
-        "5": "img/maps/map-garam05-2.png",
-        "6": "img/maps/map-garam06-0.png",
-        "7": "img/maps/map-garam07-0.png",
-        "8": "img/maps/map-garam08-0.png",
-        "9": "img/maps/map-garam09-0.png",
-        "10": "img/maps/map-garam10-0.png",
-        "11": "img/maps/map-garam11-0.png",
-        "12": "img/maps/map-garam12-0.png",
-        "13": "img/maps/map-garam13-1.png",
-        "14": "img/maps/map-garam14-0.png",
-        "15": "img/maps/map-garam15-0.png",
-        "16": "img/maps/map-garam16-0.png",
-        "17": "img/maps/map-garam17-0.png",
-        "18": "img/maps/map-garam18-0.png",
-        "19": "img/maps/map-garam19-0.png",
-        "20": "img/maps/map-garam20-0.png",
-        "21": "img/maps/map-garam21-0.png",
-        "22": "img/maps/map-garam22-0.png",
-        "23": "img/maps/map-garam23-0.png",
-        "24": "img/maps/map-garam24-0.png",
-        "25": "img/maps/map-garam25-0.png",
-        "26": "img/maps/map-garam26-1.png",
-        "27": "img/maps/map-garam27-0.png",
-        "28": "img/maps/map-garam28-0.png",
-        "29": "img/maps/map-garam29-0.png",
-        "30": "img/maps/map-garam30-0.png",
-        "31": "img/maps/map-garam31-0.png",
-        "32": "img/maps/map-garam32-0.png",
-        "33": "img/maps/map-garam33-0.png",
-        "34": "img/maps/map-garam34-0.png",
-        "35": "img/maps/map-garam35-0.png",
-        "36": "img/maps/map-garam36-0.png",
-        "37": "img/maps/map-garam37-1.png",
-        "38": "img/maps/map-garam38-0.png",
-        "39": "img/maps/map-garam39-0.png",
-        "40": "img/maps/map-garam40-0.png",
-        "41": "img/maps/map-garam41-0.png",
-        "42": "img/maps/map-garam42-0.png",
-        "43": "img/maps/map-garam43-0.png",
-        "44": "img/maps/map-garam44-0.png",
-        "45": "img/maps/map-garam45-0.png",
-        "46": "img/maps/map-garam46-0.png",
-        "47": "img/maps/map-garam47-0.png",
-        "48": "img/maps/map-garam48-0.png",
-        "49": "img/maps/map-garam49-0.png",
-        "50": "img/maps/map-garam50-0.png"
-      }
-    },
-    "リドナヒー": {
-      "type": "real",
-      "area": "リドナヒー",
-      "plane": "リドナヒー",
-      "title": "リドナヒー 実マップ画像",
-      "desc": "Wiki有志作成のリドナヒー4〜6（ボス側・宝箱側ルート分岐）実マップ画像。",
-      "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%82%AC%E3%83%A9%E3%83%A0%E3%83%9E%E3%82%B5%E3%83%A9",
-      "credit": "一次情報出典: マジカルバケーション攻略Wiki ガラムマサラ (リドナヒー節)",
-      "submaps": [
-        {
-          "name": "リドナヒー4",
-          "file": "img/maps/map-rido04-0.png",
-          "desc": "右上: リドナヒー2に戻る / 右下: リドナヒー8(宝箱側)へ / 左下: リドナヒー7(ボス側)へ"
-        },
-        {
-          "name": "リドナヒー5",
-          "file": "img/maps/map-rido05-0.png",
-          "desc": "左下: リドナヒー3に戻る / 左上: リドナヒー9(宝箱側)へ / 右下: リドナヒー7(ボス側)へ"
-        },
-        {
-          "name": "リドナヒー6",
-          "file": "img/maps/map-rido06-0.png",
-          "desc": "右下: リドナヒー1に戻る / 右上: リドナヒー10(宝箱側)へ / 左上: リドナヒー7(ボス側)へ"
-        }
-      ]
-    },
-    "リギニオ密林": {
-      "type": "real",
-      "area": "リギニオ密林",
-      "plane": "闇のプレーン",
-      "title": "リギニオ密林・沼 実マップ概略図",
-      "desc": "Wiki有志作成のリギニオ密林・沼の全体ルート概略図（赤丸数字は順路）。",
-      "sourceUrl": "https://wikiwiki.jp/magivaca/%E9%97%87%E3%81%AE%E3%83%97%E3%83%AC%E3%83%BC%E3%83%B3",
-      "credit": "一次情報出典: マジカルバケーション攻略Wiki 闇のプレーン (リギニオ密林節 概略図)",
-      "file": "img/maps/map_riginio.png"
-    }
-  },
   "schematic": {
     "キャンプ場（ウィルオウィスプ・ヴァレンシア海岸）": {
       "title": "ヴァレンシア海岸・キャンプ場 模式図",
@@ -22527,10 +21903,428 @@ const CHEST_MAP_ASSETS = {
           }
         ]
       ]
+    },
+    "リギニオ密林": {
+      "plane": "闇のプレーン",
+      "area": "リギニオ密林",
+      "title": "リギニオ密林 ルート・フロア接続模式図",
+      "desc": "レヒカフ沼周辺７から続く密林ダンジョン。分岐する各ルートと宝箱配置の模式図です。",
+      "grid": [
+        [
+          {
+            "name": "リギニオ密林7",
+            "aliases": [
+              "リギニオ密林7",
+              "リギニオ密林７"
+            ],
+            "links": [
+              "south"
+            ],
+            "desc": "北西部ルート"
+          },
+          {
+            "name": "リギニオ密林6",
+            "aliases": [
+              "リギニオ密林6",
+              "リギニオ密林６"
+            ],
+            "links": [
+              "south",
+              "west"
+            ],
+            "desc": "北東部（宝箱2個）"
+          },
+          {
+            "name": "リギニオ密林8",
+            "aliases": [
+              "リギニオ密林8",
+              "リギニオ密林８"
+            ],
+            "links": [
+              "west"
+            ],
+            "desc": "最奥部"
+          }
+        ],
+        [
+          {
+            "name": "リギニオ密林4",
+            "aliases": [
+              "リギニオ密林4",
+              "リギニオ密林４",
+              "リギニオ密林４(密林６の階段から進入)",
+              "リギニオ密林４(密林５の右上から進入)"
+            ],
+            "links": [
+              "north",
+              "south",
+              "east"
+            ],
+            "desc": "中央広場（宝箱2個）"
+          },
+          {
+            "name": "リギニオ密林5",
+            "aliases": [
+              "リギニオ密林5",
+              "リギニオ密林５"
+            ],
+            "links": [
+              "north",
+              "west"
+            ],
+            "desc": "東部連絡路"
+          },
+          null
+        ],
+        [
+          {
+            "name": "リギニオ密林1",
+            "aliases": [
+              "リギニオ密林1",
+              "リギニオ密林１"
+            ],
+            "isEntrance": true,
+            "links": [
+              "north",
+              "east"
+            ],
+            "desc": "入口（宝箱2個）"
+          },
+          {
+            "name": "リギニオ密林2",
+            "aliases": [
+              "リギニオ密林2",
+              "リギニオ密林２"
+            ],
+            "links": [
+              "west",
+              "east"
+            ],
+            "desc": "南部通路（宝箱1個）"
+          },
+          {
+            "name": "リギニオ密林3",
+            "aliases": [
+              "リギニオ密林3",
+              "リギニオ密林３"
+            ],
+            "links": [
+              "west"
+            ],
+            "desc": "南東部（宝箱2個）"
+          }
+        ]
+      ]
+    },
+    "リドナヒー": {
+      "plane": "リドナヒー",
+      "area": "リドナヒー",
+      "title": "リドナヒー 階層・ルート分岐模式図",
+      "desc": "リドナヒーの階層接続。5階でボス直行ルートと宝箱フロアルートに分岐します。",
+      "grid": [
+        [
+          {
+            "name": "リドナヒー6",
+            "aliases": [
+              "リドナヒー8",
+              "リドナヒー８",
+              "リドナヒー9",
+              "リドナヒー９",
+              "リドナヒー10",
+              "リドナヒー１０"
+            ],
+            "links": [
+              "south"
+            ],
+            "desc": "宝箱フロア（ホワイト装備3個）"
+          },
+          {
+            "name": "ボスフロア",
+            "aliases": [
+              "リドナヒー6 (ボス部屋)"
+            ],
+            "links": [],
+            "desc": "ボス戦（宝箱なし）"
+          }
+        ],
+        [
+          {
+            "name": "リドナヒー5",
+            "aliases": [
+              "リドナヒー7",
+              "リドナヒー７"
+            ],
+            "links": [
+              "north",
+              "south"
+            ],
+            "desc": "右階段→宝箱 / 左階段→ボス（宝箱1個）"
+          },
+          null
+        ],
+        [
+          {
+            "name": "リドナヒー4",
+            "aliases": [
+              "リドナヒー3",
+              "リドナヒー３"
+            ],
+            "isEntrance": true,
+            "links": [
+              "north"
+            ],
+            "desc": "広間・入口（宝箱1個）"
+          },
+          null
+        ]
+      ]
+    },
+    "ガラムマサラ": {
+      "plane": "ガラムマサラ",
+      "area": "ガラムマサラ",
+      "title": "ガラムマサラ 1F〜50F 階層構造・宝箱出現模式図",
+      "desc": "全50フロアのタワーダンジョン。3フロアごと（1F, 4F, 7F, 10F...49F）に各3個の宝箱（計150個）が出現します。下のフロア選択で各階の宝箱と開封状況を確認できます。",
+      "grid": [
+        [
+          {
+            "name": "ガラムマサラ49F",
+            "links": [
+              "north",
+              "south"
+            ],
+            "desc": "最深層宝箱フロア（宝箱3個）"
+          },
+          {
+            "name": "ガラムマサラ50F",
+            "links": [
+              "west"
+            ],
+            "desc": "最上階・ボスフロア"
+          }
+        ],
+        [
+          {
+            "name": "ガラムマサラ25F〜46F",
+            "links": [
+              "north",
+              "south"
+            ],
+            "desc": "深層（3フロアごとに宝箱3個）"
+          },
+          null
+        ],
+        [
+          {
+            "name": "ガラムマサラ1F〜22F",
+            "isEntrance": true,
+            "links": [
+              "north"
+            ],
+            "desc": "中低層（3フロアごとに宝箱3個）"
+          },
+          null
+        ]
+      ]
+    }
+  },
+  "sourceLinks": {
+    "キャンプ場（ウィルオウィスプ・ヴァレンシア海岸）": {
+      "shanilName": "相川ともき氏のマジカルバケーション攻略サイト",
+      "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_1.html",
+      "wikiUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9",
+      "subpages": [
+        {
+          "name": "ウィルオウィスプ (相川氏サイト)",
+          "url": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_1.html"
+        },
+        {
+          "name": "ヴァレンシア海岸 (相川氏サイト)",
+          "url": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_2.html"
+        }
+      ]
+    },
+    "ミモレットの森": {
+      "shanilName": "相川ともき氏のマジカルバケーション攻略サイト",
+      "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_3.html",
+      "wikiUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    },
+    "森の洞窟": {
+      "shanilName": "相川ともき氏のマジカルバケーション攻略サイト",
+      "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_3.html",
+      "wikiUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    },
+    "トルーナ村": {
+      "shanilName": "相川ともき氏のマジカルバケーション攻略サイト",
+      "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_4.html",
+      "wikiUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    },
+    "ベナコンチャ遺跡": {
+      "shanilName": "相川ともき氏のマジカルバケーション攻略サイト",
+      "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_5.html",
+      "wikiUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    },
+    "レーミッツ宮殿外": {
+      "shanilName": "相川ともき氏のマジカルバケーション攻略サイト",
+      "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_7.html",
+      "wikiUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    },
+    "レーミッツ宮殿内": {
+      "shanilName": "相川ともき氏のマジカルバケーション攻略サイト",
+      "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_7.html",
+      "wikiUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    },
+    "～ピップルスタウン": {
+      "shanilName": "相川ともき氏のマジカルバケーション攻略サイト",
+      "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_8.html",
+      "wikiUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    },
+    "ラ・ロッシュの塔": {
+      "shanilName": "相川ともき氏のマジカルバケーション攻略サイト",
+      "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_9.html",
+      "wikiUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    },
+    "～ゲアラヴァ村": {
+      "shanilName": "相川ともき氏のマジカルバケーション攻略サイト",
+      "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_10.html",
+      "wikiUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    },
+    "キードモンガ": {
+      "shanilName": "相川ともき氏のマジカルバケーション攻略サイト",
+      "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_11.html",
+      "wikiUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    },
+    "氷の島・ジェラ風穴": {
+      "shanilName": "相川ともき氏のマジカルバケーション攻略サイト",
+      "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_2.html",
+      "wikiUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+      "subpages": [
+        {
+          "name": "ジェラ風穴 (相川氏サイト)",
+          "url": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_2.html"
+        },
+        {
+          "name": "マサラティ村・氷の島 (相川氏サイト)",
+          "url": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_2.html"
+        }
+      ]
+    },
+    "タピオカティ村": {
+      "shanilName": "相川ともき氏のマジカルバケーション攻略サイト",
+      "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_3.html",
+      "wikiUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    },
+    "リギニオ密林": {
+      "shanilName": "相川ともき氏のマジカルバケーション攻略サイト",
+      "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_4.html",
+      "wikiUrl": "https://wikiwiki.jp/magivaca/%E3%83%AA%E3%82%AE%E3%83%8B%E3%82%AA%E5%AF%86%E6%9E%97"
+    },
+    "クムヤムト砂漠": {
+      "shanilName": "相川ともき氏のマジカルバケーション攻略サイト",
+      "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_5.html",
+      "wikiUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    },
+    "ずんどこ穴": {
+      "shanilName": "相川ともき氏のマジカルバケーション攻略サイト",
+      "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_5.html",
+      "wikiUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    },
+    "アクアビット城": {
+      "shanilName": "相川ともき氏のマジカルバケーション攻略サイト",
+      "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_5.html",
+      "wikiUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    },
+    "エニグマの森": {
+      "shanilName": "相川ともき氏のマジカルバケーション攻略サイト",
+      "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_6.html",
+      "wikiUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    },
+    "東の森": {
+      "shanilName": "相川ともき氏のマジカルバケーション攻略サイト",
+      "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_7.html",
+      "wikiUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    },
+    "モルビエ火山": {
+      "shanilName": "相川ともき氏のマジカルバケーション攻略サイト",
+      "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_8.html",
+      "wikiUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    },
+    "バソリモ村": {
+      "shanilName": "相川ともき氏のマジカルバケーション攻略サイト",
+      "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_9.html",
+      "wikiUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    },
+    "ブラウニーの穴": {
+      "shanilName": "相川ともき氏のマジカルバケーション攻略サイト",
+      "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_9.html",
+      "wikiUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    },
+    "キスニカ鉱山": {
+      "shanilName": "相川ともき氏のマジカルバケーション攻略サイト",
+      "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_10.html",
+      "wikiUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    },
+    "タンドーリ": {
+      "shanilName": "相川ともき氏のマジカルバケーション攻略サイト",
+      "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_2.html",
+      "wikiUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    },
+    "荒廃の地(～モイロロト村)": {
+      "shanilName": "相川ともき氏のマジカルバケーション攻略サイト",
+      "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_3.html",
+      "wikiUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    },
+    "ピラミッド": {
+      "shanilName": "相川ともき氏のマジカルバケーション攻略サイト",
+      "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_4.html",
+      "wikiUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    },
+    "荒廃の地(～ラキューオ)": {
+      "shanilName": "相川ともき氏のマジカルバケーション攻略サイト",
+      "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_5.html",
+      "wikiUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    },
+    "ラキューオ": {
+      "shanilName": "相川ともき氏のマジカルバケーション攻略サイト",
+      "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_5.html",
+      "wikiUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    },
+    "死の回廊": {
+      "shanilName": "相川ともき氏のマジカルバケーション攻略サイト",
+      "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_6.html",
+      "wikiUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    },
+    "暗闇の地": {
+      "shanilName": "相川ともき氏のマジカルバケーション攻略サイト",
+      "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_7.html",
+      "wikiUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    },
+    "失意の沼": {
+      "shanilName": "相川ともき氏のマジカルバケーション攻略サイト",
+      "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_7.html",
+      "wikiUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    },
+    "モギナス魔窟": {
+      "shanilName": "相川ともき氏のマジカルバケーション攻略サイト",
+      "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_8.html",
+      "wikiUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    },
+    "ガラムマサラ": {
+      "shanilName": null,
+      "shanilUrl": null,
+      "wikiUrl": "https://wikiwiki.jp/magivaca/%E3%82%AC%E3%83%A9%E3%83%A0%E3%83%9E%E3%82%B5%E3%83%A9"
+    },
+    "リドナヒー": {
+      "shanilName": null,
+      "shanilUrl": null,
+      "wikiUrl": "https://wikiwiki.jp/magivaca/%E3%82%AC%E3%83%A9%E3%83%A0%E3%83%9E%E3%82%B5%E3%83%A9"
+    },
+    "シサバレイ": {
+      "shanilName": null,
+      "shanilUrl": null,
+      "wikiUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
     }
   }
 };
-
 
 if (typeof window !== 'undefined') {
   window.CHEST_MAP_ASSETS = CHEST_MAP_ASSETS;

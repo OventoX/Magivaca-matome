@@ -3,7 +3,7 @@ const path = require('path');
 const assert = require('assert');
 
 console.log('================================================================');
-console.log('🧪 相川ともき氏攻略マップ 統合検証テスト (test_shanil_integration.js)');
+console.log('🧪 相川ともき氏攻略情報・事実情報照合検証テスト (test_shanil_integration.js)');
 console.log('================================================================');
 
 // 1. Data file inspection
@@ -12,34 +12,29 @@ const CHESTS_DATA = data.CHESTS_DATA;
 const CHEST_MAP_ASSETS = data.CHEST_MAP_ASSETS;
 
 assert(CHESTS_DATA && CHESTS_DATA.length === 453, 'CHESTS_DATA must contain 453 chests');
-assert(CHEST_MAP_ASSETS && CHEST_MAP_ASSETS.shanil, 'CHEST_MAP_ASSETS.shanil must exist');
+assert(CHEST_MAP_ASSETS && CHEST_MAP_ASSETS.schematic, 'CHEST_MAP_ASSETS.schematic must exist');
+assert(CHEST_MAP_ASSETS && CHEST_MAP_ASSETS.sourceLinks, 'CHEST_MAP_ASSETS.sourceLinks must exist');
 
-const shanilAreas = Object.keys(CHEST_MAP_ASSETS.shanil);
-console.log(`\n1. 相川氏マップ採用エリア数: ${shanilAreas.length} / 32 エリア`);
-assert.strictEqual(shanilAreas.length, 32, 'Must have exactly 32 Shanil map areas');
+const sourceLinks = CHEST_MAP_ASSETS.sourceLinks;
+const shanilAreas = Object.keys(sourceLinks).filter(a => sourceLinks[a].shanilUrl !== null);
+console.log(`\n1. 相川氏サイト出典リンク設定エリア数: ${shanilAreas.length} / 32 エリア`);
+assert.strictEqual(shanilAreas.length, 32, 'Must have exactly 32 Shanil source areas');
 
-// 2. Validate all 35 images on disk
-console.log('\n2. ディスク上のマップ画像実在・完全性チェック');
-let totalMapsChecked = 0;
-for (const area of shanilAreas) {
-  const meta = CHEST_MAP_ASSETS.shanil[area];
-  assert(meta.sourceName.includes('相川ともき氏'), `${area}: sourceName must mention 相川ともき氏`);
-  assert(meta.sourceUrl.startsWith('https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/'), `${area}: valid sourceUrl`);
-  assert(meta.credit.includes('相川ともき氏'), `${area}: credit must mention 相川ともき氏`);
-  assert(Array.isArray(meta.maps) && meta.maps.length > 0, `${area}: must have submaps`);
-
-  for (const sm of meta.maps) {
-    const fullPath = path.join(__dirname, '..', sm.file);
-    assert(fs.existsSync(fullPath), `Map file not found on disk: ${sm.file}`);
-    const stat = fs.statSync(fullPath);
-    assert(stat.size > 0, `Map file is empty: ${sm.file}`);
-    totalMapsChecked++;
+// 2. Validate NO image files on disk
+console.log('\n2. 著作権配慮：他サイトの画像ファイル完全撤去チェック');
+const mapsDir = path.join(__dirname, '../img/maps');
+let imgCount = 0;
+if (fs.existsSync(mapsDir)) {
+  const files = fs.readdirSync(mapsDir, { recursive: true });
+  for (const f of files) {
+    if (/\.(png|gif|jpe?g|webp)$/i.test(f)) imgCount++;
   }
 }
-console.log(`✅ 全32エリアに登録された全マップ画像（延べ ${totalMapsChecked} 枚）の実在と有効サイズを確認！`);
+assert.strictEqual(imgCount, 0, 'Must have 0 image files in img/maps');
+console.log('✅ img/maps 配下に外部画像ファイルは一切存在しないことを確認！');
 
-// 3. Validate chests mapping and differences
-console.log('\n3. 宝箱データとの赤丸番号・場所対応および相違点注記チェック');
+// 3. Validate chests mapping and differences (facts data)
+console.log('\n3. 事実情報：赤丸番号・場所対応および相違点注記チェック');
 const chestsInShanilAreas = CHESTS_DATA.filter(c => shanilAreas.includes(c.area));
 console.log(`相川氏エリア内宝箱数: ${chestsInShanilAreas.length} 件`);
 assert.strictEqual(chestsInShanilAreas.length, 293, 'Must have exactly 293 chests in Shanil areas');
@@ -53,16 +48,16 @@ const unmapped = chestsInShanilAreas.filter(c => c.shanilMark === null);
 assert.strictEqual(unmapped.length, 1, 'Exactly 1 chest must remain unmapped');
 assert.strictEqual(unmapped[0].id, 'chest_216', 'chest_216 must be the unmapped chest');
 assert(unmapped[0].diffNote.includes('相川氏チャートには未記載'), 'chest_216 must have proper diffNote');
-console.log(`✅ 未記載宝箱 (chest_216 / 荒廃の地6) は無理に対応させず「未記載（Wiki優先）」として明記されていることを確認！`);
+console.log('✅ 未記載宝箱 (chest_216 / 荒廃の地6) は無理に対応させず「未記載（Wiki優先）」として明記されていることを確認！');
 
-// Check sample diff notes
+// Check diff notes
 const withDiff = chestsInShanilAreas.filter(c => c.diffNote !== null && c.diffNote !== undefined);
 console.log(`相違点・照合注記付与件数: ${withDiff.length} 件`);
 assert(withDiff.length > 0, 'Must have difference notes recorded');
-console.log(`✅ 相川氏サイトとWikiの表記ゆれ・数量差・分類差（例: ラシモフ金貨/銀貨、カエルグミ青/緑等）が注記されていることを確認！`);
+console.log('✅ 相川氏サイトとWikiの表記ゆれ・数量差・分類差（例: ラシモフ金貨/銀貨、カエルグミ青/緑等）が注記されていることを確認！');
 
 // 4. Mock Environment and Rendering Verification
-console.log('\n4. モック環境による描画関数・UI連動テスト');
+console.log('\n4. モック環境による自作SVG模式図・出典リンク・赤丸対応表描画テスト');
 global.SPIRITS_DATA = data.SPIRITS_DATA;
 global.ELEMENT_META = data.ELEMENT_META;
 global.PIRANHA_DATA = data.PIRANHA_DATA;
@@ -150,30 +145,17 @@ global.window.renderChestsTab();
 const chestsHtml = domNodes['chests-tab-content'].innerHTML;
 assert(chestsHtml.length > 0, 'chests-tab-content must have content rendered');
 
-// Test Benakoncha map rendered in HTML
-assert(chestsHtml.includes('img/maps/shanil/map_benakoncha.gif'), 'Must render Benakoncha map image');
-assert(chestsHtml.includes('相川ともき氏のマジカルバケーション攻略サイト'), 'Must render Shanil site credit');
-assert(chestsHtml.includes('マップ赤丸番号と宝箱の対応表'), 'Must render red circle reference table');
+// Test Benakoncha rendered in HTML
+assert(chestsHtml.includes('相川ともき氏サイトでダンジョン実マップを見る'), 'Must render Shanil site direct link');
+assert(chestsHtml.includes('https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_5.html'), 'Must link to Benakoncha chart');
+assert(chestsHtml.includes('相川氏チャート赤丸番号・場所と宝箱の対応表'), 'Must render red circle reference table');
 assert(chestsHtml.includes('badge-shanil-pos'), 'Must render badge-shanil-pos on chest cards');
 assert(chestsHtml.includes('マップ ④'), 'Must render map mark ④ for Benakoncha north');
-console.log('✅ ベナコンチャ遺跡のマップ画像、相川氏出典クレジット、赤丸対応表、宝箱カードバッジの正常描画を確認！');
+console.log('✅ ベナコンチャ遺跡の自作SVG模式図、相川氏出典リンク、赤丸対応表、宝箱カードバッジの正常描画を確認！');
 
-// Test Moginasu multi-map subtabs
-assert(chestsHtml.includes('img/maps/shanil/map_moginasu1.png'), 'Must render Moginasu map 1');
-assert(chestsHtml.includes('setShanilSubmap'), 'Must render setShanilSubmap onclick handlers');
-console.log('✅ モギナス魔窟の複数マップ切替タブ (3階層分) の正常描画を確認！');
-
-// Test switching Moginasu submap
-global.window.setShanilSubmap('死のプレーン_モギナス魔窟', 'moginasu2');
-const updatedHtml = domNodes['chests-tab-content'].innerHTML;
-assert(updatedHtml.includes('img/maps/shanil/map_moginasu2.png'), 'Must render Moginasu map 2 after switching');
-console.log('✅ サブマップ切替 (setShanilSubmap) が正常に動作し画像が動的更新されたことを確認！');
-
-// Test toggling to schematic view
-global.window.setShanilViewMode('光のプレーン_ベナコンチャ遺跡', 'schematic');
-const schematicHtml = domNodes['chests-tab-content'].innerHTML;
-assert(schematicHtml.includes('area-schematic-svg'), 'Must render SVG schematic when switched to schematic');
-console.log('✅ 模式図への切替表示 (setShanilViewMode) が正常に動作することを確認！');
+// Test NO <img> with map files
+assert(!chestsHtml.includes('<img src="img/maps/'), 'Must not render any local map image tags');
+console.log('✅ HTML内にローカルマップ画像タグが一切含まれないことを確認！');
 
 // Test toggle chest in mark table
 global.window.toggleChest('chest_031');
@@ -182,5 +164,5 @@ assert(storageMock['magivaca_chest_checklist_v1'].includes('chest_031'), 'chest_
 console.log('✅ 宝箱チェックボックスとlocalStorage連動が正常に動作することを確認！');
 
 console.log('\n================================================================');
-console.log('🎉 ALL SHANIL MAP INTEGRATION TESTS PASSED WITH 100% SUCCESS!');
+console.log('🎉 ALL SHANIL INTEGRATION TESTS PASSED WITH 100% SUCCESS!');
 console.log('================================================================');

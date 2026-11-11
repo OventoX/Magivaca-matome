@@ -2000,6 +2000,66 @@ a:hover {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
 }
 
+.map-external-links-bar {
+  margin: 10px 0 12px 0;
+  padding: 10px 14px;
+  background: #f8fafc;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.ext-links-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.btn-ext-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 5px 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #1e40af;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.15s ease;
+}
+
+.btn-ext-link:hover {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.btn-ext-link.wiki {
+  color: #047857;
+  background: #ecfdf5;
+  border-color: #a7f3d0;
+}
+
+.btn-ext-link.wiki:hover {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.btn-ext-link.sub {
+  font-size: 0.76rem;
+  padding: 4px 10px;
+}
+
+.ext-link-note {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
 .chest-real-map-wrapper {
   text-align: center;
   margin: 10px 0;

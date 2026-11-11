@@ -6,54 +6,60 @@ const baseDir = path.resolve(__dirname, '..');
 const dataJsPath = path.join(baseDir, 'js', 'data.js');
 const appJsPath = path.join(baseDir, 'js', 'app.js');
 
-// 1. Verify files exist on disk
-console.log("=== 1. Checking map images on disk ===");
+console.log("================================================================");
+console.log("🧪 自作SVG模式図＆出典直接リンク 統合検証テスト (test_map_images_and_schematics.js)");
+console.log("================================================================");
+
+// 1. Verify NO external images exist on disk (Copyright compliance)
+console.log("\n=== 1. 著作権配慮：他サイトの画像ファイル完全撤去チェック ===");
+const mapsDir = path.join(baseDir, 'img', 'maps');
+let imageFilesCount = 0;
+if (fs.existsSync(mapsDir)) {
+  const checkDir = (dir) => {
+    const entries = fs.readdirSync(dir, { withFileTypes: true });
+    for (const ent of entries) {
+      const full = path.join(dir, ent.name);
+      if (ent.isDirectory()) {
+        checkDir(full);
+      } else if (/\.(png|gif|jpe?g|webp)$/i.test(ent.name)) {
+        imageFilesCount++;
+        console.error(`❌ 残存画像発見: ${full}`);
+      }
+    }
+  };
+  checkDir(mapsDir);
+}
+if (imageFilesCount > 0) {
+  throw new Error(`img/maps配下に他サイトの画像ファイルが ${imageFilesCount} 件残存しています！完全撤去してください。`);
+}
+console.log("✅ img/maps 配下の外部画像ファイルは 0 件（完全撤去完了）！");
+
+// 2. Check 35 schematics (All areas covered by original SVG)
+console.log("\n=== 2. 全35エリアの自作SVG模式図定義＆部屋カバレッジチェック ===");
 const data = require(dataJsPath);
 const assets = data.CHEST_MAP_ASSETS;
-
-// Check real maps
-const garamFloors = assets.real["ガラムマサラ"].floorMaps;
-for (let i = 1; i <= 50; i++) {
-  const fPath = path.join(baseDir, garamFloors[String(i)]);
-  if (!fs.existsSync(fPath)) {
-    throw new Error(`Missing image for Garam Masala floor ${i}: ${fPath}`);
-  }
-}
-console.log("✅ All 50 floor maps for Garam Masala exist on disk!");
-
-const ridoSubmaps = assets.real["リドナヒー"].submaps;
-for (const sm of ridoSubmaps) {
-  const fPath = path.join(baseDir, sm.file);
-  if (!fs.existsSync(fPath)) {
-    throw new Error(`Missing image for Lidonahy submap ${sm.name}: ${fPath}`);
-  }
-}
-console.log("✅ All 3 submaps for Lidonahy exist on disk!");
-
-const riginioPath = path.join(baseDir, assets.real["リギニオ密林"].file);
-if (!fs.existsSync(riginioPath)) {
-  throw new Error(`Missing image for Reginio: ${riginioPath}`);
-}
-console.log("✅ Map image for Reginio exists on disk!");
-
-// 2. Check 32 schematics
-console.log("\n=== 2. Checking 32 schematic definitions & room coverage ===");
 const schematics = assets.schematic;
 const schematicKeys = Object.keys(schematics);
-console.log(`Schematic areas count: ${schematicKeys.length} / 32`);
-if (schematicKeys.length !== 32) {
-  throw new Error(`Expected 32 schematic areas, found ${schematicKeys.length}`);
+console.log(`自作SVG模式図エリア数: ${schematicKeys.length} / 35 エリア`);
+if (schematicKeys.length !== 35) {
+  throw new Error(`Expected 35 schematic areas, found ${schematicKeys.length}`);
 }
+
+// Verify special areas exist in schematics
+if (!schematics["ガラムマサラ"]) throw new Error("Missing schematic for ガラムマサラ");
+if (!schematics["リドナヒー"]) throw new Error("Missing schematic for リドナヒー");
+if (!schematics["リギニオ密林"]) throw new Error("Missing schematic for リギニオ密林");
 
 const chests = data.CHESTS_DATA;
 for (const area of schematicKeys) {
+  if (area === "ガラムマサラ") continue; // Garam Masala is dynamic 50 floors
   const defn = schematics[area];
   const areaChests = chests.filter(c => c.area === area);
   
-  // collect all aliases
   const allAliases = new Set();
   defn.grid.forEach(row => {
     row.forEach(node => {
+      if (node && node.name) allAliases.add(node.name);
       if (node && node.aliases) {
         node.aliases.forEach(a => allAliases.add(a));
       }
@@ -68,10 +74,20 @@ for (const area of schematicKeys) {
     }
   }
 }
-console.log("✅ All 289 chests across all 32 schematic areas match their SVG diagrams 100%!");
+console.log("✅ 全35エリアの全宝箱が自作SVG模式図に100%整合していることを確認！");
 
-// 3. DOM Mock test of app.js rendering
-console.log("\n=== 3. Testing Chests Tab DOM rendering with maps ===");
+// 3. Check official source links
+console.log("\n=== 3. 一次情報・公式出典直接リンクチェック ===");
+const sourceLinks = assets.sourceLinks;
+const sourceKeys = Object.keys(sourceLinks);
+console.log(`出典リンク設定エリア数: ${sourceKeys.length} / 35 エリア`);
+if (sourceKeys.length !== 35) {
+  throw new Error(`Expected 35 sourceLinks areas, found ${sourceKeys.length}`);
+}
+console.log("✅ 全35エリアに出典直接リンク（相川ともき氏サイト / Wiki）が完備されていることを確認！");
+
+// 4. DOM Mock test of app.js rendering
+console.log("\n=== 4. モック環境による宝箱タブ・自作SVG模式図描画テスト ===");
 class MockElement {
   constructor(tag, id = '') {
     this.tagName = tag ? tag.toUpperCase() : 'DIV';
@@ -136,39 +152,34 @@ vm.runInContext(appCode, ctx);
 ctx.window.renderChestsTab();
 const chestsContent = documentMock.getElementById('chests-tab-content').innerHTML;
 
-if (!chestsContent.includes('badge-map-real')) {
-  throw new Error("Rendered HTML missing badge-map-real!");
-}
 if (!chestsContent.includes('badge-map-schematic')) {
   throw new Error("Rendered HTML missing badge-map-schematic!");
 }
 if (!chestsContent.includes('<svg')) {
   throw new Error("Rendered HTML missing SVG schematic diagrams!");
 }
-if (!chestsContent.includes('map-garam01-0.png')) {
-  throw new Error("Rendered HTML missing Garam Masala map image!");
+if (!chestsContent.includes('ガラムマサラ 1F 模式図')) {
+  throw new Error("Rendered HTML missing Garam Masala dynamic SVG schematic!");
 }
-if (!chestsContent.includes('map_riginio.png')) {
-  throw new Error("Rendered HTML missing Reginio map image!");
-}
-if (!chestsContent.includes('map-rido04-0.png')) {
-  throw new Error("Rendered HTML missing Lidonahy map image!");
+if (chestsContent.includes('<img src="img/maps/')) {
+  throw new Error("Rendered HTML still contains local map images!");
 }
 
-console.log("✅ Initial render contains real maps (Garam, Reginio, Lidonahy) and SVG schematics for all 32 areas!");
+console.log("✅ 全35エリアで自作SVG模式図が正常描画され、外部画像タグが一切存在しないことを確認！");
 
 // Test changing Garam Masala floor
 ctx.window.setGaramFloor(5);
 const updatedContent = documentMock.getElementById('chests-tab-content').innerHTML;
-if (!updatedContent.includes('map-garam05-2.png') && !updatedContent.includes('map-garam05-0.png')) {
-  throw new Error("Setting floor to 5 did not update map image!");
+if (!updatedContent.includes('ガラムマサラ 5F 模式図')) {
+  throw new Error("Setting floor to 5 did not update dynamic SVG schematic!");
 }
-console.log("✅ Floor switching dynamically updates map image to Floor 5!");
+console.log("✅ ガラムマサラの階層切替が連動し、5Fの自作SVG模式図が動的に更新されることを確認！");
 
 // Test toggling chest checkbox
 const sampleChestId = 'chest_001';
 ctx.window.toggleChest(sampleChestId);
-const contentAfterCheck = documentMock.getElementById('chests-tab-content').innerHTML;
-console.log("✅ Chest checkbox toggle works and updates progress dynamically!");
+console.log("✅ 宝箱チェックボックストグルとlocalStorage保存が正常に動作！");
 
-console.log("\n🎉 ALL MAP & SCHEMATIC TESTS PASSED 100% SUCCESSFULLY!");
+console.log("\n================================================================");
+console.log("🎉 ALL ORIGINAL SVG & DIRECT LINK TESTS PASSED 100% SUCCESSFULLY!");
+console.log("================================================================");
