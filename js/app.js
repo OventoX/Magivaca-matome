@@ -18,6 +18,28 @@
     query: ''
   };
 
+  // Tab switching helper
+  window.switchTab = function(tabId) {
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    tabBtns.forEach(b => {
+      if (b.dataset.tab === tabId) {
+        b.classList.add('active');
+      } else {
+        b.classList.remove('active');
+      }
+    });
+
+    document.querySelectorAll('.tab-content').forEach(tc => {
+      if (tc.id === tabId) {
+        tc.classList.add('active');
+      } else {
+        tc.classList.remove('active');
+      }
+    });
+
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   // Load state from localStorage
   function loadState() {
     try {
@@ -373,7 +395,7 @@
     `;
   }
 
-  // Render Leveling Tab (NEW - 優先1)
+  // Render Leveling Tab (優先1)
   function renderLevelingTab() {
     const container = document.getElementById('leveling-tab-content');
     if (!container) return;
@@ -471,7 +493,7 @@
     `;
   }
 
-  // Render Chart Tab (NEW - 優先2)
+  // Render Chart Tab (優先2)
   function renderChartTab() {
     const container = document.getElementById('chart-tab-content');
     if (!container) return;
@@ -524,6 +546,15 @@
           <p class="section-source">一次情報出典: <a href="https://wikiwiki.jp/magivaca/" target="_blank" rel="noopener noreferrer">マジカルバケーション攻略Wiki チャート各節</a></p>
         </div>
 
+        <!-- Ofuro Banner Link -->
+        <div class="info-block" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
+          <div>
+            <strong>♨️ 最強補正『お風呂セット』入手チャート</strong>
+            <p style="font-size:0.82rem; color:var(--text-muted);">魔バス修理後にやさがし乱数調整で入手できる全ステ+51セットの解説はこちら</p>
+          </div>
+          <button type="button" class="btn btn-primary" onclick="switchTab('tab-ofuro')">お風呂セットチャートを見る ➔</button>
+        </div>
+
         <div style="display:flex; flex-direction:column; gap:14px;">
           ${planesHtml}
         </div>
@@ -531,7 +562,114 @@
     `;
   }
 
-  // Render System Tab (NEW - 優先3)
+  // Render Ofuro Set Chart Tab (NEW - 第4弾)
+  function renderOfuroTab() {
+    const container = document.getElementById('ofuro-tab-content');
+    if (!container || typeof OFURO_CHART_DATA === 'undefined') return;
+
+    const data = OFURO_CHART_DATA;
+
+    // Overview parts rows
+    const partsRows = data.overview.parts.map(p => `
+      <tr>
+        <td style="font-weight:600;">${p.part}</td>
+        <td style="font-weight:700; color:var(--accent);">${p.name}</td>
+        <td>${p.single}</td>
+        <td style="font-weight:600; color:#b45309;">${p.equipped}</td>
+      </tr>
+    `).join('');
+
+    // Routes HTML
+    const routesHtml = data.routes.map(r => `
+      <div class="doc-card" style="margin-bottom:16px;">
+        <div class="doc-card-header">
+          <div class="doc-card-title">
+            <span>✨ ${escapeHtml(r.name)}</span>
+          </div>
+        </div>
+        <div class="doc-card-body">
+          <p style="color:var(--text-secondary); margin-bottom:8px;">${escapeHtml(r.summary)}</p>
+          
+          <div style="display:flex; flex-direction:column; gap:10px;">
+            ${r.steps.map(st => `
+              <div style="background-color:var(--bg-subtle); border-left:3px solid var(--accent); padding:10px 12px; border-radius:var(--radius-sm);">
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:4px;">
+                  <strong style="color:var(--text-primary);">ステップ ${st.step}：${escapeHtml(st.action)}</strong>
+                  <span class="doc-card-badge">${escapeHtml(st.location)}</span>
+                </div>
+                <div style="font-size:0.85rem; color:var(--text-secondary); white-space:pre-line; line-height:1.55;">
+                  ${escapeHtml(st.detail)}
+                </div>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+      </div>
+    `).join('');
+
+    container.innerHTML = `
+      <div class="content-section">
+        <div class="section-header">
+          <h2 class="section-title">♨️ ${escapeHtml(data.title)}</h2>
+          <p class="section-desc">魔バスの『やさがし』乱数調整によって入手できる、全ステータス+51の超強力装備『おふろ装備一式』の入手手順チャートです。</p>
+          <p class="section-source">
+            一次情報出典: 
+            <a href="${data.source_yasagashi}" target="_blank" rel="noopener noreferrer">やさがし</a> | 
+            <a href="${data.source_equip}" target="_blank" rel="noopener noreferrer">装備アイテム</a> | 
+            <a href="${data.source_beginner}" target="_blank" rel="noopener noreferrer">初心者向けプレイガイド</a>
+          </p>
+        </div>
+
+        <h3 style="font-size:1.05rem; margin-bottom:8px;">🛁 お風呂セット（おふろ装備一式）とは？</h3>
+        <p style="font-size:0.88rem; color:var(--text-secondary); line-height:1.6; margin-bottom:12px;">
+          ${escapeHtml(data.overview.summary)}
+        </p>
+
+        <div class="data-table-wrapper" style="margin-bottom:20px;">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>部位</th>
+                <th>アイテム名</th>
+                <th>単体装備時の補正</th>
+                <th>おふろ一式装備時（セット補正）</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${partsRows}
+            </tbody>
+          </table>
+        </div>
+
+        <h3 style="font-size:1.05rem; margin-bottom:8px;">📋 入手の前提条件</h3>
+        <div class="info-block" style="margin-bottom:20px;">
+          <ul style="margin-left:20px; font-size:0.86rem; display:flex; flex-direction:column; gap:4px;">
+            ${data.prerequisites.map(p => `<li>${escapeHtml(p)}</li>`).join('')}
+          </ul>
+        </div>
+
+        <h3 style="font-size:1.05rem; margin-bottom:8px;">⚠️ 取り返しのつかない要素・注意点</h3>
+        <div style="display:flex; flex-direction:column; gap:10px; margin-bottom:24px;">
+          ${data.warnings.map(w => `
+            <div class="warning-box">
+              <span class="warning-icon">⚠️</span>
+              <div>
+                <strong>${escapeHtml(w.title)}:</strong><br>
+                <span>${escapeHtml(w.desc)}</span>
+              </div>
+            </div>
+          `).join('')}
+        </div>
+
+        <h3 style="font-size:1.05rem; margin-bottom:10px;">🚀 入手手順チャート（ルート別）</h3>
+        <div>
+          ${routesHtml}
+        </div>
+      </div>
+    `;
+  }
+
+  // Render System Tab (優先3)
   function renderSystemTab() {
     const container = document.getElementById('system-tab-content');
     if (!container) return;
@@ -546,6 +684,11 @@
         </div>
         <div class="doc-card-body" style="white-space: pre-line; line-height:1.6;">
           ${escapeHtml(sec.content)}
+          ${sec.title.includes('こんにゃくいも') || sec.title.includes('仲間') ? `
+            <div style="margin-top:8px;">
+              <button type="button" class="btn" onclick="switchTab('tab-ofuro')" style="font-size:0.8rem;">♨️ 魔バスの『お風呂セット』入手チャートを見る ➔</button>
+            </div>
+          ` : ''}
         </div>
       </div>
     `).join('');
@@ -663,6 +806,7 @@
     renderCompleteGuideTab();
     renderLevelingTab();
     renderChartTab();
+    renderOfuroTab();
     renderSystemTab();
     renderGuidesTab();
   }
@@ -684,17 +828,7 @@
     const tabBtns = document.querySelectorAll('.tab-btn');
     tabBtns.forEach(btn => {
       btn.addEventListener('click', () => {
-        tabBtns.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-
-        const targetTab = btn.dataset.tab;
-        document.querySelectorAll('.tab-content').forEach(tc => {
-          tc.classList.remove('active');
-        });
-        const activeContent = document.getElementById(targetTab);
-        if (activeContent) {
-          activeContent.classList.add('active');
-        }
+        window.switchTab(btn.dataset.tab);
       });
     });
 
