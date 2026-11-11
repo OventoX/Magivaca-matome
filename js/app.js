@@ -16,7 +16,7 @@
   let checkedMimicCoins = new Set();
   let checkedRecords = new Set();
 
-  // State: Filters
+  // State: Spirits Filter
   let currentFilters = {
     element: 'all',
     plane: 'all',
@@ -27,14 +27,11 @@
     query: ''
   };
 
-  // State: Items & Drops
+  // State: Items Tab
   let itemCategory = 'all';
   let itemEquipSlot = 'all';
   let itemSearchQuery = '';
   let lookupQuery = '';
-
-  // State: Monsters Tab
-  let monsterDropMap = 'all';
 
   // State: Story Tab
   let storyPlane = 'all';
@@ -67,7 +64,7 @@
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  // Load states from localStorage
+  // Load state from localStorage
   function loadState() {
     try {
       const savedSpirits = localStorage.getItem(STORAGE_KEY);
@@ -98,7 +95,7 @@
     }
   }
 
-  // Save states to localStorage
+  // Save state to localStorage
   function saveState() {
     try {
       localStorage.setItem(STORAGE_KEY, JSON.stringify(Array.from(checkedSpirits)));
@@ -118,7 +115,9 @@
       checkedSpirits.add(id);
     }
     saveState();
-    updateUI();
+    updateProgressUI();
+    renderSpiritsList();
+    renderCompleteGuideTab();
   }
 
   function toggleMagicNote(no) {
@@ -151,88 +150,85 @@
     renderCollectionsTab();
   }
 
-  // Progress Calculations for Spirits
+  // Calculate Progress for Spirits
   function calculateProgress() {
     const total = SPIRITS_DATA.length;
-    const checked = checkedSpirits.size;
-    const percent = total > 0 ? Math.round((checked / total) * 100) : 0;
+    const checkedCount = checkedSpirits.size;
+    const percent = total > 0 ? Math.round((checkedCount / total) * 100) : 0;
 
-    const byElement = {};
-    for (const [key, meta] of Object.entries(ELEMENT_META)) {
-      byElement[key] = {
-        name: meta.name,
-        color: meta.color,
-        badgeBg: meta.badgeBg,
-        checked: 0,
-        total: 0
-      };
+    const elemCounts = {};
+    for (const elemName in ELEMENT_META) {
+      elemCounts[elemName] = { total: 0, checked: 0 };
     }
 
     SPIRITS_DATA.forEach(s => {
-      if (byElement[s.element]) {
-        byElement[s.element].total++;
+      if (elemCounts[s.element]) {
+        elemCounts[s.element].total++;
         if (checkedSpirits.has(s.id)) {
-          byElement[s.element].checked++;
+          elemCounts[s.element].checked++;
         }
       }
     });
 
-    return { total, checked, percent, byElement };
+    return { total, checkedCount, percent, elemCounts };
   }
 
-  // Update Progress UI (Header Bar & Element Tracker)
+  // Update Global Header Progress & Element Tracker Chips
   function updateProgressUI() {
-    const progress = calculateProgress();
+    const prog = calculateProgress();
 
     const countEl = document.getElementById('overall-progress-count');
     const barEl = document.getElementById('overall-progress-bar');
-    if (countEl) countEl.textContent = `${progress.checked} / ${progress.total} 体 (${progress.percent}%)`;
-    if (barEl) barEl.style.width = `${progress.percent}%`;
+    if (countEl) countEl.textContent = `${prog.checkedCount} / ${prog.total} 体 (${prog.percent}%)`;
+    if (barEl) barEl.style.width = `${prog.percent}%`;
 
-    const gridEl = document.getElementById('element-tracker-grid');
-    if (gridEl) {
-      gridEl.innerHTML = '';
+    const grid = document.getElementById('element-tracker-grid');
+    if (!grid) return;
 
-      // All chip
-      const allChip = document.createElement('div');
-      allChip.className = `element-chip ${currentFilters.element === 'all' ? 'selected' : ''}`;
-      allChip.innerHTML = `
-        <span class="chip-dot" style="background:#475569;"></span>
-        <span class="chip-name">全属性</span>
-        <span class="chip-count">${progress.checked}/${progress.total}</span>
+    grid.innerHTML = '';
+
+    // "All" chip
+    const allChip = document.createElement('div');
+    allChip.className = `element-chip ${currentFilters.element === 'all' ? 'selected' : ''}`;
+    allChip.innerHTML = `
+      <span class="chip-dot" style="background:#475569;"></span>
+      <span class="chip-name">全属性</span>
+      <span class="chip-count">${prog.checkedCount}/${prog.total}</span>
+    `;
+    allChip.addEventListener('click', () => {
+      setElementFilter('all');
+    });
+    grid.appendChild(allChip);
+
+    // 16 Element Chips
+    for (const elemName in ELEMENT_META) {
+      const meta = ELEMENT_META[elemName];
+      const counts = prog.elemCounts[elemName] || { total: 7, checked: 0 };
+      const isSelected = currentFilters.element === elemName;
+      const isComplete = counts.checked === counts.total && counts.total > 0;
+
+      const chip = document.createElement('div');
+      chip.className = `element-chip ${isSelected ? 'selected' : ''} ${isComplete ? 'completed' : ''}`;
+      chip.innerHTML = `
+        <span class="chip-dot" style="background:${meta.color};"></span>
+        <span class="chip-name">${elemName}</span>
+        <span class="chip-count">${counts.checked}/${counts.total}</span>
       `;
-      allChip.addEventListener('click', () => {
-        setElementFilter('all');
+      chip.addEventListener('click', () => {
+        if (currentFilters.element === elemName) {
+          setElementFilter('all');
+        } else {
+          setElementFilter(elemName);
+        }
       });
-      gridEl.appendChild(allChip);
-
-      // Element chips
-      for (const [elemName, info] of Object.entries(progress.byElement)) {
-        const chip = document.createElement('div');
-        const isSelected = currentFilters.element === elemName;
-        const isComplete = info.checked === info.total && info.total > 0;
-        chip.className = `element-chip ${isSelected ? 'selected' : ''} ${isComplete ? 'completed' : ''}`;
-        chip.innerHTML = `
-          <span class="chip-dot" style="background:${info.color};"></span>
-          <span class="chip-name">${elemName}</span>
-          <span class="chip-count">${info.checked}/${info.total}</span>
-        `;
-        chip.addEventListener('click', () => {
-          if (currentFilters.element === elemName) {
-            setElementFilter('all');
-          } else {
-            setElementFilter(elemName);
-          }
-        });
-        gridEl.appendChild(chip);
-      }
+      grid.appendChild(chip);
     }
   }
 
   function setElementFilter(elem) {
     currentFilters.element = elem;
-    renderSpiritsList();
     updateProgressUI();
+    renderSpiritsList();
   }
 
   // Filter Spirits (including Phase 5 Plane Progress Linked Filter)
@@ -240,27 +236,27 @@
     const q = currentFilters.query.toLowerCase().trim();
 
     return SPIRITS_DATA.filter(s => {
-      // Element filter
+      // Element
       if (currentFilters.element !== 'all' && s.element !== currentFilters.element) {
         return false;
       }
 
-      // Plane filter
+      // Plane
       if (currentFilters.plane !== 'all' && !s.planes.includes(currentFilters.plane)) {
         return false;
       }
 
-      // Req Tag filter
+      // Req Tag
       if (currentFilters.reqTag !== 'all' && !s.reqTags.includes(currentFilters.reqTag)) {
         return false;
       }
 
-      // Only warning filter
+      // Warning only
       if (currentFilters.onlyWarning && !s.missable) {
         return false;
       }
 
-      // Hide completed filter
+      // Hide completed
       if (currentFilters.hideCompleted && checkedSpirits.has(s.id)) {
         return false;
       }
@@ -273,15 +269,22 @@
         }
       }
 
-      // Query filter
+      // Keyword Search (名前、居場所、詳細、要求、条件、備考、警告)
       if (q) {
-        const matchLoc = s.location && s.location.toLowerCase().includes(q);
-        const matchSub = s.subLocation && s.subLocation.toLowerCase().includes(q);
-        const matchReq = s.requirement && s.requirement.toLowerCase().includes(q);
-        const matchRem = s.remarks && s.remarks.toLowerCase().includes(q);
-        const matchWarn = s.warningText && s.warningText.toLowerCase().includes(q);
-        const matchElem = s.element && s.element.includes(q);
-        if (!matchLoc && !matchSub && !matchReq && !matchRem && !matchWarn && !matchElem) {
+        const searchTarget = [
+          s.element,
+          s.spiritName,
+          s.locationRaw,
+          s.locationClean,
+          s.locationDetail,
+          s.condition,
+          s.requirement,
+          s.remarks,
+          s.missable || '',
+          s.reqTags ? s.reqTags.join(' ') : ''
+        ].join(' ').toLowerCase();
+
+        if (!searchTarget.includes(q)) {
           return false;
         }
       }
@@ -290,11 +293,11 @@
     });
   }
 
-  // Render Spirits List
+  // Render Spirits Cards (完全復元・正しいデータフィールド参照)
   function renderSpiritsList() {
-    const listEl = document.getElementById('spirits-container');
+    const container = document.getElementById('spirits-container');
     const summaryEl = document.getElementById('filter-results-summary');
-    if (!listEl) return;
+    if (!container) return;
 
     const filtered = getFilteredSpirits();
 
@@ -303,25 +306,26 @@
     }
 
     if (filtered.length === 0) {
-      listEl.innerHTML = `
-        <div class="empty-state">
-          <div class="empty-icon">🔍</div>
+      container.innerHTML = `
+        <div style="grid-column: 1/-1; text-align: center; padding: 40px; background: var(--bg-surface); border: 1px solid var(--border-light); border-radius: var(--radius-md); color: var(--text-muted);">
           <p>該当する精霊が見つかりませんでした。</p>
-          <p style="font-size:0.85rem; margin-top:4px;">検索条件やフィルターを変更してみてください。</p>
+          <p style="font-size: 0.85rem; margin-top: 4px;">条件や検索キーワードを変更してください。</p>
         </div>
       `;
       return;
     }
 
-    listEl.innerHTML = '';
+    container.innerHTML = '';
 
     filtered.forEach(s => {
       const isChecked = checkedSpirits.has(s.id);
-      const card = document.createElement('div');
-      card.className = `spirit-card ${isChecked ? 'checked' : ''} ${s.missable ? 'missable' : ''}`;
-      card.id = `spirit-card-${s.id}`;
+      const meta = ELEMENT_META[s.element] || { color: '#888', symbol: s.element };
 
-      // Planes badges
+      const card = document.createElement('div');
+      card.className = `spirit-card ${isChecked ? 'checked' : ''} ${s.missable ? 'has-warning' : ''}`;
+      card.dataset.id = s.id;
+
+      // Plane Badges HTML
       const planeBadges = s.planes.map(p => {
         let cls = 'badge-plane-light';
         if (p.includes('闇')) cls = 'badge-plane-dark';
@@ -329,175 +333,158 @@
         return `<span class="badge ${cls}">${escapeHtml(p)}</span>`;
       }).join(' ');
 
-      // Element meta
-      const meta = ELEMENT_META[s.element] || { color: '#475569', badgeBg: '#f1f5f9' };
+      // Warning HTML
+      const warningHtml = s.missable ? `
+        <div class="spirit-warning-box">
+          <span class="warning-icon">⚠️</span>
+          <div class="warning-body">
+            <strong>【取り返しのつかない要素】</strong><br>
+            ${escapeHtml(s.missable)}
+          </div>
+        </div>
+      ` : '';
+
+      // Requirement HTML
+      const reqVal = s.requirement || '-';
+      const condVal = s.condition ? `
+        <div class="detail-row">
+          <span class="detail-key">出現条件</span>
+          <span class="detail-val">${escapeHtml(s.condition)}</span>
+        </div>
+      ` : '';
+
+      // Remarks HTML
+      const remarksVal = s.remarks && s.remarks !== '-' ? `
+        <div class="spirit-remarks">
+          ${escapeHtml(s.remarks)}
+        </div>
+      ` : '';
 
       card.innerHTML = `
-        <input type="checkbox" class="spirit-checkbox" id="check-${s.id}" ${isChecked ? 'checked' : ''} aria-label="${escapeHtml(s.name)} を仲間にした">
-        <div class="spirit-card-content">
-          <div class="spirit-header-row">
-            <div class="spirit-name-group">
-              <span class="spirit-badge" style="background:${meta.badgeBg}; color:${meta.color};">
-                ${escapeHtml(s.element)} (${s.indexInElement}/7)
-              </span>
-              <span class="spirit-name">${escapeHtml(s.name)}</span>
-              ${planeBadges}
-              ${s.missable ? '<span class="badge badge-warning">⚠️ 消滅注意</span>' : ''}
-            </div>
-          </div>
-
-          <div class="spirit-info-grid">
-            <div class="info-item">
-              <span class="info-label">居場所:</span>
-              <span class="info-val"><strong>${escapeHtml(s.location)}</strong></span>
-            </div>
-            <div class="info-item">
-              <span class="info-label">詳細:</span>
-              <span class="info-val">${escapeHtml(s.subLocation || '-')}</span>
-            </div>
-            <div class="info-item" style="grid-column: 1 / -1;">
-              <span class="info-label">要求:</span>
-              <span class="info-val req-val">${escapeHtml(s.requirement)}</span>
-            </div>
-          </div>
-
-          ${s.remarks ? `
-            <div class="spirit-remarks">
-              ${escapeHtml(s.remarks)}
-            </div>
-          ` : ''}
-
-          ${s.missable && s.warningText ? `
-            <div class="spirit-warning-box">
-              <span class="warning-icon">⚠️</span>
-              <div class="warning-body">
-                <strong>【取り返しのつかない要素】</strong><br>
-                ${escapeHtml(s.warningText)}
+        <div class="card-header">
+          <div class="card-title-group">
+            <input type="checkbox" class="custom-checkbox" ${isChecked ? 'checked' : ''} aria-label="${escapeHtml(s.element)}の精霊${s.index}チェック">
+            <span class="elem-badge-icon" style="background:${meta.color};">${meta.symbol}</span>
+            <div class="spirit-title">
+              <div class="spirit-main-name">
+                ${escapeHtml(s.element)}の精霊 ${escapeHtml(s.spiritName)}
               </div>
+              <span class="spirit-sub-num">${escapeHtml(s.element)} #${s.index}</span>
             </div>
-          ` : ''}
-
-          <div class="spirit-wiki-link">
-            <a href="${escapeHtml(s.wikiUrl)}" target="_blank" rel="noopener noreferrer">
-              📖 Wiki「${escapeHtml(s.element)}の精霊」で確認 ↗
-            </a>
           </div>
+          <div class="card-badges">
+            ${planeBadges}
+          </div>
+        </div>
+
+        <div class="card-body">
+          <div class="detail-row">
+            <span class="detail-key">居場所</span>
+            <span class="detail-val"><strong>${escapeHtml(s.locationClean)}</strong> ${s.locationDetail ? `<span style="color:var(--text-muted);">(${escapeHtml(s.locationDetail)})</span>` : ''}</span>
+          </div>
+          ${condVal}
+          <div class="detail-row">
+            <span class="detail-key">要求</span>
+            <span class="detail-val requirement-highlight">${escapeHtml(reqVal)}</span>
+          </div>
+          ${remarksVal}
+          ${warningHtml}
+        </div>
+
+        <div class="card-footer">
+          <span>タグ: ${escapeHtml(s.reqTags ? s.reqTags.join(', ') : '-')}</span>
+          <a href="${escapeHtml(s.sourceUrl)}" target="_blank" rel="noopener noreferrer" class="source-link" title="一次情報Wikiの該当節を開く">
+            出典Wiki ↗
+          </a>
         </div>
       `;
 
-      // Checkbox event
-      const chk = card.querySelector('.spirit-checkbox');
-      chk.addEventListener('change', () => {
+      // Event listener for checkbox & card click
+      const chk = card.querySelector('.custom-checkbox');
+      chk.addEventListener('click', (e) => {
+        e.stopPropagation();
         toggleSpirit(s.id);
       });
 
-      listEl.appendChild(card);
+      card.addEventListener('click', (e) => {
+        if (e.target.tagName && e.target.tagName.toLowerCase() === 'a') return;
+        toggleSpirit(s.id);
+      });
+
+      container.appendChild(card);
     });
   }
 
-  // Render Complete Guide Tab
+  // Render Complete Guide Tab with Dynamic Warnings (完全復元・正しいデータ参照)
   function renderCompleteGuideTab() {
     const container = document.getElementById('complete-guide-tab-content');
     if (!container) return;
 
+    const prog = calculateProgress();
+    const darkChecked = prog.elemCounts['闇'] ? prog.elemCounts['闇'].checked : 0;
+    const lightChecked = prog.elemCounts['光'] ? prog.elemCounts['光'].checked : 0;
+    const fire3Checked = checkedSpirits.has('火_3');
+
+    let dynamicAlertHtml = '';
+    if (darkChecked > 0 && lightChecked < 7) {
+      dynamicAlertHtml = `
+        <div class="warning-callout" style="margin-bottom: 16px;">
+          <h3>⚠️【重要警告】現在、闇の精霊（ニルヴァ）が ${darkChecked} 体チェックされています！</h3>
+          <p>
+            光の精霊（ルクス）は、仲間にしているニルヴァの数が多いと出現・加入しなくなります（最も厳しいリドナヒー10は『ニルヴァ1体以下』）。<br>
+            <strong>必ず光の精霊7体をコンプリートしてから、残りの闇精霊を仲間にしてください。</strong>
+          </p>
+        </div>
+      `;
+    }
+
+    let fireAlertHtml = '';
+    if (!fire3Checked) {
+      fireAlertHtml = `
+        <div style="background-color: #fffbeb; border: 1px solid #fde68a; border-left: 4px solid #d97706; padding: 12px 14px; border-radius: var(--radius-sm); margin-bottom: 16px; font-size: 0.85rem; color: #92400e;">
+          <strong>🔔 ずんどこ穴のトースト（火_3）はまだ未チェックです</strong>
+          <p style="margin-top:2px;">
+            闇のプレーン「ずんどこ穴」でドワーフを1人でも説得すると二度と出現しなくなります。ドワーフ説得前に必ずミーロリ銀貨4枚を渡して仲間にしてください。
+          </p>
+        </div>
+      `;
+    }
+
     container.innerHTML = `
       <div class="guide-section">
-        <h2>⚠️ 精霊コンプリート必須手順と消滅警告</h2>
+        <h2>⚠️ 精霊コンプリートの手順と必須ルール</h2>
         <p style="font-size:0.92rem; color:var(--text-secondary); margin-bottom:16px;">
-          『マジカルバケーション』の精霊全112体コンプリートを目指す上で、<strong>特定の順番を間違えると二度と仲間にできなくなる精霊</strong>や、進行不可になる罠が存在します。
+          取り返しのつかない要素や加入制限が非常に多いため、必ず以下の順序を守って進行してください。
         </p>
 
-        <div class="progress-selector-card">
-          <label for="guide-progress-select"><strong>🗺️ 現在のゲーム進行度を選択:</strong></label>
-          <select id="guide-progress-select" class="progress-select">
-            <option value="all">すべて表示</option>
-            <option value="物質のプレーン">1. 物質のプレーン（序盤）</option>
-            <option value="光のプレーン">2. 光のプレーン</option>
-            <option value="闇のプレーン">3. 闇のプレーン</option>
-            <option value="死のプレーン">4. 死のプレーン</option>
-            <option value="クリア後">5. クリア後・ガラムマサラ</option>
-          </select>
-          <div style="margin-top:10px;">
-            <button type="button" class="btn btn-secondary btn-sm" id="btn-jump-to-spirits-plane">
-              🧚 選択中プレーンの未収集精霊をチェックリストで見る ↗
-            </button>
+        ${dynamicAlertHtml}
+        ${fireAlertHtml}
+
+        <div class="filter-card" style="margin-bottom:18px;">
+          <h3 style="font-size:1.05rem; color:var(--accent); margin-bottom:8px;">🏆 推奨コンプリート順序（鉄則）</h3>
+          <div style="font-size:0.92rem; font-weight:bold; color:var(--text-primary); line-height:1.6;">
+            1. 愛の精霊（カエル捕獲0個〜少数） ➔ 2. 光の精霊（ニルヴァ1体以下〜） ➔ 3. 闇の精霊（カエル大量捕獲）
           </div>
-        </div>
-
-        <div id="guide-steps-list">
-          <!-- Dynamic steps -->
-        </div>
-
-        <div class="warning-callout">
-          <h3>🚨 最重要！契約順番の鉄則（愛 → 光 → 闇）</h3>
-          <p>
-            後半に登場する高位精霊には厳密な契約順序があります：<br>
-            <strong>①「愛の精霊」と仲良くなる（死のプレーン）</strong><br>
-            ↓<br>
-            <strong>②「光の精霊」と仲良くなる（愛の精霊が必要）</strong><br>
-            ↓<br>
-            <strong>③「闇の精霊」と仲良くなる（光の精霊が必要）</strong><br>
-            この順序を破ると、要求条件が満たせず進行不能となります。
+          <p style="font-size:0.83rem; color:var(--text-muted); margin-top:4px;">
+            一次情報出典: <a href="https://wikiwiki.jp/magivaca/%E7%B2%BE%E9%9C%8A#k55e4a54" target="_blank" rel="noopener noreferrer">攻略Wiki 精霊コンプリート節</a>
           </p>
+        </div>
+
+        <h3 style="font-size:1.05rem; color:var(--text-primary); margin-bottom:12px;">🚨 6大必須ルールと消滅警告</h3>
+        <div style="display:flex; flex-direction:column; gap:12px;">
+          ${COMP_GUIDE.critical_rules.map((r, i) => `
+            <div class="story-card missable" style="margin-bottom:0;">
+              <div style="font-weight:700; color:var(--warning-text); margin-bottom:4px; font-size:0.95rem;">
+                ${i+1}. ${escapeHtml(r.title)}
+              </div>
+              <div style="font-size:0.86rem; color:var(--text-secondary); line-height:1.5;">
+                ${escapeHtml(r.desc)}
+              </div>
+            </div>
+          `).join('')}
         </div>
       </div>
     `;
-
-    const selectEl = document.getElementById('guide-progress-select');
-    const stepsListEl = document.getElementById('guide-steps-list');
-
-    function renderSteps(filterStage) {
-      stepsListEl.innerHTML = '';
-      COMP_GUIDE.forEach(step => {
-        if (filterStage !== 'all' && step.stage !== filterStage) return;
-
-        const stepCard = document.createElement('div');
-        stepCard.className = `guide-step-card ${step.isCritical ? 'critical' : ''}`;
-        stepCard.innerHTML = `
-          <div class="guide-step-header">
-            <span class="badge ${step.isCritical ? 'badge-warning' : 'badge-plane'}">${escapeHtml(step.stage)}</span>
-            <span class="guide-step-title">${escapeHtml(step.title)}</span>
-          </div>
-          <div class="guide-step-desc">${escapeHtml(step.description)}</div>
-          <div class="guide-step-warning">
-            <strong>⚠️ 注意点:</strong> ${escapeHtml(step.warning)}
-          </div>
-        `;
-        stepsListEl.appendChild(stepCard);
-      });
-    }
-
-    renderSteps('all');
-
-    if (selectEl) {
-      selectEl.addEventListener('change', (e) => {
-        renderSteps(e.target.value);
-      });
-    }
-
-    const jumpBtn = document.getElementById('btn-jump-to-spirits-plane');
-    if (jumpBtn && selectEl) {
-      jumpBtn.addEventListener('click', () => {
-        const val = selectEl.value;
-        if (val.includes('光')) currentFilters.plane = '光';
-        else if (val.includes('闇')) currentFilters.plane = '闇';
-        else if (val.includes('死')) currentFilters.plane = '死';
-        else currentFilters.plane = 'all';
-
-        currentFilters.planeProgressOnly = true;
-        const chk = document.getElementById('filter-plane-progress-only');
-        if (chk) chk.checked = true;
-
-        const planeBtns = document.querySelectorAll('.plane-filter-btn');
-        planeBtns.forEach(b => {
-          if (b.dataset.plane === currentFilters.plane) b.classList.add('active');
-          else b.classList.remove('active');
-        });
-
-        window.switchTab('tab-spirits');
-        renderSpiritsList();
-      });
-    }
   }
 
   // ==========================================================================
@@ -574,7 +561,6 @@
       </div>
     `;
 
-    // Render lookup if active
     renderLookupResults();
     renderItemTables();
 
@@ -629,7 +615,6 @@
     }
   }
 
-  // Reverse Lookup Renderer
   function renderLookupResults() {
     const resArea = document.getElementById('lookup-results-area');
     if (!resArea) return;
@@ -710,7 +695,6 @@
     resArea.innerHTML = html;
   }
 
-  // Render Item Tables
   function renderItemTables() {
     const displayEl = document.getElementById('item-tables-display');
     if (!displayEl) return;
@@ -722,7 +706,9 @@
     if (itemCategory === 'all' || itemCategory === '回復・補助') {
       const filteredRecovery = ITEM_RECOVERY_DATA.filter(item => {
         if (!q) return true;
-        return item.name.toLowerCase().includes(q) || item.effect.toLowerCase().includes(q) || item.location.toLowerCase().includes(q);
+        return (item.name && item.name.toLowerCase().includes(q)) ||
+               (item.effect && item.effect.toLowerCase().includes(q)) ||
+               (item.location && item.location.toLowerCase().includes(q));
       });
 
       if (filteredRecovery.length > 0) {
@@ -759,7 +745,11 @@
       const filteredEquip = ITEM_EQUIP_DATA.filter(item => {
         if (itemEquipSlot !== 'all' && item.slot !== itemEquipSlot) return false;
         if (!q) return true;
-        return item.name.toLowerCase().includes(q) || item.slot.toLowerCase().includes(q) || item.desc.toLowerCase().includes(q) || item.shop.toLowerCase().includes(q) || item.chest.toLowerCase().includes(q);
+        return (item.name && item.name.toLowerCase().includes(q)) ||
+               (item.slot && item.slot.toLowerCase().includes(q)) ||
+               (item.desc && item.desc.toLowerCase().includes(q)) ||
+               (item.shop && item.shop.toLowerCase().includes(q)) ||
+               (item.chest && item.chest.toLowerCase().includes(q));
       });
 
       if (filteredEquip.length > 0) {
@@ -807,7 +797,8 @@
     if (itemCategory === 'all' || itemCategory === 'セット効果') {
       const filteredSets = ITEM_EQUIP_SETS.filter(item => {
         if (!q) return true;
-        return item.name.toLowerCase().includes(q) || item.location.toLowerCase().includes(q);
+        return (item.name && item.name.toLowerCase().includes(q)) ||
+               (item.location && item.location.toLowerCase().includes(q));
       });
 
       if (filteredSets.length > 0) {
@@ -850,7 +841,9 @@
     if (itemCategory === 'all' || itemCategory === 'MDパーツ') {
       const filteredMd = ITEM_MD_DATA.filter(item => {
         if (!q) return true;
-        return item.name.toLowerCase().includes(q) || item.type.toLowerCase().includes(q) || item.desc.toLowerCase().includes(q);
+        return (item.name && item.name.toLowerCase().includes(q)) ||
+               (item.type && item.type.toLowerCase().includes(q)) ||
+               (item.desc && item.desc.toLowerCase().includes(q));
       });
 
       if (filteredMd.length > 0) {
@@ -888,7 +881,8 @@
     if (itemCategory === 'all' || itemCategory === '貴重品・その他') {
       const filteredOther = ITEM_OTHER_DATA.filter(item => {
         if (!q) return true;
-        return item.name.toLowerCase().includes(q) || item.desc.toLowerCase().includes(q);
+        return (item.name && item.name.toLowerCase().includes(q)) ||
+               (item.desc && item.desc.toLowerCase().includes(q));
       });
 
       if (filteredOther.length > 0) {
@@ -950,7 +944,7 @@
           </p>
         </div>
 
-        <!-- Boss Monsters (Not in In-game Pokédex) -->
+        <!-- Boss Monsters -->
         <h3 style="font-size:1.05rem; color:var(--text-primary); margin-bottom:8px;">
           👑 図鑑非掲載モンスター・ボス一覧 (${BOSS_MONSTERS_DATA.length}体)
         </h3>
@@ -1152,7 +1146,6 @@
 
     containerCards.innerHTML = html;
 
-    // Filter event listeners
     const planeBtns = container.querySelectorAll('.story-plane-btn');
     planeBtns.forEach(btn => {
       btn.addEventListener('click', () => {
@@ -1272,7 +1265,6 @@
 
       subContentEl.innerHTML = html;
 
-      // Event listeners
       subContentEl.querySelectorAll('.note-chk').forEach(chk => {
         chk.addEventListener('change', () => {
           toggleMagicNote(parseInt(chk.dataset.no, 10));
@@ -1366,7 +1358,6 @@
 
       subContentEl.innerHTML = html;
 
-      // Event listeners
       subContentEl.querySelectorAll('.coin-chk').forEach(chk => {
         chk.addEventListener('change', () => {
           toggleMimicCoin(parseInt(chk.dataset.id, 10));
@@ -1439,7 +1430,6 @@
 
       subContentEl.innerHTML = html;
 
-      // Event listeners
       subContentEl.querySelectorAll('.rec-chk').forEach(chk => {
         chk.addEventListener('change', () => {
           toggleRecord(chk.dataset.cat);
@@ -1448,7 +1438,7 @@
     }
   }
 
-  // Render Leveling Tab
+  // Render Leveling Tab (完全復元・実データ構造 LEVELING_DATA.spots に完全合致)
   function renderLevelingTab() {
     const container = document.getElementById('leveling-tab-content');
     if (!container) return;
@@ -1457,14 +1447,14 @@
       <div class="guide-section">
         <h2>📈 最適レベリング（経験値稼ぎ）完全ガイド</h2>
         <p style="font-size:0.92rem; color:var(--text-secondary); margin-bottom:16px;">
-          Wiki記載のデータに基づく、ゲーム進行度別の最高効率レベリング狩り場と、裏技・システム仕様を活用した爆速育成テクニックのまとめです。
+          Wikiに掲載されている解析データに基づく、ゲーム進行度別の最高効率レベリング狩り場と、裏技・システム仕様を活用した爆速育成テクニックのまとめです。
         </p>
 
         <!-- Warning Callout -->
         <div class="warning-callout">
           <h3>⚡ 爆速レベリング：魔法連打稼ぎテクニック</h3>
           <p>
-            戦闘中に味方全体で<strong>消費MPの少ない低ランク魔法（単体魔法など）を1ターンに大量入力して戦闘を終える</strong>と、参加者全員の「魔法経験値」が爆発的に加算されます。
+            戦闘中に味方全体で<strong>消費MPの少ない低ランク魔法（単体魔法など）を1ターンに大量入力して戦闘を終える</strong>と、参加者全員の「魔法経験値」が爆発的に加算されます。<br>
             敵を物理攻撃だけで倒すのではなく、毎ターン必ず魔法を選択するのが早期育成の最大のコツです。
           </p>
         </div>
@@ -1473,22 +1463,37 @@
         <h3 style="font-size:1.05rem; color:var(--text-primary); margin-top:20px; margin-bottom:12px;">
           🗺️ 進行度別・最高効率の狩り場一覧
         </h3>
-        <div id="leveling-spots-list">
-          <!-- Spots injected here -->
+        <div id="leveling-spots-list" style="display:flex; flex-direction:column; gap:12px;">
+          ${LEVELING_DATA.spots.map(spot => `
+            <div class="leveling-card">
+              <div class="leveling-header">
+                <div>
+                  <span class="badge badge-plane">${escapeHtml(spot.phase)}</span>
+                  <span class="badge" style="background:var(--bg-subtle); color:var(--text-secondary); margin-left:6px;">${escapeHtml(spot.plane)}</span>
+                  <strong style="font-size:1rem; margin-left:8px; color:var(--text-primary);">${escapeHtml(spot.location)}</strong>
+                </div>
+                <span class="badge" style="background:#fef3c7; color:#92400e;">目安: ${escapeHtml(spot.recommended_lv)}</span>
+              </div>
+              <div class="leveling-body">
+                <div><strong>🎯 狙い目モンスター:</strong> ${escapeHtml(spot.monsters)}</div>
+                <div><strong>💡 稼ぎ方・特徴:</strong> ${escapeHtml(spot.basis)}</div>
+                <div style="color:var(--text-muted); font-size:0.83rem;"><strong>⚠️ 備考・注意点:</strong> ${escapeHtml(spot.caution)}</div>
+              </div>
+            </div>
+          `).join('')}
         </div>
 
         <!-- Boss Revival Exploit -->
-        <div class="guide-step-card critical" style="margin-top:24px;">
-          <div class="guide-step-header">
-            <span class="badge badge-warning">Wiki明記・裏技仕様</span>
-            <span class="guide-step-title">ガラムマサラ：ボス復活による無限経験値稼ぎ</span>
+        <div class="story-card missable" style="margin-top:24px;">
+          <div style="font-weight:700; color:var(--warning-text); margin-bottom:4px; font-size:0.95rem;">
+            Wiki明記・裏技仕様：ガラムマサラ ボス復活による無限経験値稼ぎ
           </div>
-          <div class="guide-step-desc">
-            クリア後ダンジョン「ガラムマサラ」の特定の階層に出現するボスは、<strong>階層を移動して戻るか、ワープを挟むことで復活し何度でも再戦できる仕様</strong>が存在します。
+          <div style="font-size:0.86rem; color:var(--text-secondary); line-height:1.5;">
+            クリア後ダンジョン「ガラムマサラ」の特定の階層に出現するボスは、<strong>階層を移動して戻るか、ワープを挟むことで復活し何度でも再戦できる仕様</strong>が存在します。<br>
             ボスは通常敵の数十倍の破格の経験値とブラー（お金）を保有しているため、高レベル帯のレベリング速度が劇的に跳ね上がります。
           </div>
-          <div class="guide-step-warning">
-            <strong>⚠️ 注意点:</strong> ターニィが仲間になるボス#2など、一度倒すと二度と復活しないボスも存在します。詳細は各階層の攻略チャートを確認してください。
+          <div style="font-size:0.83rem; color:var(--warning-text); margin-top:6px;">
+            ⚠️ 注意点: ターニィが仲間になるボス#2など、一度倒すと二度と復活しないボスも存在します。詳細は各階層の攻略チャートを確認してください。
           </div>
         </div>
 
@@ -1509,33 +1514,9 @@
         </div>
       </div>
     `;
-
-    const spotsContainer = document.getElementById('leveling-spots-list');
-    if (spotsContainer && LEVELING_DATA.spots) {
-      spotsContainer.innerHTML = '';
-      LEVELING_DATA.spots.forEach(spot => {
-        const card = document.createElement('div');
-        card.className = 'leveling-card';
-        card.innerHTML = `
-          <div class="leveling-header">
-            <div>
-              <span class="badge badge-plane">${escapeHtml(spot.stage)}</span>
-              <strong style="font-size:1rem; margin-left:6px; color:var(--text-primary);">${escapeHtml(spot.map)}</strong>
-            </div>
-            <span class="badge" style="background:#fef3c7; color:#92400e;">目安: LV ${escapeHtml(spot.targetLevel)}</span>
-          </div>
-          <div class="leveling-body">
-            <div><strong>🎯 狙い目モンスター:</strong> ${escapeHtml(spot.monsters)}</div>
-            <div><strong>💡 稼ぎ方・特徴:</strong> ${escapeHtml(spot.features)}</div>
-            <div style="color:var(--text-muted); font-size:0.83rem;"><strong>⚠️ 備考・注意点:</strong> ${escapeHtml(spot.remarks)}</div>
-          </div>
-        `;
-        spotsContainer.appendChild(card);
-      });
-    }
   }
 
-  // Render Scenario Chart Tab
+  // Render Scenario Chart Tab (完全復元・実データ構造 CHART_DATA.planes に完全合致)
   function renderChartTab() {
     const container = document.getElementById('chart-tab-content');
     if (!container) return;
@@ -1583,18 +1564,18 @@
       displayContainer.innerHTML = `
         <div style="margin-top:16px;">
           <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
-            <h3 style="font-size:1.1rem; color:var(--accent);">${escapeHtml(plane.name)} (${escapeHtml(plane.theme)})</h3>
-            <span style="font-size:0.85rem; color:var(--text-muted);">目安レベル: LV ${escapeHtml(plane.targetLv)}</span>
+            <h3 style="font-size:1.1rem; color:var(--accent);">${escapeHtml(plane.name)}</h3>
+            <span style="font-size:0.85rem; color:var(--text-muted);">${escapeHtml(plane.condition)}</span>
           </div>
 
-          <div class="guide-step-card" style="margin-bottom:16px;">
-            <div style="font-weight:600; margin-bottom:4px;">🏁 到達条件:</div>
-            <div style="font-size:0.88rem; color:var(--text-secondary);">${escapeHtml(plane.requirement)}</div>
+          <div class="story-card" style="margin-bottom:16px;">
+            <div style="font-weight:600; margin-bottom:4px;">📖 プレーン概要:</div>
+            <div style="font-size:0.88rem; color:var(--text-secondary); line-height:1.5;">${escapeHtml(plane.summary)}</div>
           </div>
 
           <h4 style="font-size:0.95rem; margin-top:16px; margin-bottom:10px; color:var(--text-primary);">📌 重要イベントと進め方:</h4>
           <div style="display:flex; flex-direction:column; gap:8px;">
-            ${plane.keyEvents.map((ev, i) => `
+            ${plane.events.map((ev, i) => `
               <div style="display:flex; gap:10px; font-size:0.88rem; background:white; padding:10px 14px; border:1px solid var(--border-light); border-radius:var(--radius-sm);">
                 <span style="font-weight:bold; color:var(--accent); min-width:24px;">${i+1}.</span>
                 <span>${escapeHtml(ev)}</span>
@@ -1603,155 +1584,132 @@
           </div>
 
           <div style="margin-top:16px; display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:14px;">
-            <div class="guide-step-card" style="margin-bottom:0;">
+            <div class="story-card" style="margin-bottom:0;">
               <strong style="color:var(--text-primary);">👾 出現ボス:</strong>
               <div style="margin-top:4px; font-size:0.88rem; color:var(--text-secondary);">${escapeHtml(plane.bosses)}</div>
             </div>
-            <div class="guide-step-card critical" style="margin-bottom:0;">
+            <div class="story-card missable" style="margin-bottom:0;">
               <strong style="color:var(--warning-text);">⚠️ 取り返しのつかない要素:</strong>
-              <div style="margin-top:4px; font-size:0.88rem; color:var(--warning-text);">${escapeHtml(plane.missables)}</div>
+              <div style="margin-top:4px; font-size:0.88rem; color:var(--warning-text);">${escapeHtml(plane.missable)}</div>
             </div>
           </div>
 
           <div style="font-size:0.8rem; color:var(--text-muted); margin-top:14px; text-align:right;">
-            出典: <a href="${escapeHtml(plane.wikiUrl)}" target="_blank" rel="noopener noreferrer">Wiki「${escapeHtml(plane.name)}」</a>
+            出典: <a href="${escapeHtml(plane.url)}" target="_blank" rel="noopener noreferrer">Wiki「${escapeHtml(plane.name)}」</a>
           </div>
         </div>
       `;
     }
   }
 
-  // Render Ofuro Set Chart Tab
+  // Render Ofuro Set Chart Tab (完全復元・実データ構造 OFURO_CHART_DATA に完全合致)
   function renderOfuroTab() {
     const container = document.getElementById('ofuro-tab-content');
-    if (!container) return;
+    if (!container || typeof OFURO_CHART_DATA === 'undefined') return;
 
     const data = OFURO_CHART_DATA;
 
-    container.innerHTML = `
-      <div class="guide-section">
-        <h2>♨️ お風呂セット入手チャート（手順・分岐・警告）</h2>
-        <p style="font-size:0.92rem; color:var(--text-secondary); margin-bottom:16px;">
-          温泉機能に関連する最強防具シリーズ<strong>「お風呂セット」</strong>の性能・効果と、確実に入手するためのステップ形式攻略チャートです。
-        </p>
+    // Overview parts rows
+    const partsRows = data.overview.parts.map(p => `
+      <tr>
+        <td style="font-weight:600;">${p.part}</td>
+        <td style="font-weight:700; color:var(--accent);">${p.name}</td>
+        <td>${p.single}</td>
+        <td style="font-weight:600; color:#b45309;">${p.equipped}</td>
+      </tr>
+    `).join('');
 
-        <!-- What is Ofuro Set & Set Bonus -->
-        <div class="filter-card" style="margin-bottom:20px;">
-          <h3 style="font-size:1.05rem; color:var(--accent); margin-bottom:8px;">
-            🛀 お風呂セットとは？（用途・破格のセット効果）
-          </h3>
-          <p style="font-size:0.88rem; color:var(--text-secondary); line-height:1.6; margin-bottom:12px;">
-            ${escapeHtml(data.overview.description)}
-          </p>
-          <div class="warning-callout" style="margin-bottom:12px;">
-            <strong>✨ 一式装備時のセット効果:</strong><br>
-            力・守・速・精がすべて <strong>+${data.overview.setEffect.power}</strong> 上昇、さらに最大MPが <strong>+${data.overview.setEffect.mp}</strong> されます！
+    // Routes HTML
+    const routesHtml = data.routes.map(r => `
+      <div class="doc-card" style="margin-bottom:16px;">
+        <div class="doc-card-header">
+          <div class="doc-card-title">
+            <span>✨ ${escapeHtml(r.name)}</span>
           </div>
-          <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:10px; font-size:0.85rem;">
-            ${data.overview.items.map(it => `
-              <div style="background:var(--bg-subtle); padding:8px 12px; border-radius:var(--radius-sm); border-left:3px solid var(--accent);">
-                <strong>${escapeHtml(it.name)}</strong> (${escapeHtml(it.slot)})<br>
-                <span style="color:var(--text-muted); font-size:0.8rem;">効果: ${escapeHtml(it.effect)}</span>
+        </div>
+        <div class="doc-card-body">
+          <p style="color:var(--text-secondary); margin-bottom:8px;">${escapeHtml(r.summary)}</p>
+          
+          <div style="display:flex; flex-direction:column; gap:10px;">
+            ${r.steps.map(st => `
+              <div style="background-color:var(--bg-subtle); border-left:3px solid var(--accent); padding:10px 12px; border-radius:var(--radius-sm);">
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:4px;">
+                  <strong style="color:var(--text-primary);">ステップ ${st.step}：${escapeHtml(st.action)}</strong>
+                  <span class="doc-card-badge">${escapeHtml(st.location)}</span>
+                </div>
+                <div style="font-size:0.85rem; color:var(--text-secondary); white-space:pre-line; line-height:1.55;">
+                  ${escapeHtml(st.detail)}
+                </div>
               </div>
             `).join('')}
           </div>
         </div>
+      </div>
+    `).join('');
 
-        <!-- Route Selector -->
-        <h3 style="font-size:1.05rem; color:var(--text-primary); margin-bottom:12px;">
-          🛣️ 入手ルートの選択
-        </h3>
-        <div class="filter-chips" id="ofuro-route-chips" style="margin-bottom:16px;">
-          ${data.routes.map((rt, idx) => `
-            <button type="button" class="filter-btn ${idx === 0 ? 'active' : ''}" data-route-id="${rt.id}">
-              ${escapeHtml(rt.name)}
-            </button>
+    container.innerHTML = `
+      <div class="content-section">
+        <div class="section-header">
+          <h2 class="section-title">♨️ ${escapeHtml(data.title)}</h2>
+          <p class="section-desc">魔バスの『やさがし』乱数調整によって入手できる、全ステータス+51の超強力装備『おふろ装備一式』の入手手順チャートです。</p>
+          <p class="section-source">
+            一次情報出典: 
+            <a href="${data.source_yasagashi}" target="_blank" rel="noopener noreferrer">やさがし</a> | 
+            <a href="${data.source_equip}" target="_blank" rel="noopener noreferrer">装備アイテム</a> | 
+            <a href="${data.source_beginner}" target="_blank" rel="noopener noreferrer">初心者向けプレイガイド</a>
+          </p>
+        </div>
+
+        <h3 style="font-size:1.05rem; margin-bottom:8px;">🛁 お風呂セット（おふろ装備一式）とは？</h3>
+        <p style="font-size:0.88rem; color:var(--text-secondary); line-height:1.6; margin-bottom:12px;">
+          ${escapeHtml(data.overview.summary)}
+        </p>
+
+        <div class="data-table-wrapper" style="margin-bottom:20px;">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>部位</th>
+                <th>アイテム名</th>
+                <th>単体装備時の補正</th>
+                <th>おふろ一式装備時（セット補正）</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${partsRows}
+            </tbody>
+          </table>
+        </div>
+
+        <h3 style="font-size:1.05rem; margin-bottom:8px;">📋 入手の前提条件</h3>
+        <div class="info-block" style="margin-bottom:20px;">
+          <ul style="margin-left:20px; font-size:0.86rem; display:flex; flex-direction:column; gap:4px;">
+            ${data.prerequisites.map(p => `<li>${escapeHtml(p)}</li>`).join('')}
+          </ul>
+        </div>
+
+        <h3 style="font-size:1.05rem; margin-bottom:8px;">⚠️ 取り返しのつかない要素・注意点</h3>
+        <div style="display:flex; flex-direction:column; gap:10px; margin-bottom:24px;">
+          ${data.warnings.map(w => `
+            <div class="warning-box">
+              <span class="warning-icon">⚠️</span>
+              <div>
+                <strong>${escapeHtml(w.title)}:</strong><br>
+                <span>${escapeHtml(w.desc)}</span>
+              </div>
+            </div>
           `).join('')}
         </div>
 
-        <!-- Route Details Display -->
-        <div id="ofuro-route-display">
-          <!-- Injected dynamically -->
-        </div>
-
-        <!-- Wiki Sources -->
-        <div style="font-size:0.8rem; color:var(--text-muted); margin-top:24px; text-align:right;">
-          一次情報出典: 
-          <a href="${data.sources.onsen}" target="_blank" rel="noopener noreferrer">通信要素：温泉</a> | 
-          <a href="${data.sources.yasagashi}" target="_blank" rel="noopener noreferrer">やさがし</a> | 
-          <a href="${data.sources.urawaza}" target="_blank" rel="noopener noreferrer">裏ワザ・小ネタ</a>
+        <h3 style="font-size:1.05rem; margin-bottom:10px;">🚀 入手手順チャート（ルート別）</h3>
+        <div>
+          ${routesHtml}
         </div>
       </div>
     `;
-
-    const routeChips = container.querySelectorAll('#ofuro-route-chips button');
-    const displayEl = document.getElementById('ofuro-route-display');
-
-    function renderRoute(routeId) {
-      const route = data.routes.find(r => r.id === routeId);
-      if (!route || !displayEl) return;
-
-      displayEl.innerHTML = `
-        <div class="guide-step-card ${route.warning ? 'critical' : ''}" style="margin-bottom:16px;">
-          <div class="guide-step-header">
-            <span class="badge ${route.warning ? 'badge-warning' : 'badge-plane'}">${escapeHtml(route.type)}</span>
-            <span class="guide-step-title">${escapeHtml(route.name)}</span>
-          </div>
-          <p style="font-size:0.88rem; color:var(--text-secondary); margin-bottom:12px;">
-            ${escapeHtml(route.summary)}
-          </p>
-
-          <div style="background:var(--bg-subtle); padding:10px 14px; border-radius:var(--radius-sm); margin-bottom:14px; font-size:0.85rem;">
-            <strong>📋 前提条件・準備物:</strong>
-            <ul style="margin:4px 0 0 18px; color:var(--text-primary);">
-              ${route.prerequisites.map(p => `<li>${escapeHtml(p)}</li>`).join('')}
-            </ul>
-          </div>
-
-          ${route.warning ? `
-            <div class="warning-callout" style="margin-bottom:14px;">
-              <strong>⚠️ 取り返しのつかない要素・重大警告:</strong><br>
-              ${escapeHtml(route.warning)}
-            </div>
-          ` : ''}
-
-          <h4 style="font-size:0.95rem; margin-bottom:10px; color:var(--text-primary);">
-            📝 入手手順ステップ (${route.steps.length}段階):
-          </h4>
-          <div style="display:flex; flex-direction:column; gap:10px;">
-            ${route.steps.map(st => `
-              <div style="display:flex; gap:12px; background:white; padding:12px 14px; border:1px solid var(--border-light); border-radius:var(--radius-sm);">
-                <div style="background:var(--accent-light); color:var(--accent); font-weight:bold; border-radius:50%; width:28px; height:28px; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
-                  ${st.step}
-                </div>
-                <div style="flex:1;">
-                  <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:4px; flex-wrap:wrap;">
-                    <strong style="color:var(--text-primary); font-size:0.95rem;">${escapeHtml(st.action)}</strong>
-                    <span class="badge badge-plane" style="font-size:0.75rem;">${escapeHtml(st.location)}</span>
-                  </div>
-                  <div style="font-size:0.85rem; color:var(--text-secondary); line-height:1.5;">
-                    ${escapeHtml(st.detail)}
-                  </div>
-                </div>
-              </div>
-            `).join('')}
-          </div>
-        </div>
-      `;
-    }
-
-    renderRoute(data.routes[0].id);
-
-    routeChips.forEach(btn => {
-      btn.addEventListener('click', () => {
-        routeChips.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        renderRoute(btn.dataset.routeId);
-      });
-    });
   }
 
-  // Render System Tab
+  // Render System Tab (完全復元・実データ構造 SYSTEM_DATA.sections に完全合致)
   function renderSystemTab() {
     const container = document.getElementById('system-tab-content');
     if (!container) return;
@@ -1760,56 +1718,32 @@
       <div class="guide-section">
         <h2>⚙️ システム仕様解説</h2>
         <p style="font-size:0.92rem; color:var(--text-secondary); margin-bottom:16px;">
-          Wiki記載のデータに基づく、仲間16名の性能一覧、魔法属性の相性と精霊コンボ仕様、および重要システムの解説です。
+          Wiki記載のデータに基づく、仲間16名の性能、魔法属性の相性と精霊コンボ仕様、および重要システムの解説です。
         </p>
 
-        <!-- Party Members Grid -->
-        <h3 style="font-size:1.05rem; color:var(--text-primary); margin-top:20px; margin-bottom:12px;">
-          👥 仲間16名の基本情報と初期属性
-        </h3>
-        <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(260px, 1fr)); gap:12px;">
-          ${SYSTEM_DATA.members.map(m => {
-            const meta = ELEMENT_META[m.element] || { color: '#475569', badgeBg: '#f1f5f9' };
-            return `
-              <div class="spirit-card" style="padding:12px 14px; margin-bottom:0;">
-                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
-                  <strong style="font-size:0.98rem; color:var(--text-primary);">${escapeHtml(m.name)}</strong>
-                  <span class="spirit-badge" style="background:${meta.badgeBg}; color:${meta.color};">${escapeHtml(m.element)}</span>
-                </div>
-                <div style="font-size:0.83rem; color:var(--text-secondary); line-height:1.4;">
-                  <div><strong>種族:</strong> ${escapeHtml(m.race)}</div>
-                  <div><strong>初期配置:</strong> ${escapeHtml(m.row)}</div>
-                  <div><strong>特徴:</strong> ${escapeHtml(m.feature)}</div>
-                </div>
+        <div style="display:flex; flex-direction:column; gap:16px;">
+          ${SYSTEM_DATA.sections.map(sec => `
+            <div class="story-card" style="margin-bottom:0;">
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                <h3 style="font-size:1.05rem; color:var(--accent); margin:0;">${escapeHtml(sec.title)}</h3>
+                <a href="${escapeHtml(sec.url)}" target="_blank" rel="noopener noreferrer" style="font-size:0.8rem;">Wiki該当節 ↗</a>
               </div>
-            `;
-          }).join('')}
+              <div style="font-size:0.88rem; color:var(--text-secondary); line-height:1.6; white-space:pre-wrap;">${escapeHtml(sec.content)}</div>
+            </div>
+          `).join('')}
         </div>
 
-        <!-- Magic Combo -->
-        <h3 style="font-size:1.05rem; color:var(--text-primary); margin-top:28px; margin-bottom:12px;">
-          ✨ 魔法属性の相性と精霊コンボ
-        </h3>
-        <div style="background-color:var(--bg-subtle); border-radius:var(--radius-md); padding:16px; font-size:0.88rem; line-height:1.6; color:var(--text-primary);">
-          <p>
-            本作の16属性にはそれぞれ明確な「弱点」と「耐性」が存在します。味方前列に精霊を召喚した状態で対応する魔法を放つと、<strong>精霊コンボが発生し威力が跳ね上がります</strong>。
-          </p>
-          <ul style="padding-left:20px; margin-top:8px;">
-            <li><strong>光と闇:</strong> 互いに大ダメージを与え合う完全な対立関係</li>
-            <li><strong>愛の属性:</strong> 全属性に対して安定した回復・サポートを発揮する特殊属性</li>
-            <li><strong>古の属性:</strong> ガラムマサラ等で猛威を振るう特殊系統</li>
-          </ul>
-        </div>
-
-        <div style="font-size:0.8rem; color:var(--text-muted); margin-top:14px; text-align:right;">
-          出典: <a href="https://wikiwiki.jp/magivaca/%E4%BB%B2%E9%96%93" target="_blank" rel="noopener noreferrer">仲間一覧</a> |
-          <a href="https://wikiwiki.jp/magivaca/%E9%AD%94%E6%B3%95" target="_blank" rel="noopener noreferrer">魔法システム</a>
+        <div style="font-size:0.8rem; color:var(--text-muted); margin-top:20px; text-align:right;">
+          一次情報出典: 
+          <a href="${escapeHtml(SYSTEM_DATA.party_url)}" target="_blank" rel="noopener noreferrer">仲間</a> | 
+          <a href="${escapeHtml(SYSTEM_DATA.magic_url)}" target="_blank" rel="noopener noreferrer">魔法</a> | 
+          <a href="${escapeHtml(SYSTEM_DATA.record_url)}" target="_blank" rel="noopener noreferrer">成績</a>
         </div>
       </div>
     `;
   }
 
-  // Render Guides Tab (Piranha & Lifespan)
+  // Render Guides Tab (完全復元・実データ構造 PIRANHA_DATA, LIFESPAN_GUIDE に完全合致)
   function renderGuidesTab() {
     const container = document.getElementById('guides-tab-content');
     if (!container) return;
@@ -1827,30 +1761,57 @@
         <!-- Piranha Rule -->
         <div class="filter-card" style="margin-bottom:20px;">
           <h3 style="font-size:1.05rem; color:var(--accent); margin-bottom:8px;">
-            🐟 ピラニアのコイン返還法則
+            🐟 ${escapeHtml(piranha.title)}
           </h3>
           <p style="font-size:0.88rem; color:var(--text-secondary); line-height:1.6; margin-bottom:12px;">
-            ${escapeHtml(piranha.overview)}
+            ${escapeHtml(piranha.summary)}
           </p>
+          <div style="font-size:0.83rem; color:var(--text-muted); margin-bottom:12px;">
+            📍 出現場所: ${escapeHtml(piranha.location)}
+          </div>
           <div class="warning-callout" style="margin-bottom:12px;">
             <strong>💡 最高効率の稼ぎテクニック:</strong><br>
-            ${escapeHtml(piranha.fastGrindTip)}
+            ${escapeHtml(piranha.tips)}
           </div>
+
+          <h4 style="font-size:0.95rem; margin-top:14px; margin-bottom:8px; color:var(--text-primary);">📊 投入金額の剰余（あまり）と返還コイン対応表</h4>
+          <div class="data-table-container">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>余り (あまり)</th>
+                  <th>返還コイン</th>
+                  <th>精霊契約での用途</th>
+                </tr>
+              </thead>
+              <tbody>
+                ${piranha.mod_table.map(t => `
+                  <tr>
+                    <td><strong>${escapeHtml(t.mod)}</strong></td>
+                    <td><span class="badge badge-plane">${escapeHtml(t.coin)}</span></td>
+                    <td style="font-size:0.82rem; color:var(--text-secondary);">${escapeHtml(t.use)}</td>
+                  </tr>
+                `).join('')}
+              </tbody>
+            </table>
+          </div>
+
+          <h4 style="font-size:0.95rem; margin-top:16px; margin-bottom:8px; color:var(--text-primary);">📊 1回あたりの投入金額によるシフト法則表</h4>
           <div class="data-table-container">
             <table class="data-table">
               <thead>
                 <tr>
                   <th>投入金額（ブラー）</th>
-                  <th>返還されるコイン</th>
-                  <th>備考</th>
+                  <th>シフト量</th>
+                  <th>特徴・備考</th>
                 </tr>
               </thead>
               <tbody>
-                ${piranha.tiers.map(t => `
+                ${piranha.amount_table.map(t => `
                   <tr>
                     <td><strong>${escapeHtml(t.amount)}</strong></td>
-                    <td><span class="badge badge-plane">${escapeHtml(t.reward)}</span></td>
-                    <td style="font-size:0.82rem; color:var(--text-secondary);">${escapeHtml(t.note)}</td>
+                    <td>+${escapeHtml(t.shift)}</td>
+                    <td style="font-size:0.82rem; color:var(--text-secondary);">${escapeHtml(t.feature)}</td>
                   </tr>
                 `).join('')}
               </tbody>
@@ -1861,15 +1822,15 @@
         <!-- Lifespan Specs -->
         <div class="filter-card">
           <h3 style="font-size:1.05rem; color:var(--accent); margin-bottom:8px;">
-            ⏳ カエルグミ・ミミズグミ・まつぼっくりの寿命仕様
+            ⏳ ${escapeHtml(lifespan.title)}
           </h3>
           <p style="font-size:0.88rem; color:var(--text-secondary); line-height:1.6; margin-bottom:12px;">
-            ${escapeHtml(lifespan.overview)}
+            ${escapeHtml(lifespan.summary)}
           </p>
           <div style="display:flex; flex-direction:column; gap:8px;">
-            ${lifespan.rules.map(r => `
+            ${lifespan.details.map(r => `
               <div style="background:var(--bg-subtle); padding:10px 14px; border-radius:var(--radius-sm); font-size:0.85rem; border-left:3px solid var(--accent);">
-                <strong>${escapeHtml(r.item)}:</strong> ${escapeHtml(r.detail)}
+                <strong>${escapeHtml(r.item)}:</strong> ${escapeHtml(r.rule)}
               </div>
             `).join('')}
           </div>
