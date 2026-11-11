@@ -1,0 +1,2465 @@
+{
+  "real": {
+    "ガラムマサラ": {
+      "type": "real",
+      "area": "ガラムマサラ",
+      "plane": "ガラムマサラ",
+      "title": "ガラムマサラ 1F〜50F 実マップ画像",
+      "desc": "Wiki有志作成の全50フロア実マップ画像。フロアごとの宝箱配置と順路を確認できます。",
+      "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%82%AC%E3%83%A9%E3%83%A0%E3%83%9E%E3%82%B5%E3%83%A9",
+      "credit": "一次情報出典: マジカルバケーション攻略Wiki ガラムマサラ (画像: Wiki有志作成フロアマップ)",
+      "totalFloors": 50,
+      "floorMaps": {
+        "1": "img/maps/map-garam01-0.png",
+        "2": "img/maps/map-garam02-0.png",
+        "3": "img/maps/map-garam03-0.png",
+        "4": "img/maps/map-garam04-0.png",
+        "5": "img/maps/map-garam05-2.png",
+        "6": "img/maps/map-garam06-0.png",
+        "7": "img/maps/map-garam07-0.png",
+        "8": "img/maps/map-garam08-0.png",
+        "9": "img/maps/map-garam09-0.png",
+        "10": "img/maps/map-garam10-0.png",
+        "11": "img/maps/map-garam11-0.png",
+        "12": "img/maps/map-garam12-0.png",
+        "13": "img/maps/map-garam13-1.png",
+        "14": "img/maps/map-garam14-0.png",
+        "15": "img/maps/map-garam15-0.png",
+        "16": "img/maps/map-garam16-0.png",
+        "17": "img/maps/map-garam17-0.png",
+        "18": "img/maps/map-garam18-0.png",
+        "19": "img/maps/map-garam19-0.png",
+        "20": "img/maps/map-garam20-0.png",
+        "21": "img/maps/map-garam21-0.png",
+        "22": "img/maps/map-garam22-0.png",
+        "23": "img/maps/map-garam23-0.png",
+        "24": "img/maps/map-garam24-0.png",
+        "25": "img/maps/map-garam25-0.png",
+        "26": "img/maps/map-garam26-1.png",
+        "27": "img/maps/map-garam27-0.png",
+        "28": "img/maps/map-garam28-0.png",
+        "29": "img/maps/map-garam29-0.png",
+        "30": "img/maps/map-garam30-0.png",
+        "31": "img/maps/map-garam31-0.png",
+        "32": "img/maps/map-garam32-0.png",
+        "33": "img/maps/map-garam33-0.png",
+        "34": "img/maps/map-garam34-0.png",
+        "35": "img/maps/map-garam35-0.png",
+        "36": "img/maps/map-garam36-0.png",
+        "37": "img/maps/map-garam37-1.png",
+        "38": "img/maps/map-garam38-0.png",
+        "39": "img/maps/map-garam39-0.png",
+        "40": "img/maps/map-garam40-0.png",
+        "41": "img/maps/map-garam41-0.png",
+        "42": "img/maps/map-garam42-0.png",
+        "43": "img/maps/map-garam43-0.png",
+        "44": "img/maps/map-garam44-0.png",
+        "45": "img/maps/map-garam45-0.png",
+        "46": "img/maps/map-garam46-0.png",
+        "47": "img/maps/map-garam47-0.png",
+        "48": "img/maps/map-garam48-0.png",
+        "49": "img/maps/map-garam49-0.png",
+        "50": "img/maps/map-garam50-0.png"
+      }
+    },
+    "リドナヒー": {
+      "type": "real",
+      "area": "リドナヒー",
+      "plane": "リドナヒー",
+      "title": "リドナヒー 実マップ画像",
+      "desc": "Wiki有志作成のリドナヒー4〜6（ボス側・宝箱側ルート分岐）実マップ画像。",
+      "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%82%AC%E3%83%A9%E3%83%A0%E3%83%9E%E3%82%B5%E3%83%A9",
+      "credit": "一次情報出典: マジカルバケーション攻略Wiki ガラムマサラ (リドナヒー節)",
+      "submaps": [
+        {
+          "name": "リドナヒー4",
+          "file": "img/maps/map-rido04-0.png",
+          "desc": "右上: リドナヒー2に戻る / 右下: リドナヒー8(宝箱側)へ / 左下: リドナヒー7(ボス側)へ"
+        },
+        {
+          "name": "リドナヒー5",
+          "file": "img/maps/map-rido05-0.png",
+          "desc": "左下: リドナヒー3に戻る / 左上: リドナヒー9(宝箱側)へ / 右下: リドナヒー7(ボス側)へ"
+        },
+        {
+          "name": "リドナヒー6",
+          "file": "img/maps/map-rido06-0.png",
+          "desc": "右下: リドナヒー1に戻る / 右上: リドナヒー10(宝箱側)へ / 左上: リドナヒー7(ボス側)へ"
+        }
+      ]
+    },
+    "リギニオ密林": {
+      "type": "real",
+      "area": "リギニオ密林",
+      "plane": "闇のプレーン",
+      "title": "リギニオ密林・沼 実マップ概略図",
+      "desc": "Wiki有志作成のリギニオ密林・沼の全体ルート概略図（赤丸数字は順路）。",
+      "sourceUrl": "https://wikiwiki.jp/magivaca/%E9%97%87%E3%81%AE%E3%83%97%E3%83%AC%E3%83%BC%E3%83%B3",
+      "credit": "一次情報出典: マジカルバケーション攻略Wiki 闇のプレーン (リギニオ密林節 概略図)",
+      "file": "img/maps/map_riginio.png"
+    }
+  },
+  "schematic": {
+    "キャンプ場（ウィルオウィスプ・ヴァレンシア海岸）": {
+      "title": "ヴァレンシア海岸・キャンプ場 模式図",
+      "desc": "学校出発〜ヴァレンシア海岸〜洞窟ワープ（序盤限定エリア）",
+      "grid": [
+        [
+          {
+            "name": "ウィルオウィスプ(学校)",
+            "aliases": [
+              "ウィルオウィスプ"
+            ],
+            "entrance": false,
+            "note": "序盤限定"
+          },
+          {
+            "name": "ヴァレンシア海岸・西",
+            "aliases": [
+              "ヴァレンシア海岸・西",
+              "ヴァレンシア海岸"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "ヴァレンシア海岸・東",
+            "aliases": [
+              "ヴァレンシア海岸・東"
+            ],
+            "entrance": false,
+            "note": ""
+          }
+        ],
+        [
+          null,
+          {
+            "name": "コテージ・キャンプ地",
+            "aliases": [
+              "コテージ",
+              "キャンプ場"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "海岸の洞窟(ワープ出口)",
+            "aliases": [
+              "海岸の洞窟"
+            ],
+            "entrance": true,
+            "note": "突入で戻れなくなる"
+          }
+        ]
+      ]
+    },
+    "ミモレットの森": {
+      "title": "ミモレットの森 模式図",
+      "desc": "Wiki「マップ位置 概略」準拠",
+      "grid": [
+        [
+          {
+            "name": "森の洞窟・入口",
+            "aliases": [
+              "森の洞窟・入口",
+              "森の洞窟側"
+            ],
+            "entrance": true,
+            "note": ""
+          },
+          {
+            "name": "小川の丸太橋",
+            "aliases": [
+              "小川の丸太橋"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "ミモレットの森(西側)",
+            "aliases": [
+              "ミモレットの森(西側)",
+              "ミモレットの森"
+            ],
+            "entrance": false,
+            "note": ""
+          }
+        ],
+        [
+          null,
+          {
+            "name": "カエルグミの森",
+            "aliases": [
+              "カエルグミの森"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          null
+        ]
+      ]
+    },
+    "森の洞窟": {
+      "title": "森の洞窟 模式図",
+      "desc": "Wiki「マップ位置 概略」準拠",
+      "grid": [
+        [
+          {
+            "name": "森の洞窟・西",
+            "aliases": [
+              "森の洞窟・西"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "森の洞窟・小部屋",
+            "aliases": [
+              "森の洞窟・小部屋(森の洞窟側)",
+              "森の洞窟・小部屋"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "森の洞窟・東",
+            "aliases": [
+              "森の洞窟・東(森の洞窟側)",
+              "森の洞窟・東"
+            ],
+            "entrance": false,
+            "note": ""
+          }
+        ],
+        [
+          {
+            "name": "森の洞窟・入口",
+            "aliases": [
+              "森の洞窟・入口"
+            ],
+            "entrance": true,
+            "note": ""
+          },
+          null,
+          {
+            "name": "ミモレットの森へ",
+            "aliases": [
+              "ミモレットの森"
+            ],
+            "entrance": true,
+            "note": ""
+          }
+        ],
+        [
+          null,
+          null,
+          {
+            "name": "トルーナ村へ",
+            "aliases": [
+              "トルーナ村"
+            ],
+            "entrance": true,
+            "note": ""
+          }
+        ]
+      ]
+    },
+    "トルーナ村": {
+      "title": "トルーナ村 模式図",
+      "desc": "Wiki「マップ位置 概略」準拠（地下洞窟に宝箱あり）",
+      "grid": [
+        [
+          {
+            "name": "ベナコンチャ遺跡へ",
+            "aliases": [
+              "ベナコンチャ遺跡"
+            ],
+            "entrance": true,
+            "note": ""
+          },
+          null,
+          {
+            "name": "トルーナ村(地上)",
+            "aliases": [
+              "トルーナ村"
+            ],
+            "entrance": false,
+            "note": ""
+          }
+        ],
+        [
+          {
+            "name": "レーミッツ・北西へ",
+            "aliases": [
+              "レーミッツ・北西"
+            ],
+            "entrance": true,
+            "note": ""
+          },
+          {
+            "name": "レーミッツ宮殿へ",
+            "aliases": [
+              "レーミッツ宮殿"
+            ],
+            "entrance": true,
+            "note": ""
+          },
+          {
+            "name": "森の洞窟(トルーナ地下)",
+            "aliases": [
+              "森の洞窟・小部屋(トルーナ村地下)",
+              "森の洞窟・東(トルーナ村地下)"
+            ],
+            "entrance": false,
+            "note": ""
+          }
+        ]
+      ]
+    },
+    "ベナコンチャ遺跡": {
+      "title": "ベナコンチャ遺跡 模式図",
+      "desc": "Wiki「マップ位置 概略」準拠",
+      "grid": [
+        [
+          {
+            "name": "ベナコンチャ西",
+            "aliases": [
+              "ベナコンチャ西"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "ベナコンチャ北",
+            "aliases": [
+              "ベナコンチャ北"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "ベナコンチャ東",
+            "aliases": [
+              "ベナコンチャ東"
+            ],
+            "entrance": false,
+            "note": ""
+          }
+        ],
+        [
+          null,
+          {
+            "name": "ベナコンチャ遺跡(中央)",
+            "aliases": [
+              "ベナコンチャ遺跡"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          null
+        ],
+        [
+          {
+            "name": "ベナコンチャ南西",
+            "aliases": [
+              "ベナコンチャ南西"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "ベナコンチャ南",
+            "aliases": [
+              "ベナコンチャ南"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "ベナコンチャ南東",
+            "aliases": [
+              "ベナコンチャ南東"
+            ],
+            "entrance": false,
+            "note": ""
+          }
+        ]
+      ]
+    },
+    "レーミッツ宮殿外": {
+      "title": "レーミッツ宮殿外 模式図",
+      "desc": "Wiki「マップ位置 概略」準拠",
+      "grid": [
+        [
+          null,
+          {
+            "name": "文鳥ケ原へ",
+            "aliases": [
+              "文鳥ケ原"
+            ],
+            "entrance": true,
+            "note": ""
+          },
+          null
+        ],
+        [
+          {
+            "name": "レーミッツ・北西",
+            "aliases": [
+              "レーミッツ・北西",
+              "レーミッツ・北西(宮殿外)"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "レーミッツ宮殿",
+            "aliases": [
+              "レーミッツ宮殿",
+              "レーミッツ・北東(宮殿内)"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "レーミッツ・北東",
+            "aliases": [
+              "レーミッツ・北東"
+            ],
+            "entrance": false,
+            "note": ""
+          }
+        ],
+        [
+          {
+            "name": "レーミッツ・西",
+            "aliases": [
+              "レーミッツ・西",
+              "レーミッツ・西(宮殿内)",
+              "レーミッツ・西(宮殿外)"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "トピアリーの迷宮",
+            "aliases": [
+              "トピアリーの迷宮(正面ルート)",
+              "トピアリーの迷宮(宮殿東から進入)",
+              "トピアリーの迷宮"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "レーミッツ・東",
+            "aliases": [
+              "レーミッツ・東"
+            ],
+            "entrance": false,
+            "note": ""
+          }
+        ],
+        [
+          {
+            "name": "レーミッツ・南西",
+            "aliases": [
+              "レーミッツ・南西"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "レーミッツ宮殿門",
+            "aliases": [
+              "レーミッツ宮殿門"
+            ],
+            "entrance": false,
+            "note": "開門時自動開封あり"
+          },
+          {
+            "name": "レーミッツ・南東",
+            "aliases": [
+              "レーミッツ・南東"
+            ],
+            "entrance": false,
+            "note": ""
+          }
+        ]
+      ]
+    },
+    "レーミッツ宮殿内": {
+      "title": "レーミッツ宮殿内 模式図",
+      "desc": "Wiki「宮殿内部概略図」準拠（1F・2Fの各精霊扉）",
+      "grid": [
+        [
+          {
+            "name": "西2F階段",
+            "aliases": [
+              "西2階宮殿内部・西階段"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "小部屋(火)",
+            "aliases": [
+              "西2階宮殿内部・小部屋(扉: 火の精霊)"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "客間(風・美)",
+            "aliases": [
+              "西2階宮殿内部・客間(扉: 風の精霊)",
+              "西2階宮殿内部・客間(扉: 美の精霊)"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "2F大廊下",
+            "aliases": [
+              "大廊下",
+              "宮殿内部・大廊下"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "応接間(音)",
+            "aliases": [
+              "東2階宮殿内部・応接間(扉: 音の精霊)"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "廊下(石・虫)",
+            "aliases": [
+              "東2階宮殿内部・廊下(扉: 石の精霊)",
+              "東2階宮殿内部・廊下(扉: 虫の精霊)"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "東2F階段",
+            "aliases": [
+              "東2階宮殿内部・東階段"
+            ],
+            "entrance": false,
+            "note": ""
+          }
+        ],
+        [
+          {
+            "name": "西広場(毒)",
+            "aliases": [
+              "東1階宮殿内部・西広場(扉: 毒の精霊)"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "休憩所(光・古)",
+            "aliases": [
+              "西1階宮殿内部・休憩所(扉: 光の精霊)",
+              "西1階宮殿内部・休憩所(扉: 古の精霊)"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "地下入口(木)",
+            "aliases": [
+              "西1階宮殿内部地下入口(扉: 木の精霊)",
+              "宮殿内部・地下"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "宮殿入口",
+            "aliases": [
+              "宮殿内部・入口"
+            ],
+            "entrance": true,
+            "note": ""
+          },
+          {
+            "name": "西階段下(雷)",
+            "aliases": [
+              "東1階宮殿内部西階段下(扉: 雷の精霊)"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "鳥の間",
+            "aliases": [
+              "西1階宮殿内部・鳥の間"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "東階段下",
+            "aliases": [
+              "東1階宮殿内部東階段下"
+            ],
+            "entrance": false,
+            "note": ""
+          }
+        ]
+      ]
+    },
+    "～ピップルスタウン": {
+      "title": "ピップルスタウン周辺 模式図",
+      "desc": "Wiki「マップ位置 概略」準拠",
+      "grid": [
+        [
+          null,
+          {
+            "name": "イベンセ岩場１",
+            "aliases": [
+              "イベンセ岩場１"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "レーミッツ・北西",
+            "aliases": [
+              "レーミッツ・北西"
+            ],
+            "entrance": false,
+            "note": ""
+          }
+        ],
+        [
+          {
+            "name": "ピップルスタウン",
+            "aliases": [
+              "ピップルスタウン"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "ロッシュの川べり",
+            "aliases": [
+              "ロッシュの川べり"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "レーミッツ・西",
+            "aliases": [
+              "レーミッツ・西(宮殿外)",
+              "レーミッツ・西"
+            ],
+            "entrance": false,
+            "note": ""
+          }
+        ],
+        [
+          {
+            "name": "ロッシュの一本橋",
+            "aliases": [
+              "ロッシュの一本橋"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          null,
+          null
+        ]
+      ]
+    },
+    "ラ・ロッシュの塔": {
+      "title": "ラ・ロッシュの塔 模式図",
+      "desc": "1F〜6F フロア階層図（2F・5Fに宝箱あり）",
+      "grid": [
+        [
+          {
+            "name": "ラ・ロッシュ６Ｆ(最上階)",
+            "aliases": [
+              "ラ・ロッシュ６Ｆ"
+            ],
+            "entrance": false,
+            "note": ""
+          }
+        ],
+        [
+          {
+            "name": "ラ・ロッシュ５Ｆ",
+            "aliases": [
+              "ラ・ロッシュ５Ｆ"
+            ],
+            "entrance": false,
+            "note": ""
+          }
+        ],
+        [
+          {
+            "name": "ラ・ロッシュ４Ｆ",
+            "aliases": [
+              "ラ・ロッシュ４Ｆ"
+            ],
+            "entrance": false,
+            "note": ""
+          }
+        ],
+        [
+          {
+            "name": "ラ・ロッシュ３Ｆ",
+            "aliases": [
+              "ラ・ロッシュ３Ｆ"
+            ],
+            "entrance": false,
+            "note": ""
+          }
+        ],
+        [
+          {
+            "name": "ラ・ロッシュ２Ｆ",
+            "aliases": [
+              "ラ・ロッシュ２Ｆ"
+            ],
+            "entrance": false,
+            "note": ""
+          }
+        ],
+        [
+          {
+            "name": "ラ・ロッシュ１Ｆ(塔入口)",
+            "aliases": [
+              "ラ・ロッシュ１Ｆ",
+              "ラ・ロッシュの塔"
+            ],
+            "entrance": true,
+            "note": ""
+          }
+        ]
+      ]
+    },
+    "～ゲアラヴァ村": {
+      "title": "ゲアラヴァ村周辺 模式図",
+      "desc": "Wiki「マップ位置 概略」準拠",
+      "grid": [
+        [
+          {
+            "name": "キード・モンガ",
+            "aliases": [
+              "キード・モンガ",
+              "キードモンガ"
+            ],
+            "entrance": true,
+            "note": ""
+          },
+          {
+            "name": "ゲアラヴァ村",
+            "aliases": [
+              "ゲアラヴァ村(岩場2から進入)",
+              "ゲアラヴァ村"
+            ],
+            "entrance": false,
+            "note": ""
+          }
+        ],
+        [
+          {
+            "name": "イベンセ岩場２",
+            "aliases": [
+              "イベンセ岩場２"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "イベンセ岩場１",
+            "aliases": [
+              "イベンセ岩場１"
+            ],
+            "entrance": false,
+            "note": ""
+          }
+        ],
+        [
+          {
+            "name": "イベンセ岩場３",
+            "aliases": [
+              "イベンセ岩場３"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          null
+        ]
+      ]
+    },
+    "キードモンガ": {
+      "title": "キードモンガ 模式図",
+      "desc": "外壁階段・1F〜3F・工場・頂上",
+      "grid": [
+        [
+          {
+            "name": "キードモンガ３階(外側)",
+            "aliases": [
+              "キードモンガ３階(外側)"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "キードモンガ頂上",
+            "aliases": [
+              "キードモンガ頂上"
+            ],
+            "entrance": true,
+            "note": ""
+          }
+        ],
+        [
+          {
+            "name": "キードモンガ２階(外側)",
+            "aliases": [
+              "キードモンガ２階(外側)"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "キードモンガ工場",
+            "aliases": [
+              "キードモンガ工場"
+            ],
+            "entrance": false,
+            "note": ""
+          }
+        ],
+        [
+          {
+            "name": "キードモンガ１階(外側)",
+            "aliases": [
+              "キードモンガ１階(外側)"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "キードモンガ１階(内側)",
+            "aliases": [
+              "キードモンガ１階(内側)"
+            ],
+            "entrance": false,
+            "note": ""
+          }
+        ]
+      ]
+    },
+    "氷の島・ジェラ風穴": {
+      "title": "氷の島・ジェラ風穴 模式図",
+      "desc": "Wiki「マップ位置 概略」準拠",
+      "grid": [
+        [
+          {
+            "name": "氷の島",
+            "aliases": [
+              "氷の島"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "ジェラ風穴３",
+            "aliases": [
+              "ジェラ風穴３"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "ジェラ風穴１",
+            "aliases": [
+              "ジェラ風穴１"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "ジェラ風穴６",
+            "aliases": [
+              "ジェラ風穴６"
+            ],
+            "entrance": false,
+            "note": ""
+          }
+        ],
+        [
+          null,
+          null,
+          {
+            "name": "ジェラ風穴２",
+            "aliases": [
+              "ジェラ風穴２"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          null
+        ],
+        [
+          null,
+          {
+            "name": "ジェラ風穴４",
+            "aliases": [
+              "ジェラ風穴４"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "ジェラ風穴５",
+            "aliases": [
+              "ジェラ風穴５"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          null
+        ]
+      ]
+    },
+    "タピオカティ村": {
+      "title": "タピオカティ村周辺 模式図",
+      "desc": "Wiki「マップ位置 概略」準拠",
+      "grid": [
+        [
+          {
+            "name": "レヒカフ沼周辺３",
+            "aliases": [
+              "レヒカフ沼周辺３"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "マサラティ村",
+            "aliases": [
+              "マサラティ村"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "メースの家",
+            "aliases": [
+              "メースの家"
+            ],
+            "entrance": false,
+            "note": ""
+          }
+        ],
+        [
+          {
+            "name": "レヒカフ沼周辺７",
+            "aliases": [
+              "レヒカフ沼周辺７"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "タピオカティ村",
+            "aliases": [
+              "タピオカティ村"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "東の森３へ",
+            "aliases": [
+              "東の森３"
+            ],
+            "entrance": true,
+            "note": ""
+          }
+        ]
+      ]
+    },
+    "クムヤムト砂漠": {
+      "title": "クムヤムト砂漠 模式図",
+      "desc": "Wiki「マップ位置 概略」準拠",
+      "grid": [
+        [
+          {
+            "name": "ずんどこ穴へ",
+            "aliases": [
+              "ずんどこ穴"
+            ],
+            "entrance": true,
+            "note": ""
+          },
+          {
+            "name": "アクアビット城へ",
+            "aliases": [
+              "アクアビット城"
+            ],
+            "entrance": true,
+            "note": ""
+          },
+          {
+            "name": "タピオカティ村へ",
+            "aliases": [
+              "タピオカティ村"
+            ],
+            "entrance": true,
+            "note": ""
+          }
+        ],
+        [
+          {
+            "name": "クムヤムト砂漠３",
+            "aliases": [
+              "クムヤムト砂漠３"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "クムヤムト砂漠１",
+            "aliases": [
+              "クムヤムト砂漠１"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          null
+        ],
+        [
+          {
+            "name": "クムヤムト砂漠２",
+            "aliases": [
+              "クムヤムト砂漠２"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          null,
+          null
+        ]
+      ]
+    },
+    "ずんどこ穴": {
+      "title": "ずんどこ穴 模式図",
+      "desc": "Wiki「マップ位置 概略」準拠（1段目〜4段目縦穴）",
+      "grid": [
+        [
+          {
+            "name": "ずんどこ穴(1段目・入口)",
+            "aliases": [
+              "ずんどこ穴(1段目)",
+              "ずんどこ穴１"
+            ],
+            "entrance": true,
+            "note": ""
+          }
+        ],
+        [
+          {
+            "name": "ずんどこ穴(2段目)",
+            "aliases": [
+              "ずんどこ穴(2段目)"
+            ],
+            "entrance": false,
+            "note": ""
+          }
+        ],
+        [
+          {
+            "name": "ずんどこ穴(3段目)",
+            "aliases": [
+              "ずんどこ穴(3段目)"
+            ],
+            "entrance": false,
+            "note": ""
+          }
+        ],
+        [
+          {
+            "name": "ずんどこ穴(4段目・最深部)",
+            "aliases": [
+              "ずんどこ穴(4段目)"
+            ],
+            "entrance": false,
+            "note": ""
+          }
+        ]
+      ]
+    },
+    "アクアビット城": {
+      "title": "アクアビット城 模式図",
+      "desc": "Wiki「マップ位置 概略」準拠",
+      "grid": [
+        [
+          null,
+          {
+            "name": "アクアビット城２",
+            "aliases": [
+              "アクアビット城２"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          null
+        ],
+        [
+          {
+            "name": "アクアビット城４",
+            "aliases": [
+              "アクアビット城４"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "アクアビット城１",
+            "aliases": [
+              "アクアビット城１"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "アクアビット城３",
+            "aliases": [
+              "アクアビット城３"
+            ],
+            "entrance": false,
+            "note": ""
+          }
+        ],
+        [
+          null,
+          {
+            "name": "アクアビット城(城門)",
+            "aliases": [
+              "アクアビット城"
+            ],
+            "entrance": true,
+            "note": ""
+          },
+          null
+        ]
+      ]
+    },
+    "エニグマの森": {
+      "title": "エニグマの森 模式図",
+      "desc": "Wiki「マップ位置 概略」準拠",
+      "grid": [
+        [
+          {
+            "name": "タピオカティ村へ",
+            "aliases": [
+              "タピオカティ村"
+            ],
+            "entrance": true,
+            "note": ""
+          },
+          {
+            "name": "東の森３へ",
+            "aliases": [
+              "東の森３"
+            ],
+            "entrance": true,
+            "note": ""
+          },
+          null,
+          null
+        ],
+        [
+          {
+            "name": "カエル沼",
+            "aliases": [
+              "カエル沼"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "エニグマの森・北",
+            "aliases": [
+              "エニグマの森・北(エニグマの森の右上から進入)",
+              "エニグマの森・北(カエル沼の右から進入)",
+              "エニグマの森・北"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "キスニカ鉱山入口へ",
+            "aliases": [
+              "キスニカ鉱山入口"
+            ],
+            "entrance": true,
+            "note": ""
+          },
+          null
+        ],
+        [
+          {
+            "name": "エニグマの森",
+            "aliases": [
+              "エニグマの森"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "ツリーマンの集落",
+            "aliases": [
+              "ツリーマンの集落"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "クガンデ村(北側)",
+            "aliases": [
+              "クガンデ村(北側)"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          null
+        ],
+        [
+          {
+            "name": "エニグマの森・沼",
+            "aliases": [
+              "エニグマの森・沼"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    "東の森": {
+      "title": "東の森 模式図",
+      "desc": "Wiki「マップ位置 概略」準拠",
+      "grid": [
+        [
+          {
+            "name": "レヒカフ沼",
+            "aliases": [
+              "レヒカフ沼"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "バソリモ村",
+            "aliases": [
+              "バソリモ村"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "モルビエ火山入口",
+            "aliases": [
+              "モルビエ火山入口"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "東の森４",
+            "aliases": [
+              "東の森４"
+            ],
+            "entrance": false,
+            "note": ""
+          }
+        ],
+        [
+          {
+            "name": "レヒカフ沼周辺８",
+            "aliases": [
+              "レヒカフ沼周辺８"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "謎の遺跡",
+            "aliases": [
+              "謎の遺跡"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "王者の森",
+            "aliases": [
+              "王者の森"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "東の森２",
+            "aliases": [
+              "東の森２"
+            ],
+            "entrance": false,
+            "note": ""
+          }
+        ],
+        [
+          {
+            "name": "ツリーマンの集落",
+            "aliases": [
+              "ツリーマンの集落"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "クガンデ村",
+            "aliases": [
+              "クガンデ村"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "ヒトデ花の原っぱ",
+            "aliases": [
+              "ヒトデ花の原っぱ"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "東の森１",
+            "aliases": [
+              "東の森１"
+            ],
+            "entrance": false,
+            "note": ""
+          }
+        ]
+      ]
+    },
+    "モルビエ火山": {
+      "title": "モルビエ火山 模式図",
+      "desc": "Wiki「マップ位置 概略」準拠",
+      "grid": [
+        [
+          null,
+          {
+            "name": "モルビエ火山５",
+            "aliases": [
+              "モルビエ火山５"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "モルビエ火山２",
+            "aliases": [
+              "モルビエ火山２"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          null
+        ],
+        [
+          {
+            "name": "モルビエ火山６",
+            "aliases": [
+              "モルビエ火山６"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "モルビエ火山４",
+            "aliases": [
+              "モルビエ火山４"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "モルビエ火山３",
+            "aliases": [
+              "モルビエ火山３"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          null
+        ],
+        [
+          null,
+          {
+            "name": "モルビエ火山１",
+            "aliases": [
+              "モルビエ火山１(奥側)",
+              "モルビエ火山１(入口側)",
+              "モルビエ火山１"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "モルビエ火山入口",
+            "aliases": [
+              "モルビエ火山入口"
+            ],
+            "entrance": true,
+            "note": ""
+          },
+          null
+        ]
+      ]
+    },
+    "バソリモ村": {
+      "title": "バソリモ村 模式図",
+      "desc": "Wiki「マップ位置 概略」準拠（民家に宝箱あり）",
+      "grid": [
+        [
+          {
+            "name": "バソリモ村入口",
+            "aliases": [
+              "バソリモ村入口"
+            ],
+            "entrance": true,
+            "note": ""
+          },
+          {
+            "name": "バソリモ村(中央)",
+            "aliases": [
+              "バソリモ村"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "バソリモ温泉",
+            "aliases": [
+              "バソリモ温泉"
+            ],
+            "entrance": false,
+            "note": ""
+          }
+        ],
+        [
+          null,
+          {
+            "name": "バソリモ村・民家(ブラウニーの穴入口)",
+            "aliases": [
+              "バソリモ村・民家(ブラウニーの穴入口)",
+              "バソリモ村・民家"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "東の森へ",
+            "aliases": [
+              "東の森"
+            ],
+            "entrance": true,
+            "note": ""
+          }
+        ]
+      ]
+    },
+    "ブラウニーの穴": {
+      "title": "ブラウニーの穴 模式図",
+      "desc": "Wiki「マップ位置 概略」準拠",
+      "grid": [
+        [
+          {
+            "name": "バソリモ村・民家",
+            "aliases": [
+              "バソリモ村・民家"
+            ],
+            "entrance": true,
+            "note": ""
+          },
+          null,
+          {
+            "name": "ブラウニーの穴３",
+            "aliases": [
+              "ブラウニーの穴３"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "キスニカ鉱山入口へ",
+            "aliases": [
+              "キスニカ鉱山入口"
+            ],
+            "entrance": true,
+            "note": ""
+          }
+        ],
+        [
+          {
+            "name": "ブラウニーの穴１",
+            "aliases": [
+              "ブラウニーの穴１"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          null,
+          {
+            "name": "ブラウニーの穴４",
+            "aliases": [
+              "ブラウニーの穴４"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          null
+        ],
+        [
+          {
+            "name": "ブラウニーの穴２",
+            "aliases": [
+              "ブラウニーの穴２"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    "キスニカ鉱山": {
+      "title": "キスニカ鉱山 模式図",
+      "desc": "Wiki「マップ位置 概略」準拠（全12フロア）",
+      "grid": [
+        [
+          {
+            "name": "キスニカ鉱山６",
+            "aliases": [
+              "キスニカ鉱山６"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "キスニカ鉱山５",
+            "aliases": [
+              "キスニカ鉱山５"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "キスニカ鉱山７",
+            "aliases": [
+              "キスニカ鉱山７"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "キスニカ鉱山１０",
+            "aliases": [
+              "キスニカ鉱山１０"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "キスニカ鉱山１２",
+            "aliases": [
+              "キスニカ鉱山１２"
+            ],
+            "entrance": false,
+            "note": ""
+          }
+        ],
+        [
+          {
+            "name": "キスニカ鉱山１",
+            "aliases": [
+              "キスニカ鉱山１"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "キスニカ鉱山２",
+            "aliases": [
+              "キスニカ鉱山２"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "キスニカ鉱山８",
+            "aliases": [
+              "キスニカ鉱山８(鉱山１から進入)",
+              "キスニカ鉱山８(鉱山２から進入)",
+              "キスニカ鉱山８"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "キスニカ鉱山９",
+            "aliases": [
+              "キスニカ鉱山９"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "キスニカ鉱山１１",
+            "aliases": [
+              "キスニカ鉱山１１"
+            ],
+            "entrance": false,
+            "note": ""
+          }
+        ],
+        [
+          {
+            "name": "キスニカ鉱山入口",
+            "aliases": [
+              "キスニカ鉱山入口"
+            ],
+            "entrance": true,
+            "note": ""
+          },
+          {
+            "name": "キスニカ鉱山３",
+            "aliases": [
+              "キスニカ鉱山３"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "キスニカ鉱山４",
+            "aliases": [
+              "キスニカ鉱山４"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          null,
+          null
+        ]
+      ]
+    },
+    "タンドーリ": {
+      "title": "タンドーリ 模式図",
+      "desc": "Wiki「マップ位置 概略」準拠",
+      "grid": [
+        [
+          {
+            "name": "ガスパチョ村へ",
+            "aliases": [
+              "ガスパチョ村"
+            ],
+            "entrance": true,
+            "note": ""
+          },
+          {
+            "name": "タンドーリ入口",
+            "aliases": [
+              "タンドーリ入口"
+            ],
+            "entrance": true,
+            "note": ""
+          }
+        ],
+        [
+          {
+            "name": "タンドーリ１",
+            "aliases": [
+              "タンドーリ１"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "タンドーリ２",
+            "aliases": [
+              "タンドーリ２"
+            ],
+            "entrance": false,
+            "note": ""
+          }
+        ],
+        [
+          {
+            "name": "タンドーリ３",
+            "aliases": [
+              "タンドーリ３"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "タンドーリ４",
+            "aliases": [
+              "タンドーリ４"
+            ],
+            "entrance": false,
+            "note": ""
+          }
+        ],
+        [
+          null,
+          {
+            "name": "タンドーリ５",
+            "aliases": [
+              "タンドーリ５"
+            ],
+            "entrance": false,
+            "note": ""
+          }
+        ]
+      ]
+    },
+    "荒廃の地(～モイロロト村)": {
+      "title": "荒廃の地(〜モイロロト村) 模式図",
+      "desc": "Wiki「マップ位置 概略」準拠",
+      "grid": [
+        [
+          {
+            "name": "荒廃の地６",
+            "aliases": [
+              "荒廃の地６"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          null,
+          {
+            "name": "モイロロト村へ",
+            "aliases": [
+              "モイロロト村"
+            ],
+            "entrance": true,
+            "note": ""
+          }
+        ],
+        [
+          {
+            "name": "荒廃の地１",
+            "aliases": [
+              "荒廃の地１"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "ガスパチョ村",
+            "aliases": [
+              "ガスパチョ村"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "荒廃の地３",
+            "aliases": [
+              "荒廃の地３"
+            ],
+            "entrance": false,
+            "note": ""
+          }
+        ],
+        [
+          null,
+          null,
+          {
+            "name": "荒廃の地２",
+            "aliases": [
+              "荒廃の地２"
+            ],
+            "entrance": false,
+            "note": ""
+          }
+        ]
+      ]
+    },
+    "ピラミッド": {
+      "title": "ピラミッド 模式図",
+      "desc": "Wiki「マップ位置 概略」準拠（全12フロア＋入口）",
+      "grid": [
+        [
+          null,
+          {
+            "name": "ピラミッド１２(頂上)",
+            "aliases": [
+              "ピラミッド１２"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          null
+        ],
+        [
+          {
+            "name": "ピラミッド９",
+            "aliases": [
+              "ピラミッド９"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "ピラミッド１１",
+            "aliases": [
+              "ピラミッド１１"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "ピラミッド１０",
+            "aliases": [
+              "ピラミッド１０"
+            ],
+            "entrance": false,
+            "note": ""
+          }
+        ],
+        [
+          {
+            "name": "ピラミッド８",
+            "aliases": [
+              "ピラミッド８"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "ピラミッド１",
+            "aliases": [
+              "ピラミッド１"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "ピラミッド７",
+            "aliases": [
+              "ピラミッド７"
+            ],
+            "entrance": false,
+            "note": ""
+          }
+        ],
+        [
+          {
+            "name": "ピラミッド５",
+            "aliases": [
+              "ピラミッド５"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "ピラミッド２",
+            "aliases": [
+              "ピラミッド２"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "ピラミッド４",
+            "aliases": [
+              "ピラミッド４"
+            ],
+            "entrance": false,
+            "note": ""
+          }
+        ],
+        [
+          {
+            "name": "ピラミッド６",
+            "aliases": [
+              "ピラミッド６"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "ピラミッド入口",
+            "aliases": [
+              "ピラミッド入口"
+            ],
+            "entrance": true,
+            "note": ""
+          },
+          {
+            "name": "ピラミッド３",
+            "aliases": [
+              "ピラミッド３"
+            ],
+            "entrance": false,
+            "note": ""
+          }
+        ]
+      ]
+    },
+    "荒廃の地(～ラキューオ)": {
+      "title": "荒廃の地(〜ラキューオ) 模式図",
+      "desc": "Wiki「マップ位置 概略」準拠",
+      "grid": [
+        [
+          {
+            "name": "ピラミッド入口へ",
+            "aliases": [
+              "ピラミッド入口"
+            ],
+            "entrance": true,
+            "note": ""
+          },
+          {
+            "name": "荒廃の地４",
+            "aliases": [
+              "荒廃の地４"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "モイロロト村へ",
+            "aliases": [
+              "モイロロト村"
+            ],
+            "entrance": true,
+            "note": ""
+          }
+        ],
+        [
+          {
+            "name": "荒廃の地６",
+            "aliases": [
+              "荒廃の地６"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "ラキューオ入口へ",
+            "aliases": [
+              "ラキューオ入口"
+            ],
+            "entrance": true,
+            "note": ""
+          },
+          {
+            "name": "ずんどこ穴(3段目)",
+            "aliases": [
+              "ずんどこ穴(3段目)"
+            ],
+            "entrance": false,
+            "note": ""
+          }
+        ]
+      ]
+    },
+    "ラキューオ": {
+      "title": "ラキューオ村 模式図",
+      "desc": "Wiki「マップ位置 概略」準拠",
+      "grid": [
+        [
+          {
+            "name": "ラキューオ１",
+            "aliases": [
+              "ラキューオ１"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "ラキューオ２",
+            "aliases": [
+              "ラキューオ２"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "ラキューオ３",
+            "aliases": [
+              "ラキューオ３"
+            ],
+            "entrance": false,
+            "note": ""
+          }
+        ],
+        [
+          {
+            "name": "ラキューオ４",
+            "aliases": [
+              "ラキューオ４"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "ラキューオ５",
+            "aliases": [
+              "ラキューオ５"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "ラキューオ６",
+            "aliases": [
+              "ラキューオ６"
+            ],
+            "entrance": false,
+            "note": ""
+          }
+        ]
+      ]
+    },
+    "死の回廊": {
+      "title": "死の回廊 模式図",
+      "desc": "Wiki「マップ位置 概略」準拠",
+      "grid": [
+        [
+          {
+            "name": "死の回廊入口",
+            "aliases": [
+              "死の回廊入口"
+            ],
+            "entrance": true,
+            "note": ""
+          },
+          {
+            "name": "死の回廊１",
+            "aliases": [
+              "死の回廊１"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "死の回廊３",
+            "aliases": [
+              "死の回廊３"
+            ],
+            "entrance": false,
+            "note": ""
+          }
+        ],
+        [
+          null,
+          {
+            "name": "死の回廊２",
+            "aliases": [
+              "死の回廊２"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "死の回廊出口",
+            "aliases": [
+              "死の回廊出口"
+            ],
+            "entrance": true,
+            "note": ""
+          }
+        ]
+      ]
+    },
+    "暗闇の地": {
+      "title": "暗闇の地 模式図",
+      "desc": "Wiki「マップ位置 概略」準拠",
+      "grid": [
+        [
+          {
+            "name": "死の回廊・出口",
+            "aliases": [
+              "死の回廊・出口"
+            ],
+            "entrance": true,
+            "note": ""
+          },
+          {
+            "name": "暗闇の地１",
+            "aliases": [
+              "暗闇の地１"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "暗闇の地２",
+            "aliases": [
+              "暗闇の地２"
+            ],
+            "entrance": false,
+            "note": ""
+          }
+        ],
+        [
+          null,
+          {
+            "name": "暗闇の地３",
+            "aliases": [
+              "暗闇の地３"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "暗闇の地４",
+            "aliases": [
+              "暗闇の地４"
+            ],
+            "entrance": false,
+            "note": ""
+          }
+        ],
+        [
+          null,
+          null,
+          {
+            "name": "暗闇の地５(失意の沼へ)",
+            "aliases": [
+              "暗闇の地５"
+            ],
+            "entrance": true,
+            "note": ""
+          }
+        ]
+      ]
+    },
+    "失意の沼": {
+      "title": "失意の沼 模式図",
+      "desc": "Wiki「マップ位置 概略」準拠",
+      "grid": [
+        [
+          {
+            "name": "失意の沼３",
+            "aliases": [
+              "失意の沼３"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "失意の沼１",
+            "aliases": [
+              "失意の沼１"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "暗闇の地５へ",
+            "aliases": [
+              "暗闇の地５"
+            ],
+            "entrance": true,
+            "note": ""
+          }
+        ],
+        [
+          {
+            "name": "失意の沼４",
+            "aliases": [
+              "失意の沼４"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "失意の沼２",
+            "aliases": [
+              "失意の沼２"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          null
+        ],
+        [
+          {
+            "name": "モギナスの口へ",
+            "aliases": [
+              "モギナスの口"
+            ],
+            "entrance": true,
+            "note": ""
+          },
+          null,
+          null
+        ]
+      ]
+    },
+    "モギナス魔窟": {
+      "title": "モギナス魔窟 模式図",
+      "desc": "Wiki「マップ位置 概略」準拠（全15フロア）",
+      "grid": [
+        [
+          {
+            "name": "モギナス魔窟４",
+            "aliases": [
+              "モギナス魔窟４"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "モギナス魔窟５",
+            "aliases": [
+              "モギナス魔窟５"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          null,
+          {
+            "name": "モギナスの口",
+            "aliases": [
+              "モギナスの口"
+            ],
+            "entrance": true,
+            "note": ""
+          }
+        ],
+        [
+          {
+            "name": "モギナス魔窟３",
+            "aliases": [
+              "モギナス魔窟３"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "モギナス魔窟２",
+            "aliases": [
+              "モギナス魔窟２"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "モギナス魔窟１",
+            "aliases": [
+              "モギナス魔窟１"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "モギナス魔窟６",
+            "aliases": [
+              "モギナス魔窟６"
+            ],
+            "entrance": false,
+            "note": ""
+          }
+        ],
+        [
+          {
+            "name": "モギナス魔窟８",
+            "aliases": [
+              "モギナス魔窟８"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "モギナス魔窟７",
+            "aliases": [
+              "モギナス魔窟７"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "モギナス魔窟９",
+            "aliases": [
+              "モギナス魔窟９"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          null
+        ],
+        [
+          {
+            "name": "モギナス魔窟１１",
+            "aliases": [
+              "モギナス魔窟１１"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "モギナス魔窟１０",
+            "aliases": [
+              "モギナス魔窟１０"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "モギナス魔窟１２",
+            "aliases": [
+              "モギナス魔窟１２"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "モギナス魔窟１３",
+            "aliases": [
+              "モギナス魔窟１３"
+            ],
+            "entrance": false,
+            "note": ""
+          }
+        ],
+        [
+          null,
+          {
+            "name": "モギナス魔窟１４",
+            "aliases": [
+              "モギナス魔窟１４"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "モギナス魔窟１５",
+            "aliases": [
+              "モギナス魔窟１５"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          null
+        ]
+      ]
+    },
+    "シサバレイ": {
+      "title": "シサバレイ 模式図",
+      "desc": "クリア後裏ダンジョン（全10フロア）",
+      "grid": [
+        [
+          {
+            "name": "シサバレイ１",
+            "aliases": [
+              "シサバレイ１"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "シサバレイ２",
+            "aliases": [
+              "シサバレイ２"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "シサバレイ３",
+            "aliases": [
+              "シサバレイ３"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "シサバレイ４",
+            "aliases": [
+              "シサバレイ４"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "シサバレイ５",
+            "aliases": [
+              "シサバレイ５"
+            ],
+            "entrance": false,
+            "note": ""
+          }
+        ],
+        [
+          {
+            "name": "シサバレイ６",
+            "aliases": [
+              "シサバレイ６"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "シサバレイ７",
+            "aliases": [
+              "シサバレイ７"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "シサバレイ８",
+            "aliases": [
+              "シサバレイ８"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "シサバレイ９",
+            "aliases": [
+              "シサバレイ９"
+            ],
+            "entrance": false,
+            "note": ""
+          },
+          {
+            "name": "シサバレイ１０",
+            "aliases": [
+              "シサバレイ１０"
+            ],
+            "entrance": false,
+            "note": ""
+          }
+        ]
+      ]
+    }
+  }
+}

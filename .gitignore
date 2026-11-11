@@ -11,7 +11,8 @@ wiki_cache/
 
 # Ignore py in root only
 /*.py
-test_*.js
+/test_*.js
+!tools/test_*.js
 
 # System generated logs
 .system_generated/
