@@ -11,6 +11,14 @@
   const STORAGE_KEY_RECORDS = 'magivaca_records_v1';
   const STORAGE_KEY_CHESTS = 'magivaca_chest_checklist_v1';
 
+  // Helper: 全角数字を半角数字に変換して正規化する共通関数
+  function normalizeMapName(str) {
+    if (str === null || str === undefined) return '';
+    return String(str)
+      .replace(/[０-９]/g, s => String.fromCharCode(s.charCodeAt(0) - 0xFEE0))
+      .trim();
+  }
+
   // State: Checklists
   let checkedSpirits = new Set();
   let checkedMagicNotes = new Set();
@@ -223,7 +231,9 @@ let collapsedMaps = new Set();
       if (chestOnlyStar && !c.type.includes('宝箱*')) return false;
       if (chestSearchQuery) {
         const q = chestSearchQuery.toLowerCase();
-        const mMap = c.mapName.toLowerCase().includes(q);
+        const normQ = normalizeMapName(q).toLowerCase();
+        const normMap = normalizeMapName(c.mapName).toLowerCase();
+        const mMap = normMap.includes(normQ) || c.mapName.toLowerCase().includes(q);
         const mArea = c.area.toLowerCase().includes(q);
         const mItem = c.item.toLowerCase().includes(q);
         const mNote = c.note.toLowerCase().includes(q);
@@ -1636,7 +1646,17 @@ let collapsedMaps = new Set();
         const node = grid[r][c];
         if (!node) continue;
         const matched = areaChests.filter(ch => {
-          return node.aliases.some(a => a === ch.mapName || ch.mapName.includes(a) || a.includes(ch.mapName));
+          if (!ch.mapName) return false;
+          const normCh = normalizeMapName(ch.mapName);
+          const normNode = normalizeMapName(node.name);
+          if (normCh === normNode || ch.mapName === node.name) return true;
+          if (node.aliases && Array.isArray(node.aliases)) {
+            return node.aliases.some(a => {
+              const normA = normalizeMapName(a);
+              return a === ch.mapName || normA === normCh || ch.mapName.includes(a) || a.includes(ch.mapName) || normCh.includes(normA) || normA.includes(normCh);
+            });
+          }
+          return false;
         });
         const opened = matched.filter(ch => checkedChests.has(ch.id)).length;
         nodeStats[node.name] = { total: matched.length, opened: opened };
@@ -1756,8 +1776,8 @@ let collapsedMaps = new Set();
 
   // Garam Masala Dynamic Floor Schematic Generator (100% Original SVG)
   function renderGaramFloorSvg(floor, floorChests, checkedChests) {
-    const isTreasureFloor = (floor % 3 === 1);
     const totalChests = floorChests.length;
+    const isTreasureFloor = (totalChests > 0);
     const openedChests = floorChests.filter(c => checkedChests.has(c.id)).length;
     const allOpened = (totalChests > 0 && openedChests === totalChests);
 
@@ -1767,7 +1787,7 @@ let collapsedMaps = new Set();
     let statusBg = isTreasureFloor ? (allOpened ? '#dcfce7' : '#fef3c7') : '#f1f5f9';
     let statusStroke = isTreasureFloor ? (allOpened ? '#10b981' : '#f59e0b') : '#cbd5e1';
     let statusTextColor = isTreasureFloor ? (allOpened ? '#15803d' : '#b45309') : '#64748b';
-    let statusText = isTreasureFloor ? (allOpened ? '✅ 宝箱 3/3個 開封済' : `🎁 宝箱 ${openedChests}/3個`) : '🛡️ 通路フロア（宝箱なし）';
+    let statusText = isTreasureFloor ? (allOpened ? `✅ 宝箱 ${totalChests}/${totalChests}個 開封済` : `🎁 宝箱 ${openedChests}/${totalChests}個`) : '🛡️ 通路フロア（宝箱なし）';
 
     let svg = `<svg class="area-schematic-svg" viewBox="0 0 ${width} ${height}" width="${width}" height="${height}" xmlns="http://www.w3.org/2000/svg">`;
     svg += `<defs>
@@ -1793,7 +1813,7 @@ let collapsedMaps = new Set();
     svg += `<rect x="136" y="46" width="88" height="82" rx="6" fill="${centerFill}" stroke="${centerStroke}" stroke-width="1.8" filter="url(#shadow-garam)"/>`;
     svg += `<text x="180" y="70" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">${isTreasureFloor ? '宝箱フロア' : '連絡通路'}</text>`;
     if (isTreasureFloor) {
-      svg += `<text x="180" y="88" font-size="9.5" font-weight="bold" fill="#b45309" text-anchor="middle">🎁 宝箱 3個</text>`;
+      svg += `<text x="180" y="88" font-size="9.5" font-weight="bold" fill="#b45309" text-anchor="middle">🎁 宝箱 ${totalChests}個</text>`;
       svg += `<text x="180" y="106" font-size="8.5" fill="#64748b" text-anchor="middle">モンスター警戒</text>`;
     } else {
       svg += `<text x="180" y="92" font-size="9" fill="#64748b" text-anchor="middle">通常フロア</text>`;
@@ -1824,14 +1844,15 @@ let collapsedMaps = new Set();
     if (areaName === 'ガラムマサラ') {
       const floorStr = String(garamSelectedFloor);
       const floorTargetName = 'ガラムマサラ' + floorStr;
-      const floorChests = allChestsInArea.filter(c => c.mapName === floorTargetName);
+      const floorChests = allChestsInArea.filter(c => normalizeMapName(c.mapName) === floorTargetName);
       const floorOpened = floorChests.filter(c => checkedChests.has(c.id)).length;
 
       let floorOptions = '';
       for (let f = 1; f <= 50; f++) {
-        const fc = allChestsInArea.filter(c => c.mapName === 'ガラムマサラ' + f);
+        const targetFloorName = 'ガラムマサラ' + f;
+        const fc = allChestsInArea.filter(c => normalizeMapName(c.mapName) === targetFloorName);
         const fo = fc.filter(c => checkedChests.has(c.id)).length;
-        const statusLabel = fc.length === 0 ? '(宝箱なし)' : (fo === fc.length ? '(3/3個済)' : `(${fo}/${fc.length}個)`);
+        const statusLabel = fc.length === 0 ? '(宝箱なし)' : (fo === fc.length ? `(${fo}/${fc.length}個済)` : `(${fo}/${fc.length}個)`);
         floorOptions += `<option value="${f}" ${f === garamSelectedFloor ? 'selected' : ''}>${f}F ${statusLabel}</option>`;
       }
 
@@ -2192,7 +2213,7 @@ let collapsedMaps = new Set();
         let displayedChests = areaChests;
         if (areaName === 'ガラムマサラ' && garamViewMode === 'floor' && !chestSearchQuery) {
           const targetFloor = 'ガラムマサラ' + garamSelectedFloor;
-          displayedChests = areaChests.filter(c => c.mapName === targetFloor);
+          displayedChests = areaChests.filter(c => normalizeMapName(c.mapName) === targetFloor);
         }
         if (displayedChests.length === 0) {
           html += `
