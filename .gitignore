@@ -15,3 +15,5 @@ test_*.js
 
 # System generated logs
 .system_generated/
+__pycache__/
+*.pyc

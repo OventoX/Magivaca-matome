@@ -12,7 +12,7 @@ def test_tab_layout():
     tabs = soup.select(".nav-tabs-wrapper .tab-btn")
 
     print(f"Total tabs found: {len(tabs)}")
-    assert len(tabs) == 11, f"Expected 11 tabs, got {len(tabs)}"
+    assert len(tabs) == 12, f"Expected 12 tabs, got {len(tabs)}"
 
     # 375px viewport parameters
     viewport_width = 375
