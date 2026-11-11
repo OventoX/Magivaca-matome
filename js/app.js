@@ -169,6 +169,11 @@ let collapsedMaps = new Set();
   let itemSearchQuery = '';
   let lookupQuery = '';
 
+  // State: Monsters Tab
+  let monsterSearchQuery = '';
+  let monsterSelectedElement = 'all';
+  let monsterTypeFilter = 'all'; // 'all' | 'regular' | 'boss'
+
   // State: Story Tab
   let storyPlane = 'all';
 
@@ -1170,21 +1175,106 @@ let collapsedMaps = new Set();
   }
 
   // ==========================================================================
-  // Tab: Monsters & Drop Rates (Phase 5 - Priority 1)
+  // Tab: Monsters & Drop Rates (Phase 5 & 9 - Monster Encyclopedia)
   // ==========================================================================
   function renderMonstersTab() {
     const container = document.getElementById('monsters-tab-content');
     if (!container) return;
 
+    // Build unified monster dataset (Regular 288 + Boss 13 = 301 total)
+    const allMonsters = [];
+    if (typeof REGULAR_MONSTERS_DATA !== 'undefined' && Array.isArray(REGULAR_MONSTERS_DATA)) {
+      REGULAR_MONSTERS_DATA.forEach(m => {
+        allMonsters.push({
+          id: m.id || `mon_${m.number}`,
+          number: m.number,
+          name: m.name,
+          level: m.level,
+          element: m.element,
+          locations: m.locations || [],
+          size: m.size || '',
+          description: m.description || '',
+          url: m.url || 'https://wikiwiki.jp/magivaca/MonsterList',
+          isBoss: false
+        });
+      });
+    }
+
+    if (typeof BOSS_MONSTERS_DATA !== 'undefined' && Array.isArray(BOSS_MONSTERS_DATA)) {
+      BOSS_MONSTERS_DATA.forEach((b, idx) => {
+        allMonsters.push({
+          id: `boss_${idx + 1}`,
+          number: 'BOSS',
+          name: b.name,
+          level: b.level,
+          element: b.element,
+          locations: [{ location: b.location, rate: b.rate }],
+          size: '-',
+          description: 'ボス・イベント戦闘モンスター（ゲーム内図鑑非掲載）',
+          url: 'https://wikiwiki.jp/magivaca/MonsterList#boss',
+          isBoss: true
+        });
+      });
+    }
+
+    // Filter by type, element, and query
+    const filtered = allMonsters.filter(m => {
+      if (monsterTypeFilter === 'regular' && m.isBoss) return false;
+      if (monsterTypeFilter === 'boss' && !m.isBoss) return false;
+
+      if (monsterSelectedElement !== 'all' && m.element !== monsterSelectedElement) return false;
+
+      if (monsterSearchQuery) {
+        const q = normalizeMapName(monsterSearchQuery).toLowerCase();
+        const normName = normalizeMapName(m.name).toLowerCase();
+        const normNum = normalizeMapName(m.number).toLowerCase();
+        const matchName = normName.includes(q);
+        const matchNum = normNum.includes(q);
+        const matchLoc = m.locations.some(l => normalizeMapName(l.location).toLowerCase().includes(q));
+        const matchElem = m.element.toLowerCase().includes(q);
+        if (!matchName && !matchNum && !matchLoc && !matchElem) return false;
+      }
+
+      return true;
+    });
+
+    const regularCount = allMonsters.filter(m => !m.isBoss).length;
+    const bossCount = allMonsters.filter(m => m.isBoss).length;
+
+    // Elements list
+    const elementList = ['火', '風', '毒', '美', '刃', '音', '石', '虫', '木', '獣', '水', '雷', '古', '闇', '光', '愛'];
+
+    // Helper: Find drops from ITEM_DROP_INDEX based on monster location maps
+    function getMonsterDrops(m) {
+      if (typeof ITEM_DROP_INDEX === 'undefined') return [];
+      const drops = new Set();
+      for (const loc of m.locations) {
+        const normLoc = normalizeMapName(loc.location);
+        for (const [itemName, dropList] of Object.entries(ITEM_DROP_INDEX)) {
+          for (const d of dropList) {
+            const normMap = normalizeMapName(d.map);
+            if (normMap === normLoc || normLoc.includes(normMap) || normMap.includes(normLoc)) {
+              drops.add(itemName);
+              if (drops.size >= 4) break;
+            }
+          }
+          if (drops.size >= 4) break;
+        }
+        if (drops.size >= 4) break;
+      }
+      return Array.from(drops);
+    }
+
     container.innerHTML = `
       <div class="guide-section">
-        <h2>👾 モンスター図鑑 ＆ ドロップ確率一覧</h2>
-        <p style="font-size:0.92rem; color:var(--text-secondary); margin-bottom:16px;">
-          ゲーム内の図鑑機能およびWikiで解析されたモンスターデータ・ドロップ仕様のまとめです。
+        <h2>👾 モンスター図鑑 ＆ ボス一覧 (全${allMonsters.length}体)</h2>
+        <p style="font-size:0.92rem; color:var(--text-secondary); margin-bottom:14px;">
+          Wiki公式データに基づく通常モンスター全288種および図鑑非掲載ボス13体を完全網羅した総合図鑑です。<br>
+          各モンスターの属性・LV・出現場所・出現確率・公式プロフィール・生息地のドロップアイテム情報を掲載しています。
         </p>
 
         <!-- Warning Callout for Monster Completing -->
-        <div class="warning-callout" style="margin-bottom:20px;">
+        <div class="warning-callout" style="margin-bottom:18px;">
           <h3>⚠️ モンスター図鑑コンプリートの重大警告</h3>
           <p>
             ガラムマサラ（ずんどこ穴）50Fのボス#1<strong>「ディニレンドゥ」</strong>は、難易度「オニ」で文鳥を仲間にした時点で<strong>難易度に関わらず二度とフィールド上に出現しなくなります</strong>。<br>
@@ -1192,118 +1282,163 @@ let collapsedMaps = new Set();
           </p>
         </div>
 
-        <!-- Boss Monsters -->
-        <h3 style="font-size:1.05rem; color:var(--text-primary); margin-bottom:8px;">
-          👑 図鑑非掲載モンスター・ボス一覧 (${BOSS_MONSTERS_DATA.length}体)
-        </h3>
-        <p style="font-size:0.85rem; color:var(--text-secondary); margin-bottom:10px;">
-          ゲーム内のモンスター図鑑には番号が掲載されないボス格モンスターの一覧です。
-        </p>
-        <div class="data-table-container">
-          <table class="data-table">
-            <thead>
-              <tr>
-                <th>モンスター名</th>
-                <th>レベル</th>
-                <th>属性</th>
-                <th>出現場所</th>
-                <th>出現確率</th>
-              </tr>
-            </thead>
-            <tbody>
-              ${BOSS_MONSTERS_DATA.map(b => `
-                <tr>
-                  <td><strong>${escapeHtml(b.name)}</strong></td>
-                  <td>LV ${escapeHtml(b.level)}</td>
-                  <td><span class="badge badge-plane">${escapeHtml(b.element)}</span></td>
-                  <td>${escapeHtml(b.location)}</td>
-                  <td>${escapeHtml(b.rate)}</td>
-                </tr>
-              `).join('')}
-            </tbody>
-          </table>
+        <!-- Filter Controls -->
+        <div style="background:#f8fafc; border:1px solid var(--border-light); border-radius:var(--radius-sm); padding:14px; margin-bottom:18px;">
+          <!-- Search box & Type Filter Row -->
+          <div style="display:flex; flex-wrap:wrap; gap:10px; align-items:center; margin-bottom:12px;">
+            <div style="flex:1; min-width:240px;">
+              <input type="text" id="monster-search-input" value="${escapeHtml(monsterSearchQuery)}" placeholder="🔍 モンスター名・番号・出現場所で検索..." class="input-text" style="width:100%; padding:8px 12px; font-size:0.95rem; border:1px solid var(--border-light); border-radius:6px;">
+            </div>
+            <div style="display:flex; gap:6px;">
+              <button type="button" class="filter-btn monster-type-btn ${monsterTypeFilter === 'all' ? 'active' : ''}" data-type="all">すべて (${allMonsters.length})</button>
+              <button type="button" class="filter-btn monster-type-btn ${monsterTypeFilter === 'regular' ? 'active' : ''}" data-type="regular">通常 (${regularCount})</button>
+              <button type="button" class="filter-btn monster-type-btn ${monsterTypeFilter === 'boss' ? 'active' : ''}" data-type="boss">👑 ボス (${bossCount})</button>
+            </div>
+          </div>
+
+          <!-- Element Chips Row -->
+          <div style="display:flex; flex-wrap:wrap; gap:6px; align-items:center;">
+            <span style="font-size:0.85rem; font-weight:600; color:var(--text-secondary); margin-right:4px;">属性:</span>
+            <button type="button" class="chip-btn monster-elem-btn ${monsterSelectedElement === 'all' ? 'active' : ''}" data-elem="all">すべて</button>
+            ${elementList.map(el => `
+              <button type="button" class="chip-btn monster-elem-btn ${monsterSelectedElement === el ? 'active' : ''}" data-elem="${el}">${el}</button>
+            `).join('')}
+          </div>
+
+          <!-- Stats & Clear -->
+          <div style="margin-top:10px; font-size:0.85rem; color:var(--text-secondary); display:flex; justify-content:space-between; align-items:center;">
+            <div>該当: <strong>${filtered.length}</strong> / ${allMonsters.length} 体</div>
+            ${(monsterSearchQuery || monsterSelectedElement !== 'all' || monsterTypeFilter !== 'all') ? `
+              <button type="button" id="monster-reset-btn" style="background:none; border:none; color:var(--primary-color); font-size:0.82rem; cursor:pointer; text-decoration:underline;">フィルタ解除</button>
+            ` : ''}
+          </div>
         </div>
 
-        <!-- Monster Encyclopedia Links -->
-        <h3 style="font-size:1.05rem; color:var(--text-primary); margin-top:24px; margin-bottom:8px;">
-          📚 モンスター図鑑（全288種）属性別Wikiインデックス
-        </h3>
-        <p style="font-size:0.85rem; color:var(--text-secondary); margin-bottom:12px;">
-          詳細なステータス・獲得経験値・使用魔法・出現PT編成は各Wikiページでご確認いただけます。
-        </p>
-        <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(200px, 1fr)); gap:10px; margin-bottom:24px;">
-          <a class="filter-card" href="https://wikiwiki.jp/magivaca/MonsterList/01" target="_blank" rel="noopener noreferrer" style="text-decoration:none; padding:10px 14px;">
-            <strong>🔥 001～014 (火)</strong> ↗
-          </a>
-          <a class="filter-card" href="https://wikiwiki.jp/magivaca/MonsterList/02" target="_blank" rel="noopener noreferrer" style="text-decoration:none; padding:10px 14px;">
-            <strong>🌪️ 015～028 (風)</strong> ↗
-          </a>
-          <a class="filter-card" href="https://wikiwiki.jp/magivaca/MonsterList/03" target="_blank" rel="noopener noreferrer" style="text-decoration:none; padding:10px 14px;">
-            <strong>☠️ 029～042 (毒)</strong> ↗
-          </a>
-          <a class="filter-card" href="https://wikiwiki.jp/magivaca/MonsterList/04" target="_blank" rel="noopener noreferrer" style="text-decoration:none; padding:10px 14px;">
-            <strong>💄 043～056 (美)</strong> ↗
-          </a>
-          <a class="filter-card" href="https://wikiwiki.jp/magivaca/MonsterList/05" target="_blank" rel="noopener noreferrer" style="text-decoration:none; padding:10px 14px;">
-            <strong>⚔️ 057～070 (刃)</strong> ↗
-          </a>
-          <a class="filter-card" href="https://wikiwiki.jp/magivaca/MonsterList/06" target="_blank" rel="noopener noreferrer" style="text-decoration:none; padding:10px 14px;">
-            <strong>🔔 071～084 (音)</strong> ↗
-          </a>
-          <a class="filter-card" href="https://wikiwiki.jp/magivaca/MonsterList/07" target="_blank" rel="noopener noreferrer" style="text-decoration:none; padding:10px 14px;">
-            <strong>🪨 085～098 (石)</strong> ↗
-          </a>
-          <a class="filter-card" href="https://wikiwiki.jp/magivaca/MonsterList/08" target="_blank" rel="noopener noreferrer" style="text-decoration:none; padding:10px 14px;">
-            <strong>🐛 099～112 (虫)</strong> ↗
-          </a>
-          <a class="filter-card" href="https://wikiwiki.jp/magivaca/MonsterList/09" target="_blank" rel="noopener noreferrer" style="text-decoration:none; padding:10px 14px;">
-            <strong>🌲 113～126 (木)</strong> ↗
-          </a>
-          <a class="filter-card" href="https://wikiwiki.jp/magivaca/MonsterList/10" target="_blank" rel="noopener noreferrer" style="text-decoration:none; padding:10px 14px;">
-            <strong>🐺 127～140 (獣)</strong> ↗
-          </a>
-          <a class="filter-card" href="https://wikiwiki.jp/magivaca/MonsterList/11" target="_blank" rel="noopener noreferrer" style="text-decoration:none; padding:10px 14px;">
-            <strong>💧 141～154 (水)</strong> ↗
-          </a>
-          <a class="filter-card" href="https://wikiwiki.jp/magivaca/MonsterList/12" target="_blank" rel="noopener noreferrer" style="text-decoration:none; padding:10px 14px;">
-            <strong>⚡ 155～168 (雷)</strong> ↗
-          </a>
-          <a class="filter-card" href="https://wikiwiki.jp/magivaca/MonsterList/13" target="_blank" rel="noopener noreferrer" style="text-decoration:none; padding:10px 14px;">
-            <strong>🏺 169～183 (古)</strong> ↗
-          </a>
-          <a class="filter-card" href="https://wikiwiki.jp/magivaca/MonsterList/14" target="_blank" rel="noopener noreferrer" style="text-decoration:none; padding:10px 14px;">
-            <strong>🌑 184～220 (闇)</strong> ↗
-          </a>
-          <a class="filter-card" href="https://wikiwiki.jp/magivaca/MonsterList/15" target="_blank" rel="noopener noreferrer" style="text-decoration:none; padding:10px 14px;">
-            <strong>✨ 221～230 (光)</strong> ↗
-          </a>
-          <a class="filter-card" href="https://wikiwiki.jp/magivaca/MonsterList/16" target="_blank" rel="noopener noreferrer" style="text-decoration:none; padding:10px 14px;">
-            <strong>💖 231～240 (愛)</strong> ↗
-          </a>
-          <a class="filter-card" href="https://wikiwiki.jp/magivaca/MonsterList/17" target="_blank" rel="noopener noreferrer" style="text-decoration:none; padding:10px 14px;">
-            <strong>❓ 241～288 (その他)</strong> ↗
-          </a>
-          <a class="filter-card" href="https://wikiwiki.jp/magivaca/%E7%A8%AE%E6%97%8F%E5%9B%B3%E9%91%91" target="_blank" rel="noopener noreferrer" style="text-decoration:none; padding:10px 14px;">
-            <strong>📖 種族図鑑（全22種）</strong> ↗
-          </a>
+        <!-- Monster Cards Grid -->
+        <div id="monsters-list-container" class="monsters-grid">
+          ${filtered.length === 0 ? `
+            <div style="grid-column: 1 / -1; text-align:center; padding:30px; color:var(--text-secondary);">
+              条件に一致するモンスターが見つかりませんでした。
+            </div>
+          ` : filtered.map(m => {
+            const drops = getMonsterDrops(m);
+            return `
+              <div class="monster-card ${m.isBoss ? 'is-boss' : ''}" id="${m.id}">
+                <!-- Header -->
+                <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+                  <div style="display:flex; align-items:center; gap:6px; flex-wrap:wrap;">
+                    <span class="badge ${m.isBoss ? 'badge-boss' : 'badge-num'}">${m.isBoss ? '👑 BOSS' : `#${m.number}`}</span>
+                    <span class="badge badge-plane">${escapeHtml(m.element)}</span>
+                    <strong style="font-size:1.05rem; color:var(--text-primary);">${escapeHtml(m.name)}</strong>
+                  </div>
+                  <div style="font-size:0.85rem; font-weight:600; color:var(--text-secondary); white-space:nowrap;">
+                    LV ${escapeHtml(m.level)}
+                  </div>
+                </div>
+
+                <!-- Locations & Encounter Rates -->
+                <div style="margin-top:4px;">
+                  <div style="font-size:0.8rem; font-weight:600; color:var(--text-secondary); margin-bottom:2px;">📍 出現場所:</div>
+                  <div>
+                    ${m.locations.map(l => `
+                      <span class="monster-loc-tag">
+                        ${escapeHtml(l.location)} <strong style="color:var(--text-primary);">${escapeHtml(l.rate)}%</strong>
+                      </span>
+                    `).join('')}
+                  </div>
+                </div>
+
+                <!-- Drop Items (Integrated from ITEM_DROP_INDEX) -->
+                ${drops.length > 0 ? `
+                  <div class="monster-drops-box">
+                    🎁 ドロップ候補: <strong>${drops.map(escapeHtml).join('、')}</strong>
+                  </div>
+                ` : ''}
+
+                <!-- Size & Profile Description -->
+                ${(m.size || m.description) ? `
+                  <div class="monster-desc-box">
+                    ${m.size && m.size !== '-' ? `<div style="font-size:0.78rem; color:#64748b; margin-bottom:2px;">📏 ${escapeHtml(m.size)}</div>` : ''}
+                    <div>${escapeHtml(m.description)}</div>
+                  </div>
+                ` : ''}
+
+                <!-- Footer Source Link -->
+                <div style="margin-top:auto; padding-top:6px; font-size:0.8rem; text-align:right;">
+                  <a href="${escapeHtml(m.url)}" target="_blank" rel="noopener noreferrer" style="color:var(--primary-color); text-decoration:none;">
+                    📖 Wiki図鑑ページ ↗
+                  </a>
+                </div>
+              </div>
+            `;
+          }).join('')}
         </div>
 
-        <!-- Drop Specification Explanation -->
-        <h3 style="font-size:1.05rem; color:var(--text-primary); margin-top:20px; margin-bottom:8px;">
-          📊 ドロップ確率と「期待値」の仕様
-        </h3>
-        <p style="font-size:0.85rem; color:var(--text-secondary); line-height:1.6;">
-          マジカルバケーションでは、1回の戦闘で同じアイテムを2個以上ドロップすることがあります。<br>
-          例えば「森の洞窟でのカエルグミ緑」の場合、入手個数0個が76.51%、1個が21.69%、2個が1.76%、3個が0.04%となっており、戦闘100回あたりの平均入手期待値は <strong>25.33個</strong> となります。<br>
-          （アイテム逆引き検索では、ドロップ率またはこの期待値が表示されます）
-        </p>
+        <!-- Specifications & Wiki Links Accordion -->
+        <div style="margin-top:24px; padding-top:16px; border-top:1px solid var(--border-light);">
+          <details style="background:#f8fafc; border:1px solid var(--border-light); border-radius:var(--radius-sm); padding:12px 16px;">
+            <summary style="font-weight:600; color:var(--text-primary); cursor:pointer;">
+              📊 ドロップ確率と「期待値」の仕様 ＆ 種族図鑑リンク
+            </summary>
+            <div style="font-size:0.88rem; color:var(--text-secondary); line-height:1.6; margin-top:10px;">
+              <p>
+                マジカルバケーションでは、1回の戦闘で同じアイテムを2個以上ドロップすることがあります。<br>
+                例えば「森の洞窟でのカエルグミ緑」の場合、入手個数0個が76.51%、1個が21.69%、2個が1.76%、3個が0.04%となっており、戦闘100回あたりの平均入手期待値は <strong>25.33個</strong> となります。
+              </p>
+              <div style="margin-top:12px;">
+                <a class="btn-ext-link" href="https://wikiwiki.jp/magivaca/%E7%A8%AE%E6%97%8F%E5%9B%B3%E9%91%91" target="_blank" rel="noopener noreferrer">
+                  📖 Wiki種族図鑑（全22種）を見る ↗
+                </a>
+              </div>
+            </div>
+          </details>
+        </div>
 
-        <div style="font-size:0.8rem; color:var(--text-muted); margin-top:20px; text-align:right;">
-          出典: <a href="https://wikiwiki.jp/magivaca/MonsterList" target="_blank" rel="noopener noreferrer">モンスター図鑑</a> |
+        <div style="font-size:0.8rem; color:var(--text-muted); margin-top:16px; text-align:right;">
+          出典: <a href="https://wikiwiki.jp/magivaca/MonsterList" target="_blank" rel="noopener noreferrer">モンスター図鑑 (全288種)</a> |
           <a href="https://wikiwiki.jp/magivaca/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0%E3%83%89%E3%83%AD%E3%83%83%E3%83%97%E4%B8%80%E8%A6%A7" target="_blank" rel="noopener noreferrer">アイテムドロップ一覧</a>
         </div>
       </div>
     `;
+
+    // Event Handlers
+    const searchInput = document.getElementById('monster-search-input');
+    if (searchInput) {
+      searchInput.addEventListener('input', (e) => {
+        monsterSearchQuery = e.target.value;
+        renderMonstersTab();
+        // Restore focus
+        const el = document.getElementById('monster-search-input');
+        if (el) {
+          el.focus();
+          el.setSelectionRange(el.value.length, el.value.length);
+        }
+      });
+    }
+
+    container.querySelectorAll('.monster-type-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        monsterTypeFilter = btn.dataset.type;
+        renderMonstersTab();
+      });
+    });
+
+    container.querySelectorAll('.monster-elem-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        monsterSelectedElement = btn.dataset.elem;
+        renderMonstersTab();
+      });
+    });
+
+    const resetBtn = document.getElementById('monster-reset-btn');
+    if (resetBtn) {
+      resetBtn.addEventListener('click', () => {
+        monsterSearchQuery = '';
+        monsterSelectedElement = 'all';
+        monsterTypeFilter = 'all';
+        renderMonstersTab();
+      });
+    }
   }
 
   // ==========================================================================
@@ -3019,6 +3154,9 @@ let collapsedMaps = new Set();
     renderSystemTab();
     renderGuidesTab();
   }
+  window.updateUI = updateUI;
+  window.renderMonstersTab = renderMonstersTab;
+  window.renderStoryTab = renderStoryTab;
 
   // Escape HTML helper
   function escapeHtml(str) {

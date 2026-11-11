@@ -10529,6 +10529,6597 @@ const BOSS_MONSTERS_DATA = [
   }
 ];
 
+const REGULAR_MONSTERS_DATA = [
+  {
+    "id": "mon_001",
+    "number": "001",
+    "name": "ひふきコウモリ",
+    "level": "1",
+    "element": "火",
+    "locations": [
+      {
+        "location": "森の洞窟",
+        "rate": "38.50"
+      }
+    ],
+    "size": "68cm20kg",
+    "description": "火を吹くコウモリネズミ。動きはすばやいが弱い。やけどに注意。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/01",
+    "isBoss": false
+  },
+  {
+    "id": "mon_002",
+    "number": "002",
+    "name": "ボイリン",
+    "level": "3",
+    "element": "火",
+    "locations": [
+      {
+        "location": "レーミッツ宮殿(外)",
+        "rate": "25.65"
+      },
+      {
+        "location": "レーミッツ宮殿(内)",
+        "rate": "17.10"
+      }
+    ],
+    "size": "4cm～4kg～",
+    "description": "火のおばけの子供。魔法に関してはまだ未熟でからっきし使えない。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/01",
+    "isBoss": false
+  },
+  {
+    "id": "mon_003",
+    "number": "003",
+    "name": "ようがんレード",
+    "level": "7",
+    "element": "火",
+    "locations": [
+      {
+        "location": "～ピップルスタウン",
+        "rate": "24.95"
+      },
+      {
+        "location": "～ゲアラヴァ村",
+        "rate": "20.20"
+      }
+    ],
+    "size": "24cm～9kg～",
+    "description": "頭に「炎のきのこ」を育てる溶岩モンスター。溶岩のかたまりを投げる。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/01",
+    "isBoss": false
+  },
+  {
+    "id": "mon_004",
+    "number": "004",
+    "name": "チップマンク",
+    "level": "8",
+    "element": "火",
+    "locations": [
+      {
+        "location": "～ピップルスタウン",
+        "rate": "41.80"
+      },
+      {
+        "location": "～ゲアラヴァ村",
+        "rate": "23.50"
+      }
+    ],
+    "size": "42cm21kg",
+    "description": "熱い場所が大好きなリスネコの一種。気が強くすぐに襲いかかってくるので注意。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/01",
+    "isBoss": false
+  },
+  {
+    "id": "mon_005",
+    "number": "005",
+    "name": "モンブロースト",
+    "level": "13",
+    "element": "火",
+    "locations": [
+      {
+        "location": "～ゲアラヴァ村",
+        "rate": "27.00"
+      }
+    ],
+    "size": "32cm13kg",
+    "description": "炎につつまれたくり。イガグリハンマーでたたく。あまくないらしい。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/01",
+    "isBoss": false
+  },
+  {
+    "id": "mon_006",
+    "number": "006",
+    "name": "ヒクイジャッカル",
+    "level": "34",
+    "element": "火",
+    "locations": [
+      {
+        "location": "モルビエ火山",
+        "rate": "26.60"
+      },
+      {
+        "location": "キスニカ鉱山(9～12)",
+        "rate": "16.15"
+      }
+    ],
+    "size": "173cm78kg",
+    "description": "火を食べて生きるめずらしい双頭のジャッカル。毒を持っているので注意。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/01",
+    "isBoss": false
+  },
+  {
+    "id": "mon_007",
+    "number": "007",
+    "name": "エルファントム",
+    "level": "18",
+    "element": "火",
+    "locations": [
+      {
+        "location": "レヒカフ沼周辺#1",
+        "rate": "39.90"
+      },
+      {
+        "location": "謎の遺跡",
+        "rate": "44.65"
+      },
+      {
+        "location": "リギニオ密林(1～4)",
+        "rate": "32.30"
+      },
+      {
+        "location": "モルビエ火山",
+        "rate": "22.80"
+      }
+    ],
+    "size": "82cm97kg",
+    "description": "ゾウとガのモンスター。はなから火を吹く。プロレスが大好き。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/01",
+    "isBoss": false
+  },
+  {
+    "id": "mon_008",
+    "number": "008",
+    "name": "トロピコ",
+    "level": "19",
+    "element": "火",
+    "locations": [
+      {
+        "location": "レヒカフ沼周辺#1",
+        "rate": "42.75"
+      },
+      {
+        "location": "謎の遺跡",
+        "rate": "52.25"
+      },
+      {
+        "location": "リギニオ密林(1～4)",
+        "rate": "16.15"
+      },
+      {
+        "location": "モルビエ火山",
+        "rate": "1.90"
+      }
+    ],
+    "size": "137cm48kg",
+    "description": "口から火をはく炎の妖精の仲間。一本足で器用に攻撃してくる。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/01",
+    "isBoss": false
+  },
+  {
+    "id": "mon_009",
+    "number": "009",
+    "name": "ヒートチスパ",
+    "level": "35",
+    "element": "火",
+    "locations": [
+      {
+        "location": "モルビエ火山",
+        "rate": "32.30"
+      },
+      {
+        "location": "キスニカ鉱山(9～12)",
+        "rate": "23.75"
+      },
+      {
+        "location": "メルティキッス(イベント)",
+        "rate": "100"
+      }
+    ],
+    "size": "43cm7kg",
+    "description": "小動物「ちょび」を飼っている乱雲のおばけ。熱い風を噴出し攻撃する。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/01",
+    "isBoss": false
+  },
+  {
+    "id": "mon_010",
+    "number": "010",
+    "name": "フレイムレオ",
+    "level": "36",
+    "element": "火",
+    "locations": [
+      {
+        "location": "モルビエ火山",
+        "rate": "51.30"
+      },
+      {
+        "location": "キスニカ鉱山(9～12)",
+        "rate": "36.10"
+      }
+    ],
+    "size": "149cm74kg",
+    "description": "火をまとったライオン。鋭いきばと魔法で攻撃する。たてがみに気を使う一面も。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/01",
+    "isBoss": false
+  },
+  {
+    "id": "mon_011",
+    "number": "011",
+    "name": "トーチリザード",
+    "level": "150",
+    "element": "火",
+    "locations": [
+      {
+        "location": "ガラムマサラ(36～40)",
+        "rate": "19.00"
+      },
+      {
+        "location": "ガラムマサラ４０ボス",
+        "rate": "100"
+      }
+    ],
+    "size": "84cm57kg",
+    "description": "炎の袋をもつトカゲ。袋がふくらんだら要注意！くさい息と毒に注意。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/01",
+    "isBoss": false
+  },
+  {
+    "id": "mon_012",
+    "number": "012",
+    "name": "ウズルイーフ",
+    "level": "60",
+    "element": "火",
+    "locations": [
+      {
+        "location": "モギナス魔窟(1～8)",
+        "rate": "22.75"
+      },
+      {
+        "location": "ガラムマサラ(36～40)",
+        "rate": "33.25"
+      }
+    ],
+    "size": "118cm59kg",
+    "description": "サイクロプスの子供。頭がきれる種族で強力な魔法が使えるので注意。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/01",
+    "isBoss": false
+  },
+  {
+    "id": "mon_013",
+    "number": "013",
+    "name": "サラマンダー",
+    "level": "42",
+    "element": "火",
+    "locations": [
+      {
+        "location": "キスニカ鉱山(9～12)",
+        "rate": "60.10"
+      },
+      {
+        "location": "モギナス魔窟(1～8)",
+        "rate": "18.05"
+      },
+      {
+        "location": "ガラムマサラ(36～40)",
+        "rate": "19.00"
+      }
+    ],
+    "size": "135cm127kg",
+    "description": "ちょっと太ったドラゴン。大きなベロでなめまわす。力も強いので注意。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/01",
+    "isBoss": false
+  },
+  {
+    "id": "mon_014",
+    "number": "014",
+    "name": "イグニス",
+    "level": "150",
+    "element": "火",
+    "locations": [
+      {
+        "location": "ガラムマサラ(36～40)",
+        "rate": "36.10"
+      },
+      {
+        "location": "ガラムマサラ４０ボス",
+        "rate": "100"
+      }
+    ],
+    "size": "139cm27kg",
+    "description": "炎のブレスで攻撃する太ったドラゴン。速さを下げる効果を持つ。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/01",
+    "isBoss": false
+  },
+  {
+    "id": "mon_015",
+    "number": "015",
+    "name": "フライトード",
+    "level": "1",
+    "element": "風",
+    "locations": [
+      {
+        "location": "ミモレットの森",
+        "rate": "38.00"
+      },
+      {
+        "location": "森の洞窟",
+        "rate": "28.50"
+      },
+      {
+        "location": "ベナコンチャ遺跡#1",
+        "rate": "38.00"
+      },
+      {
+        "location": "ベナコンチャ遺跡#2",
+        "rate": "38.00"
+      },
+      {
+        "location": "レーミッツ宮殿(外)",
+        "rate": "2.85"
+      },
+      {
+        "location": "ガラムマサラ(1～5)",
+        "rate": "1.90"
+      }
+    ],
+    "size": "72cm17kg",
+    "description": "羽がはえた空飛ぶカエル。風をあやつり攻撃する。鋭いキバで血を吸う。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/02",
+    "isBoss": false
+  },
+  {
+    "id": "mon_016",
+    "number": "016",
+    "name": "かぜはちどり",
+    "level": "3",
+    "element": "風",
+    "locations": [
+      {
+        "location": "ベナコンチャ遺跡#1",
+        "rate": "28.50"
+      },
+      {
+        "location": "ベナコンチャ遺跡#2",
+        "rate": "34.20"
+      },
+      {
+        "location": "ガラムマサラ(1～5)",
+        "rate": "19.00"
+      },
+      {
+        "location": "スノウヘア(イベント)",
+        "rate": "100"
+      }
+    ],
+    "size": "34cm18kg",
+    "description": "魔法は使えないがしびれるくちばしを持っている。油断すると痛い目に。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/02",
+    "isBoss": false
+  },
+  {
+    "id": "mon_017",
+    "number": "017",
+    "name": "そよかぜこうもり",
+    "level": "23",
+    "element": "風",
+    "locations": [
+      {
+        "location": "クムヤムト砂漠",
+        "rate": "38.95"
+      },
+      {
+        "location": "ガラムマサラ(1～5)",
+        "rate": "9.50"
+      }
+    ],
+    "size": "17cm8kg",
+    "description": "とてもすばやいコウモリネズミの一種。風の精霊がついたとの噂。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/02",
+    "isBoss": false
+  },
+  {
+    "id": "mon_018",
+    "number": "018",
+    "name": "ブーメラン",
+    "level": "4",
+    "element": "風",
+    "locations": [
+      {
+        "location": "ベナコンチャ遺跡#1",
+        "rate": "6.90"
+      },
+      {
+        "location": "ベナコンチャ遺跡#2",
+        "rate": "14.50"
+      },
+      {
+        "location": "レーミッツ宮殿(内)",
+        "rate": "19.00"
+      },
+      {
+        "location": "ガラムマサラ(1～5)",
+        "rate": "4.75"
+      }
+    ],
+    "size": "92cm24kg",
+    "description": "ブーメランと風の魔法をあやつり攻撃してくる。趣味はヨーヨー。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/02",
+    "isBoss": false
+  },
+  {
+    "id": "mon_019",
+    "number": "019",
+    "name": "ウェザーコック",
+    "level": "70",
+    "element": "風",
+    "locations": [
+      {
+        "location": "モギナス魔窟(10,12～16)",
+        "rate": "23.75"
+      },
+      {
+        "location": "モギナス魔窟１１",
+        "rate": "27.55"
+      },
+      {
+        "location": "ガラムマサラ(1～5)",
+        "rate": "4.75"
+      }
+    ],
+    "size": "74cm22kg",
+    "description": "鳴き声がうるさいハロハロドリの仲間。魔法にも注意。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/02",
+    "isBoss": false
+  },
+  {
+    "id": "mon_020",
+    "number": "020",
+    "name": "ワポル",
+    "level": "24",
+    "element": "風",
+    "locations": [
+      {
+        "location": "クムヤムト砂漠",
+        "rate": "37.05"
+      },
+      {
+        "location": "ガラムマサラ(1～5)",
+        "rate": "14.25"
+      }
+    ],
+    "size": "65cm31kg",
+    "description": "鳥好きの植物モンスターに風の精霊がやどった。魔法防御力も高い。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/02",
+    "isBoss": false
+  },
+  {
+    "id": "mon_021",
+    "number": "021",
+    "name": "ドロセロ",
+    "level": "25",
+    "element": "風",
+    "locations": [
+      {
+        "location": "クムヤムト砂漠",
+        "rate": "41.80"
+      },
+      {
+        "location": "ガラムマサラ(1～5)",
+        "rate": "5.00"
+      }
+    ],
+    "size": "72cm37kg",
+    "description": "竜巻を起こすモンスター。ブーメランが得意で投げて攻撃してくる。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/02",
+    "isBoss": false
+  },
+  {
+    "id": "mon_022",
+    "number": "022",
+    "name": "ガランガル",
+    "level": "14",
+    "element": "風",
+    "locations": [
+      {
+        "location": "～ゲアラヴァ村",
+        "rate": "34.20"
+      },
+      {
+        "location": "ガラムマサラ(1～5)",
+        "rate": "14.25"
+      }
+    ],
+    "size": "83cm18kg",
+    "description": "タツマキで移動する風使い。かまで攻撃もしてくる。あたまがかわいい。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/02",
+    "isBoss": false
+  },
+  {
+    "id": "mon_023",
+    "number": "023",
+    "name": "ミストラル",
+    "level": "71",
+    "element": "風",
+    "locations": [
+      {
+        "location": "モギナス魔窟(10,12～16)",
+        "rate": "5.70"
+      },
+      {
+        "location": "モギナス魔窟１１",
+        "rate": "9.50"
+      },
+      {
+        "location": "ガラムマサラ(1～5)",
+        "rate": "9.50"
+      }
+    ],
+    "size": "74cm29kg",
+    "description": "強力な風を起こす雲の魔法使い。魔法も強力で魔法防御力も高い。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/02",
+    "isBoss": false
+  },
+  {
+    "id": "mon_024",
+    "number": "024",
+    "name": "プルイーチ",
+    "level": "14",
+    "element": "風",
+    "locations": [
+      {
+        "location": "クムヤムト砂漠",
+        "rate": "44.65"
+      },
+      {
+        "location": "ガラムマサラ(1～5)",
+        "rate": "1.25"
+      }
+    ],
+    "size": "19cm62kg",
+    "description": "小さくて重いふぐ。重い体でのたいあたりはしびれるので要注意。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/02",
+    "isBoss": false
+  },
+  {
+    "id": "mon_025",
+    "number": "025",
+    "name": "マンモスロデオ",
+    "level": "72",
+    "element": "風",
+    "locations": [
+      {
+        "location": "モギナス魔窟(10,12～16)",
+        "rate": "36.10"
+      },
+      {
+        "location": "モギナス魔窟１１",
+        "rate": "37.05"
+      },
+      {
+        "location": "ガラムマサラ(1～5)",
+        "rate": "1.90"
+      }
+    ],
+    "size": "54cm27kg",
+    "description": "羽のはえたマンモスに乗っている小さな騎士。魔法はからっきし。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/02",
+    "isBoss": false
+  },
+  {
+    "id": "mon_026",
+    "number": "026",
+    "name": "マンムーナイト",
+    "level": "80",
+    "element": "風",
+    "locations": [
+      {
+        "location": "ガラムマサラ(1～5)",
+        "rate": "38.60"
+      },
+      {
+        "location": "ガラムマサラ５ボス",
+        "rate": "100"
+      }
+    ],
+    "size": "27cm18kg",
+    "description": "マンムーに乗って襲撃するかわいらしい騎士。物理攻撃が強力。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/02",
+    "isBoss": false
+  },
+  {
+    "id": "mon_027",
+    "number": "027",
+    "name": "サイクロン",
+    "level": "73",
+    "element": "風",
+    "locations": [
+      {
+        "location": "モギナス魔窟(10,12～16)",
+        "rate": "19.00"
+      },
+      {
+        "location": "モギナス魔窟１１",
+        "rate": "19.00"
+      },
+      {
+        "location": "ガラムマサラ(1～5)",
+        "rate": "3.75"
+      }
+    ],
+    "size": "165cm68kg",
+    "description": "鋭いはねと背中のひれで敵を切りさく太ったドラゴン。足はあまり使わないとか。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/02",
+    "isBoss": false
+  },
+  {
+    "id": "mon_028",
+    "number": "028",
+    "name": "テンペスト",
+    "level": "80",
+    "element": "風",
+    "locations": [
+      {
+        "location": "ガラムマサラ(1～5)",
+        "rate": "24.25"
+      },
+      {
+        "location": "ガラムマサラ５ボス",
+        "rate": "100"
+      }
+    ],
+    "size": "184cm126kg",
+    "description": "大きな風のドラゴン。全ての能力が高いので注意が必要だ。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/02",
+    "isBoss": false
+  },
+  {
+    "id": "mon_029",
+    "number": "029",
+    "name": "ヒップシェル",
+    "level": "1",
+    "element": "毒",
+    "locations": [
+      {
+        "location": "森の洞窟",
+        "rate": "25.90"
+      }
+    ],
+    "size": "54cm17kg",
+    "description": "おしり型のキノコ。あまーいにおいで人をまどわす。でも、食べられない。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/03",
+    "isBoss": false
+  },
+  {
+    "id": "mon_030",
+    "number": "030",
+    "name": "ソルティーバター",
+    "level": "17",
+    "element": "毒",
+    "locations": [
+      {
+        "location": "レヒカフ沼周辺#1",
+        "rate": "6.65"
+      },
+      {
+        "location": "謎の遺跡",
+        "rate": "18.05"
+      },
+      {
+        "location": "東の森",
+        "rate": "5.70"
+      },
+      {
+        "location": "ガラムマサラ(16～20)",
+        "rate": "4.75"
+      }
+    ],
+    "size": "26cm47kg",
+    "description": "毒の沼からでてきたどろモンスター。毒を持ち防御力が高い。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/03",
+    "isBoss": false
+  },
+  {
+    "id": "mon_031",
+    "number": "031",
+    "name": "メルキュート",
+    "level": "10",
+    "element": "毒",
+    "locations": [
+      {
+        "location": "ラ・ロッシュの塔",
+        "rate": "35.15"
+      }
+    ],
+    "size": "14cm14kg",
+    "description": "毒の沼の近辺の植物から発散される水分が実体化した毒モンスター。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/03",
+    "isBoss": false
+  },
+  {
+    "id": "mon_032",
+    "number": "032",
+    "name": "ヒリヒリフンゴ",
+    "level": "27",
+    "element": "毒",
+    "locations": [
+      {
+        "location": "東の森",
+        "rate": "49.40"
+      },
+      {
+        "location": "ガラムマサラ(16～20)",
+        "rate": "4.75"
+      }
+    ],
+    "size": "57cm35kg",
+    "description": "力を下げる効果がある毒を持つモンスター。魔法は使えない。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/03",
+    "isBoss": false
+  },
+  {
+    "id": "mon_033",
+    "number": "033",
+    "name": "カビダンゴ",
+    "level": "18",
+    "element": "毒",
+    "locations": [
+      {
+        "location": "レヒカフ沼周辺#1",
+        "rate": "39.90"
+      },
+      {
+        "location": "謎の遺跡",
+        "rate": "47.50"
+      },
+      {
+        "location": "東の森",
+        "rate": "8.55"
+      },
+      {
+        "location": "ガラムマサラ(16～20)",
+        "rate": "1.90"
+      }
+    ],
+    "size": "67cm75kg",
+    "description": "その名のとおりカビが生えたダンゴのモンスター。胞子をふりまいて攻撃する。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/03",
+    "isBoss": false
+  },
+  {
+    "id": "mon_034",
+    "number": "034",
+    "name": "ほろにがバス",
+    "level": "19",
+    "element": "毒",
+    "locations": [
+      {
+        "location": "レヒカフ沼周辺#1",
+        "rate": "20.90"
+      },
+      {
+        "location": "レヒカフ沼周辺#2",
+        "rate": "6.65"
+      },
+      {
+        "location": "謎の遺跡",
+        "rate": "30.40"
+      },
+      {
+        "location": "ジェラ風穴",
+        "rate": "16.15"
+      },
+      {
+        "location": "ガラムマサラ(16～20)",
+        "rate": "1.90"
+      }
+    ],
+    "size": "26cm16kg",
+    "description": "空中をおよいでいるバス。魔法が得意で魔法で攻撃してくる。魔法防御も高い。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/03",
+    "isBoss": false
+  },
+  {
+    "id": "mon_035",
+    "number": "035",
+    "name": "ベルゼブー",
+    "level": "28",
+    "element": "毒",
+    "locations": [
+      {
+        "location": "東の森",
+        "rate": "32.30"
+      },
+      {
+        "location": "ガラムマサラ(16～20)",
+        "rate": "9.50"
+      }
+    ],
+    "size": "26cm14kg",
+    "description": "毒を持った大きめのハエ。すばやさを下げる毒を持つ。見かけによらず魔法も得意。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/03",
+    "isBoss": false
+  },
+  {
+    "id": "mon_036",
+    "number": "036",
+    "name": "しびれフグ",
+    "level": "55",
+    "element": "毒",
+    "locations": [
+      {
+        "location": "暗闇の地,失意の沼",
+        "rate": "18.05"
+      },
+      {
+        "location": "モギナス魔窟(10,12～16)",
+        "rate": "17.10"
+      },
+      {
+        "location": "モギナス魔窟１１",
+        "rate": "18.05"
+      },
+      {
+        "location": "ガラムマサラ(16～20)",
+        "rate": "14.25"
+      }
+    ],
+    "size": "52cm32kg",
+    "description": "いつもふくらんでいるふぐ。怒るともっとふくらむ。愛想が悪い。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/03",
+    "isBoss": false
+  },
+  {
+    "id": "mon_037",
+    "number": "037",
+    "name": "ヘコキドクムシ",
+    "level": "71",
+    "element": "毒",
+    "locations": [
+      {
+        "location": "モギナス魔窟(10,12～16)",
+        "rate": "12.35"
+      },
+      {
+        "location": "モギナス魔窟１１",
+        "rate": "14.25"
+      },
+      {
+        "location": "ガラムマサラ(16～20)",
+        "rate": "19.00"
+      }
+    ],
+    "size": "45cm52kg",
+    "description": "逆立ちが大好きなどくむし。マヒする毒の粉をふりまく。ちょっとだけくさい。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/03",
+    "isBoss": false
+  },
+  {
+    "id": "mon_038",
+    "number": "038",
+    "name": "ペラルドン",
+    "level": "55",
+    "element": "毒",
+    "locations": [
+      {
+        "location": "暗闇の地,失意の沼",
+        "rate": "26.60"
+      },
+      {
+        "location": "モギナス魔窟(10,12～16)",
+        "rate": "6.65"
+      },
+      {
+        "location": "モギナス魔窟１１",
+        "rate": "9.50"
+      },
+      {
+        "location": "ガラムマサラ(16～20)",
+        "rate": "14.25"
+      }
+    ],
+    "size": "94cm72kg",
+    "description": "毒をもつブタバナトカゲ。背中のふくろに毒をためてはきかけて攻撃する。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/03",
+    "isBoss": false
+  },
+  {
+    "id": "mon_039",
+    "number": "039",
+    "name": "ドクカビリザード",
+    "level": "110",
+    "element": "毒",
+    "locations": [
+      {
+        "location": "ガラムマサラ(16～20)",
+        "rate": "37.05"
+      }
+    ],
+    "size": "82cm57kg",
+    "description": "カビと同じ成分の強力な毒を持つブタバナトカゲの仲間。あごの力も強力なので注意。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/03",
+    "isBoss": false
+  },
+  {
+    "id": "mon_040",
+    "number": "040",
+    "name": "ゴルゴンゾーラ",
+    "level": "56",
+    "element": "毒",
+    "locations": [
+      {
+        "location": "暗闇の地,失意の沼",
+        "rate": "23.50"
+      },
+      {
+        "location": "モギナス魔窟(10,12～16)",
+        "rate": "1.20"
+      },
+      {
+        "location": "モギナス魔窟１１",
+        "rate": "2.40"
+      },
+      {
+        "location": "ガラムマサラ(16～20)",
+        "rate": "9.50"
+      }
+    ],
+    "size": "105cm36kg",
+    "description": "ウーズ熱で死んだドラゴンがミイラ化したモンスター。鋭いつめともうどくが武器。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/03",
+    "isBoss": false
+  },
+  {
+    "id": "mon_041",
+    "number": "041",
+    "name": "ザウバーバチカ",
+    "level": "73",
+    "element": "毒",
+    "locations": [
+      {
+        "location": "モギナス魔窟(10,12～16)",
+        "rate": "24.00"
+      },
+      {
+        "location": "モギナス魔窟１１",
+        "rate": "24.00"
+      },
+      {
+        "location": "ガラムマサラ(16～20)",
+        "rate": "22.80"
+      }
+    ],
+    "size": "96cm78kg",
+    "description": "３種の虫が合体したキメラ。強力な毒を持つカマと強力な魔法を得意とする。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/03",
+    "isBoss": false
+  },
+  {
+    "id": "mon_042",
+    "number": "042",
+    "name": "ポイジール",
+    "level": "110",
+    "element": "毒",
+    "locations": [
+      {
+        "location": "ガラムマサラ(16～20)",
+        "rate": "32.30"
+      }
+    ],
+    "size": "228cm174kg",
+    "description": "強力な毒を持ち、その毒を受けるとしびれてしまう。シビナのしっぽは必須だ。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/03",
+    "isBoss": false
+  },
+  {
+    "id": "mon_043",
+    "number": "043",
+    "name": "アロリーナ",
+    "level": "3",
+    "element": "美",
+    "locations": [
+      {
+        "location": "レーミッツ宮殿(外)",
+        "rate": "38.00"
+      },
+      {
+        "location": "レーミッツ宮殿(内)",
+        "rate": "29.45"
+      }
+    ],
+    "size": "82cm41kg",
+    "description": "つるつるおはだのぽっちゃり民族。はずかしがり屋さん。毎日のせん顔は欠かさない。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/04",
+    "isBoss": false
+  },
+  {
+    "id": "mon_044",
+    "number": "044",
+    "name": "きんいろうさぎ",
+    "level": "4",
+    "element": "美",
+    "locations": [
+      {
+        "location": "レーミッツ宮殿(外)",
+        "rate": "44.65"
+      },
+      {
+        "location": "レーミッツ宮殿(内)",
+        "rate": "19.00"
+      },
+      {
+        "location": "ガラムマサラ(21～25)",
+        "rate": "4.75"
+      }
+    ],
+    "size": "27cm7kg",
+    "description": "金色に輝く毛を持っている羽のはえたウサギ。手乗りペットとして人気。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/04",
+    "isBoss": false
+  },
+  {
+    "id": "mon_045",
+    "number": "045",
+    "name": "ヨーデルラット",
+    "level": "22",
+    "element": "美",
+    "locations": [
+      {
+        "location": "リギニオ密林(5～8)",
+        "rate": "34.20"
+      },
+      {
+        "location": "キスニカ鉱山(1～4)",
+        "rate": "2.85"
+      },
+      {
+        "location": "キスニカ鉱山(5～8)",
+        "rate": "6.65"
+      },
+      {
+        "location": "ガラムマサラ(21～25)",
+        "rate": "19.00"
+      }
+    ],
+    "size": "18cm4kg",
+    "description": "魔法が使える小さなねずみ。鮮やかな色をしたしっぽで有名である。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/04",
+    "isBoss": false
+  },
+  {
+    "id": "mon_046",
+    "number": "046",
+    "name": "ノーマジーン",
+    "level": "6",
+    "element": "美",
+    "locations": [
+      {
+        "location": "レーミッツ宮殿(内)",
+        "rate": "19.95"
+      }
+    ],
+    "size": "122cm25kg",
+    "description": "きれい好きなモンスター。魔力が高いので注意。エステは毎日かかさない。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/04",
+    "isBoss": false
+  },
+  {
+    "id": "mon_047",
+    "number": "047",
+    "name": "べにきんちゃく",
+    "level": "38",
+    "element": "美",
+    "locations": [
+      {
+        "location": "キスニカ鉱山(1～4)",
+        "rate": "41.80"
+      },
+      {
+        "location": "キスニカ鉱山(5～8)",
+        "rate": "52.25"
+      },
+      {
+        "location": "荒廃の地#1",
+        "rate": "7.60"
+      },
+      {
+        "location": "荒廃の地#2",
+        "rate": "15.20"
+      },
+      {
+        "location": "ラキューオ(1～4)",
+        "rate": "6.65"
+      },
+      {
+        "location": "ガラムマサラ(21～25)",
+        "rate": "19.00"
+      },
+      {
+        "location": "ガーシュイン(イベント)",
+        "rate": "100"
+      }
+    ],
+    "size": "94cm38kg",
+    "description": "きれいな植物の種に魂がやどった魔法使い。夏には大きな花を咲かせる。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/04",
+    "isBoss": false
+  },
+  {
+    "id": "mon_048",
+    "number": "048",
+    "name": "リーベジーン",
+    "level": "24",
+    "element": "美",
+    "locations": [
+      {
+        "location": "リギニオ密林(5～8)",
+        "rate": "35.40"
+      },
+      {
+        "location": "キスニカ鉱山(1～4)",
+        "rate": "1.90"
+      },
+      {
+        "location": "キスニカ鉱山(5～8)",
+        "rate": "5.70"
+      },
+      {
+        "location": "ガラムマサラ(21～25)",
+        "rate": "9.50"
+      }
+    ],
+    "size": "75cm36kg",
+    "description": "空中を泳ぐ事のできる不思議なトドの子供。精神力が高い。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/04",
+    "isBoss": false
+  },
+  {
+    "id": "mon_049",
+    "number": "049",
+    "name": "アルグリーア",
+    "level": "47",
+    "element": "美",
+    "locations": [
+      {
+        "location": "ラキューオ(1～4)",
+        "rate": "39.90"
+      },
+      {
+        "location": "死の回廊",
+        "rate": "3.80"
+      },
+      {
+        "location": "モギナス魔窟(1～8)",
+        "rate": "9.50"
+      },
+      {
+        "location": "ガラムマサラ(21～25)",
+        "rate": "1.90"
+      }
+    ],
+    "size": "71cm25kg",
+    "description": "ブロンドのきれいな妖精。魔法使いとしては中級。果物が大好き。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/04",
+    "isBoss": false
+  },
+  {
+    "id": "mon_050",
+    "number": "050",
+    "name": "ノスタルジーン",
+    "level": "60",
+    "element": "美",
+    "locations": [
+      {
+        "location": "モギナス魔窟(1～8)",
+        "rate": "31.00"
+      },
+      {
+        "location": "ガラムマサラ(21～25)",
+        "rate": "14.25"
+      }
+    ],
+    "size": "117cm28kg",
+    "description": "上級の魔法使い。精神力が高いがすぐに昔を思い出すくせがある。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/04",
+    "isBoss": false
+  },
+  {
+    "id": "mon_051",
+    "number": "051",
+    "name": "ジェムフロッグ",
+    "level": "39",
+    "element": "美",
+    "locations": [
+      {
+        "location": "キスニカ鉱山(1～4)",
+        "rate": "38.95"
+      },
+      {
+        "location": "キスニカ鉱山(5～8)",
+        "rate": "40.85"
+      },
+      {
+        "location": "荒廃の地#1",
+        "rate": "9.50"
+      },
+      {
+        "location": "荒廃の地#2",
+        "rate": "19.00"
+      },
+      {
+        "location": "ラキューオ(1～4)",
+        "rate": "37.05"
+      },
+      {
+        "location": "ガラムマサラ(21～25)",
+        "rate": "18.05"
+      },
+      {
+        "location": "ガーシュイン(イベント)",
+        "rate": "100"
+      }
+    ],
+    "size": "117cm41kg",
+    "description": "大きな宝石を持つカエルのようなはちゅうるい。宝石で体当たりをしてくる。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/04",
+    "isBoss": false
+  },
+  {
+    "id": "mon_052",
+    "number": "052",
+    "name": "Ｍｒビューティ",
+    "level": "40",
+    "element": "美",
+    "locations": [
+      {
+        "location": "キスニカ鉱山(1～4)",
+        "rate": "26.60"
+      },
+      {
+        "location": "キスニカ鉱山(5～8)",
+        "rate": "37.05"
+      },
+      {
+        "location": "荒廃の地#1",
+        "rate": "10.45"
+      },
+      {
+        "location": "荒廃の地#2",
+        "rate": "21.85"
+      },
+      {
+        "location": "ガラムマサラ(21～25)",
+        "rate": "4.75"
+      }
+    ],
+    "size": "153cm47kg",
+    "description": "ハーティーボウで後ろにも攻撃してくるやっかい者。魔法は使えない。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/04",
+    "isBoss": false
+  },
+  {
+    "id": "mon_053",
+    "number": "053",
+    "name": "Ｍｒセクシー",
+    "level": "47",
+    "element": "美",
+    "locations": [
+      {
+        "location": "ラキューオ(1～4)",
+        "rate": "71.25"
+      },
+      {
+        "location": "死の回廊",
+        "rate": "12.35"
+      },
+      {
+        "location": "モギナス魔窟(1～8)",
+        "rate": "4.75"
+      },
+      {
+        "location": "ガラムマサラ(21～25)",
+        "rate": "1.90"
+      }
+    ],
+    "size": "173cm68kg",
+    "description": "Ｍｒビューティの弟。ハーティーボウも兄ゆずり。おつむの弱さも兄ゆずり。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/04",
+    "isBoss": false
+  },
+  {
+    "id": "mon_054",
+    "number": "054",
+    "name": "Ｍｒモラール",
+    "level": "120",
+    "element": "美",
+    "locations": [
+      {
+        "location": "ガラムマサラ(21～25)",
+        "rate": "23.75"
+      },
+      {
+        "location": "ガラムマサラ４５ボス",
+        "rate": "100"
+      }
+    ],
+    "size": "207cm94kg",
+    "description": "Ｍｒ３兄弟の末っ子。じまんの弓はもちろん健在。相変わらず魔法はダメ。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/04",
+    "isBoss": false
+  },
+  {
+    "id": "mon_055",
+    "number": "055",
+    "name": "マジョラム",
+    "level": "47",
+    "element": "美",
+    "locations": [
+      {
+        "location": "ラキューオ(1～4)",
+        "rate": "48.70"
+      },
+      {
+        "location": "死の回廊",
+        "rate": "21.85"
+      },
+      {
+        "location": "モギナス魔窟(1～8)",
+        "rate": "1.90"
+      },
+      {
+        "location": "ガラムマサラ(21～25)",
+        "rate": "14.25"
+      }
+    ],
+    "size": "173cm38kg",
+    "description": "下半身がヘビの魔法使い。知的で美しさを求めている。魔法防御力が高いので注意。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/04",
+    "isBoss": false
+  },
+  {
+    "id": "mon_056",
+    "number": "056",
+    "name": "デレアスモス",
+    "level": "120",
+    "element": "美",
+    "locations": [
+      {
+        "location": "ガラムマサラ(21～25)",
+        "rate": "27.55"
+      },
+      {
+        "location": "ガラムマサラ４５ボス",
+        "rate": "100"
+      }
+    ],
+    "size": "184cm129kg",
+    "description": "肉体派と思いきや、魔法も使える厄介なヤツ。力をダウンさせてくるぞ。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/04",
+    "isBoss": false
+  },
+  {
+    "id": "mon_057",
+    "number": "057",
+    "name": "ベビーシザー",
+    "level": "2",
+    "element": "刃",
+    "locations": [
+      {
+        "location": "ベナコンチャ遺跡#1",
+        "rate": "18.00"
+      },
+      {
+        "location": "ベナコンチャ遺跡#2",
+        "rate": "22.55"
+      },
+      {
+        "location": "レーミッツ宮殿(内)",
+        "rate": "13.30"
+      },
+      {
+        "location": "ガラムマサラ(21～25)",
+        "rate": "1.90"
+      },
+      {
+        "location": "スノウヘア(イベント)",
+        "rate": "100"
+      }
+    ],
+    "size": "31cm7kg",
+    "description": "危険な「チキチキバサミ」を器用に使うモンスター。とても小さい。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/05",
+    "isBoss": false
+  },
+  {
+    "id": "mon_058",
+    "number": "058",
+    "name": "ぱっくりカッター",
+    "level": "21",
+    "element": "刃",
+    "locations": [
+      {
+        "location": "リギニオ密林(1～4)",
+        "rate": "29.70"
+      }
+    ],
+    "size": "58cm21kg",
+    "description": "危険な「パクパクバサミ」を上手に使うモンスター。魔法攻撃にも注意。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/05",
+    "isBoss": false
+  },
+  {
+    "id": "mon_059",
+    "number": "059",
+    "name": "チョッパー",
+    "level": "47",
+    "element": "刃",
+    "locations": [
+      {
+        "location": "ラキューオ(5～7)",
+        "rate": "53.20"
+      },
+      {
+        "location": "モギナス魔窟(10,12～16)",
+        "rate": "17.10"
+      },
+      {
+        "location": "モギナス魔窟１１",
+        "rate": "18.05"
+      },
+      {
+        "location": "ガラムマサラ(46～49)",
+        "rate": "9.50"
+      }
+    ],
+    "size": "69cm96kg",
+    "description": "危険な「バリバリバサミ」を豪快に使うモンスター。魔法も豪快だ。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/05",
+    "isBoss": false
+  },
+  {
+    "id": "mon_060",
+    "number": "060",
+    "name": "クッピポーン",
+    "level": "4",
+    "element": "刃",
+    "locations": [
+      {
+        "location": "ベナコンチャ遺跡#1",
+        "rate": "38.00"
+      },
+      {
+        "location": "ベナコンチャ遺跡#2",
+        "rate": "38.00"
+      },
+      {
+        "location": "レーミッツ宮殿(内)",
+        "rate": "36.10"
+      }
+    ],
+    "size": "115cm46kg",
+    "description": "大剣「ピッポリクロス」を自在に操り攻撃してくる。魔法は苦手。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/05",
+    "isBoss": false
+  },
+  {
+    "id": "mon_061",
+    "number": "061",
+    "name": "マップタツーン",
+    "level": "23",
+    "element": "刃",
+    "locations": [
+      {
+        "location": "リギニオ密林(1～4)",
+        "rate": "21.85"
+      }
+    ],
+    "size": "79cm24kg",
+    "description": "青く大きな剣を振り回す。小さいけど力持ち。でもやっぱり魔法は苦手。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/05",
+    "isBoss": false
+  },
+  {
+    "id": "mon_062",
+    "number": "062",
+    "name": "ザリガニバロン",
+    "level": "20",
+    "element": "刃",
+    "locations": [
+      {
+        "location": "レヒカフ沼周辺#2",
+        "rate": "32.30"
+      },
+      {
+        "location": "ジェラ風穴",
+        "rate": "43.70"
+      }
+    ],
+    "size": "124cm37kg",
+    "description": "赤くてかたいカラに身をつつんだ巨大ザリガニ。つめの肉はとてもおいしい。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/05",
+    "isBoss": false
+  },
+  {
+    "id": "mon_063",
+    "number": "063",
+    "name": "デスレイザー",
+    "level": "47",
+    "element": "刃",
+    "locations": [
+      {
+        "location": "ラキューオ(5～7)",
+        "rate": "57.00"
+      },
+      {
+        "location": "モギナス魔窟(10,12～16)",
+        "rate": "0.95"
+      },
+      {
+        "location": "モギナス魔窟１１",
+        "rate": "1.90"
+      },
+      {
+        "location": "ガラムマサラ(46～49)",
+        "rate": "9.50"
+      }
+    ],
+    "size": "143cm36kg",
+    "description": "切れ味の鋭いカマで攻撃するつむじ風に乗ったがいこつ。魔法も得意である。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/05",
+    "isBoss": false
+  },
+  {
+    "id": "mon_064",
+    "number": "064",
+    "name": "アームジズー",
+    "level": "38",
+    "element": "刃",
+    "locations": [
+      {
+        "location": "ブラウニーの穴",
+        "rate": "37.05"
+      },
+      {
+        "location": "ラキューオ(5～7)",
+        "rate": "17.10"
+      }
+    ],
+    "size": "153cm74kg",
+    "description": "かたいカラに身をつつんだ巨大なロブスター。ゆでると赤くなるらしい。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/05",
+    "isBoss": false
+  },
+  {
+    "id": "mon_065",
+    "number": "065",
+    "name": "ナイフドレス",
+    "level": "24",
+    "element": "刃",
+    "locations": [
+      {
+        "location": "リギニオ密林(1～4)",
+        "rate": "25.40"
+      }
+    ],
+    "size": "108cm22kg",
+    "description": "ナイフをぬいつけたドレスを着たちいさなおばけ。サーカスがだーい好き。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/05",
+    "isBoss": false
+  },
+  {
+    "id": "mon_066",
+    "number": "066",
+    "name": "オクトポーデ",
+    "level": "71",
+    "element": "刃",
+    "locations": [
+      {
+        "location": "モギナス魔窟(10,12～16)",
+        "rate": "35.85"
+      },
+      {
+        "location": "モギナス魔窟１１",
+        "rate": "38.00"
+      },
+      {
+        "location": "ガラムマサラ(46～49)",
+        "rate": "18.05"
+      }
+    ],
+    "size": "136cm58kg",
+    "description": "切れ味鋭いモリで攻撃する。スミで目くらましをするので注意が必要だ。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/05",
+    "isBoss": false
+  },
+  {
+    "id": "mon_067",
+    "number": "067",
+    "name": "グラディウス",
+    "level": "40",
+    "element": "刃",
+    "locations": [
+      {
+        "location": "ブラウニーの穴",
+        "rate": "18.05"
+      },
+      {
+        "location": "ラキューオ(5～7)",
+        "rate": "12.35"
+      }
+    ],
+    "size": "63cm42kg",
+    "description": "小さな毒の刃物がついた布を振り回して攻撃する。魔法攻撃もあるので注意。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/05",
+    "isBoss": false
+  },
+  {
+    "id": "mon_068",
+    "number": "068",
+    "name": "ソードフェアリー",
+    "level": "170",
+    "element": "刃",
+    "locations": [
+      {
+        "location": "ガラムマサラ(46～49)",
+        "rate": "22.80"
+      }
+    ],
+    "size": "121cm46kg",
+    "description": "剣技の優れた小さなおばけ。回転してちいさな刃物を飛ばして攻撃してくる。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/05",
+    "isBoss": false
+  },
+  {
+    "id": "mon_069",
+    "number": "069",
+    "name": "ぶつぎりまじん",
+    "level": "73",
+    "element": "刃",
+    "locations": [
+      {
+        "location": "モギナス魔窟(10,12～16)",
+        "rate": "6.10"
+      },
+      {
+        "location": "モギナス魔窟１１",
+        "rate": "8.50"
+      },
+      {
+        "location": "ガラムマサラ(46～49)",
+        "rate": "19.00"
+      }
+    ],
+    "size": "202cm117kg",
+    "description": "大きなからだで２本の剣をふりまわす魔人。まんまるでくるくるまわる。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/05",
+    "isBoss": false
+  },
+  {
+    "id": "mon_070",
+    "number": "070",
+    "name": "サーベルズーガー",
+    "level": "170",
+    "element": "刃",
+    "locations": [
+      {
+        "location": "ガラムマサラ(46～49)",
+        "rate": "33.25"
+      }
+    ],
+    "size": "186cm145kg",
+    "description": "二刀流の達人として有名。伝説の円月刀で攻撃する。力だけでなく魔法も使える。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/05",
+    "isBoss": false
+  },
+  {
+    "id": "mon_071",
+    "number": "071",
+    "name": "はなうたうさぎ",
+    "level": "8",
+    "element": "音",
+    "locations": [
+      {
+        "location": "ラ・ロッシュの塔",
+        "rate": "46.55"
+      }
+    ],
+    "size": "46cm12kg",
+    "description": "ほっぺの羽根で浮遊している天使うさぎの変種。にじいろにんじんが好き。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/06",
+    "isBoss": false
+  },
+  {
+    "id": "mon_072",
+    "number": "072",
+    "name": "アラームラビン",
+    "level": "9",
+    "element": "音",
+    "locations": [
+      {
+        "location": "ラ・ロッシュの塔",
+        "rate": "26.60"
+      }
+    ],
+    "size": "24cm8kg",
+    "description": "寝ている人をつついてくる。朝早くから鳴きはじめ昼過ぎにはおとなしくなる。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/06",
+    "isBoss": false
+  },
+  {
+    "id": "mon_073",
+    "number": "073",
+    "name": "うたうたいうさぎ",
+    "level": "18",
+    "element": "音",
+    "locations": [
+      {
+        "location": "レヒカフ沼周辺#1",
+        "rate": "22.80"
+      },
+      {
+        "location": "レヒカフ沼周辺#2",
+        "rate": "3.80"
+      },
+      {
+        "location": "謎の遺跡",
+        "rate": "38.95"
+      },
+      {
+        "location": "ジェラ風穴",
+        "rate": "13.30"
+      },
+      {
+        "location": "ガラムマサラ(6～10)",
+        "rate": "14.25"
+      }
+    ],
+    "size": "63cm24kg",
+    "description": "歌を歌う事が大好きな天使うさぎの仲間。魔法の腕もなかなか。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/06",
+    "isBoss": false
+  },
+  {
+    "id": "mon_074",
+    "number": "074",
+    "name": "ハロハロドリ",
+    "level": "10",
+    "element": "音",
+    "locations": [
+      {
+        "location": "～ピップルスタウン",
+        "rate": "16.15"
+      },
+      {
+        "location": "ラ・ロッシュの塔",
+        "rate": "27.55"
+      },
+      {
+        "location": "～ゲアラヴァ村",
+        "rate": "22.80"
+      }
+    ],
+    "size": "79cm24kg",
+    "description": "大きな声をだして相手を失神させる嫌なヤツ。魔法も使ってくる。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/06",
+    "isBoss": false
+  },
+  {
+    "id": "mon_075",
+    "number": "075",
+    "name": "がーがーグース",
+    "level": "19",
+    "element": "音",
+    "locations": [
+      {
+        "location": "レヒカフ沼周辺#1",
+        "rate": "20.90"
+      },
+      {
+        "location": "レヒカフ沼周辺#2",
+        "rate": "14.25"
+      },
+      {
+        "location": "謎の遺跡",
+        "rate": "26.60"
+      },
+      {
+        "location": "ジェラ風穴",
+        "rate": "19.95"
+      }
+    ],
+    "size": "37cm26kg",
+    "description": "頭の上のアヒルを巧みに使い攻撃してくる魔法使い。アヒルはまだ子供らしい。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/06",
+    "isBoss": false
+  },
+  {
+    "id": "mon_076",
+    "number": "076",
+    "name": "ドンチャタヌキ",
+    "level": "39",
+    "element": "音",
+    "locations": [
+      {
+        "location": "ブラウニーの穴",
+        "rate": "54.15"
+      },
+      {
+        "location": "ガラムマサラ(6～10)",
+        "rate": "1.90"
+      }
+    ],
+    "size": "53cm38kg",
+    "description": "しっぽでおなかのたいこをたたき、相手を眠らせる。しっぽの力がとても強い。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/06",
+    "isBoss": false
+  },
+  {
+    "id": "mon_077",
+    "number": "077",
+    "name": "タピローム",
+    "level": "22",
+    "element": "音",
+    "locations": [
+      {
+        "location": "リギニオ密林(1～4)",
+        "rate": "38.00"
+      },
+      {
+        "location": "ブラウニーの穴",
+        "rate": "6.65"
+      },
+      {
+        "location": "ガラムマサラ(6～10)",
+        "rate": "4.75"
+      }
+    ],
+    "size": "153cm68kg",
+    "description": "魔法が苦手な大きなバク。かたくて巨大な実の中に入り身を守っている。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/06",
+    "isBoss": false
+  },
+  {
+    "id": "mon_078",
+    "number": "078",
+    "name": "こんがらホルン",
+    "level": "23",
+    "element": "音",
+    "locations": [
+      {
+        "location": "リギニオ密林(1～4)",
+        "rate": "29.45"
+      },
+      {
+        "location": "ブラウニーの穴",
+        "rate": "2.85"
+      },
+      {
+        "location": "ガラムマサラ(6～10)",
+        "rate": "14.25"
+      }
+    ],
+    "size": "66cm35kg",
+    "description": "いろいろな楽器がからまってしまった魔法生物。本体は謎である。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/06",
+    "isBoss": false
+  },
+  {
+    "id": "mon_079",
+    "number": "079",
+    "name": "ウィンメロディー",
+    "level": "41",
+    "element": "音",
+    "locations": [
+      {
+        "location": "ブラウニーの穴",
+        "rate": "43.70"
+      }
+    ],
+    "size": "84cm29kg",
+    "description": "エニグマがラッパ草に呪いをかけたため生まれた生物。魔法防御力が高い。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/06",
+    "isBoss": false
+  },
+  {
+    "id": "mon_080",
+    "number": "080",
+    "name": "ノイズマーチ",
+    "level": "60",
+    "element": "音",
+    "locations": [
+      {
+        "location": "モギナス魔窟(1～8)",
+        "rate": "22.80"
+      },
+      {
+        "location": "ガラムマサラ(6～10)",
+        "rate": "32.30"
+      }
+    ],
+    "size": "37cm16kg",
+    "description": "音のプレーンから追放された悪い魔法使い。エニグマと融合してるとの噂。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/06",
+    "isBoss": false
+  },
+  {
+    "id": "mon_081",
+    "number": "081",
+    "name": "ウエレンガー",
+    "level": "61",
+    "element": "音",
+    "locations": [
+      {
+        "location": "モギナス魔窟(1～8)",
+        "rate": "38.00"
+      }
+    ],
+    "size": "135cm57kg",
+    "description": "シンバルをばしばしたたき相手をマヒさせる。マヒが強力なので注意。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/06",
+    "isBoss": false
+  },
+  {
+    "id": "mon_082",
+    "number": "082",
+    "name": "セレネイド",
+    "level": "60",
+    "element": "音",
+    "locations": [
+      {
+        "location": "モギナス魔窟(1～8)",
+        "rate": "14.75"
+      }
+    ],
+    "size": "184cm65kg",
+    "description": "下半身がへびの魔法使い。高い魔法防御力を持つ。多彩な魔法を使用する。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/06",
+    "isBoss": false
+  },
+  {
+    "id": "mon_083",
+    "number": "083",
+    "name": "シンバルン",
+    "level": "90",
+    "element": "音",
+    "locations": [
+      {
+        "location": "ガラムマサラ(6～10)",
+        "rate": "38.00"
+      }
+    ],
+    "size": "162cm48kg",
+    "description": "魔法のシンバルをたたき相手をマヒさせる。魔法攻撃も得意。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/06",
+    "isBoss": false
+  },
+  {
+    "id": "mon_084",
+    "number": "084",
+    "name": "ダーモーマター",
+    "level": "150",
+    "element": "音",
+    "locations": [
+      {
+        "location": "ガラムマサラ(36～40)",
+        "rate": "9.50"
+      }
+    ],
+    "size": "149cm73kg",
+    "description": "マジカルピャッティを鳴らし攻撃する魔法使い。つねにぶつぶつ言っている。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/06",
+    "isBoss": false
+  },
+  {
+    "id": "mon_085",
+    "number": "085",
+    "name": "ドロジャム",
+    "level": "1",
+    "element": "石",
+    "locations": [
+      {
+        "location": "ミモレットの森",
+        "rate": "24.00"
+      },
+      {
+        "location": "森の洞窟",
+        "rate": "39.90"
+      },
+      {
+        "location": "ベナコンチャ遺跡#1",
+        "rate": "25.65"
+      },
+      {
+        "location": "ベナコンチャ遺跡#2",
+        "rate": "31.35"
+      },
+      {
+        "location": "レーミッツ宮殿(外)",
+        "rate": "19.95"
+      },
+      {
+        "location": "～ピップルスタウン",
+        "rate": "23.50"
+      }
+    ],
+    "size": "1cm～1kg～",
+    "description": "頭に「名もなき花」を育てるどろモンスター。最近「め」が出て大よろこび。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/07",
+    "isBoss": false
+  },
+  {
+    "id": "mon_086",
+    "number": "086",
+    "name": "つちいろマッシュ",
+    "level": "21",
+    "element": "石",
+    "locations": [
+      {
+        "location": "リギニオ密林(5～8)",
+        "rate": "19.00"
+      },
+      {
+        "location": "クムヤムト砂漠",
+        "rate": "19.95"
+      },
+      {
+        "location": "ガラムマサラ(11～15)",
+        "rate": "1.90"
+      }
+    ],
+    "size": "48cm25kg",
+    "description": "石のように硬いキノコ。毒はないので食べれない事もないらしいが・・・。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/07",
+    "isBoss": false
+  },
+  {
+    "id": "mon_087",
+    "number": "087",
+    "name": "ロックウィード",
+    "level": "2",
+    "element": "石",
+    "locations": [
+      {
+        "location": "ベナコンチャ遺跡#1",
+        "rate": "14.75"
+      },
+      {
+        "location": "ベナコンチャ遺跡#2",
+        "rate": "21.70"
+      }
+    ],
+    "size": "53cm39kg",
+    "description": "ツコンゲ石と共生する特殊なモンスター。魔法は苦手でまったく使えない。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/07",
+    "isBoss": false
+  },
+  {
+    "id": "mon_088",
+    "number": "088",
+    "name": "バゴーン",
+    "level": "4",
+    "element": "石",
+    "locations": [
+      {
+        "location": "ベナコンチャ遺跡#1",
+        "rate": "6.65"
+      },
+      {
+        "location": "ベナコンチャ遺跡#2",
+        "rate": "15.20"
+      },
+      {
+        "location": "レーミッツ宮殿(外)",
+        "rate": "39.90"
+      },
+      {
+        "location": "レーミッツ宮殿(内)",
+        "rate": "2.85"
+      },
+      {
+        "location": "ガラムマサラ(11～15)",
+        "rate": "1.90"
+      }
+    ],
+    "size": "165cm78kg",
+    "description": "トルマリン原石でできたモンスター。体もかたいが性格はもっとかたいらしい。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/07",
+    "isBoss": false
+  },
+  {
+    "id": "mon_089",
+    "number": "089",
+    "name": "コカトリス",
+    "level": "23",
+    "element": "石",
+    "locations": [
+      {
+        "location": "リギニオ密林(5～8)",
+        "rate": "37.05"
+      },
+      {
+        "location": "クムヤムト砂漠",
+        "rate": "16.15"
+      },
+      {
+        "location": "ガラムマサラ(11～15)",
+        "rate": "4.75"
+      }
+    ],
+    "size": "84cm36kg",
+    "description": "石の精霊がついた大きな鳥。七色に輝くきれいな羽と大きな声が特徴である。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/07",
+    "isBoss": false
+  },
+  {
+    "id": "mon_090",
+    "number": "090",
+    "name": "カボーン",
+    "level": "45",
+    "element": "石",
+    "locations": [
+      {
+        "location": "荒廃の地#1",
+        "rate": "42.05"
+      },
+      {
+        "location": "荒廃の地#2",
+        "rate": "54.40"
+      },
+      {
+        "location": "ピラミッド",
+        "rate": "31.35"
+      },
+      {
+        "location": "ガラムマサラ(11～15)",
+        "rate": "14.25"
+      }
+    ],
+    "size": "132cm120kg",
+    "description": "ヘタマイト原石でできたモンスター。ブラウニーが掘り起こしたという噂。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/07",
+    "isBoss": false
+  },
+  {
+    "id": "mon_091",
+    "number": "091",
+    "name": "ニョクマム",
+    "level": "45",
+    "element": "石",
+    "locations": [
+      {
+        "location": "ピラミッド",
+        "rate": "61.75"
+      },
+      {
+        "location": "ガラムマサラ(11～15)",
+        "rate": "14.25"
+      }
+    ],
+    "size": "162cm64kg",
+    "description": "３つの目を持ち石化、毒、眠りをつかって攻撃する。武器はあまり使わない。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/07",
+    "isBoss": false
+  },
+  {
+    "id": "mon_092",
+    "number": "092",
+    "name": "アンバーフロッグ",
+    "level": "44",
+    "element": "石",
+    "locations": [
+      {
+        "location": "荒廃の地#1",
+        "rate": "53.20"
+      },
+      {
+        "location": "荒廃の地#2",
+        "rate": "55.10"
+      },
+      {
+        "location": "ピラミッド",
+        "rate": "13.30"
+      },
+      {
+        "location": "ガラムマサラ(11～15)",
+        "rate": "4.75"
+      }
+    ],
+    "size": "74cm29kg",
+    "description": "石の精霊がついた宝石が好物のカエル。いつのまにか魔法が使えるようになった。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/07",
+    "isBoss": false
+  },
+  {
+    "id": "mon_093",
+    "number": "093",
+    "name": "ベルバダイル",
+    "level": "43",
+    "element": "石",
+    "locations": [
+      {
+        "location": "荒廃の地#1",
+        "rate": "17.10"
+      },
+      {
+        "location": "荒廃の地#2",
+        "rate": "29.45"
+      },
+      {
+        "location": "ピラミッド",
+        "rate": "40.85"
+      },
+      {
+        "location": "ガラムマサラ(11～15)",
+        "rate": "18.05"
+      }
+    ],
+    "size": "67cm62kg",
+    "description": "石の家を作り入るワニ。かみつく力も強いが魔法も得意なので要注意。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/07",
+    "isBoss": false
+  },
+  {
+    "id": "mon_094",
+    "number": "094",
+    "name": "ナゾのかんおけ",
+    "level": "45",
+    "element": "石",
+    "locations": [
+      {
+        "location": "ピラミッド",
+        "rate": "42.75"
+      },
+      {
+        "location": "ガラムマサラ(11～15)",
+        "rate": "9.50"
+      }
+    ],
+    "size": "159cm59kg",
+    "description": "めったに人前に姿をあらわさない伝説のモンスター。とってもかたい。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/07",
+    "isBoss": false
+  },
+  {
+    "id": "mon_095",
+    "number": "095",
+    "name": "バルバール",
+    "level": "46",
+    "element": "石",
+    "locations": [
+      {
+        "location": "ピラミッド",
+        "rate": "69.35"
+      },
+      {
+        "location": "ガラムマサラ(11～15)",
+        "rate": "19.00"
+      }
+    ],
+    "size": "121cm85kg",
+    "description": "力が強い小さなゴーレムの仲間で魔法も使う。実は左利きである。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/07",
+    "isBoss": false
+  },
+  {
+    "id": "mon_096",
+    "number": "096",
+    "name": "ドリモグラ",
+    "level": "46",
+    "element": "石",
+    "locations": [
+      {
+        "location": "ピラミッド",
+        "rate": "70.30"
+      },
+      {
+        "location": "ガラムマサラ(11～15)",
+        "rate": "18.05"
+      }
+    ],
+    "size": "179cm83kg",
+    "description": "ドリルのついた巨大なへびモグラの一種。ドリルの一撃は強力。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/07",
+    "isBoss": false
+  },
+  {
+    "id": "mon_097",
+    "number": "097",
+    "name": "ディナゾール",
+    "level": "100",
+    "element": "石",
+    "locations": [
+      {
+        "location": "ガラムマサラ(11～15)",
+        "rate": "38.00"
+      },
+      {
+        "location": "ガラムマサラ１５ボス",
+        "rate": "100"
+      }
+    ],
+    "size": "294cm174kg",
+    "description": "知力の高い石のドラゴン。強力なかみつきとブレスには注意が必要である。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/07",
+    "isBoss": false
+  },
+  {
+    "id": "mon_098",
+    "number": "098",
+    "name": "ギガンドゥーロ",
+    "level": "100",
+    "element": "石",
+    "locations": [
+      {
+        "location": "ガラムマサラ(11～15)",
+        "rate": "33.25"
+      },
+      {
+        "location": "ガラムマサラ１５ボス",
+        "rate": "100"
+      }
+    ],
+    "size": "372cm174kg",
+    "description": "とても長い石へびモグラ。体内にはいろいろな鉱石が入っているらしい。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/07",
+    "isBoss": false
+  },
+  {
+    "id": "mon_099",
+    "number": "099",
+    "name": "チャッピー",
+    "level": "5",
+    "element": "虫",
+    "locations": [
+      {
+        "location": "レーミッツ宮殿(外)",
+        "rate": "46.55"
+      },
+      {
+        "location": "ラ・ロッシュの塔",
+        "rate": "41.80"
+      },
+      {
+        "location": "ガラムマサラ(6～10)",
+        "rate": "14.25"
+      }
+    ],
+    "size": "165cm65kg",
+    "description": "巨大な食いしんぼいもむし。ハート型のつのとしっぽでメスを誘っている。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/08",
+    "isBoss": false
+  },
+  {
+    "id": "mon_100",
+    "number": "100",
+    "name": "ココン",
+    "level": "22",
+    "element": "虫",
+    "locations": [
+      {
+        "location": "リギニオ密林(5～8)",
+        "rate": "19.00"
+      },
+      {
+        "location": "ブラウニーの穴",
+        "rate": "9.50"
+      },
+      {
+        "location": "キスニカ鉱山(1～4)",
+        "rate": "12.35"
+      },
+      {
+        "location": "キスニカ鉱山(5～8)",
+        "rate": "17.10"
+      },
+      {
+        "location": "ガラムマサラ(6～10)",
+        "rate": "9.50"
+      }
+    ],
+    "size": "47cm116kg",
+    "description": "小さいがとても重い。なかなかかたいからを持つ。魔法は苦手。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/08",
+    "isBoss": false
+  },
+  {
+    "id": "mon_101",
+    "number": "101",
+    "name": "ゆうわくいもむし",
+    "level": "50",
+    "element": "虫",
+    "locations": [
+      {
+        "location": "死の回廊",
+        "rate": "45.60"
+      },
+      {
+        "location": "ガラムマサラ(6～10)",
+        "rate": "14.25"
+      }
+    ],
+    "size": "132cm83kg",
+    "description": "派手な色で種類を問わずいろいろな生物を誘惑する。プヨプヨしている。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/08",
+    "isBoss": false
+  },
+  {
+    "id": "mon_102",
+    "number": "102",
+    "name": "ダストブーケ",
+    "level": "10",
+    "element": "虫",
+    "locations": [
+      {
+        "location": "ラ・ロッシュの塔",
+        "rate": "41.80"
+      },
+      {
+        "location": "ガラムマサラ(6～10)",
+        "rate": "14.25"
+      }
+    ],
+    "size": "134cm67kg",
+    "description": "ずんぐり太った大きなハエ。とにかくよく食べる。通称、ごみばこバエ。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/08",
+    "isBoss": false
+  },
+  {
+    "id": "mon_103",
+    "number": "103",
+    "name": "ヨコヅナバエ",
+    "level": "25",
+    "element": "虫",
+    "locations": [
+      {
+        "location": "リギニオ密林(5～8)",
+        "rate": "12.35"
+      },
+      {
+        "location": "ブラウニーの穴",
+        "rate": "12.35"
+      },
+      {
+        "location": "キスニカ鉱山(1～4)",
+        "rate": "6.65"
+      },
+      {
+        "location": "キスニカ鉱山(5～8)",
+        "rate": "12.35"
+      },
+      {
+        "location": "モギナス魔窟(1～8)",
+        "rate": "1.90"
+      },
+      {
+        "location": "ガラムマサラ(6～10)",
+        "rate": "18.05"
+      }
+    ],
+    "size": "186cm207kg",
+    "description": "とっても巨大なハエ。雑食で何でも食べてしまう。通称、チャンコバエ。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/08",
+    "isBoss": false
+  },
+  {
+    "id": "mon_104",
+    "number": "104",
+    "name": "スカシカメムシ",
+    "level": "11",
+    "element": "虫",
+    "locations": [
+      {
+        "location": "ラ・ロッシュの塔",
+        "rate": "57.00"
+      },
+      {
+        "location": "ガラムマサラ(6～10)",
+        "rate": "19.00"
+      }
+    ],
+    "size": "142cm36kg",
+    "description": "結構クールな性格。いろんな意味ですかしている。とにかく、くさい。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/08",
+    "isBoss": false
+  },
+  {
+    "id": "mon_105",
+    "number": "105",
+    "name": "トリロビット",
+    "level": "50",
+    "element": "虫",
+    "locations": [
+      {
+        "location": "死の回廊",
+        "rate": "53.20"
+      },
+      {
+        "location": "ガラムマサラ(6～10)",
+        "rate": "9.50"
+      }
+    ],
+    "size": "79cm48kg",
+    "description": "鮮やかなオレンジ色をしたフルーティーな香りの虫。ちょっとすっぱい。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/08",
+    "isBoss": false
+  },
+  {
+    "id": "mon_106",
+    "number": "106",
+    "name": "パオパピオン",
+    "level": "35",
+    "element": "虫",
+    "locations": [
+      {
+        "location": "モルビエ火山",
+        "rate": "28.50"
+      },
+      {
+        "location": "ブラウニーの穴",
+        "rate": "55.10"
+      },
+      {
+        "location": "キスニカ鉱山(1～4)",
+        "rate": "19.00"
+      },
+      {
+        "location": "キスニカ鉱山(5～8)",
+        "rate": "19.00"
+      },
+      {
+        "location": "ガラムマサラ(6～10)",
+        "rate": "4.75"
+      }
+    ],
+    "size": "127cm48kg",
+    "description": "魔法が苦手な羽のはえたゾウのようなはなを持つガ。体当たりに注意。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/08",
+    "isBoss": false
+  },
+  {
+    "id": "mon_107",
+    "number": "107",
+    "name": "ファレーナ",
+    "level": "50",
+    "element": "虫",
+    "locations": [
+      {
+        "location": "死の回廊",
+        "rate": "37.05"
+      },
+      {
+        "location": "ガラムマサラ(6～10)",
+        "rate": "18.05"
+      }
+    ],
+    "size": "143cm75kg",
+    "description": "きれいなハネと長いハナを持つ魔法を使うちょう。コイン集めが趣味。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/08",
+    "isBoss": false
+  },
+  {
+    "id": "mon_108",
+    "number": "108",
+    "name": "マミービートル",
+    "level": "37",
+    "element": "虫",
+    "locations": [
+      {
+        "location": "モルビエ火山",
+        "rate": "29.45"
+      },
+      {
+        "location": "ブラウニーの穴",
+        "rate": "43.70"
+      },
+      {
+        "location": "キスニカ鉱山(1～4)",
+        "rate": "17.10"
+      },
+      {
+        "location": "キスニカ鉱山(5～8)",
+        "rate": "18.05"
+      },
+      {
+        "location": "ガラムマサラ(6～10)",
+        "rate": "4.75"
+      }
+    ],
+    "size": "128cm28kg",
+    "description": "死んだテナガテントウをエニグマがミイラ化した。ねんえきとのびる腕に注意。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/08",
+    "isBoss": false
+  },
+  {
+    "id": "mon_109",
+    "number": "109",
+    "name": "スカラベギプス",
+    "level": "90",
+    "element": "虫",
+    "locations": [
+      {
+        "location": "ガラムマサラ(6～10)",
+        "rate": "22.80"
+      }
+    ],
+    "size": "154cm48kg",
+    "description": "ヨコシマテントウが精霊に力をかりたモンスター。体力をすいとるので注意。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/08",
+    "isBoss": false
+  },
+  {
+    "id": "mon_110",
+    "number": "110",
+    "name": "ハナゾノキメラ",
+    "level": "50",
+    "element": "虫",
+    "locations": [
+      {
+        "location": "死の回廊",
+        "rate": "47.50"
+      },
+      {
+        "location": "ガラムマサラ(6～10)",
+        "rate": "4.75"
+      }
+    ],
+    "size": "169cm46kg",
+    "description": "ちょうとカマキリとクワガタが合体したキメラの一種。強力魔法と毒に注意。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/08",
+    "isBoss": false
+  },
+  {
+    "id": "mon_111",
+    "number": "111",
+    "name": "クリザーリダ",
+    "level": "90",
+    "element": "虫",
+    "locations": [
+      {
+        "location": "ガラムマサラ(6～10)",
+        "rate": "40.85"
+      }
+    ],
+    "size": "138cm42kg",
+    "description": "とてもかたいカラを持つキスニカちょうの幼虫。かたい石が好物。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/08",
+    "isBoss": false
+  },
+  {
+    "id": "mon_112",
+    "number": "112",
+    "name": "バガモール",
+    "level": "90",
+    "element": "虫",
+    "locations": [
+      {
+        "location": "ガラムマサラ(6～10)",
+        "rate": "37.05"
+      }
+    ],
+    "size": "157cm56kg",
+    "description": "エニグマが何度も虫と融合した時に突然変異で生まれた。全てにおいて強力だ。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/08",
+    "isBoss": false
+  },
+  {
+    "id": "mon_113",
+    "number": "113",
+    "name": "エッグウィード",
+    "level": "7",
+    "element": "木",
+    "locations": [
+      {
+        "location": "～ピップルスタウン",
+        "rate": "24.70"
+      },
+      {
+        "location": "～ゲアラヴァ村",
+        "rate": "12.35"
+      }
+    ],
+    "size": "42cm19kg",
+    "description": "ハロハロドリのタマゴに寄生したモンスター。かたいカラで身を守っている。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/09",
+    "isBoss": false
+  },
+  {
+    "id": "mon_114",
+    "number": "114",
+    "name": "わかくさきのこ",
+    "level": "8",
+    "element": "木",
+    "locations": [
+      {
+        "location": "～ピップルスタウン",
+        "rate": "16.15"
+      },
+      {
+        "location": "～ゲアラヴァ村",
+        "rate": "0.95"
+      }
+    ],
+    "size": "33cm13kg",
+    "description": "緑色の特殊なキノコ。毒を持ち食べても青臭い。栄養はあるらしい。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/09",
+    "isBoss": false
+  },
+  {
+    "id": "mon_115",
+    "number": "115",
+    "name": "グラスダンサー",
+    "level": "25",
+    "element": "木",
+    "locations": [
+      {
+        "location": "リギニオ密林(5～8)",
+        "rate": "24.15"
+      },
+      {
+        "location": "ガラムマサラ(11～15)",
+        "rate": "1.90"
+      }
+    ],
+    "size": "86cm34kg",
+    "description": "おどりが大好きな魔法使い。魔法は得意だが体は弱い。つぶらなひとみが印象的。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/09",
+    "isBoss": false
+  },
+  {
+    "id": "mon_116",
+    "number": "116",
+    "name": "ポロルート",
+    "level": "10",
+    "element": "木",
+    "locations": [
+      {
+        "location": "～ピップルスタウン",
+        "rate": "44.65"
+      },
+      {
+        "location": "～ゲアラヴァ村",
+        "rate": "21.85"
+      },
+      {
+        "location": "ガラムマサラ(11～15)",
+        "rate": "4.75"
+      }
+    ],
+    "size": "58cm38kg",
+    "description": "「きんかんひよこ」と共生しているモンスター。ヒナがすだつと現れない。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/09",
+    "isBoss": false
+  },
+  {
+    "id": "mon_117",
+    "number": "117",
+    "name": "イガイガナッツ",
+    "level": "23",
+    "element": "木",
+    "locations": [
+      {
+        "location": "リギニオ密林(5～8)",
+        "rate": "27.30"
+      },
+      {
+        "location": "ガラムマサラ(11～15)",
+        "rate": "4.75"
+      }
+    ],
+    "size": "28cm37kg",
+    "description": "イガイガナッツの種でたたく。自分の体がイガイガナッツに守られている。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/09",
+    "isBoss": false
+  },
+  {
+    "id": "mon_118",
+    "number": "118",
+    "name": "ワンダーコーン",
+    "level": "27",
+    "element": "木",
+    "locations": [
+      {
+        "location": "東の森",
+        "rate": "37.30"
+      },
+      {
+        "location": "ガラムマサラ(11～15)",
+        "rate": "1.90"
+      }
+    ],
+    "size": "96cm63kg",
+    "description": "とうもろこしのような皮をかぶった謎の生物。つぶつぶがあるかは謎。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/09",
+    "isBoss": false
+  },
+  {
+    "id": "mon_119",
+    "number": "119",
+    "name": "こけだんご",
+    "level": "28",
+    "element": "木",
+    "locations": [
+      {
+        "location": "東の森",
+        "rate": "22.80"
+      },
+      {
+        "location": "ガラムマサラ(11～15)",
+        "rate": "9.50"
+      }
+    ],
+    "size": "50cm48kg",
+    "description": "こけが生えた団子状の生物。マリモと言う噂もあるが真相は誰も知らない。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/09",
+    "isBoss": false
+  },
+  {
+    "id": "mon_120",
+    "number": "120",
+    "name": "ジャンジャンブル",
+    "level": "27",
+    "element": "木",
+    "locations": [
+      {
+        "location": "東の森",
+        "rate": "36.10"
+      },
+      {
+        "location": "ガラムマサラ(11～15)",
+        "rate": "9.50"
+      }
+    ],
+    "size": "49cm31kg",
+    "description": "自家製モーニングスターで攻撃する小さな生物。でも基本はたいあたり。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/09",
+    "isBoss": false
+  },
+  {
+    "id": "mon_121",
+    "number": "121",
+    "name": "メイプルーン",
+    "level": "29",
+    "element": "木",
+    "locations": [
+      {
+        "location": "東の森",
+        "rate": "45.35"
+      },
+      {
+        "location": "ガラムマサラ(11～15)",
+        "rate": "18.05"
+      }
+    ],
+    "size": "63cm24kg",
+    "description": "美しい木の魔法使い。魔法のみで攻撃してくる。やや病弱らしい。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/09",
+    "isBoss": false
+  },
+  {
+    "id": "mon_122",
+    "number": "122",
+    "name": "アリアーテ",
+    "level": "60",
+    "element": "木",
+    "locations": [
+      {
+        "location": "モギナス魔窟(1～8)",
+        "rate": "27.55"
+      },
+      {
+        "location": "ガラムマサラ(11～15)",
+        "rate": "20.90"
+      }
+    ],
+    "size": "74cm29kg",
+    "description": "木の精霊と仲良しの魔女。木の実が大好きで料理も得意という家庭的な面もある。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/09",
+    "isBoss": false
+  },
+  {
+    "id": "mon_123",
+    "number": "123",
+    "name": "だだちゃガニ",
+    "level": "60",
+    "element": "木",
+    "locations": [
+      {
+        "location": "モギナス魔窟(1～8)",
+        "rate": "19.25"
+      },
+      {
+        "location": "ガラムマサラ(11～15)",
+        "rate": "14.25"
+      }
+    ],
+    "size": "79cm53kg",
+    "description": "マサラティの名物である「ダダチャマメ」型のカニ。マメばくだんでいかくする。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/09",
+    "isBoss": false
+  },
+  {
+    "id": "mon_124",
+    "number": "124",
+    "name": "アルボルアーク",
+    "level": "61",
+    "element": "木",
+    "locations": [
+      {
+        "location": "モギナス魔窟(1～8)",
+        "rate": "37.05"
+      },
+      {
+        "location": "ガラムマサラ(11～15)",
+        "rate": "14.25"
+      }
+    ],
+    "size": "200cm30kg",
+    "description": "呪われた大木からできた悪魔のかんおけ。魔法は使えないがかたい。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/09",
+    "isBoss": false
+  },
+  {
+    "id": "mon_125",
+    "number": "125",
+    "name": "アズキクラブ",
+    "level": "100",
+    "element": "木",
+    "locations": [
+      {
+        "location": "ガラムマサラ(11～15)",
+        "rate": "37.05"
+      }
+    ],
+    "size": "38cm17kg",
+    "description": "だだちゃまめに呪いがかかりモンスターになった。まめばくだんに注意。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/09",
+    "isBoss": false
+  },
+  {
+    "id": "mon_126",
+    "number": "126",
+    "name": "セロリアック",
+    "level": "100",
+    "element": "木",
+    "locations": [
+      {
+        "location": "ガラムマサラ(11～15)",
+        "rate": "22.80"
+      }
+    ],
+    "size": "217cm136kg",
+    "description": "文武両道なモンスター。太っているが身軽で魔法も強力なので注意が必要。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/09",
+    "isBoss": false
+  },
+  {
+    "id": "mon_127",
+    "number": "127",
+    "name": "ポップテール",
+    "level": "1",
+    "element": "獣",
+    "locations": [
+      {
+        "location": "ミモレットの森",
+        "rate": "38.00"
+      },
+      {
+        "location": "森の洞窟",
+        "rate": "9.50"
+      },
+      {
+        "location": "レーミッツ宮殿(外)",
+        "rate": "19.00"
+      },
+      {
+        "location": "～ピップルスタウン",
+        "rate": "24.70"
+      }
+    ],
+    "size": "35cm13kg",
+    "description": "３つのしっぽと６本の足を持つリスネコ。おくびょうもので人にはなつかない。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/10",
+    "isBoss": false
+  },
+  {
+    "id": "mon_128",
+    "number": "128",
+    "name": "スカイホッパー",
+    "level": "12",
+    "element": "獣",
+    "locations": [
+      {
+        "location": "～ゲアラヴァ村",
+        "rate": "24.70"
+      },
+      {
+        "location": "ガラムマサラ(31～35)",
+        "rate": "9.50"
+      }
+    ],
+    "size": "48cm15kg",
+    "description": "すばやいコウモリの仲間。魔法は使えないがウインドカッターで攻撃する。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/10",
+    "isBoss": false
+  },
+  {
+    "id": "mon_129",
+    "number": "129",
+    "name": "メオトハイエナ",
+    "level": "23",
+    "element": "獣",
+    "locations": [
+      {
+        "location": "リギニオ密林(1～4)",
+        "rate": "25.65"
+      },
+      {
+        "location": "クムヤムト砂漠",
+        "rate": "14.25"
+      },
+      {
+        "location": "ガラムマサラ(31～35)",
+        "rate": "1.90"
+      }
+    ],
+    "size": "145cm52kg",
+    "description": "頭が２つあるハイエナ。かみのけが赤い。ちょっとやさぐれている。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/10",
+    "isBoss": false
+  },
+  {
+    "id": "mon_130",
+    "number": "130",
+    "name": "ラクーンドッグ",
+    "level": "55",
+    "element": "獣",
+    "locations": [
+      {
+        "location": "暗闇の地,失意の沼",
+        "rate": "38.00"
+      },
+      {
+        "location": "ガラムマサラ(31～35)",
+        "rate": "19.00"
+      }
+    ],
+    "size": "32cm8kg",
+    "description": "ちょっと太ったイヌ。おなかをたたいた音で相手を眠らせる。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/10",
+    "isBoss": false
+  },
+  {
+    "id": "mon_131",
+    "number": "131",
+    "name": "バクドリン",
+    "level": "14",
+    "element": "獣",
+    "locations": [
+      {
+        "location": "～ゲアラヴァ村",
+        "rate": "40.85"
+      },
+      {
+        "location": "ガラムマサラ(31～35)",
+        "rate": "9.50"
+      }
+    ],
+    "size": "132cm64kg",
+    "description": "左腕に持つ「ミニおの」で攻撃する。魔法は使えないが攻守ともに高い能力を持つ。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/10",
+    "isBoss": false
+  },
+  {
+    "id": "mon_132",
+    "number": "132",
+    "name": "ココドリーロ",
+    "level": "55",
+    "element": "獣",
+    "locations": [
+      {
+        "location": "暗闇の地,失意の沼",
+        "rate": "40.85"
+      },
+      {
+        "location": "ガラムマサラ(31～35)",
+        "rate": "14.25"
+      }
+    ],
+    "size": "85cm39kg",
+    "description": "からにこもったピンクワニ。牙には毒をがありかまれるとマヒをする事がある。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/10",
+    "isBoss": false
+  },
+  {
+    "id": "mon_133",
+    "number": "133",
+    "name": "ゴリハンマー",
+    "level": "24",
+    "element": "獣",
+    "locations": [
+      {
+        "location": "リギニオ密林(1～4)",
+        "rate": "38.95"
+      },
+      {
+        "location": "クムヤムト砂漠",
+        "rate": "34.20"
+      },
+      {
+        "location": "ガラムマサラ(31～35)",
+        "rate": "14.25"
+      }
+    ],
+    "size": "173cm94kg",
+    "description": "日曜大工が得意なパワー型。ハンマー攻撃は威力大。魔法は使えない。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/10",
+    "isBoss": false
+  },
+  {
+    "id": "mon_134",
+    "number": "134",
+    "name": "かみつきライアン",
+    "level": "35",
+    "element": "獣",
+    "locations": [
+      {
+        "location": "モルビエ火山",
+        "rate": "53.20"
+      },
+      {
+        "location": "荒廃の地#1",
+        "rate": "24.70"
+      },
+      {
+        "location": "荒廃の地#2",
+        "rate": "34.20"
+      },
+      {
+        "location": "ガラムマサラ(31～35)",
+        "rate": "14.25"
+      }
+    ],
+    "size": "187cm106kg",
+    "description": "野生のはいいろライアン。動くものを見つけると何でもかみつく習性がある。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/10",
+    "isBoss": false
+  },
+  {
+    "id": "mon_135",
+    "number": "135",
+    "name": "てっきゅうエイプ",
+    "level": "37",
+    "element": "獣",
+    "locations": [
+      {
+        "location": "モルビエ火山",
+        "rate": "22.80"
+      },
+      {
+        "location": "荒廃の地#1",
+        "rate": "42.75"
+      },
+      {
+        "location": "荒廃の地#2",
+        "rate": "49.40"
+      },
+      {
+        "location": "ガラムマサラ(31～35)",
+        "rate": "4.75"
+      }
+    ],
+    "size": "209cm137kg",
+    "description": "凶暴なサルが知識を持ち鉄球を使い始めた。野生のパワーはけたはずれ。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/10",
+    "isBoss": false
+  },
+  {
+    "id": "mon_136",
+    "number": "136",
+    "name": "ゴリドリール",
+    "level": "55",
+    "element": "獣",
+    "locations": [
+      {
+        "location": "暗闇の地,失意の沼",
+        "rate": "60.80"
+      },
+      {
+        "location": "ガラムマサラ(31～35)",
+        "rate": "18.05"
+      }
+    ],
+    "size": "227cm174kg",
+    "description": "ゴリハンマーの親分。ハンマーだけでなくドリルも使うといわれている。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/10",
+    "isBoss": false
+  },
+  {
+    "id": "mon_137",
+    "number": "137",
+    "name": "デコンベーモン",
+    "level": "56",
+    "element": "獣",
+    "locations": [
+      {
+        "location": "暗闇の地,失意の沼",
+        "rate": "62.95"
+      },
+      {
+        "location": "ガラムマサラ(31～35)",
+        "rate": "18.05"
+      }
+    ],
+    "size": "195cm86kg",
+    "description": "強い力を持ちその波動で攻撃してくる。呪われると力と守備が落ちるので注意。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/10",
+    "isBoss": false
+  },
+  {
+    "id": "mon_138",
+    "number": "138",
+    "name": "ナサローク",
+    "level": "140",
+    "element": "獣",
+    "locations": [
+      {
+        "location": "ガラムマサラ(31～35)",
+        "rate": "23.75"
+      }
+    ],
+    "size": "263cm217kg",
+    "description": "とても凶暴な陸ザメ。強力なかみつきは精神力を下げる効果も持っている。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/10",
+    "isBoss": false
+  },
+  {
+    "id": "mon_139",
+    "number": "139",
+    "name": "ダイアレーア",
+    "level": "140",
+    "element": "獣",
+    "locations": [
+      {
+        "location": "ガラムマサラ(31～35)",
+        "rate": "4.75"
+      },
+      {
+        "location": "ガラムマサラ３５ボス",
+        "rate": "100"
+      }
+    ],
+    "size": "153cm74kg",
+    "description": "半分白骨化した恐竜。力が強いが知能は低い。ツメには毒があるので注意。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/10",
+    "isBoss": false
+  },
+  {
+    "id": "mon_140",
+    "number": "140",
+    "name": "ビーストクラウン",
+    "level": "140",
+    "element": "獣",
+    "locations": [
+      {
+        "location": "ガラムマサラ(31～35)",
+        "rate": "29.45"
+      },
+      {
+        "location": "ガラムマサラ３５ボス",
+        "rate": "100"
+      }
+    ],
+    "size": "184cm105kg",
+    "description": "全ての獣から最強と言われている獣の王。あまり姿をあらわさない。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/10",
+    "isBoss": false
+  },
+  {
+    "id": "mon_141",
+    "number": "141",
+    "name": "アプア",
+    "level": "18",
+    "element": "水",
+    "locations": [
+      {
+        "location": "レヒカフ沼周辺#2",
+        "rate": "41.80"
+      },
+      {
+        "location": "ジェラ風穴",
+        "rate": "55.10"
+      }
+    ],
+    "size": "2cm～1kg～",
+    "description": "いたずら好きのおばけ。水たまりに引きこもうとする。熱いおふろは大嫌い。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/11",
+    "isBoss": false
+  },
+  {
+    "id": "mon_142",
+    "number": "142",
+    "name": "アネモネィッチ",
+    "level": "20",
+    "element": "水",
+    "locations": [
+      {
+        "location": "レヒカフ沼周辺#2",
+        "rate": "52.25"
+      },
+      {
+        "location": "ジェラ風穴",
+        "rate": "58.90"
+      },
+      {
+        "location": "ガラムマサラ(21～25)",
+        "rate": "1.90"
+      },
+      {
+        "location": "ヘイルクラブ(イベント)",
+        "rate": "100"
+      }
+    ],
+    "size": "114cm40kg",
+    "description": "バレンシア海岸に生息するイソギンチャクがエニグマの力で巨大化した魔法使い。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/11",
+    "isBoss": false
+  },
+  {
+    "id": "mon_143",
+    "number": "143",
+    "name": "うみだんご",
+    "level": "27",
+    "element": "水",
+    "locations": [
+      {
+        "location": "東の森",
+        "rate": "25.65"
+      },
+      {
+        "location": "キスニカ鉱山(1～4)",
+        "rate": "19.00"
+      },
+      {
+        "location": "キスニカ鉱山(5～8)",
+        "rate": "29.45"
+      },
+      {
+        "location": "キスニカ鉱山(9～12)",
+        "rate": "41.80"
+      },
+      {
+        "location": "ガラムマサラ(21～25)",
+        "rate": "9.50"
+      }
+    ],
+    "size": "49cm49kg",
+    "description": "水でできたプルプルしたスライム状の生物。笑顔は絶やさない。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/11",
+    "isBoss": false
+  },
+  {
+    "id": "mon_144",
+    "number": "144",
+    "name": "ビローフィッシュ",
+    "level": "39",
+    "element": "水",
+    "locations": [
+      {
+        "location": "キスニカ鉱山(1～4)",
+        "rate": "38.00"
+      },
+      {
+        "location": "キスニカ鉱山(5～8)",
+        "rate": "38.00"
+      },
+      {
+        "location": "キスニカ鉱山(9～12)",
+        "rate": "23.75"
+      },
+      {
+        "location": "ラキューオ(1～4)",
+        "rate": "12.35"
+      },
+      {
+        "location": "ガラムマサラ(21～25)",
+        "rate": "9.50"
+      }
+    ],
+    "size": "28cm10kg",
+    "description": "魔法が得意なカサゴの仲間。なかなか凶暴で毒の歯でかみついてくる。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/11",
+    "isBoss": false
+  },
+  {
+    "id": "mon_145",
+    "number": "145",
+    "name": "アイスバーグ",
+    "level": "19",
+    "element": "水",
+    "locations": [
+      {
+        "location": "レヒカフ沼周辺#2",
+        "rate": "14.25"
+      },
+      {
+        "location": "ジェラ風穴",
+        "rate": "22.80"
+      },
+      {
+        "location": "ガラムマサラ(21～25)",
+        "rate": "4.75"
+      },
+      {
+        "location": "ヘイルクラブ(イベント)",
+        "rate": "100"
+      }
+    ],
+    "size": "139cm127kg",
+    "description": "特殊な水が凍って生まれた氷のモンスター。力が強く魔法は使えない。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/11",
+    "isBoss": false
+  },
+  {
+    "id": "mon_146",
+    "number": "146",
+    "name": "アンモダイル",
+    "level": "21",
+    "element": "水",
+    "locations": [
+      {
+        "location": "レヒカフ沼周辺#2",
+        "rate": "39.90"
+      },
+      {
+        "location": "ジェラ風穴",
+        "rate": "48.45"
+      },
+      {
+        "location": "ガラムマサラ(21～25)",
+        "rate": "1.90"
+      },
+      {
+        "location": "ヘイルクラブ(イベント)",
+        "rate": "100"
+      }
+    ],
+    "size": "158cm55kg",
+    "description": "強力なあごの力でかみつくかいがらに入ったワニ。しびれる毒を持っている。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/11",
+    "isBoss": false
+  },
+  {
+    "id": "mon_147",
+    "number": "147",
+    "name": "テイパール",
+    "level": "28",
+    "element": "水",
+    "locations": [
+      {
+        "location": "東の森",
+        "rate": "34.20"
+      },
+      {
+        "location": "キスニカ鉱山(1～4)",
+        "rate": "19.95"
+      },
+      {
+        "location": "キスニカ鉱山(5～8)",
+        "rate": "24.70"
+      },
+      {
+        "location": "キスニカ鉱山(9～12)",
+        "rate": "21.85"
+      },
+      {
+        "location": "ガラムマサラ(21～25)",
+        "rate": "4.75"
+      }
+    ],
+    "size": "157cm82kg",
+    "description": "自家製の切れ味鋭い斧で攻撃してくるモンスター。とげパンツには豊富な水が。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/11",
+    "isBoss": false
+  },
+  {
+    "id": "mon_148",
+    "number": "148",
+    "name": "ブリザードマール",
+    "level": "120",
+    "element": "水",
+    "locations": [
+      {
+        "location": "ガラムマサラ(21～25)",
+        "rate": "38.00"
+      },
+      {
+        "location": "ガラムマサラ(41～45)",
+        "rate": "19.00"
+      },
+      {
+        "location": "ガラムマサラ２５ボス",
+        "rate": "100"
+      }
+    ],
+    "size": "84cm59kg",
+    "description": "深い水の中に住むザリガニ。深水で鍛えられた殻は硬く防御力が高い。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/11",
+    "isBoss": false
+  },
+  {
+    "id": "mon_149",
+    "number": "149",
+    "name": "フスコプサロ",
+    "level": "47",
+    "element": "水",
+    "locations": [
+      {
+        "location": "ラキューオ(1～4)",
+        "rate": "58.90"
+      },
+      {
+        "location": "ガラムマサラ(21～25)",
+        "rate": "14.25"
+      }
+    ],
+    "size": "37cm15kg",
+    "description": "水をおなかいっぱいにためる習性を持つふぐ。その重たい体当たりは強力。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/11",
+    "isBoss": false
+  },
+  {
+    "id": "mon_150",
+    "number": "150",
+    "name": "タコせんし",
+    "level": "47",
+    "element": "水",
+    "locations": [
+      {
+        "location": "ラキューオ(1～4)",
+        "rate": "53.20"
+      },
+      {
+        "location": "ガラムマサラ(21～25)",
+        "rate": "18.05"
+      }
+    ],
+    "size": "185cm63kg",
+    "description": "魔法もつかえる海の戦士。スミをはいて攻撃してくる。もりでつつかれる。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/11",
+    "isBoss": false
+  },
+  {
+    "id": "mon_151",
+    "number": "151",
+    "name": "うずしおがに",
+    "level": "47",
+    "element": "水",
+    "locations": [
+      {
+        "location": "ラキューオ(1～4)",
+        "rate": "34.20"
+      },
+      {
+        "location": "ガラムマサラ(21～25)",
+        "rate": "19.00"
+      }
+    ],
+    "size": "26cm8kg",
+    "description": "頭上の貝状の割れ目から謎の泡を出して攻撃する。魔法が得意である。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/11",
+    "isBoss": false
+  },
+  {
+    "id": "mon_152",
+    "number": "152",
+    "name": "ヴァシュラン",
+    "level": "120",
+    "element": "水",
+    "locations": [
+      {
+        "location": "ガラムマサラ(21～25)",
+        "rate": "22.80"
+      },
+      {
+        "location": "ガラムマサラ(41～45)",
+        "rate": "9.50"
+      },
+      {
+        "location": "ガラムマサラ２５ボス",
+        "rate": "100"
+      }
+    ],
+    "size": "187cm78kg",
+    "description": "足のはえたサメ型ドラゴン。全てにおいて強力なので注意が必要である。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/11",
+    "isBoss": false
+  },
+  {
+    "id": "mon_153",
+    "number": "153",
+    "name": "ヒッポポリザード",
+    "level": "42",
+    "element": "水",
+    "locations": [
+      {
+        "location": "キスニカ鉱山(9～12)",
+        "rate": "61.50"
+      },
+      {
+        "location": "ガラムマサラ(21～25)",
+        "rate": "32.30"
+      }
+    ],
+    "size": "208cm243kg",
+    "description": "口から毒の水を放出して大きなべろでなめ攻撃する。夜は水辺で眠っている。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/11",
+    "isBoss": false
+  },
+  {
+    "id": "mon_154",
+    "number": "154",
+    "name": "メーアアール",
+    "level": "160",
+    "element": "水",
+    "locations": [
+      {
+        "location": "ガラムマサラ(41～45)",
+        "rate": "18.05"
+      }
+    ],
+    "size": "428cm174kg",
+    "description": "とても長いなまず。基本生活は水の中だが散歩がてらに空も飛ぶらしい。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/11",
+    "isBoss": false
+  },
+  {
+    "id": "mon_155",
+    "number": "155",
+    "name": "スパークル",
+    "level": "22",
+    "element": "雷",
+    "locations": [
+      {
+        "location": "リギニオ密林(5～8)",
+        "rate": "34.20"
+      },
+      {
+        "location": "クムヤムト砂漠",
+        "rate": "19.95"
+      },
+      {
+        "location": "ガラムマサラ(1～5)",
+        "rate": "14.25"
+      }
+    ],
+    "size": "42cm8kg",
+    "description": "電気をおびたハチドリ。放電しているので近づくと危険である。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/12",
+    "isBoss": false
+  },
+  {
+    "id": "mon_156",
+    "number": "156",
+    "name": "ベビスター",
+    "level": "44",
+    "element": "雷",
+    "locations": [
+      {
+        "location": "荒廃の地#1",
+        "rate": "29.45"
+      },
+      {
+        "location": "荒廃の地#2",
+        "rate": "35.15"
+      },
+      {
+        "location": "ラキューオ(5～7)",
+        "rate": "12.35"
+      },
+      {
+        "location": "ガラムマサラ(1～5)",
+        "rate": "4.75"
+      }
+    ],
+    "size": "93cm28kg",
+    "description": "魔法が得意なチビッ子民族。精神力も高く手ごわい。ファイヤーダンスが得意。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/12",
+    "isBoss": false
+  },
+  {
+    "id": "mon_157",
+    "number": "157",
+    "name": "マジカルカサゴ",
+    "level": "80",
+    "element": "雷",
+    "locations": [
+      {
+        "location": "ガラムマサラ(1～5)",
+        "rate": "46.55"
+      },
+      {
+        "location": "ガラムマサラ(26～30)",
+        "rate": "9.50"
+      }
+    ],
+    "size": "62cm24kg",
+    "description": "空中をおよいでいるカサゴ。毒があるので注意。たべられません。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/12",
+    "isBoss": false
+  },
+  {
+    "id": "mon_158",
+    "number": "158",
+    "name": "でんげきコヨーテ",
+    "level": "9",
+    "element": "雷",
+    "locations": [
+      {
+        "location": "～ピップルスタウン",
+        "rate": "34.20"
+      },
+      {
+        "location": "ラ・ロッシュの塔",
+        "rate": "33.25"
+      },
+      {
+        "location": "～ゲアラヴァ村",
+        "rate": "27.55"
+      },
+      {
+        "location": "ガラムマサラ(1～5)",
+        "rate": "18.05"
+      }
+    ],
+    "size": "187cm83kg",
+    "description": "雷に撃たれて耐性がついたと言われる双頭のコヨーテ。常におなかを減らせている。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/12",
+    "isBoss": false
+  },
+  {
+    "id": "mon_159",
+    "number": "159",
+    "name": "かみなりだぬき",
+    "level": "10",
+    "element": "雷",
+    "locations": [
+      {
+        "location": "～ピップルスタウン",
+        "rate": "51.30"
+      },
+      {
+        "location": "ラ・ロッシュの塔",
+        "rate": "13.30"
+      },
+      {
+        "location": "～ゲアラヴァ村",
+        "rate": "23.75"
+      },
+      {
+        "location": "ガラムマサラ(1～5)",
+        "rate": "18.05"
+      }
+    ],
+    "size": "63cm19kg",
+    "description": "おなかのタイコをたたいて雷雲を呼ぶ不思議なたぬき。魔法攻撃はあなどれない。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/12",
+    "isBoss": false
+  },
+  {
+    "id": "mon_160",
+    "number": "160",
+    "name": "ブリッツ",
+    "level": "43",
+    "element": "雷",
+    "locations": [
+      {
+        "location": "荒廃の地#1",
+        "rate": "38.00"
+      },
+      {
+        "location": "荒廃の地#2",
+        "rate": "38.00"
+      },
+      {
+        "location": "ラキューオ(5～7)",
+        "rate": "6.65"
+      },
+      {
+        "location": "ガラムマサラ(1～5)",
+        "rate": "4.75"
+      }
+    ],
+    "size": "152cm61kg",
+    "description": "ブーメランを投げる電気を帯びたモンスター。攻撃的な性格をしている。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/12",
+    "isBoss": false
+  },
+  {
+    "id": "mon_161",
+    "number": "161",
+    "name": "ビビリ",
+    "level": "24",
+    "element": "雷",
+    "locations": [
+      {
+        "location": "リギニオ密林(5～8)",
+        "rate": "37.85"
+      },
+      {
+        "location": "クムヤムト砂漠",
+        "rate": "3.80"
+      },
+      {
+        "location": "ガラムマサラ(1～5)",
+        "rate": "1.90"
+      }
+    ],
+    "size": "68cm33kg",
+    "description": "「もくもくドウリィ」をしたがえたカミナリネコ。気合でカミナリを起こす。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/12",
+    "isBoss": false
+  },
+  {
+    "id": "mon_162",
+    "number": "162",
+    "name": "ランパゴ",
+    "level": "47",
+    "element": "雷",
+    "locations": [
+      {
+        "location": "ラキューオ(5～7)",
+        "rate": "70.30"
+      },
+      {
+        "location": "モギナス魔窟(1～8)",
+        "rate": "14.25"
+      },
+      {
+        "location": "ガラムマサラ(1～5)",
+        "rate": "19.00"
+      }
+    ],
+    "size": "134cm42kg",
+    "description": "「雷石」を持ちふわふわと空中を移動するトカゲ。知能も高く注意が必要。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/12",
+    "isBoss": false
+  },
+  {
+    "id": "mon_163",
+    "number": "163",
+    "name": "オッソブーコ",
+    "level": "47",
+    "element": "雷",
+    "locations": [
+      {
+        "location": "ラキューオ(5～7)",
+        "rate": "49.40"
+      },
+      {
+        "location": "ガラムマサラ(1～5)",
+        "rate": "1.90"
+      }
+    ],
+    "size": "137cm86kg",
+    "description": "力が強く、こんぼうで攻撃してくる。魔法も使う。小さい事を気にしている。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/12",
+    "isBoss": false
+  },
+  {
+    "id": "mon_164",
+    "number": "164",
+    "name": "イエローグローム",
+    "level": "47",
+    "element": "雷",
+    "locations": [
+      {
+        "location": "ラキューオ(5～7)",
+        "rate": "43.70"
+      },
+      {
+        "location": "モギナス魔窟(1～8)",
+        "rate": "4.75"
+      },
+      {
+        "location": "ガラムマサラ(1～5)",
+        "rate": "1.90"
+      }
+    ],
+    "size": "54cm27kg",
+    "description": "なぜか羽マンモスに乗って移動する雷小僧。雷も落とせない半人前。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/12",
+    "isBoss": false
+  },
+  {
+    "id": "mon_165",
+    "number": "165",
+    "name": "サンダーモラスク",
+    "level": "80",
+    "element": "雷",
+    "locations": [
+      {
+        "location": "ガラムマサラ(1～5)",
+        "rate": "47.50"
+      },
+      {
+        "location": "ガラムマサラ(26～30)",
+        "rate": "37.05"
+      }
+    ],
+    "size": "137cm48kg",
+    "description": "魔法を使うタコ。海を守っているらしいがモリで魚をとって食べる。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/12",
+    "isBoss": false
+  },
+  {
+    "id": "mon_166",
+    "number": "166",
+    "name": "ベルティゴー",
+    "level": "130",
+    "element": "雷",
+    "locations": [
+      {
+        "location": "ガラムマサラ(26～30)",
+        "rate": "33.25"
+      },
+      {
+        "location": "ガラムマサラ３０ボス",
+        "rate": "100"
+      }
+    ],
+    "size": "249cm126kg",
+    "description": "たてがみで電気を発生させるデンキライオンの一種。力やすばやさも高い。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/12",
+    "isBoss": false
+  },
+  {
+    "id": "mon_167",
+    "number": "167",
+    "name": "イナマズン",
+    "level": "61",
+    "element": "雷",
+    "locations": [
+      {
+        "location": "モギナス魔窟(1～8)",
+        "rate": "22.15"
+      },
+      {
+        "location": "ガラムマサラ(26～30)",
+        "rate": "9.50"
+      }
+    ],
+    "size": "243cm76kg",
+    "description": "なまずのようなドラゴン。攻撃は強力でしびれる時もあるので注意。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/12",
+    "isBoss": false
+  },
+  {
+    "id": "mon_168",
+    "number": "168",
+    "name": "エレクトズモス",
+    "level": "130",
+    "element": "雷",
+    "locations": [
+      {
+        "location": "ガラムマサラ(26～30)",
+        "rate": "22.80"
+      },
+      {
+        "location": "ガラムマサラ３０ボス",
+        "rate": "100"
+      }
+    ],
+    "size": "218cm385kg",
+    "description": "「しびれべろ」で攻撃する特殊なサラマンダー。魔法も使える強敵だ。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/12",
+    "isBoss": false
+  },
+  {
+    "id": "mon_169",
+    "number": "169",
+    "name": "ブリキスピナー",
+    "level": "14",
+    "element": "古",
+    "locations": [
+      {
+        "location": "キードモンガ",
+        "rate": "65.80"
+      },
+      {
+        "location": "タルタルちゃん(イベント)",
+        "rate": "100"
+      }
+    ],
+    "size": "66cm32kg",
+    "description": "ゼンマイ仕掛けの古代機械。多くが謎につつまれている。回転攻撃には注意。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/13",
+    "isBoss": false
+  },
+  {
+    "id": "mon_170",
+    "number": "170",
+    "name": "クロムスピナー",
+    "level": "44",
+    "element": "古",
+    "locations": [
+      {
+        "location": "タンドーリ",
+        "rate": "84.55"
+      },
+      {
+        "location": "ガラムマサラ(16～20)",
+        "rate": "4.75"
+      }
+    ],
+    "size": "66cm32kg",
+    "description": "電池で動く古代機械。。多くが謎につつまれている。ブリキスピナーより高性能。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/13",
+    "isBoss": false
+  },
+  {
+    "id": "mon_171",
+    "number": "171",
+    "name": "アクセルスピナー",
+    "level": "70",
+    "element": "古",
+    "locations": [
+      {
+        "location": "モギナス魔窟(10,12～16)",
+        "rate": "25.65"
+      },
+      {
+        "location": "モギナス魔窟１１",
+        "rate": "28.50"
+      },
+      {
+        "location": "ガラムマサラ(16～20)",
+        "rate": "19.00"
+      }
+    ],
+    "size": "66cm32kg",
+    "description": "半永久的に動く古代機械。多くが謎につつまれている。スピナー系の最高級機だ。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/13",
+    "isBoss": false
+  },
+  {
+    "id": "mon_172",
+    "number": "172",
+    "name": "ブリキクロック",
+    "level": "15",
+    "element": "古",
+    "locations": [
+      {
+        "location": "キードモンガ",
+        "rate": "73.15"
+      },
+      {
+        "location": "ガラムマサラ(16～20)",
+        "rate": "1.90"
+      },
+      {
+        "location": "タルタルちゃん(イベント)",
+        "rate": "100"
+      }
+    ],
+    "size": "78cm18kg",
+    "description": "魔法に強い古代機械。多くが謎につつまれている。直接攻撃はしてこない。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/13",
+    "isBoss": false
+  },
+  {
+    "id": "mon_173",
+    "number": "173",
+    "name": "クロムクロック",
+    "level": "45",
+    "element": "古",
+    "locations": [
+      {
+        "location": "タンドーリ",
+        "rate": "37.05"
+      },
+      {
+        "location": "ガラムマサラ(16～20)",
+        "rate": "1.90"
+      }
+    ],
+    "size": "78cm18kg",
+    "description": "とても魔法に強い古代機械。多くが謎につつまれている。ブリキクロックより高性能。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/13",
+    "isBoss": false
+  },
+  {
+    "id": "mon_174",
+    "number": "174",
+    "name": "アクセルクロック",
+    "level": "71",
+    "element": "古",
+    "locations": [
+      {
+        "location": "モギナス魔窟(10,12～16)",
+        "rate": "14.10"
+      },
+      {
+        "location": "モギナス魔窟１１",
+        "rate": "16.75"
+      },
+      {
+        "location": "ガラムマサラ(16～20)",
+        "rate": "11.40"
+      }
+    ],
+    "size": "78cm18kg",
+    "description": "かなり魔法に強い古代機械。多くが謎につつまれている。クロック系の最高級機だ。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/13",
+    "isBoss": false
+  },
+  {
+    "id": "mon_175",
+    "number": "175",
+    "name": "ブリキバーナー",
+    "level": "16",
+    "element": "古",
+    "locations": [
+      {
+        "location": "キードモンガ",
+        "rate": "61.75"
+      },
+      {
+        "location": "ガラムマサラ(16～20)",
+        "rate": "14.25"
+      },
+      {
+        "location": "タルタルちゃん(イベント)",
+        "rate": "100"
+      }
+    ],
+    "size": "119cm54kg",
+    "description": "タイヤのついた古代機械。多くが謎につつまれている。魔法は使えない。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/13",
+    "isBoss": false
+  },
+  {
+    "id": "mon_176",
+    "number": "176",
+    "name": "クロムバーナー",
+    "level": "44",
+    "element": "古",
+    "locations": [
+      {
+        "location": "タンドーリ",
+        "rate": "85.50"
+      },
+      {
+        "location": "ガラムマサラ(16～20)",
+        "rate": "4.75"
+      }
+    ],
+    "size": "119cm54kg",
+    "description": "タイヤのついた古代機械。多くが謎につつまれている。強力な火を吹く。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/13",
+    "isBoss": false
+  },
+  {
+    "id": "mon_177",
+    "number": "177",
+    "name": "アクセルバーナー",
+    "level": "72",
+    "element": "古",
+    "locations": [
+      {
+        "location": "モギナス魔窟(10,12～16)",
+        "rate": "4.55"
+      },
+      {
+        "location": "モギナス魔窟１１",
+        "rate": "7.90"
+      },
+      {
+        "location": "ガラムマサラ(16～20)",
+        "rate": "18.05"
+      }
+    ],
+    "size": "119cm54kg",
+    "description": "タイヤのついた古代機械。多くが謎につつまれている。バーナー系の最高級機だ。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/13",
+    "isBoss": false
+  },
+  {
+    "id": "mon_178",
+    "number": "178",
+    "name": "ブリキボマー",
+    "level": "45",
+    "element": "古",
+    "locations": [
+      {
+        "location": "タンドーリ",
+        "rate": "61.75"
+      },
+      {
+        "location": "ガラムマサラ(16～20)",
+        "rate": "14.25"
+      }
+    ],
+    "size": "139cm73kg",
+    "description": "ばくはつを起こす古代機械。多くが謎につつまれている。ボム攻撃には注意。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/13",
+    "isBoss": false
+  },
+  {
+    "id": "mon_179",
+    "number": "179",
+    "name": "クロムボマー",
+    "level": "110",
+    "element": "古",
+    "locations": [
+      {
+        "location": "ガラムマサラ(16～20)",
+        "rate": "38.00"
+      },
+      {
+        "location": "ガラムマサラ(41～45)",
+        "rate": "19.00"
+      },
+      {
+        "location": "ガラムマサラ２０ボス",
+        "rate": "100"
+      }
+    ],
+    "size": "139cm73kg",
+    "description": "ばくはつを起こす古代機械。多くが謎につつまれている。激しい爆発を起こす。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/13",
+    "isBoss": false
+  },
+  {
+    "id": "mon_180",
+    "number": "180",
+    "name": "アクセルボマー",
+    "level": "160",
+    "element": "古",
+    "locations": [
+      {
+        "location": "ガラムマサラ(41～45)",
+        "rate": "38.00"
+      }
+    ],
+    "size": "139cm73kg",
+    "description": "ばくはつを起こす古代機械。多くが謎につつまれている。ボマー系の最高級機だ。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/13",
+    "isBoss": false
+  },
+  {
+    "id": "mon_181",
+    "number": "181",
+    "name": "ブリキマージ",
+    "level": "46",
+    "element": "古",
+    "locations": [
+      {
+        "location": "タンドーリ",
+        "rate": "60.10"
+      },
+      {
+        "location": "ガラムマサラ(16～20)",
+        "rate": "9.50"
+      }
+    ],
+    "size": "80cm39kg",
+    "description": "魔法使いの古代機械。多くが謎につつまれている。たさいな魔法に注意が必要。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/13",
+    "isBoss": false
+  },
+  {
+    "id": "mon_182",
+    "number": "182",
+    "name": "クロムマージ",
+    "level": "110",
+    "element": "古",
+    "locations": [
+      {
+        "location": "ガラムマサラ(16～20)",
+        "rate": "27.55"
+      },
+      {
+        "location": "ガラムマサラ(41～45)",
+        "rate": "11.40"
+      },
+      {
+        "location": "ガラムマサラ２０ボス",
+        "rate": "100"
+      }
+    ],
+    "size": "80cm39kg",
+    "description": "魔法使いの古代機械。多くが謎につつまれている。強力な魔法を使う。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/13",
+    "isBoss": false
+  },
+  {
+    "id": "mon_183",
+    "number": "183",
+    "name": "アクセルマージ",
+    "level": "160",
+    "element": "古",
+    "locations": [
+      {
+        "location": "ガラムマサラ(41～45)",
+        "rate": "36.10"
+      }
+    ],
+    "size": "80cm39kg",
+    "description": "魔法使いの古代機械。多くが謎につつまれている。マージ系の最高級機だ。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/13",
+    "isBoss": false
+  },
+  {
+    "id": "mon_184",
+    "number": "184",
+    "name": "ダミーゴースト",
+    "level": "1",
+    "element": "闇",
+    "locations": [
+      {
+        "location": "レーミッツ宮殿(内)",
+        "rate": "3.25"
+      },
+      {
+        "location": "ラ・ロッシュの塔",
+        "rate": "3.75"
+      },
+      {
+        "location": "闇の精霊(1体目)",
+        "rate": "100"
+      },
+      {
+        "location": "闇の精霊(2体目)",
+        "rate": "99.00"
+      },
+      {
+        "location": "ヴァルカネイラ(イベント)",
+        "rate": "100"
+      },
+      {
+        "location": "ダブハスネル(レーミッツ宮殿イベント)",
+        "rate": "100"
+      }
+    ],
+    "size": "59cm8kg",
+    "description": "ボロ布をまとったゆうれい。おどろかすのがせいいっぱいな小心者らしい。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/14",
+    "isBoss": false
+  },
+  {
+    "id": "mon_185",
+    "number": "185",
+    "name": "クロバティー",
+    "level": "5",
+    "element": "闇",
+    "locations": [
+      {
+        "location": "レーミッツ宮殿(内)",
+        "rate": "5.00"
+      },
+      {
+        "location": "ガラムマサラ(26～30)",
+        "rate": "18.05"
+      }
+    ],
+    "size": "34cm5kg",
+    "description": "闇のコウモリ。「なぞのかんおけ」から飛び出してくるぞ。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/14",
+    "isBoss": false
+  },
+  {
+    "id": "mon_186",
+    "number": "186",
+    "name": "アンスティンガー",
+    "level": "12",
+    "element": "闇",
+    "locations": [
+      {
+        "location": "ガラムマサラ(26～30)",
+        "rate": "19.00"
+      },
+      {
+        "location": "闇の精霊(2体目)",
+        "rate": "100"
+      },
+      {
+        "location": "ダブハスネル(キードモンガイベント)",
+        "rate": "100"
+      }
+    ],
+    "size": "17cm4kg",
+    "description": "失意の沼に住むと言われる闇のエキスを大量に含むクラゲの仲間。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/14",
+    "isBoss": false
+  },
+  {
+    "id": "mon_187",
+    "number": "187",
+    "name": "ボロファントム",
+    "level": "18",
+    "element": "闇",
+    "locations": [
+      {
+        "location": "レヒカフ沼周辺#1",
+        "rate": "1.75"
+      },
+      {
+        "location": "レヒカフ沼周辺#2",
+        "rate": "1.75"
+      },
+      {
+        "location": "謎の遺跡",
+        "rate": "3.25"
+      },
+      {
+        "location": "ガラムマサラ(26～30)",
+        "rate": "1.90"
+      },
+      {
+        "location": "闇の精霊(3体目)",
+        "rate": "99.00"
+      },
+      {
+        "location": "闇の精霊(4体目)",
+        "rate": "99.00"
+      },
+      {
+        "location": "ラドハスネル(イベント)",
+        "rate": "100"
+      }
+    ],
+    "size": "29cm3kg",
+    "description": "エニグマに殺された者の魂が供養できずにさまよう。寒気がしたら近くに・・・。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/14",
+    "isBoss": false
+  },
+  {
+    "id": "mon_188",
+    "number": "188",
+    "name": "ウラウール",
+    "level": "46",
+    "element": "闇",
+    "locations": [
+      {
+        "location": "闇の精霊(5体目)",
+        "rate": "99.00"
+      }
+    ],
+    "size": "125cm23kg",
+    "description": "闇のウールにつつまれたヒツジの魔法使い。やさしい一面もある。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/14",
+    "isBoss": false
+  },
+  {
+    "id": "mon_189",
+    "number": "189",
+    "name": "ウィグログ",
+    "level": "47",
+    "element": "闇",
+    "locations": [
+      {
+        "location": "闇の精霊(5体目)",
+        "rate": "100"
+      }
+    ],
+    "size": "37cm8kg",
+    "description": "失意の沼とレヒカフの沼を行き来するハネカエル。魔法は使えないが風を使う。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/14",
+    "isBoss": false
+  },
+  {
+    "id": "mon_190",
+    "number": "190",
+    "name": "ダークダフィー",
+    "level": "70",
+    "element": "闇",
+    "locations": [
+      {
+        "location": "ガラムマサラ(6～10)",
+        "rate": "3.75"
+      },
+      {
+        "location": "ガラムマサラ(26～30)",
+        "rate": "19.95"
+      }
+    ],
+    "size": "42cm9kg",
+    "description": "大魔法使いのゆうれいなのでもちろん魔法は強力。ＭＰすいとりも厄介だ。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/14",
+    "isBoss": false
+  },
+  {
+    "id": "mon_191",
+    "number": "191",
+    "name": "ガルシューム",
+    "level": "7",
+    "element": "闇",
+    "locations": [
+      {
+        "location": "ラ・ロッシュの塔",
+        "rate": "5.00"
+      },
+      {
+        "location": "ガラムマサラ(26～30)",
+        "rate": "14.25"
+      },
+      {
+        "location": "ダブハスネル(レーミッツ宮殿イベント)",
+        "rate": "100"
+      }
+    ],
+    "size": "127cm15kg",
+    "description": "魔法が使えないほねの騎士。毒を持っているので注意。サウスポーである。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/14",
+    "isBoss": false
+  },
+  {
+    "id": "mon_192",
+    "number": "192",
+    "name": "ブッチョン",
+    "level": "13",
+    "element": "闇",
+    "locations": [
+      {
+        "location": "ガラムマサラ(26～30)",
+        "rate": "9.50"
+      },
+      {
+        "location": "闇の精霊(2体目)",
+        "rate": "99.00"
+      },
+      {
+        "location": "ダブハスネル(キードモンガイベント)",
+        "rate": "100"
+      }
+    ],
+    "size": "98cm83kg",
+    "description": "大きな剣を操る小さな剣士。背が小さいため剣を頭上に乗せて大きく見せている。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/14",
+    "isBoss": false
+  },
+  {
+    "id": "mon_193",
+    "number": "193",
+    "name": "ヨルポチョン",
+    "level": "19",
+    "element": "闇",
+    "locations": [
+      {
+        "location": "レヒカフ沼周辺#1",
+        "rate": "3.75"
+      },
+      {
+        "location": "レヒカフ沼周辺#2",
+        "rate": "3.75"
+      },
+      {
+        "location": "謎の遺跡",
+        "rate": "4.50"
+      },
+      {
+        "location": "ガラムマサラ(26～30)",
+        "rate": "4.75"
+      }
+    ],
+    "size": "38cm14kg",
+    "description": "闇の精霊を好む不思議な獣。その生態はいまだに謎。天然記念物に指定された。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/14",
+    "isBoss": false
+  },
+  {
+    "id": "mon_194",
+    "number": "194",
+    "name": "アルマゲル",
+    "level": "31",
+    "element": "闇",
+    "locations": [
+      {
+        "location": "闇の精霊(3体目)",
+        "rate": "99.00"
+      }
+    ],
+    "size": "153cm21kg",
+    "description": "肉弾系の闇使い。エニグマが戦場で優れた剣士を復活させたとの噂。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/14",
+    "isBoss": false
+  },
+  {
+    "id": "mon_195",
+    "number": "195",
+    "name": "スウィーティ",
+    "level": "35",
+    "element": "闇",
+    "locations": [
+      {
+        "location": "闇の精霊(4体目)",
+        "rate": "100"
+      },
+      {
+        "location": "オムザネイル(イベント)",
+        "rate": "100"
+      }
+    ],
+    "size": "42cm11kg",
+    "description": "大地を踏み鳴らす生物。地震を起こすと言われる。歩くと不思議な音がする。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/14",
+    "isBoss": false
+  },
+  {
+    "id": "mon_196",
+    "number": "196",
+    "name": "メディエータ",
+    "level": "70",
+    "element": "闇",
+    "locations": [
+      {
+        "location": "ガラムマサラ(6～10)",
+        "rate": "5.00"
+      },
+      {
+        "location": "ガラムマサラ(26～30)",
+        "rate": "19.00"
+      },
+      {
+        "location": "ケルレンドゥ(ラスボス)",
+        "rate": "100"
+      }
+    ],
+    "size": "182cm38kg",
+    "description": "元騎士団団長。闇に従うわけでなく自分の意思で主を守るために復活。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/14",
+    "isBoss": false
+  },
+  {
+    "id": "mon_197",
+    "number": "197",
+    "name": "オカルトダック",
+    "level": "20",
+    "element": "闇",
+    "locations": [
+      {
+        "location": "レヒカフ沼周辺#1",
+        "rate": "5.00"
+      },
+      {
+        "location": "レヒカフ沼周辺#2",
+        "rate": "5.00"
+      },
+      {
+        "location": "謎の遺跡",
+        "rate": "5.00"
+      }
+    ],
+    "size": "107cm31kg",
+    "description": "布をかぶったあひる。魔法も使ってくる。中を見た人はいないらしい。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/14",
+    "isBoss": false
+  },
+  {
+    "id": "mon_198",
+    "number": "198",
+    "name": "ヌジタップ",
+    "level": "33",
+    "element": "闇",
+    "locations": [
+      {
+        "location": "闇の精霊(3体目)",
+        "rate": "99.00"
+      }
+    ],
+    "size": "156cm32kg",
+    "description": "森の奥地に住む一本足の闇の魔法使い。ブタのような鼻と立派なツノを持つ。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/14",
+    "isBoss": false
+  },
+  {
+    "id": "mon_199",
+    "number": "199",
+    "name": "マーシャルモンク",
+    "level": "33",
+    "element": "闇",
+    "locations": [
+      {
+        "location": "闇の精霊(3体目)",
+        "rate": "100"
+      }
+    ],
+    "size": "162cm48kg",
+    "description": "あらゆる格闘技をマスターしたチャンピオン。特に打撃系が得意。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/14",
+    "isBoss": false
+  },
+  {
+    "id": "mon_200",
+    "number": "200",
+    "name": "パラダック",
+    "level": "37",
+    "element": "闇",
+    "locations": [
+      {
+        "location": "闇の精霊(4体目)",
+        "rate": "99.00"
+      },
+      {
+        "location": "闇の精霊(5体目)",
+        "rate": "99.00"
+      },
+      {
+        "location": "オムザネイル(イベント)",
+        "rate": "100"
+      }
+    ],
+    "size": "59cm13kg",
+    "description": "ツノが生えたアヒル。魔法と特殊なヤリで攻撃。アクセサリーが好き。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/14",
+    "isBoss": false
+  },
+  {
+    "id": "mon_201",
+    "number": "201",
+    "name": "デッドカーブ",
+    "level": "39",
+    "element": "闇",
+    "locations": [
+      {
+        "location": "闇の精霊(4体目)",
+        "rate": "99.00"
+      },
+      {
+        "location": "闇の精霊(5体目)",
+        "rate": "99.00"
+      }
+    ],
+    "size": "63cm21kg",
+    "description": "死神の子供。円月カマで命を奪う練習中。まだまだ見習い程度。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/14",
+    "isBoss": false
+  },
+  {
+    "id": "mon_202",
+    "number": "202",
+    "name": "パンダウディ",
+    "level": "50",
+    "element": "闇",
+    "locations": [
+      {
+        "location": "ガラムマサラ(26～30)",
+        "rate": "4.75"
+      },
+      {
+        "location": "闇の精霊(6体目)",
+        "rate": "99.00"
+      }
+    ],
+    "size": "129cm83kg",
+    "description": "魔法使いになりたい小さなパンダ。じゅずを持ち練習するがまだ魔法が使えない。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/14",
+    "isBoss": false
+  },
+  {
+    "id": "mon_203",
+    "number": "203",
+    "name": "サモンダック",
+    "level": "130",
+    "element": "闇",
+    "locations": [
+      {
+        "location": "ガラムマサラ(26～30)",
+        "rate": "19.00"
+      },
+      {
+        "location": "ガラムマサラ(31～35)",
+        "rate": "23.75"
+      }
+    ],
+    "size": "86cm27kg",
+    "description": "アヒル界の大魔法使い。人気もすごくアヒル界のファッションリーダーだ。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/14",
+    "isBoss": false
+  },
+  {
+    "id": "mon_204",
+    "number": "204",
+    "name": "カボチおばば",
+    "level": "70",
+    "element": "闇",
+    "locations": [
+      {
+        "location": "ガラムマサラ(26～30)",
+        "rate": "1.90"
+      },
+      {
+        "location": "闇の精霊(6体目)",
+        "rate": "99.00"
+      },
+      {
+        "location": "ケルレンドゥ(ラスボス)",
+        "rate": "100"
+      }
+    ],
+    "size": "152cm53kg",
+    "description": "かぼちゃのお面をかぶってるふしぎなおばば。年中無休でハロウィン中。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/14",
+    "isBoss": false
+  },
+  {
+    "id": "mon_205",
+    "number": "205",
+    "name": "インセクメタリー",
+    "level": "51",
+    "element": "闇",
+    "locations": [
+      {
+        "location": "闇の精霊(6体目)",
+        "rate": "100"
+      }
+    ],
+    "size": "158cm63kg",
+    "description": "太った魔法使いのミイラ。永遠の命を手に入れるために自らミイラになったらしい。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/14",
+    "isBoss": false
+  },
+  {
+    "id": "mon_206",
+    "number": "206",
+    "name": "エビまどう",
+    "level": "130",
+    "element": "闇",
+    "locations": [
+      {
+        "location": "ガラムマサラ(26～30)",
+        "rate": "4.75"
+      },
+      {
+        "location": "ガラムマサラ(31～35)",
+        "rate": "14.25"
+      }
+    ],
+    "size": "136cm42kg",
+    "description": "エビのような姿をした事からエビまどうと呼ばれている魔法使いのおじいさん。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/14",
+    "isBoss": false
+  },
+  {
+    "id": "mon_207",
+    "number": "207",
+    "name": "あんこくかぼちゃ",
+    "level": "130",
+    "element": "闇",
+    "locations": [
+      {
+        "location": "ガラムマサラ(26～30)",
+        "rate": "14.25"
+      },
+      {
+        "location": "ガラムマサラ(31～35)",
+        "rate": "9.50"
+      }
+    ],
+    "size": "182cm28kg",
+    "description": "その昔、闇の雨が降った時できた呪いのかぼちゃを食べた人が変身したらしい。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/14",
+    "isBoss": false
+  },
+  {
+    "id": "mon_208",
+    "number": "208",
+    "name": "パンドーラ",
+    "level": "140",
+    "element": "闇",
+    "locations": [
+      {
+        "location": "ガラムマサラ(31～35)",
+        "rate": "18.05"
+      },
+      {
+        "location": "ガラムマサラ(36～40)",
+        "rate": "19.00"
+      }
+    ],
+    "size": "228cm49kg",
+    "description": "パンドラのかんおけ。かんおけに入っている人の怨念で強さが変わるらしい。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/14",
+    "isBoss": false
+  },
+  {
+    "id": "mon_209",
+    "number": "209",
+    "name": "わるいプギーモ",
+    "level": "140",
+    "element": "闇",
+    "locations": [
+      {
+        "location": "ガラムマサラ(31～35)",
+        "rate": "6.65"
+      },
+      {
+        "location": "ガラムマサラ(36～40)",
+        "rate": "14.25"
+      }
+    ],
+    "size": "127cm48kg",
+    "description": "いたずら好きでなまけ者。かなりの悪さをするので鬼プギーモとも言われる。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/14",
+    "isBoss": false
+  },
+  {
+    "id": "mon_210",
+    "number": "210",
+    "name": "メロリアン",
+    "level": "150",
+    "element": "闇",
+    "locations": [
+      {
+        "location": "ガラムマサラ(36～40)",
+        "rate": "36.10"
+      },
+      {
+        "location": "ガラムマサラ(41～45)",
+        "rate": "9.50"
+      },
+      {
+        "location": "シサバレイ(3～5)",
+        "rate": "9.50"
+      },
+      {
+        "location": "シサバレイ(6～10)",
+        "rate": "9.50"
+      }
+    ],
+    "size": "169cm75kg",
+    "description": "食べれば食べるほど闇に侵される暗黒メロンを好むと言う謎の民族。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/14",
+    "isBoss": false
+  },
+  {
+    "id": "mon_211",
+    "number": "211",
+    "name": "ヘルドラゴイル",
+    "level": "70",
+    "element": "闇",
+    "locations": [
+      {
+        "location": "モギナス魔窟９",
+        "rate": "100"
+      },
+      {
+        "location": "ケルレンドゥ(ラスボス)",
+        "rate": "100"
+      }
+    ],
+    "size": "238cm107kg",
+    "description": "首の長ーいドラゴン。ＭＰを吸い取られるので注意が必要。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/14",
+    "isBoss": false
+  },
+  {
+    "id": "mon_212",
+    "number": "212",
+    "name": "インバドール",
+    "level": "140",
+    "element": "闇",
+    "locations": [
+      {
+        "location": "ガラムマサラ(31～35)",
+        "rate": "19.00"
+      },
+      {
+        "location": "ガラムマサラ(36～40)",
+        "rate": "23.75"
+      },
+      {
+        "location": "シサバレイ２",
+        "rate": "9.50"
+      },
+      {
+        "location": "シサバレイ(3～5)",
+        "rate": "18.05"
+      }
+    ],
+    "size": "235cm184kg",
+    "description": "闇の剣豪。かなりの腕らしく今まで負った傷は腹部の２つのみ。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/14",
+    "isBoss": false
+  },
+  {
+    "id": "mon_213",
+    "number": "213",
+    "name": "コンバットボール",
+    "level": "150",
+    "element": "闇",
+    "locations": [
+      {
+        "location": "ガラムマサラ(36～40)",
+        "rate": "33.25"
+      },
+      {
+        "location": "ガラムマサラ(41～45)",
+        "rate": "37.05"
+      },
+      {
+        "location": "ガラムマサラ(46～49)",
+        "rate": "14.25"
+      },
+      {
+        "location": "シサバレイ２",
+        "rate": "2.40"
+      },
+      {
+        "location": "シサバレイ(3～5)",
+        "rate": "18.00"
+      },
+      {
+        "location": "シサバレイ(6～10)",
+        "rate": "4.75"
+      }
+    ],
+    "size": "186cm117kg",
+    "description": "ゴムまりのような体で肉弾戦をしかけてくる強敵。魔法も使うやっかいなヤツ。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/14",
+    "isBoss": false
+  },
+  {
+    "id": "mon_214",
+    "number": "214",
+    "name": "ギアラゴイル",
+    "level": "150",
+    "element": "闇",
+    "locations": [
+      {
+        "location": "ガラムマサラ(36～40)",
+        "rate": "8.55"
+      },
+      {
+        "location": "ガラムマサラ(41～45)",
+        "rate": "1.90"
+      },
+      {
+        "location": "ガラムマサラ(46～49)",
+        "rate": "4.75"
+      },
+      {
+        "location": "シサバレイ１",
+        "rate": "5.00"
+      },
+      {
+        "location": "シサバレイ２",
+        "rate": "5.00"
+      },
+      {
+        "location": "シサバレイ(3～5)",
+        "rate": "5.00"
+      }
+    ],
+    "size": "286cm218kg",
+    "description": "長い首と小さな羽を持つ闇のドラゴン。闇のブレスは強力だ。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/14",
+    "isBoss": false
+  },
+  {
+    "id": "mon_215",
+    "number": "215",
+    "name": "ビルゴー",
+    "level": "160",
+    "element": "闇",
+    "locations": [
+      {
+        "location": "ガラムマサラ(41～45)",
+        "rate": "19.00"
+      },
+      {
+        "location": "ガラムマサラ(46～49)",
+        "rate": "29.45"
+      },
+      {
+        "location": "シサバレイ２",
+        "rate": "1.90"
+      },
+      {
+        "location": "シサバレイ(3～5)",
+        "rate": "35.15"
+      },
+      {
+        "location": "シサバレイ(6～10)",
+        "rate": "1.90"
+      }
+    ],
+    "size": "174cm61kg",
+    "description": "魔女最強といわれる闇使い。冷血で性格も悪いのでみんなから嫌われている。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/14",
+    "isBoss": false
+  },
+  {
+    "id": "mon_216",
+    "number": "216",
+    "name": "アルタイール",
+    "level": "170",
+    "element": "闇",
+    "locations": [
+      {
+        "location": "ガラムマサラ(46～49)",
+        "rate": "37.05"
+      },
+      {
+        "location": "シサバレイ１",
+        "rate": "38.00"
+      },
+      {
+        "location": "シサバレイ２",
+        "rate": "38.00"
+      },
+      {
+        "location": "シサバレイ(3～5)",
+        "rate": "39.90"
+      },
+      {
+        "location": "シサバレイ(6～10)",
+        "rate": "29.00"
+      },
+      {
+        "location": "ガラムマサラ５０ボス#1",
+        "rate": "100"
+      }
+    ],
+    "size": "205cm186kg",
+    "description": "巨大な肉のかたまりのようなモンスター。はどうやのろいと言う特殊攻撃を使う。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/14",
+    "isBoss": false
+  },
+  {
+    "id": "mon_217",
+    "number": "217",
+    "name": "ドラゴンゾンビ",
+    "level": "160",
+    "element": "闇",
+    "locations": [
+      {
+        "location": "ガラムマサラ(41～45)",
+        "rate": "23.75"
+      },
+      {
+        "location": "ガラムマサラ(46～49)",
+        "rate": "20.90"
+      },
+      {
+        "location": "シサバレイ１",
+        "rate": "19.00"
+      },
+      {
+        "location": "シサバレイ２",
+        "rate": "28.50"
+      },
+      {
+        "location": "シサバレイ(3～5)",
+        "rate": "41.80"
+      },
+      {
+        "location": "シサバレイ(6～10)",
+        "rate": "46.55"
+      }
+    ],
+    "size": "216cm74kg",
+    "description": "ドラゴンを保存するためにミイラ化したがドラゴンは暴れ続けている。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/14",
+    "isBoss": false
+  },
+  {
+    "id": "mon_218",
+    "number": "218",
+    "name": "ポエニクス",
+    "level": "170",
+    "element": "闇",
+    "locations": [
+      {
+        "location": "ガラムマサラ(46～49)",
+        "rate": "23.75"
+      },
+      {
+        "location": "シサバレイ(3～5)",
+        "rate": "4.75"
+      },
+      {
+        "location": "シサバレイ(6～10)",
+        "rate": "12.65"
+      },
+      {
+        "location": "ガラムマサラ５０ボス#1",
+        "rate": "100"
+      }
+    ],
+    "size": "227cm108kg",
+    "description": "最も美しい闇のドラゴン。ゴイル族と対立するが実力は互角らしい。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/14",
+    "isBoss": false
+  },
+  {
+    "id": "mon_219",
+    "number": "219",
+    "name": "デビジズー",
+    "level": "190",
+    "element": "闇",
+    "locations": [
+      {
+        "location": "シサバレイ２",
+        "rate": "19.00"
+      },
+      {
+        "location": "シサバレイ(3～5)",
+        "rate": "48.10"
+      },
+      {
+        "location": "シサバレイ(6～10)",
+        "rate": "53.80"
+      },
+      {
+        "location": "シサバレイ５ボス",
+        "rate": "100"
+      }
+    ],
+    "size": "153cm43kg",
+    "description": "闇の力で永遠の命を得たじいさん。常に悪知恵を働かせていて腹黒い。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/14",
+    "isBoss": false
+  },
+  {
+    "id": "mon_220",
+    "number": "220",
+    "name": "ブーイオゴイル",
+    "level": "200",
+    "element": "闇",
+    "locations": [
+      {
+        "location": "シサバレイ(6～10)",
+        "rate": "23.05"
+      },
+      {
+        "location": "シサバレイ１０ボス",
+        "rate": "100"
+      },
+      {
+        "location": "闇の精霊(7体目)",
+        "rate": "100"
+      }
+    ],
+    "size": "326cm263kg",
+    "description": "ゴイル系で最強の戦士。強力なかみつきと闇のブレスで全てを破壊する。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/14",
+    "isBoss": false
+  },
+  {
+    "id": "mon_221",
+    "number": "221",
+    "name": "ピリピルゼリー",
+    "level": "4",
+    "element": "光",
+    "locations": [
+      {
+        "location": "レーミッツ宮殿(内)",
+        "rate": "34.20"
+      },
+      {
+        "location": "リドナヒー(1～5)",
+        "rate": "55.10"
+      }
+    ],
+    "size": "33cm2kg",
+    "description": "浮遊しているかぜくらげ。毒をのぞけば食べられ、大変おいしいと言われる。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/15",
+    "isBoss": false
+  },
+  {
+    "id": "mon_222",
+    "number": "222",
+    "name": "ベルチャーム",
+    "level": "5",
+    "element": "光",
+    "locations": [
+      {
+        "location": "レーミッツ宮殿(内)",
+        "rate": "15.20"
+      },
+      {
+        "location": "リドナヒー(1～5)",
+        "rate": "38.00"
+      }
+    ],
+    "size": "84cm29kg",
+    "description": "ハネがはえた光のヒツジ。不思議な毛は暗いところでほんのり光るという。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/15",
+    "isBoss": false
+  },
+  {
+    "id": "mon_223",
+    "number": "223",
+    "name": "マシェリー",
+    "level": "6",
+    "element": "光",
+    "locations": [
+      {
+        "location": "レーミッツ宮殿(内)",
+        "rate": "38.00"
+      },
+      {
+        "location": "リドナヒー(1～5)",
+        "rate": "28.50"
+      }
+    ],
+    "size": "78cm23kg",
+    "description": "おとなしい性格だがわがままで、じだんだをふむ。愛の大使の大人気ペット。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/15",
+    "isBoss": false
+  },
+  {
+    "id": "mon_224",
+    "number": "224",
+    "name": "パンジー",
+    "level": "190",
+    "element": "光",
+    "locations": [
+      {
+        "location": "リドナヒー(1～5)",
+        "rate": "42.75"
+      },
+      {
+        "location": "リドナヒー(6～10)",
+        "rate": "42.75"
+      },
+      {
+        "location": "リドナヒー７ボス",
+        "rate": "100"
+      }
+    ],
+    "size": "47cm13kg",
+    "description": "ゆったりとして動かない不思議な生物。おなかが空くと動きが速い。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/15",
+    "isBoss": false
+  },
+  {
+    "id": "mon_225",
+    "number": "225",
+    "name": "ティポーン",
+    "level": "190",
+    "element": "光",
+    "locations": [
+      {
+        "location": "リドナヒー(1～5)",
+        "rate": "50.35"
+      },
+      {
+        "location": "リドナヒー(6～10)",
+        "rate": "25.65"
+      },
+      {
+        "location": "リドナヒー７ボス",
+        "rate": "100"
+      }
+    ],
+    "size": "158cm38kg",
+    "description": "身軽な動きで敵をかわしぼこぼこ攻撃してくる。格闘技系。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/15",
+    "isBoss": false
+  },
+  {
+    "id": "mon_226",
+    "number": "226",
+    "name": "ネンリキパンチョ",
+    "level": "200",
+    "element": "光",
+    "locations": [
+      {
+        "location": "リドナヒー(6～10)",
+        "rate": "56.05"
+      }
+    ],
+    "size": "103cm27kg",
+    "description": "ちょっと汚れた光のパンダ。わんぱくでいつもササまみれになっている。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/15",
+    "isBoss": false
+  },
+  {
+    "id": "mon_227",
+    "number": "227",
+    "name": "エビしぇんにん",
+    "level": "200",
+    "element": "光",
+    "locations": [
+      {
+        "location": "リドナヒー(6～10)",
+        "rate": "64.60"
+      }
+    ],
+    "size": "143cm47kg",
+    "description": "さまざまな魔法を使う大魔法使い年は３００歳をこえる。「せんにん」と言えない。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/15",
+    "isBoss": false
+  },
+  {
+    "id": "mon_228",
+    "number": "228",
+    "name": "ピキーモ",
+    "level": "190",
+    "element": "光",
+    "locations": [
+      {
+        "location": "リドナヒー(6～10)",
+        "rate": "35.15"
+      },
+      {
+        "location": "リドナヒー７ボス",
+        "rate": "100"
+      }
+    ],
+    "size": "141cm39kg",
+    "description": "天才プギーモと言われる。がんばりやだが戦闘に関してがんばる事を知らない。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/15",
+    "isBoss": false
+  },
+  {
+    "id": "mon_229",
+    "number": "229",
+    "name": "キャヴィジオン",
+    "level": "60",
+    "element": "光",
+    "locations": [
+      {
+        "location": "ラキューオ８",
+        "rate": "100"
+      },
+      {
+        "location": "リドナヒー(1～5)",
+        "rate": "32.30"
+      },
+      {
+        "location": "リドナヒー(6～10)",
+        "rate": "22.80"
+      }
+    ],
+    "size": "183cm59kg",
+    "description": "美しい光のドラゴン。全てにおいて強力なうえにＨＰを吸い取るので注意。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/15",
+    "isBoss": false
+  },
+  {
+    "id": "mon_230",
+    "number": "230",
+    "name": "バッボノエル",
+    "level": "200",
+    "element": "光",
+    "locations": [
+      {
+        "location": "リドナヒー１０ボス",
+        "rate": "100"
+      }
+    ],
+    "size": "127cm89kg",
+    "description": "とてもめずらしい光の戦士。ほとんど人前に現れない。あまり戦闘を好まない。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/15",
+    "isBoss": false
+  },
+  {
+    "id": "mon_231",
+    "number": "231",
+    "name": "ユーレロラム",
+    "level": "10",
+    "element": "愛",
+    "locations": [
+      {
+        "location": "レーミッツ宮殿(外)",
+        "rate": "5.00"
+      },
+      {
+        "location": "ブラウニーの穴",
+        "rate": "5.00"
+      },
+      {
+        "location": "リドナヒー(1～5)",
+        "rate": "5.00"
+      }
+    ],
+    "size": "65cm38kg",
+    "description": "「ユーレロベル」を持っている愛のヒツジ。戦闘を好まず逃げてしまう。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/16",
+    "isBoss": false
+  },
+  {
+    "id": "mon_232",
+    "number": "232",
+    "name": "ときめきくらげ",
+    "level": "27",
+    "element": "愛",
+    "locations": [
+      {
+        "location": "ジェラ風穴",
+        "rate": "5.00"
+      },
+      {
+        "location": "ブラウニーの穴",
+        "rate": "4.75"
+      },
+      {
+        "location": "ガラムマサラ(11～15)",
+        "rate": "5.00"
+      },
+      {
+        "location": "リドナヒー(1～5)",
+        "rate": "4.75"
+      }
+    ],
+    "size": "11cm1kg",
+    "description": "きれいなピンク色をしためずらしい愛のクラゲ。ゆらゆらと空中をさまよう。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/16",
+    "isBoss": false
+  },
+  {
+    "id": "mon_233",
+    "number": "233",
+    "name": "ポチョン",
+    "level": "35",
+    "element": "愛",
+    "locations": [
+      {
+        "location": "クムヤムト砂漠",
+        "rate": "5.00"
+      },
+      {
+        "location": "ブラウニーの穴",
+        "rate": "4.50"
+      },
+      {
+        "location": "ガラムマサラ(16～20)",
+        "rate": "5.00"
+      },
+      {
+        "location": "リドナヒー(1～5)",
+        "rate": "3.75"
+      }
+    ],
+    "size": "59cm26kg",
+    "description": "あまり動かないなまけもの。ちょっとネコっぽい。戦闘を好まず逃げてしまう。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/16",
+    "isBoss": false
+  },
+  {
+    "id": "mon_234",
+    "number": "234",
+    "name": "ペチィー",
+    "level": "42",
+    "element": "愛",
+    "locations": [
+      {
+        "location": "モルビエ火山",
+        "rate": "5.00"
+      },
+      {
+        "location": "ブラウニーの穴",
+        "rate": "3.25"
+      },
+      {
+        "location": "ガラムマサラ(21～25)",
+        "rate": "5.00"
+      },
+      {
+        "location": "リドナヒー(1～5)",
+        "rate": "2.50"
+      }
+    ],
+    "size": "120cm14kg",
+    "description": "身長の半分が耳という愛に生きるわがまま生物。機嫌が悪いとじだんだ攻撃。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/16",
+    "isBoss": false
+  },
+  {
+    "id": "mon_235",
+    "number": "235",
+    "name": "サイコパンチョ",
+    "level": "49",
+    "element": "愛",
+    "locations": [
+      {
+        "location": "キスニカ鉱山(1～4)",
+        "rate": "5.00"
+      },
+      {
+        "location": "キスニカ鉱山(5～8)",
+        "rate": "5.00"
+      },
+      {
+        "location": "ガラムマサラ(26～30)",
+        "rate": "5.00"
+      },
+      {
+        "location": "リドナヒー(1～5)",
+        "rate": "1.25"
+      },
+      {
+        "location": "リドナヒー(6～10)",
+        "rate": "5.00"
+      }
+    ],
+    "size": "48cm63kg",
+    "description": "ねんりきをつかうパンダ。だが魔法はつかえない。戦闘を好まず逃げてしまう。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/16",
+    "isBoss": false
+  },
+  {
+    "id": "mon_236",
+    "number": "236",
+    "name": "ラブドロワ",
+    "level": "56",
+    "element": "愛",
+    "locations": [
+      {
+        "location": "ピラミッド",
+        "rate": "5.00"
+      },
+      {
+        "location": "ガラムマサラ(31～35)",
+        "rate": "5.00"
+      },
+      {
+        "location": "リドナヒー(1～5)",
+        "rate": "0.50"
+      },
+      {
+        "location": "リドナヒー(6～10)",
+        "rate": "4.75"
+      }
+    ],
+    "size": "143cm22kg",
+    "description": "とってもマジメな好青年。ひとたびキレると相手をボコボコにしてしまう。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/16",
+    "isBoss": false
+  },
+  {
+    "id": "mon_237",
+    "number": "237",
+    "name": "プギーモ",
+    "level": "65",
+    "element": "愛",
+    "locations": [
+      {
+        "location": "ラキューオ(5～7)",
+        "rate": "5.00"
+      },
+      {
+        "location": "ガラムマサラ(36～40)",
+        "rate": "5.00"
+      },
+      {
+        "location": "リドナヒー(6～10)",
+        "rate": "3.75"
+      }
+    ],
+    "size": "127cm48kg",
+    "description": "落ち着かないがんばりや。「ぽこスピア」でつっつく。戦闘を好まず逃げてしまう。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/16",
+    "isBoss": false
+  },
+  {
+    "id": "mon_238",
+    "number": "238",
+    "name": "シュリンポー",
+    "level": "160",
+    "element": "愛",
+    "locations": [
+      {
+        "location": "ガラムマサラ(41～45)",
+        "rate": "1.25"
+      },
+      {
+        "location": "リドナヒー(6～10)",
+        "rate": "2.50"
+      }
+    ],
+    "size": "126cm37kg",
+    "description": "暑いのが嫌いな大魔法使い。少しでも暑いとピンク色になってしまう一面も。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/16",
+    "isBoss": false
+  },
+  {
+    "id": "mon_239",
+    "number": "239",
+    "name": "エンジジ",
+    "level": "70",
+    "element": "愛",
+    "locations": [
+      {
+        "location": "死の回廊",
+        "rate": "5.00"
+      },
+      {
+        "location": "ガラムマサラ(41～45)",
+        "rate": "5.00"
+      },
+      {
+        "location": "リドナヒー(6～10)",
+        "rate": "1.25"
+      }
+    ],
+    "size": "168cm65kg",
+    "description": "愛の装備で身をかためた万能じいさん。戦闘を好まず逃げてしまう。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/16",
+    "isBoss": false
+  },
+  {
+    "id": "mon_240",
+    "number": "240",
+    "name": "インデュライン",
+    "level": "170",
+    "element": "愛",
+    "locations": [
+      {
+        "location": "ガラムマサラ(46～49)",
+        "rate": "5.00"
+      },
+      {
+        "location": "リドナヒー(6～10)",
+        "rate": "0.50"
+      }
+    ],
+    "size": "170cm55kg",
+    "description": "世界に１種の愛のドラゴン。とてもやさしくて愛に満ちあふれている。いやし系。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/16",
+    "isBoss": false
+  },
+  {
+    "id": "mon_241",
+    "number": "241",
+    "name": "ピスカプーク",
+    "level": "1",
+    "element": "闇",
+    "locations": [
+      {
+        "location": "ピスカプーク(イベント)",
+        "rate": "100"
+      }
+    ],
+    "size": "187cm72kg",
+    "description": "突然キャンプ中に襲ってくる正体不明のエニグマ。主に魔法使いを襲う。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/17",
+    "isBoss": false
+  },
+  {
+    "id": "mon_242",
+    "number": "242",
+    "name": "デミッスス",
+    "level": "1",
+    "element": "獣",
+    "locations": [
+      {
+        "location": "デミッスス(イベント)",
+        "rate": "100"
+      }
+    ],
+    "size": "187cm228kg",
+    "description": "巨大なあなほりネズミ。ミミズグミを主食とし、巣穴にためる。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/17",
+    "isBoss": false
+  },
+  {
+    "id": "mon_243",
+    "number": "243",
+    "name": "ヴァルカネイラ",
+    "level": "1",
+    "element": "闇",
+    "locations": [
+      {
+        "location": "ヴァルカネイラ(イベント)",
+        "rate": "100"
+      }
+    ],
+    "size": "194cm81kg",
+    "description": "変装をして人をだます事が得意なめずらしいエニグマ。高度な魔法を使いこなす。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/17",
+    "isBoss": false
+  },
+  {
+    "id": "mon_244",
+    "number": "244",
+    "name": "スノウヘア",
+    "level": "4",
+    "element": "風",
+    "locations": [
+      {
+        "location": "スノウヘア(イベント)",
+        "rate": "100"
+      }
+    ],
+    "size": "186cm37kg",
+    "description": "大きいが弱い鳥。まつぼっくりと犬が大好き。やや太りすぎ。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/17",
+    "isBoss": false
+  },
+  {
+    "id": "mon_245",
+    "number": "245",
+    "name": "ダブハスネル",
+    "level": "7",
+    "element": "闇",
+    "locations": [
+      {
+        "location": "ダブハスネル(レーミッツ宮殿イベント)",
+        "rate": "100"
+      }
+    ],
+    "size": "328cm136kg",
+    "description": "こうらのようなかたいからだを持つめずらしいエニグマ。知的でみんなで行動する。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/17",
+    "isBoss": false
+  },
+  {
+    "id": "mon_246",
+    "number": "246",
+    "name": "ブッチーネ３世",
+    "level": "9",
+    "element": "石",
+    "locations": [
+      {
+        "location": "ブッチーネ３世(レーミッツ宮殿イベント)",
+        "rate": "100"
+      }
+    ],
+    "size": "254cm185kg",
+    "description": "ドワーフを死ぬまでまわすとても力の強いオーガ。あしがとてもくさい。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/17",
+    "isBoss": false
+  },
+  {
+    "id": "mon_247",
+    "number": "247",
+    "name": "タルタルちゃん",
+    "level": "18",
+    "element": "古",
+    "locations": [
+      {
+        "location": "タルタルちゃん(イベント)",
+        "rate": "100"
+      }
+    ],
+    "size": "168cm273kg",
+    "description": "グレナデンが作ったロボットケルベロスらしい。ガラクタマシーン。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/17",
+    "isBoss": false
+  },
+  {
+    "id": "mon_248",
+    "number": "248",
+    "name": "ヘイルクラブ",
+    "level": "21",
+    "element": "水",
+    "locations": [
+      {
+        "location": "ヘイルクラブ(イベント)",
+        "rate": "100"
+      }
+    ],
+    "size": "172cm134kg",
+    "description": "ジェラ風穴に住みつくカニ。巨大なはさみと、かたいこうらが武器。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/17",
+    "isBoss": false
+  },
+  {
+    "id": "mon_249",
+    "number": "249",
+    "name": "フェンネル",
+    "level": "25",
+    "element": "風",
+    "locations": [
+      {
+        "location": "フェンネル(イベント)",
+        "rate": "100"
+      }
+    ],
+    "size": "190cm105kg",
+    "description": "どーどーを食べる狂暴な獣。鋭いツメですばやい攻撃をしかけてくるので要注意。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/17",
+    "isBoss": false
+  },
+  {
+    "id": "mon_250",
+    "number": "250",
+    "name": "バダブーン",
+    "level": "35",
+    "element": "獣",
+    "locations": [
+      {
+        "location": "バダブーン(イベント)",
+        "rate": "100"
+      }
+    ],
+    "size": "303cm235kg",
+    "description": "自称、森の王者。スタミナまんてんなサル。くしゃみが止まらない。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/17",
+    "isBoss": false
+  },
+  {
+    "id": "mon_251",
+    "number": "251",
+    "name": "メルティキッス",
+    "level": "37",
+    "element": "火",
+    "locations": [
+      {
+        "location": "メルティキッス(イベント)",
+        "rate": "100"
+      }
+    ],
+    "size": "163cm227kg",
+    "description": "いつも笑っている感じのいいヤツ。溶岩からできた。突然、襲いかかってくる。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/17",
+    "isBoss": false
+  },
+  {
+    "id": "mon_252",
+    "number": "252",
+    "name": "ガーシュイン",
+    "level": "45",
+    "element": "美",
+    "locations": [
+      {
+        "location": "ガーシュイン(イベント)",
+        "rate": "100"
+      }
+    ],
+    "size": "294cm230kg",
+    "description": "この世で最も美しいと言われるドラゴン。全てにおいて強力である。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/17",
+    "isBoss": false
+  },
+  {
+    "id": "mon_253",
+    "number": "253",
+    "name": "ツボゴーレム",
+    "level": "50",
+    "element": "闇",
+    "locations": [
+      {
+        "location": "ツボゴーレム(イベント)",
+        "rate": "100"
+      }
+    ],
+    "size": "274cm105kg",
+    "description": "うらみのあるツボが集まってできたゴーレム。クラインの言うことを聞く。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/17",
+    "isBoss": false
+  },
+  {
+    "id": "mon_254",
+    "number": "254",
+    "name": "オムザネイル",
+    "level": "55",
+    "element": "闇",
+    "locations": [
+      {
+        "location": "オムザネイル(イベント)",
+        "rate": "100"
+      }
+    ],
+    "size": "189cm76kg",
+    "description": "自らミイラ化した魔法使い。ピラミッドを守っている。生前は光の魔法使いだった。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/17",
+    "isBoss": false
+  },
+  {
+    "id": "mon_255",
+    "number": "255",
+    "name": "エキウロクリュ",
+    "level": "68",
+    "element": "闇",
+    "locations": [
+      {
+        "location": "エキウロクリュ(イベント)",
+        "rate": "100"
+      }
+    ],
+    "size": "218cm296kg",
+    "description": "全てのエニグマを支配すべくケルレンドゥをも殺した極悪なエニグマ。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/17",
+    "isBoss": false
+  },
+  {
+    "id": "mon_256",
+    "number": "256",
+    "name": "ケルレンドゥ",
+    "level": "75",
+    "element": "闇",
+    "locations": [
+      {
+        "location": "ケルレンドゥ(イベント)",
+        "rate": "100"
+      }
+    ],
+    "size": "357cm118kg",
+    "description": "現在最強のエニグマ。能力の向上を常に目指し死と生を繰り返している。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/17",
+    "isBoss": false
+  },
+  {
+    "id": "mon_257",
+    "number": "257",
+    "name": "ザフロピーク",
+    "level": "30",
+    "element": "闇",
+    "locations": [
+      {
+        "location": "エニグマの森",
+        "rate": "57.00"
+      },
+      {
+        "location": "ガラムマサラ１０ボス",
+        "rate": "100"
+      }
+    ],
+    "size": "187cm72kg",
+    "description": "ピスカプークの亜種。育ちが悪く、タチが悪い。魔法があまり効かない。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/17",
+    "isBoss": false
+  },
+  {
+    "id": "mon_258",
+    "number": "258",
+    "name": "デミッススゾンビ",
+    "level": "180",
+    "element": "獣",
+    "locations": [
+      {
+        "location": "ガラムマサラ５０",
+        "rate": "42.05"
+      }
+    ],
+    "size": "167cm68kg",
+    "description": "闇のプレーンの毒気に。おかされたデミッスス。すぐ土をダメにしてしまう",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/17",
+    "isBoss": false
+  },
+  {
+    "id": "mon_259",
+    "number": "259",
+    "name": "アラクネイラ",
+    "level": "31",
+    "element": "闇",
+    "locations": [
+      {
+        "location": "エニグマの森",
+        "rate": "43.00"
+      },
+      {
+        "location": "ラドハスネル(イベント)",
+        "rate": "100"
+      }
+    ],
+    "size": "205cm93kg",
+    "description": "ネイラ族の変種。強い仲間といっしょに現れるひきょうなエニグマ。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/17",
+    "isBoss": false
+  },
+  {
+    "id": "mon_260",
+    "number": "260",
+    "name": "ワイルドビーク",
+    "level": "180",
+    "element": "風",
+    "locations": [
+      {
+        "location": "ガラムマサラ５０",
+        "rate": "22.75"
+      }
+    ],
+    "size": "136cm72kg",
+    "description": "森林にすむ怪鳥。巨大な足で木をなぎ倒しながら進む。奇妙な鳴声をしている。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/17",
+    "isBoss": false
+  },
+  {
+    "id": "mon_261",
+    "number": "261",
+    "name": "ラドハスネル",
+    "level": "33",
+    "element": "闇",
+    "locations": [
+      {
+        "location": "ラドハスネル(イベント)",
+        "rate": "100"
+      }
+    ],
+    "size": "316cm164kg",
+    "description": "ハスネル族の変種。ムカデのような姿をしていて複数の手で攻撃してくる。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/17",
+    "isBoss": false
+  },
+  {
+    "id": "mon_262",
+    "number": "262",
+    "name": "ブッチーネ２世",
+    "level": "180",
+    "element": "石",
+    "locations": [
+      {
+        "location": "ガラムマサラ５０",
+        "rate": "51.30"
+      }
+    ],
+    "size": "274cm158kg",
+    "description": "デキの悪い２代目。ばか力だが、あたまの中身は「おみそ」である。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/17",
+    "isBoss": false
+  },
+  {
+    "id": "mon_263",
+    "number": "263",
+    "name": "バッハフント",
+    "level": "180",
+    "element": "古",
+    "locations": [
+      {
+        "location": "ガラムマサラ５０",
+        "rate": "20.90"
+      }
+    ],
+    "size": "148cm533kg",
+    "description": "タルタルのプロトタイプ。番犬ロボとして売られ、ドワーフの人気商品になる。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/17",
+    "isBoss": false
+  },
+  {
+    "id": "mon_264",
+    "number": "264",
+    "name": "クーポワール",
+    "level": "180",
+    "element": "水",
+    "locations": [
+      {
+        "location": "ガラムマサラ５０",
+        "rate": "11.40"
+      }
+    ],
+    "size": "159cm193kg",
+    "description": "沼地に棲むサンドクラブ。『カニ爪フライ』のため、乱獲されている。絶滅種。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/17",
+    "isBoss": false
+  },
+  {
+    "id": "mon_265",
+    "number": "265",
+    "name": "ポルケピック",
+    "level": "180",
+    "element": "風",
+    "locations": [
+      {
+        "location": "ガラムマサラ５０",
+        "rate": "23.75"
+      }
+    ],
+    "size": "198cm95kg",
+    "description": "どうもうなタイガーウルフ。気配をなくし背後から襲う。単独行動を好む。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/17",
+    "isBoss": false
+  },
+  {
+    "id": "mon_266",
+    "number": "266",
+    "name": "ゼーフドンゴ",
+    "level": "180",
+    "element": "獣",
+    "locations": [
+      {
+        "location": "ガラムマサラ５０",
+        "rate": "57.60"
+      }
+    ],
+    "size": "349cm268kg",
+    "description": "森から追放された暴れザル。豪腕と大きな口で攻撃する。のうてんきな性格だ。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/17",
+    "isBoss": false
+  },
+  {
+    "id": "mon_267",
+    "number": "267",
+    "name": "リキッドボディー",
+    "level": "180",
+    "element": "火",
+    "locations": [
+      {
+        "location": "ガラムマサラ５０",
+        "rate": "28.50"
+      }
+    ],
+    "size": "127cm85kg",
+    "description": "どろどろのモンスター。ドロジャムの本体でもある。て言うかドロジャムが本体？",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/17",
+    "isBoss": false
+  },
+  {
+    "id": "mon_268",
+    "number": "268",
+    "name": "ホーンドラゴン",
+    "level": "180",
+    "element": "美",
+    "locations": [
+      {
+        "location": "ガラムマサラ５０",
+        "rate": "23.75"
+      }
+    ],
+    "size": "328cm285kg",
+    "description": "「青い石」を好むドラゴン。ウロコは青白く輝き、その光は有毒である。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/17",
+    "isBoss": false
+  },
+  {
+    "id": "mon_269",
+    "number": "269",
+    "name": "ウラガノボトル",
+    "level": "190",
+    "element": "闇",
+    "locations": [
+      {
+        "location": "シサバレイ１",
+        "rate": "38.00"
+      },
+      {
+        "location": "シサバレイ２",
+        "rate": "40.50"
+      },
+      {
+        "location": "シサバレイ(3～5)",
+        "rate": "42.75"
+      },
+      {
+        "location": "シサバレイ５ボス",
+        "rate": "100"
+      }
+    ],
+    "size": "372cm328kg",
+    "description": "大河の水をすべて飲み込むといわれる魔法のツボ。計り知れないほどそこなし。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/17",
+    "isBoss": false
+  },
+  {
+    "id": "mon_270",
+    "number": "270",
+    "name": "ヴァンピール",
+    "level": "200",
+    "element": "闇",
+    "locations": [
+      {
+        "location": "シサバレイ(6～10)",
+        "rate": "41.75"
+      },
+      {
+        "location": "シサバレイ１０ボス",
+        "rate": "100"
+      }
+    ],
+    "size": "149cm36kg",
+    "description": "闇に心を支配されてしまった悲しい魔法学校卒業生。過去の記憶をなくしている。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/17",
+    "isBoss": false
+  },
+  {
+    "id": "mon_271",
+    "number": "271",
+    "name": "ブロムゲクリュ",
+    "level": "200",
+    "element": "闇",
+    "locations": [
+      {
+        "location": "シサバレイ(6～10)",
+        "rate": "41.80"
+      },
+      {
+        "location": "シサバレイ１０ボス",
+        "rate": "100"
+      }
+    ],
+    "size": "248cm273kg",
+    "description": "クリュ族の中でも暴れん坊。みさかいなく襲ってくる残酷なエニグマ。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/17",
+    "isBoss": false
+  },
+  {
+    "id": "mon_272",
+    "number": "272",
+    "name": "ディニレンドゥ",
+    "level": "180",
+    "element": "闇",
+    "locations": [
+      {
+        "location": "ガラムマサラ５０ボス#1",
+        "rate": "100"
+      }
+    ],
+    "size": "357cm118kg",
+    "description": "ケルレンドゥの分身。倒されても、死ぬコトはない不死身の体をもつ。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/17",
+    "isBoss": false
+  },
+  {
+    "id": "mon_273",
+    "number": "273",
+    "name": "ベオルピーク",
+    "level": "65",
+    "element": "闇",
+    "locations": [
+      {
+        "location": "ガラムマサラ１０ボス",
+        "rate": "100"
+      },
+      {
+        "location": "エキウロクリュ(イベント)",
+        "rate": "100"
+      }
+    ],
+    "size": "187cm72kg",
+    "description": "プーク族最強のエニグマ。知能が高く、強力な魔法を使い攻撃してくる。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/17",
+    "isBoss": false
+  },
+  {
+    "id": "mon_274",
+    "number": "274",
+    "name": "デミッススキング",
+    "level": "140",
+    "element": "獣",
+    "locations": [
+      {
+        "location": "ガラムマサラ(31～35)",
+        "rate": "20.90"
+      }
+    ],
+    "size": "197cm103kg",
+    "description": "１８いるデミッスス族の王の中の王。その金色に輝く毛皮は貴重である。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/17",
+    "isBoss": false
+  },
+  {
+    "id": "mon_275",
+    "number": "275",
+    "name": "パラズネイラ",
+    "level": "66",
+    "element": "闇",
+    "locations": [
+      {
+        "location": "エキウロクリュ(イベント)",
+        "rate": "100"
+      }
+    ],
+    "size": "214cm143kg",
+    "description": "暗黒色のエニグマのエリート。大きな体と高い知力を持ち、闇の魔法で襲ってくる。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/17",
+    "isBoss": false
+  },
+  {
+    "id": "mon_276",
+    "number": "276",
+    "name": "シエルフォーゲ",
+    "level": "80",
+    "element": "風",
+    "locations": [
+      {
+        "location": "ガラムマサラ５ボス",
+        "rate": "100"
+      }
+    ],
+    "size": "193cm42kg",
+    "description": "天空の支配者。そのキレイな羽根は重宝され高価な値で取引される。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/17",
+    "isBoss": false
+  },
+  {
+    "id": "mon_277",
+    "number": "277",
+    "name": "ピグハスネル",
+    "level": "90",
+    "element": "闇",
+    "locations": [
+      {
+        "location": "ガラムマサラ１０ボス",
+        "rate": "100"
+      }
+    ],
+    "size": "378cm169kg",
+    "description": "赤い甲羅を持つエニグマ。その甲羅はすべての攻撃から身を守る性質をもっている。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/17",
+    "isBoss": false
+  },
+  {
+    "id": "mon_278",
+    "number": "278",
+    "name": "初代ブッチーネ",
+    "level": "100",
+    "element": "石",
+    "locations": [
+      {
+        "location": "ガラムマサラ１５ボス",
+        "rate": "100"
+      }
+    ],
+    "size": "237cm208kg",
+    "description": "ブッチーネ王国の英雄にして初代の王。その昔、悪鬼と戦った戦士の一人。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/17",
+    "isBoss": false
+  },
+  {
+    "id": "mon_279",
+    "number": "279",
+    "name": "トイケルベロス",
+    "level": "110",
+    "element": "古",
+    "locations": [
+      {
+        "location": "ガラムマサラ２０ボス",
+        "rate": "100"
+      }
+    ],
+    "size": "127cm86kg",
+    "description": "ホワイトが遊びのつもりで作ったが、あまりに強いのでどっかに捨ててしまった。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/17",
+    "isBoss": false
+  },
+  {
+    "id": "mon_280",
+    "number": "280",
+    "name": "コルトドーラ",
+    "level": "120",
+    "element": "水",
+    "locations": [
+      {
+        "location": "ガラムマサラ２５ボス",
+        "rate": "100"
+      }
+    ],
+    "size": "196cm211kg",
+    "description": "凶暴なヨロイガニ。その甲羅はすべてをはじき、そのハサミはすべてを砕く。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/17",
+    "isBoss": false
+  },
+  {
+    "id": "mon_281",
+    "number": "281",
+    "name": "ディクプレデター",
+    "level": "130",
+    "element": "雷",
+    "locations": [
+      {
+        "location": "ガラムマサラ３０ボス",
+        "rate": "100"
+      }
+    ],
+    "size": "195cm106kg",
+    "description": "銀色に輝く毛をもつ獣。ナワバリに入ったものをようしゃなく襲ってくる。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/17",
+    "isBoss": false
+  },
+  {
+    "id": "mon_282",
+    "number": "282",
+    "name": "シルバーボーブル",
+    "level": "140",
+    "element": "獣",
+    "locations": [
+      {
+        "location": "ガラムマサラ３５ボス",
+        "rate": "100"
+      }
+    ],
+    "size": "394cm352kg",
+    "description": "ガラムマサラに棲みついたイエティの仲間。背中に角が生えている。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/17",
+    "isBoss": false
+  },
+  {
+    "id": "mon_283",
+    "number": "283",
+    "name": "マッドブラス",
+    "level": "150",
+    "element": "火",
+    "locations": [
+      {
+        "location": "ガラムマサラ４０ボス",
+        "rate": "100"
+      }
+    ],
+    "size": "152cm285kg",
+    "description": "闇に汚染された銀色の液状のモンスター。具現化して襲ってくる。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/17",
+    "isBoss": false
+  },
+  {
+    "id": "mon_284",
+    "number": "284",
+    "name": "フレイムゾート",
+    "level": "160",
+    "element": "美",
+    "locations": [
+      {
+        "location": "ガラムマサラ４５ボス",
+        "rate": "100"
+      }
+    ],
+    "size": "362cm378kg",
+    "description": "「赤い石」を好むドラゴン。紅色に光り輝くウロコは、物理攻撃をはじくと言う。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/17",
+    "isBoss": false
+  },
+  {
+    "id": "mon_285",
+    "number": "285",
+    "name": "ボルケノボトル",
+    "level": "190",
+    "element": "闇",
+    "locations": [
+      {
+        "location": "シサバレイ５ボス",
+        "rate": "100"
+      }
+    ],
+    "size": "294cm218kg",
+    "description": "マグマで焼かれた巨大ツボ。体内に溶岩が詰まっていて怒るとあふれる。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/17",
+    "isBoss": false
+  },
+  {
+    "id": "mon_286",
+    "number": "286",
+    "name": "スケレトゥール",
+    "level": "200",
+    "element": "闇",
+    "locations": [
+      {
+        "location": "シサバレイ１０ボス",
+        "rate": "100"
+      }
+    ],
+    "size": "171cm28kg",
+    "description": "闇におちた異国の魔法使い。昔、悪と戦った賢者の一人。伝説の賢者のミイラである。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/17",
+    "isBoss": false
+  },
+  {
+    "id": "mon_287",
+    "number": "287",
+    "name": "ゾダウロクリュ",
+    "level": "180",
+    "element": "闇",
+    "locations": [
+      {
+        "location": "ガラムマサラ５０ボス#1",
+        "rate": "100"
+      }
+    ],
+    "size": "218cm296kg",
+    "description": "クリュ族の長。エキウロクリュの元側近。歴代の戦争を引き起こした。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/17",
+    "isBoss": false
+  },
+  {
+    "id": "mon_288",
+    "number": "288",
+    "name": "ゲヴグレンドゥ",
+    "level": "200",
+    "element": "闇",
+    "locations": [
+      {
+        "location": "シサバレイ１０ボス",
+        "rate": "100"
+      }
+    ],
+    "size": "264cm172kg",
+    "description": "ケルレンドゥの力をはるかにこえる伝説のエニグマ。すべてを知るもの。",
+    "url": "https://wikiwiki.jp/magivaca/MonsterList/17",
+    "isBoss": false
+  }
+];
+
 const STORY_CHOICES_DATA = [
   {
     "plane": "物質のプレーン",
@@ -10565,6 +17156,34 @@ const STORY_CHOICES_DATA = [
         "notes": "【期間限定・取り返しのつかない要素】エニグマ襲撃イベントが始まると二度と入手できなくなる。知っていても「知らない」と答えること。",
         "missable": true,
         "url": "https://wikiwiki.jp/magivaca/%E9%AD%94%E6%B3%95%E3%81%AE%E6%89%8B%E5%B8%B3"
+      },
+      {
+        "scene": "図書室・教室での装備回収と仲間会話",
+        "location": "魔法学校（図書室・教室・音楽室）",
+        "choices": [
+          {
+            "action": "図書室の本棚や宝箱を探索し、教室でカベルネに話しかける",
+            "options": "校舎を出る前に図書室をくまなく探索する ／ 探索せずに出発する",
+            "result": "バンダナ、マジックリスト、ビニールシャツ、木のくつ、愛のシールなど序盤限定の装備品を回収可能。カベルネを仲間に迎えて出発する。"
+          }
+        ],
+        "notes": "校舎から一度外に出ると二度と学校には戻れないため、出発前のアイテム回収は必須。",
+        "missable": true,
+        "url": "https://wikiwiki.jp/magivaca/%E3%83%81%E3%83%A3%E3%83%BC%E3%83%88/%E7%89%A9%E8%B3%AA%E3%81%AE%E3%83%97%E3%83%AC%E3%83%BC%E3%83%B3#classroom"
+      },
+      {
+        "scene": "カエルの林・カエルグミ捕獲と成績表リセット",
+        "location": "ヴァレンシア海岸・カエルの林",
+        "choices": [
+          {
+            "action": "捕獲したカエルグミをレモンに渡すかどうか",
+            "options": "【選択肢A】レモンに渡す ／ 【選択肢B】渡さずに所持する",
+            "result": "レモンに渡すと成績表上のカエルグミ取得数が0にリセットされる。「カエルグミ取得数0クリア」を目指すやりこみプレイにおける必須分岐。"
+          }
+        ],
+        "notes": "カエルグミ0個クリアを目指す場合、ここでカエルグミをレモンに渡して取得数を0に戻しておくこと。",
+        "missable": true,
+        "url": "https://wikiwiki.jp/magivaca/%E3%83%81%E3%83%A3%E3%83%BC%E3%83%88/%E7%89%A9%E8%B3%AA%E3%81%AE%E3%83%97%E3%83%AC%E3%83%BC%E3%83%B3#frog_wood"
       }
     ]
   },
@@ -10584,6 +17203,34 @@ const STORY_CHOICES_DATA = [
         "notes": "光のプレーンで最初に加入する仲間。光のプレーンではモンスターは出現しない。",
         "missable": false,
         "url": "https://wikiwiki.jp/magivaca/%E3%83%81%E3%83%A3%E3%83%BC%E3%83%88/%E5%85%89%E3%81%AE%E3%83%97%E3%83%AC%E3%83%BC%E3%83%B3#piscabook"
+      },
+      {
+        "scene": "森の洞窟・ヴァルカネイラ戦とアランシア加入",
+        "location": "森の洞窟・入口 ～ 東",
+        "choices": [
+          {
+            "action": "洞窟入口手前の選択肢、およびマップ右下でのキルシュ・アランシア共闘",
+            "options": "入口での会話選択肢（どちらを選んでも戦闘へ）",
+            "result": "ヴァルカネイラ撃破後にアランシアが正式加入し、メニュー機能「モンスター図鑑」を入手。キルシュは一旦別行動となる。"
+          }
+        ],
+        "notes": "戦闘後にトルーナ村へ進む。キルシュは後ほどトルーナ村のイベントで再加入する。",
+        "missable": false,
+        "url": "https://wikiwiki.jp/magivaca/%E3%83%81%E3%83%A3%E3%83%BC%E3%83%88/%E5%85%89%E3%81%AE%E3%83%97%E3%83%AC%E3%83%BC%E3%83%B3#forest_cave"
+      },
+      {
+        "scene": "トルーナ村・キルシュ再加入と村長イベント",
+        "location": "トルーナ村（左上の民家・森の洞窟小部屋）",
+        "choices": [
+          {
+            "action": "村長からウークルの羽を入手後、森の洞窟・小部屋へ向かう",
+            "options": "森の洞窟・小部屋へ寄り道してキルシュを仲間にする ／ そのままベナコンチャ遺跡へ直行",
+            "result": "森の洞窟小部屋でキルシュに話しかけると戦闘なしで再加入。村の右上で加入したガナッシュと共に強固な前衛が揃う。"
+          }
+        ],
+        "notes": "キルシュを回収せずに遺跡を進めることも可能だが、物理火力が大きく低下するため必ず立ち寄って回収推奨。",
+        "missable": false,
+        "url": "https://wikiwiki.jp/magivaca/%E3%83%81%E3%83%A3%E3%83%BC%E3%83%88/%E5%85%89%E3%81%AE%E3%83%97%E3%83%AC%E3%83%BC%E3%83%B3#toluna"
       },
       {
         "scene": "ベナコンチャ遺跡・スノウヘア戦後の移動分岐",
@@ -10618,42 +17265,28 @@ const STORY_CHOICES_DATA = [
         "location": "文鳥ケ原",
         "choices": [
           {
-            "action": "文鳥に話しかける",
-            "options": "話しかけるごとに「ちゅん！」「じゅいー」と鳴き声が変化",
-            "result": "12羽すべてを「ちゅん！」に揃えると12羽目が赤文字になり、ミモレットの森に隠し要素（文鳥）が出現する。"
+            "action": "文鳥の合唱を聴いた後の会話",
+            "options": "「はい」「いいえ」のいずれかを選択",
+            "result": "選択肢によるストーリーの分岐はなし。「ラシモフ金貨」または「ラシモフ銀貨」を入手できる。"
           }
         ],
-        "notes": "奇数回は「ちゅん！」、偶数回は「じゅいー」と鳴く規則性がある。",
+        "notes": "文鳥温泉への道が開く。温泉に入ることでHP・MPが全回復する。",
         "missable": false,
-        "url": "https://wikiwiki.jp/magivaca/%E3%83%81%E3%83%A3%E3%83%BC%E3%83%88/%E5%85%89%E3%81%AE%E3%83%97%E3%83%AC%E3%83%BC%E3%83%B3#bunchou"
+        "url": "https://wikiwiki.jp/magivaca/%E3%83%81%E3%83%A3%E3%83%BC%E3%83%88/%E5%85%89%E3%81%AE%E3%83%97%E3%83%AC%E3%83%BC%E3%83%B3#buncho"
       },
       {
-        "scene": "キードモンガ・タルタルちゃん戦前の選択肢",
-        "location": "キードモンガ",
+        "scene": "ラ・ロッシュの塔・カベルネ加入",
+        "location": "ラ・ロッシュの塔",
         "choices": [
           {
-            "action": "タルタルちゃんとの対峙",
-            "options": "「はい」を選ぶ",
-            "result": "一時的に所持カエルグミをすべて失うが、戦闘勝利後にすべて返還される。戦闘に突入。"
+            "action": "塔内にいるカベルネに話しかける",
+            "options": "話しかけて「はい」を選択",
+            "result": "カベルネが正式加入。カベルネはカエルグミを食べない（戦闘不能回復アイテムを受け付けない）固有仕様を持つため編成・回復に注意。"
           }
         ],
-        "notes": "カエルグミを失っても慌てる必要はない。戦闘後に全快＋返還される。",
+        "notes": "カベルネ加入後は全体回復魔法や精霊魔法でのHP管理が重要となる。",
         "missable": false,
-        "url": "https://wikiwiki.jp/magivaca/%E3%83%81%E3%83%A3%E3%83%BC%E3%83%88/%E5%85%89%E3%81%AE%E3%83%97%E3%83%AC%E3%83%BC%E3%83%B3#tartar"
-      },
-      {
-        "scene": "魔バス発進（闇のプレーンへ）",
-        "location": "キードモンガ・バス停",
-        "choices": [
-          {
-            "action": "魔バスに話しかける",
-            "options": "「はい」を選ぶと闇のプレーンへ移動 ／ 「いいえ」で通常の魔バス操作",
-            "result": "「はい」を選ぶと物語が進行し、闇のプレーンへ突入する。"
-          }
-        ],
-        "notes": "闇のプレーンへ進むと当面の間は光のプレーンに戻れない。精霊集めやアイテム回収のやり残しがないか確認すること。",
-        "missable": false,
-        "url": "https://wikiwiki.jp/magivaca/%E3%83%81%E3%83%A3%E3%83%BC%E3%83%88/%E5%85%89%E3%81%AE%E3%83%97%E3%83%AC%E3%83%BC%E3%83%B3#magicbus"
+        "url": "https://wikiwiki.jp/magivaca/%E3%83%81%E3%83%A3%E3%83%BC%E3%83%88/%E5%85%89%E3%81%AE%E3%83%97%E3%83%AC%E3%83%BC%E3%83%B3#laroche"
       }
     ]
   },
@@ -10661,46 +17294,88 @@ const STORY_CHOICES_DATA = [
     "plane": "闇のプレーン",
     "events": [
       {
-        "scene": "バソリモ村・こんにゃくイモの譲渡",
-        "location": "バソリモ村・民家",
+        "scene": "レヒカフ沼・オリーブとの再会と会話",
+        "location": "レヒカフ沼（沼地・中央部）",
         "choices": [
           {
-            "action": "メースに話しかける（こんにゃくイモ所持時）",
-            "options": "「はい」を選ぶ ／ 「いいえ」を選ぶ",
-            "result": "「はい」でこんにゃくイモを渡しストーリーが進行。「いいえ」を選んでも何度でも再選択可能。"
+            "action": "沼地でオリーブを発見した際の会話",
+            "options": "「助ける」「話を聞く」など",
+            "result": "オリーブが一時的に同行状態になる。泥沼の歩行ギミックを教わり、謎の遺跡方面への移動が可能になる。"
           }
         ],
-        "notes": "メースの横にいるマジックドールに話しかけると、そのMDを再びPTに加入させることができる。",
+        "notes": "沼地の毒地形を通過する前に回復アイテム（どくドクナ）を補充しておくこと。",
         "missable": false,
-        "url": "https://wikiwiki.jp/magivaca/%E3%83%81%E3%83%A3%E3%83%BC%E3%83%88/%E9%97%87%E3%81%AE%E3%83%97%E3%83%AC%E3%83%BC%E3%83%B3#konnyaku"
+        "url": "https://wikiwiki.jp/magivaca/%E3%83%81%E3%83%A3%E3%83%BC%E3%83%88/%E9%97%87%E3%81%AE%E3%83%97%E3%83%AC%E3%83%BC%E3%83%B3#lehikaf"
       },
       {
-        "scene": "MD-003 マッケレル加入（超重要取り返しのつかない要素）",
-        "location": "モギナス魔窟・イベント戦闘後",
+        "scene": "マサラティ村・カフェオレ救出と再加入",
+        "location": "マサラティ村",
         "choices": [
           {
-            "action": "戦闘後の加入選択肢",
-            "options": "PT人数5人以下で選択肢「はい」を選ぶ",
-            "result": "MD-003 マッケレルが仲間になる。"
+            "action": "村のイベントを進めてカフェオレに話しかける",
+            "options": "イベント進行後に話しかけて仲間に加える",
+            "result": "カフェオレが正式にパーティ復帰。単体・全体高火力の雷魔法使いとして加入し、水属性モンスターが多い闇のプレーンで主力となる。"
           }
         ],
-        "notes": "【取り返しのつかない要素】PTが6人満員だったり、「いいえ」を選んでしまうと二度と仲間にならない！必ず事前にPTを5人以下にして挑むこと。",
-        "missable": true,
-        "url": "https://wikiwiki.jp/magivaca/%E3%83%81%E3%83%A3%E3%83%BC%E3%83%88/%E9%97%87%E3%81%AE%E3%83%97%E3%83%AC%E3%83%BC%E3%83%B3#mackerel"
+        "notes": "カフェオレ加入により属性相性での戦闘難易度が大幅に緩和される。",
+        "missable": false,
+        "url": "https://wikiwiki.jp/magivaca/%E3%83%81%E3%83%A3%E3%83%BC%E3%83%88/%E9%97%87%E3%81%AE%E3%83%97%E3%83%AC%E3%83%BC%E3%83%B3#masalati"
       },
       {
-        "scene": "ショコラ加入のPT人数制限",
-        "location": "暗闇の地",
+        "scene": "タピオカティ村・宿屋とキャンディ合流",
+        "location": "タピオカティ村",
         "choices": [
           {
-            "action": "ショコラに話しかける",
-            "options": "PT人数5人以下で話しかける",
-            "result": "ショコラが仲間に加わる。PTが6人だと加入しないが、こちらは人数を減らせば再挑戦可能。"
+            "action": "村長・村人に話しかけ、宿屋イベントを進行",
+            "options": "村の探索後に宿屋で休む",
+            "result": "イベントを経てキャンディと合流。風属性魔法と回復サポートが強化される。"
           }
         ],
-        "notes": "マッケレルと異なり取り返しはつくが、二度手間を防ぐためPT枠を空けておこう。",
+        "notes": "村周辺の湖・水辺エリアの探索フラグが開放される。",
         "missable": false,
-        "url": "https://wikiwiki.jp/magivaca/%E3%83%81%E3%83%A3%E3%83%BC%E3%83%88/%E9%97%87%E3%81%AE%E3%83%97%E3%83%AC%E3%83%BC%E3%83%B3#chocolat"
+        "url": "https://wikiwiki.jp/magivaca/%E3%83%81%E3%83%A3%E3%83%BC%E3%83%88/%E9%97%87%E3%81%AE%E3%83%97%E3%83%AC%E3%83%BC%E3%83%B3#tapiokati"
+      },
+      {
+        "scene": "クムヤムト砂漠・オアシスの選択",
+        "location": "クムヤムト砂漠",
+        "choices": [
+          {
+            "action": "砂漠でオアシスを発見した際の行動",
+            "options": "オアシスで水を飲む ／ そのまま砂漠を進む",
+            "result": "オアシスで水を飲むとPTのHP・MPが回復し、砂漠特有の熱気によるHP減少ペナルティが解除される。"
+          }
+        ],
+        "notes": "砂漠を歩くと歩数に応じてダメージを受けるため、定期的にオアシスを利用することが推奨される。",
+        "missable": false,
+        "url": "https://wikiwiki.jp/magivaca/%E3%83%81%E3%83%A3%E3%83%BC%E3%83%88/%E9%97%87%E3%81%AE%E3%83%97%E3%83%AC%E3%83%BC%E3%83%B3#kumyamt"
+      },
+      {
+        "scene": "エニグマの森・シードルとの合流",
+        "location": "エニグマの森",
+        "choices": [
+          {
+            "action": "迷いの森の分岐進行",
+            "options": "【ルートA】左上へ進む ／ 【ルートB】右下へ進む",
+            "result": "ルートAへ進むとシードルと合流でき、森の出口への正しい道順を教えてもらえる。ルートBだと同じエリアをループする。"
+          }
+        ],
+        "notes": "シードルがパーティに加入。木属性の魔法使いとして活躍する。",
+        "missable": false,
+        "url": "https://wikiwiki.jp/magivaca/%E3%83%81%E3%83%A3%E3%83%BC%E3%83%88/%E9%97%87%E3%81%AE%E3%83%97%E3%83%AC%E3%83%BC%E3%83%B3#enigma_forest"
+      },
+      {
+        "scene": "キスニカ鉱山・トロッコ切り替えとブッチーネ3世戦",
+        "location": "キスニカ鉱山（5〜8F, 9〜12F）",
+        "choices": [
+          {
+            "action": "トロッコの進路切り替えスイッチを操作する",
+            "options": "直進ルート ／ 分岐ルート（宝箱・精霊回収）",
+            "result": "スイッチ操作により隠しエリアの宝箱や精霊を回収可能。最深部でブッチーネ3世＋マジックドール4体とのボス戦。"
+          }
+        ],
+        "notes": "ボス戦では取り巻きのマジックドールを全体魔法で素早く掃討するのがセオリー。",
+        "missable": false,
+        "url": "https://wikiwiki.jp/magivaca/%E3%83%81%E3%83%A3%E3%83%BC%E3%83%88/%E9%97%87%E3%81%AE%E3%83%97%E3%83%AC%E3%83%BC%E3%83%B3#kisnika"
       }
     ]
   },
@@ -10708,32 +17383,88 @@ const STORY_CHOICES_DATA = [
     "plane": "死のプレーン",
     "events": [
       {
-        "scene": "死の地図入手",
-        "location": "死者の村",
+        "scene": "大岩・ガスパチョ村への道",
+        "location": "大岩（死のプレーン・入口）",
         "choices": [
           {
-            "action": "村長との会話",
-            "options": "どの選択肢を選んでも結果は同じ",
-            "result": "自動的に「死の地図」を入手する。"
+            "action": "大岩を押して道を切り開く",
+            "options": "キルシュの力を借りて岩を押す",
+            "result": "大岩を排除してガスパチョ村への道が開通。村で回復アイテムの補充やセーブが可能になる。"
           }
         ],
-        "notes": "死のプレーンの広大なマップを探索するための必須アイテム。",
+        "notes": "死のプレーンは敵の攻撃力が高いため、ガスパチョ村での装備確認が重要。",
         "missable": false,
-        "url": "https://wikiwiki.jp/magivaca/%E3%83%81%E3%83%A3%E3%83%BC%E3%83%88/%E6%AD%BB%E3%81%AE%E3%83%97%E3%83%AC%E3%83%BC%E3%83%B3#death_map"
+        "url": "https://wikiwiki.jp/magivaca/%E3%83%81%E3%83%A3%E3%83%BC%E3%83%88/%E6%AD%BB%E3%81%AE%E3%83%97%E3%83%AC%E3%83%BC%E3%83%B3#oiwa"
       },
       {
-        "scene": "クライン破壊イベント",
-        "location": "死のプレーン各所",
+        "scene": "タンドーリ・オリーブ救出イベント",
+        "location": "タンドーリ",
         "choices": [
           {
-            "action": "戦闘後にクラインを割るかどうかの選択",
-            "options": "「はい」を選ぶ ／ 「いいえ」を選ぶ",
-            "result": "「いいえ」を選ぶとその後のショートカット選択肢が発生する。"
+            "action": "タンドーリの街の地下牢・イベントを進める",
+            "options": "見張りとの戦闘を経て救出",
+            "result": "捕らわれていたオリーブを救出してパーティに再加入。植物魔法での状態異常・サポートが復帰。"
           }
         ],
-        "notes": "進行上の悪影響はないのでプレイスタイルに合わせて選択可能。",
+        "notes": "死のプレーンの過酷な環境下での重要戦力となる。",
         "missable": false,
-        "url": "https://wikiwiki.jp/magivaca/%E3%83%81%E3%83%A3%E3%83%BC%E3%83%88/%E6%AD%BB%E3%81%AE%E3%83%97%E3%83%AC%E3%83%BC%E3%83%B3#cline"
+        "url": "https://wikiwiki.jp/magivaca/%E3%83%81%E3%83%A3%E3%83%BC%E3%83%88/%E6%AD%BB%E3%81%AE%E3%83%97%E3%83%AC%E3%83%BC%E3%83%B3#tandoori"
+      },
+      {
+        "scene": "ピラミッド・石の棺と謎解き",
+        "location": "ピラミッド（中央の玄室）",
+        "choices": [
+          {
+            "action": "4つの石の棺を調べる順序",
+            "options": "【順序A】左上→右下→左下→右上 ／ 【順序B】その他の順序",
+            "result": "正しい順序で棺を開けると中央の隠し扉が開き、石の精霊や強力な古代装備を入手できる。間違えるとモンスターが出現。"
+          }
+        ],
+        "notes": "ピラミッド内部は落とし穴が多いので慎重に探索すること。",
+        "missable": false,
+        "url": "https://wikiwiki.jp/magivaca/%E3%83%81%E3%83%A3%E3%83%BC%E3%83%88/%E6%AD%BB%E3%81%AE%E3%83%97%E3%83%AC%E3%83%BC%E3%83%B3#pyramid"
+      },
+      {
+        "scene": "ラキューオ・セサミとの再会",
+        "location": "ラキューオ（廃墟）",
+        "choices": [
+          {
+            "action": "変わり果てたセサミとの会話",
+            "options": "セサミの問いかけに「はい」「いいえ」で回答",
+            "result": "選択肢によるストーリーの分岐はなし。セサミの心情やエニグマの真相が語られ、物語の核心へと迫る。"
+          }
+        ],
+        "notes": "会話イベント後、モギナス魔窟への道が解放される。",
+        "missable": false,
+        "url": "https://wikiwiki.jp/magivaca/%E3%83%81%E3%83%A3%E3%83%BC%E3%83%88/%E6%AD%BB%E3%81%AE%E3%83%97%E3%83%AC%E3%83%BC%E3%83%B3#laqoo"
+      },
+      {
+        "scene": "モギナス魔窟・最深部突入前の準備",
+        "location": "モギナス魔窟（入口 ～ 最深部）",
+        "choices": [
+          {
+            "action": "最深部の扉を開ける前の確認",
+            "options": "扉を開けて突入する ／ 引き返して準備を整える",
+            "result": "扉の奥へ進むとボス戦が連続し、しばらく街へ戻れなくなる。装備・回復アイテムを万全にして挑む必要がある。"
+          }
+        ],
+        "notes": "【警告】セーブデータを分けることが推奨される難所。",
+        "missable": false,
+        "url": "https://wikiwiki.jp/magivaca/%E3%83%81%E3%83%A3%E3%83%BC%E3%83%88/%E6%AD%BB%E3%81%AE%E3%83%97%E3%83%AC%E3%83%BC%E3%83%B3#moginas"
+      },
+      {
+        "scene": "死の回廊・光の魔法使い覚醒と闇ダンジョン閉鎖",
+        "location": "死の回廊 ～ 暗闇の地",
+        "choices": [
+          {
+            "action": "ストーリーを進めて光の魔法使いに覚醒する",
+            "options": "ストーリー進行を受け入れる",
+            "result": "主人公が闇属性から光属性へと変化し、光属性魔法を習得。同時に「闇の魔法使い限定」のダンジョン（リドナヒー等）に二度と入れなくなる。"
+          }
+        ],
+        "notes": "【重大注意】覚醒前にリドナヒーの宝箱・図鑑・精霊回収を必ず完了させておくこと。事前セーブ必須。",
+        "missable": true,
+        "url": "https://wikiwiki.jp/magivaca/%E3%83%81%E3%83%A3%E3%83%BC%E3%83%88/%E6%AD%BB%E3%81%AE%E3%83%97%E3%83%AC%E3%83%BC%E3%83%B3#corridor_of_death"
       }
     ]
   },
@@ -10741,46 +17472,74 @@ const STORY_CHOICES_DATA = [
     "plane": "ガラムマサラ",
     "events": [
       {
-        "scene": "ダンジョン難易度選択（ヌル・ナミ・オニ）",
-        "location": "ずんどこ穴・入口",
+        "scene": "キヤシカゥアのツボ・カエルグミ要求数の増減ルール",
+        "location": "ガラムマサラ各階（キヤシカゥアのツボ）",
         "choices": [
           {
-            "action": "ギュウヒ・オグラに話しかける",
-            "options": "【ヌル】易しい冒険 ／ 【ナミ】標準的な試練 ／ 【オニ】過酷な最深部",
-            "result": "難易度に応じてツボの要求カエルグミ数や出現モンスター、最深部ボスが変化する。"
+            "action": "ツボにカエルグミを投入する",
+            "options": "要求数どおりにカエルグミを投入 ／ 投入せずに通り過ぎる",
+            "result": "投入するとツボの封印が解け、次の階層への階段やアイテムが出現。戦闘後にカエルグミ擬態と接触することで要求数が増減する。"
           }
         ],
-        "notes": "一度難易度を決めると外に出るまで変更できない。再選択時は1階層目からやり直しとなる。",
+        "notes": "ツボの要求カエルグミ数を減らすには、カエルグミ擬態を倒してツボの要求カウントを調整することが有効。",
         "missable": false,
-        "url": "https://wikiwiki.jp/magivaca/%E3%83%81%E3%83%A3%E3%83%BC%E3%83%88/%E3%82%AC%E3%83%A9%E3%83%A0%E3%83%9E%E3%82%B5%E3%83%A9#difficulty"
+        "url": "https://wikiwiki.jp/magivaca/%E3%83%81%E3%83%A3%E3%83%BC%E3%83%88/%E3%82%AC%E3%83%A9%E3%83%A0%E3%83%9E%E3%82%B5%E3%83%A9#tsubo"
       },
       {
-        "scene": "ディニレンドゥ図鑑消滅警告（超重要取り返しのつかない要素）",
+        "scene": "カエルグミ擬態・消滅バグ回避手順",
+        "location": "ガラムマサラ 5F, 7F, 9F, 14F, 15F",
+        "choices": [
+          {
+            "action": "カエルグミ擬態への接触方法",
+            "options": "【推奨】後ろから追突・Aボタン連打 ／ 正面から近づく（バグ発生リスク）",
+            "result": "擬態が壁から浮いた状態で接触すると、マップ下端の「バグ壁」をすり抜けて画面外へ消失してしまうバグを回避できる。"
+          }
+        ],
+        "notes": "【攻略本言及の仕様】ガラムマサラ14Fではマップ進入から約15秒後に擬態同士のすれ違いで1体が画面外へ消失する。進入後15秒以内に片方と接触することで回避可能。",
+        "missable": true,
+        "url": "https://wikiwiki.jp/magivaca/%E3%83%81%E3%83%A3%E3%83%BC%E3%83%88/%E3%82%AC%E3%83%A9%E3%83%A0%E3%83%9E%E3%82%B5%E3%83%A9#frog_mimic"
+      },
+      {
+        "scene": "50Fボス#1「ディニレンドゥ」図鑑登録の絶対ルール",
         "location": "ガラムマサラ 50F",
         "choices": [
           {
-            "action": "難易度「オニ」での文鳥加入",
-            "options": "オニで文鳥を仲間にする前に、必ずヌルかナミで50Fボス#1（ディニレンドゥ）を撃破する",
-            "result": "オニで文鳥を仲間にした瞬間、ボス#1（ディニレンドゥ）が難易度問わず二度と出現しなくなる。"
+            "action": "難易度選択とクリア順序",
+            "options": "【必須】1周目に「ヌル」または「ナミ」で50Fをクリア ／ 1周目から「オニ」で文鳥を仲間にする",
+            "result": "難易度「オニ」で文鳥を仲間にした時点で、ディニレンドゥは難易度に関わらず二度とフィールドに出現しなくなる。図鑑をコンプリートできなくなる重大な罠。"
           }
         ],
-        "notes": "【取り返しのつかない要素】モンスター図鑑コンプリートを目指す場合、1周目は必ず「ヌル」または「ナミ」で50Fまで進めてディニレンドゥを倒すこと！",
+        "notes": "【最重要警告】モンスター図鑑コンプリートを目指す場合、必ずオニに挑む前にヌルまたはナミで50階まで進め、ディニレンドゥを倒して図鑑登録すること。",
         "missable": true,
-        "url": "https://wikiwiki.jp/magivaca/%E3%83%81%E3%83%A3%E3%83%BC%E3%83%88/%E3%82%AC%E3%83%A9%E3%83%A0%E3%83%9E%E3%82%B5%E3%83%A9#boss_warning"
+        "url": "https://wikiwiki.jp/magivaca/%E3%83%81%E3%83%A3%E3%83%BC%E3%83%88/%E3%82%AC%E3%83%A9%E3%83%A0%E3%83%9E%E3%82%B5%E3%83%A9#dinilendu"
       },
       {
-        "scene": "ターニィ加入条件",
-        "location": "ガラムマサラ 50F",
+        "scene": "シサバレイ・精霊石像と目玉石像による特殊PT操作",
+        "location": "シサバレイ（1F〜5F）",
         "choices": [
           {
-            "action": "ボス#2（土偶）撃破後の選択肢",
-            "options": "PT人数5人以下で倒し、選択肢「はい」を選ぶ",
-            "result": "ターニィが仲間になる。"
+            "action": "フロア内の石像を調べる",
+            "options": "精霊の石像（対応属性の仲間を追加） ／ 目玉の石像（目玉の数だけPT後方から仲間を除外）",
+            "result": "シサバレイ内では通常メニューからのPT編成が不可。石像のギミックを使って仲間を入れ替え、ボス戦に向けた最適な陣形を構築する。"
           }
         ],
-        "notes": "【注意】難易度「ナミ」または「オニ」限定。ボス#2は1度でも倒すと二度と出現しないため、PT枠を空けて挑むこと。",
+        "notes": "PT上限6人の状態で精霊石像を調べても何も起きないため、目玉石像で人数を減らしてから目当ての仲間を加えること。",
+        "missable": false,
+        "url": "https://wikiwiki.jp/magivaca/%E3%83%81%E3%83%A3%E3%83%BC%E3%83%88/%E3%82%AC%E3%83%A9%E3%83%A0%E3%83%9E%E3%82%B5%E3%83%A9#sisavalley"
+      },
+      {
+        "scene": "リドナヒー・闇魔法使い限定突入とニルヴァ",
+        "location": "リドナヒー（10F）",
+        "choices": [
+          {
+            "action": "闇の魔法使いの状態で10Fまで登頂しニルヴァに話しかける",
+            "options": "光の魔法使いに覚醒する前に突入・クリアする",
+            "result": "10Fのニルヴァとの会話イベントおよびモンスター図鑑登録を達成。光の魔法使いになってしまうと二度と進入できない。"
+          }
+        ],
+        "notes": "【取り返しのつかない要素】ゲームクリアや光の魔法使い覚醒前に必ず10Fまで踏破すること。",
         "missable": true,
-        "url": "https://wikiwiki.jp/magivaca/%E3%83%81%E3%83%A3%E3%83%BC%E3%83%88/%E3%82%AC%E3%83%A9%E3%83%A0%E3%83%9E%E3%82%B5%E3%83%A9#tahnee"
+        "url": "https://wikiwiki.jp/magivaca/%E3%83%81%E3%83%A3%E3%83%BC%E3%83%88/%E3%82%AC%E3%83%A9%E3%83%A0%E3%83%9E%E3%82%B5%E3%83%A9#lidonahy"
       }
     ]
   }
@@ -10856,7 +17615,7 @@ if (typeof module !== 'undefined' && module.exports) {
   module.exports = {
     SPIRITS_DATA, ELEMENT_META, PIRANHA_DATA, LIFESPAN_GUIDE, COMP_GUIDE, LEVELING_DATA, CHART_DATA, SYSTEM_DATA, OFURO_CHART_DATA,
     ITEM_RECOVERY_DATA, ITEM_OTHER_DATA, ITEM_MD_DATA, ITEM_EQUIP_DATA, ITEM_EQUIP_SETS, ITEM_DROP_INDEX,
-    MAGIC_NOTES_DATA, MIMIC_COINS_DATA, BOSS_MONSTERS_DATA, STORY_CHOICES_DATA, RECORD_CRITERIA_DATA
+    MAGIC_NOTES_DATA, MIMIC_COINS_DATA, BOSS_MONSTERS_DATA, REGULAR_MONSTERS_DATA, STORY_CHOICES_DATA, RECORD_CRITERIA_DATA
   };
 }
 

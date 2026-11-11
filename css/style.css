@@ -2155,3 +2155,78 @@ a:hover {
   color: #ffffff;
   border-color: var(--accent);
 }
+
+/* ==========================================================================
+   Monster Encyclopedia Grid & Cards (Phase 9)
+   ========================================================================== */
+.monsters-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 14px;
+  margin-top: 14px;
+}
+
+.monster-card {
+  background: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-sm);
+  padding: 14px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.monster-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.monster-card.is-boss {
+  border-color: #f59e0b;
+  background: #fffdf5;
+}
+
+.badge-boss {
+  background: #fef3c7;
+  color: #b45309;
+  font-weight: bold;
+}
+
+.badge-num {
+  background: #f1f5f9;
+  color: #475569;
+  font-weight: 600;
+  font-family: monospace;
+}
+
+.monster-loc-tag {
+  display: inline-block;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  padding: 2px 7px;
+  font-size: 0.8rem;
+  color: #334155;
+  margin: 2px 4px 2px 0;
+}
+
+.monster-desc-box {
+  background: #f8fafc;
+  border-left: 3px solid #cbd5e1;
+  padding: 6px 10px;
+  font-size: 0.82rem;
+  color: #475569;
+  border-radius: 0 4px 4px 0;
+  line-height: 1.45;
+}
+
+.monster-drops-box {
+  font-size: 0.82rem;
+  color: #15803d;
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
