@@ -13,7 +13,7 @@ def test_mobile_compactness():
     # 1. タブの存在と個数確認
     tabs = soup.select(".nav-tabs-wrapper .tab-btn")
     print(f"Total navigation tabs: {len(tabs)}")
-    assert len(tabs) == 12, f"Expected 12 tabs, got {len(tabs)}"
+    assert len(tabs) == 13, f"Expected 13 tabs, got {len(tabs)}"
 
     # 2. ヘッダーの要素確認
     btn_backup = soup.select_one("#btn-backup")

@@ -10,6 +10,7 @@
   const STORAGE_KEY_MIMIC_COINS = 'magivaca_mimic_coins_v1';
   const STORAGE_KEY_RECORDS = 'magivaca_records_v1';
   const STORAGE_KEY_CHESTS = 'magivaca_chest_checklist_v1';
+  const STORAGE_KEY_TIMELINE = 'magivaca_timeline_checklist_v1';
 
   // Helper: 全角数字を半角数字に変換して正規化する共通関数
   function normalizeMapName(str) {
@@ -137,6 +138,12 @@
   let checkedMimicCoins = new Set();
   let checkedRecords = new Set();
   let checkedChests = new Set();
+  let checkedTimeline = new Set();
+
+  // State: Timeline Tab (Phase 10)
+  let timelineCategoryFilter = 'all'; // 'all' | 'spirit' | 'chest' | 'event'
+  let timelineGroupFilter = 'all'; // 'all' | 'matter' | 'light' | 'dark' | 'death' | 'garam' | 'undetermined'
+  let timelineOnlyUnchecked = false;
 
   // State: Chests Tab
   let chestPlane = 'all';
@@ -246,6 +253,12 @@ let collapsedMaps = new Set();
         const arr = JSON.parse(savedChests);
         if (Array.isArray(arr)) checkedChests = new Set(arr);
       }
+
+      const savedTimeline = localStorage.getItem(STORAGE_KEY_TIMELINE);
+      if (savedTimeline) {
+        const arr = JSON.parse(savedTimeline);
+        if (Array.isArray(arr)) checkedTimeline = new Set(arr);
+      }
     } catch (e) {
       console.warn('Failed to load state from localStorage:', e);
     }
@@ -259,6 +272,7 @@ let collapsedMaps = new Set();
       localStorage.setItem(STORAGE_KEY_MIMIC_COINS, JSON.stringify(Array.from(checkedMimicCoins)));
       localStorage.setItem(STORAGE_KEY_RECORDS, JSON.stringify(Array.from(checkedRecords)));
       localStorage.setItem(STORAGE_KEY_CHESTS, JSON.stringify(Array.from(checkedChests)));
+      localStorage.setItem(STORAGE_KEY_TIMELINE, JSON.stringify(Array.from(checkedTimeline)));
     } catch (e) {
       console.warn('Failed to save state to localStorage:', e);
     }
@@ -275,6 +289,7 @@ let collapsedMaps = new Set();
     updateProgressUI();
     renderSpiritsList();
     renderCompleteGuideTab();
+    renderTimelineTab();
   }
 
   function toggleMagicNote(no) {
@@ -296,8 +311,21 @@ let collapsedMaps = new Set();
     }
     saveState();
     renderChestsTab();
+    renderTimelineTab();
   }
   window.toggleChest = toggleChest;
+
+  // Timeline Toggle Helpers (Phase 10)
+  function toggleTimelineItem(timelineId) {
+    if (checkedTimeline.has(timelineId)) {
+      checkedTimeline.delete(timelineId);
+    } else {
+      checkedTimeline.add(timelineId);
+    }
+    saveState();
+    renderTimelineTab();
+  }
+  window.toggleTimelineItem = toggleTimelineItem;
 
   function toggleAreaCollapse(areaKey) {
     if (collapsedAreas.has(areaKey)) {
@@ -1489,7 +1517,7 @@ let collapsedMaps = new Set();
 
       planeData.events.forEach(ev => {
         html += `
-          <div class="story-card ${ev.missable ? 'missable' : ''}">
+          <div class="story-card ${ev.missable ? 'missable' : ''}" data-story-scene="${escapeHtml(ev.scene)}">
             <div class="story-card-header">
               <div>
                 <div class="story-card-title">${escapeHtml(ev.scene)}</div>
@@ -3138,6 +3166,596 @@ let collapsedMaps = new Set();
     `;
   }
 
+  // ==========================================================================
+  // Tab: Missable Elements Integrated Timeline (Phase 10)
+  // ==========================================================================
+  function resolveTimelinePlacement(item) {
+    // 既存データ（CHART_DATA.planes / STORY_CHOICES_DATA / CHESTS_DATA）の進行ステップに基づき機械的に配置を決定
+    // チャート内に進行ステップが存在しない・または任意探索＋累積条件のみで前後関係が一意に定まらない項目は「順序未確定」に分類
+    const loc = String(item.location || '');
+    const plane = String(item.plane || '');
+
+    // 1. 順序未確定（CHART_DATAの進行ステップに場所が存在しない・または累積条件のみで順序が機械的に決まらない項目）
+    if (item.refId === '愛_5' || loc.includes('メースの家')) {
+      return {
+        groupKey: 'undetermined',
+        groupTitle: '❓ 順序未確定（チャート進行順の特定不可・累積条件）',
+        stepOrder: 901,
+        stepLabel: '闇のプレーン / メースの家・クガンデ村',
+        undeterminedReason: '既存のシナリオチャート・選択肢・宝箱データに「メースの家」「クガンデ村」の進行ステップが存在せず、闇のプレーン内の到達順序を機械的に特定できないため'
+      };
+    }
+    if (item.refId === '光_4' || loc.includes('モイロロト村')) {
+      return {
+        groupKey: 'undetermined',
+        groupTitle: '❓ 順序未確定（チャート進行順の特定不可・累積条件）',
+        stepOrder: 902,
+        stepLabel: '死のプレーン / モイロロト村・宿',
+        undeterminedReason: '既存のシナリオチャート・選択肢データに「モイロロト村」の進行ステップが存在せず、かつ出現条件が「時間経過＋ニルヴァ4体以下」の累積制限であるため'
+      };
+    }
+    if (item.refId === '光_5' || loc.includes('ラキューオ')) {
+      return {
+        groupKey: 'undetermined',
+        groupTitle: '❓ 順序未確定（チャート進行順の特定不可・累積条件）',
+        stepOrder: 903,
+        stepLabel: '死のプレーン / ラキューオ7',
+        undeterminedReason: '既存のシナリオチャート（CHART_DATA）の死のプレーン進行順に「ラキューオ」が含まれておらず（任意探索ダンジョン）、かつ条件が「ニルヴァ3体以下」の累積制限であるため'
+      };
+    }
+
+    // 2. 物質のプレーン (CHART_DATA.planes[0])
+    if (plane.includes('物質')) {
+      if (loc.includes('ウィルオウィスプ') || loc.includes('図書室')) {
+        return {
+          groupKey: 'matter',
+          groupTitle: '1️⃣ 物質のプレーン（ゲーム開始〜学校出発・海岸）',
+          stepOrder: 101,
+          stepLabel: 'Step 1-1: ウィルオウィスプ（魔法学校・校舎内）'
+        };
+      }
+      return {
+        groupKey: 'matter',
+        groupTitle: '1️⃣ 物質のプレーン（ゲーム開始〜学校出発・海岸）',
+        stepOrder: 102,
+        stepLabel: 'Step 1-2: ヴァレンシア海岸・海岸の洞窟・カエルの林'
+      };
+    }
+
+    // 3. 光のプレーン (CHART_DATA.planes[1] & STORY_CHOICES_DATA[1])
+    if (plane.includes('光')) {
+      if (loc.includes('トルーナ')) {
+        return {
+          groupKey: 'light',
+          groupTitle: '2️⃣ 光のプレーン',
+          stepOrder: 201,
+          stepLabel: 'Step 2-1: トルーナ村'
+        };
+      }
+      if (loc.includes('ベナコンチャ')) {
+        return {
+          groupKey: 'light',
+          groupTitle: '2️⃣ 光のプレーン',
+          stepOrder: 202,
+          stepLabel: 'Step 2-2: ベナコンチャ遺跡（ボス『スノウヘア』撃破直後）'
+        };
+      }
+      if (loc.includes('ワクティ') || loc.includes('レーミッツ')) {
+        return {
+          groupKey: 'light',
+          groupTitle: '2️⃣ 光のプレーン',
+          stepOrder: 203,
+          stepLabel: 'Step 2-3: ワクティ村 ～ レーミッツ宮殿門'
+        };
+      }
+      if (loc.includes('ピップルスタウン')) {
+        return {
+          groupKey: 'light',
+          groupTitle: '2️⃣ 光のプレーン',
+          stepOrder: 204,
+          stepLabel: 'Step 2-4: ピップルスタウン'
+        };
+      }
+      if (loc.includes('ラ・ロッシュ')) {
+        return {
+          groupKey: 'light',
+          groupTitle: '2️⃣ 光のプレーン',
+          stepOrder: 205,
+          stepLabel: 'Step 2-5: ラ・ロッシュの塔'
+        };
+      }
+    }
+
+    // 4. ガラムマサラ・エクストラダンジョン（リドナヒー含む）(CHART_DATA.planes[4])
+    if (plane.includes('ガラムマサラ') || loc.includes('リドナヒー') || loc.includes('ガラムマサラ')) {
+      if (loc.includes('5F') || loc.includes('14F')) {
+        return {
+          groupKey: 'garam',
+          groupTitle: '5️⃣ ガラムマサラ ＆ エクストラダンジョン（クリア後・深부）',
+          stepOrder: 501,
+          stepLabel: 'Step 5-1: ガラムマサラ 5F〜15F（カエルグミ擬態フロア）'
+        };
+      }
+      if (loc.includes('50F')) {
+        return {
+          groupKey: 'garam',
+          groupTitle: '5️⃣ ガラムマサラ ＆ エクストラダンジョン（クリア後・深部）',
+          stepOrder: 502,
+          stepLabel: 'Step 5-2: ガラムマサラ 50F（ディニレンドゥ戦）'
+        };
+      }
+      if (loc.includes('リドナヒー')) {
+        return {
+          groupKey: 'garam',
+          groupTitle: '5️⃣ ガラムマサラ ＆ エクストラダンジョン（クリア後・深部）',
+          stepOrder: 503,
+          stepLabel: 'Step 5-3: リドナヒー 10F（闇の魔法使い限定・光精霊7体目）'
+        };
+      }
+    }
+
+    // 5. 闇のプレーン (CHART_DATA.planes[2])
+    if (plane.includes('闇')) {
+      if (loc.includes('リギニオ密林')) {
+        return {
+          groupKey: 'dark',
+          groupTitle: '3️⃣ 闇のプレーン',
+          stepOrder: 301,
+          stepLabel: 'Step 3-1: リギニオ密林（ボス『バダブーン』戦）'
+        };
+      }
+      if (loc.includes('ずんどこ穴')) {
+        return {
+          groupKey: 'dark',
+          groupTitle: '3️⃣ 闇のプレーン',
+          stepOrder: 302,
+          stepLabel: 'Step 3-2: ずんどこ穴（ドワーフ説得イベント）'
+        };
+      }
+      if (loc.includes('アクアビット城')) {
+        return {
+          groupKey: 'dark',
+          groupTitle: '3️⃣ 闇のプレーン',
+          stepOrder: 303,
+          stepLabel: 'Step 3-3: アクアビット城'
+        };
+      }
+    }
+
+    // 6. 死のプレーン (CHART_DATA.planes[3])
+    if (plane.includes('死')) {
+      if (loc.includes('ガスパチョ') || loc.includes('タンドーリ')) {
+        return {
+          groupKey: 'death',
+          groupTitle: '4️⃣ 死のプレーン',
+          stepOrder: 401,
+          stepLabel: 'Step 4-1: ガスパチョ村 ～ タンドーリ（クライン割りイベント）'
+        };
+      }
+      if (loc.includes('ピラミッド')) {
+        return {
+          groupKey: 'death',
+          groupTitle: '4️⃣ 死のプレーン',
+          stepOrder: 402,
+          stepLabel: 'Step 4-2: ピラミッド'
+        };
+      }
+      if (loc.includes('死の回廊') || loc.includes('暗闇の地')) {
+        return {
+          groupKey: 'death',
+          groupTitle: '4️⃣ 死のプレーン',
+          stepOrder: 403,
+          stepLabel: 'Step 4-3: 死の回廊 ～ 暗闇の地（光の魔法使い覚醒）'
+        };
+      }
+    }
+
+    // 万一上記ステップに該当しない項目があれば推測せず「順序未確定」へ分類
+    return {
+      groupKey: 'undetermined',
+      groupTitle: '❓ 順序未確定（チャート進行順の特定不可・累積条件）',
+      stepOrder: 999,
+      stepLabel: `${plane} / ${loc}`,
+      undeterminedReason: '既存チャートの進行ステップと機械的に照合できないため'
+    };
+  }
+
+  function buildMissableTimelineItems() {
+    const items = [];
+
+    // 1. 精霊データ (SPIRITS_DATA where s.missable)
+    if (typeof SPIRITS_DATA !== 'undefined' && Array.isArray(SPIRITS_DATA)) {
+      SPIRITS_DATA.filter(s => Boolean(s.missable)).forEach((s, idx) => {
+        const planeLabel = Array.isArray(s.planes) && s.planes.length > 0
+          ? s.planes.map(p => p.endsWith('のプレーン') ? p : `${p}のプレーン`).join('・')
+          : '不明';
+        const locLabel = `${s.locationClean || ''}${s.locationDetail ? '（' + s.locationDetail + '）' : ''}`;
+        const rawItem = {
+          timelineId: `tl_spirit_${s.id}`,
+          category: 'spirit',
+          categoryLabel: '🧚 精霊',
+          refId: s.id,
+          plane: planeLabel,
+          location: locLabel,
+          title: `${s.element}の精霊 ${s.spiritName} #${s.index}`,
+          subMeta: [
+            s.condition ? `出現条件: ${s.condition}` : '',
+            s.requirement ? `要求: ${s.requirement}` : ''
+          ].filter(Boolean).join(' ／ '),
+          warningText: s.missable,
+          sourceUrl: s.sourceUrl || 'https://wikiwiki.jp/magivaca/%E7%B2%BE%E9%9C%8A',
+          sourceOrder: idx
+        };
+        const placement = resolveTimelinePlacement(rawItem);
+        items.push(Object.assign(rawItem, placement));
+      });
+    }
+
+    // 2. 宝箱データ (CHESTS_DATA where c.missable)
+    if (typeof CHESTS_DATA !== 'undefined' && Array.isArray(CHESTS_DATA)) {
+      CHESTS_DATA.filter(c => Boolean(c.missable)).forEach((c, idx) => {
+        const locLabel = `${c.area} / ${c.mapName}${c.locationDetail ? '（' + c.locationDetail + '）' : ''}`;
+        const rawItem = {
+          timelineId: `tl_chest_${c.id}`,
+          category: 'chest',
+          categoryLabel: '🧰 宝箱',
+          refId: c.id,
+          plane: c.plane || '',
+          location: locLabel,
+          title: `宝箱：${c.item}（${c.mapName}）`,
+          subMeta: c.locationDetail ? `詳細位置: ${c.locationDetail}` : '',
+          warningText: c.missableReason || '期間限定の宝箱（取り返しがつかない）',
+          sourceUrl: c.sourceUrl || 'https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9',
+          sourceOrder: 100 + idx
+        };
+        const placement = resolveTimelinePlacement(rawItem);
+        items.push(Object.assign(rawItem, placement));
+      });
+    }
+
+    // 3. ストーリー選択肢データ (STORY_CHOICES_DATA where ev.missable)
+    if (typeof STORY_CHOICES_DATA !== 'undefined' && Array.isArray(STORY_CHOICES_DATA)) {
+      let evCounter = 0;
+      STORY_CHOICES_DATA.forEach((p, pi) => {
+        if (!Array.isArray(p.events)) return;
+        p.events.forEach((ev, ei) => {
+          if (!ev.missable) return;
+          const choiceSummary = Array.isArray(ev.choices)
+            ? ev.choices.map(c => `${c.action}: ${c.options}`).join(' ／ ')
+            : '';
+          const rawItem = {
+            timelineId: `tl_story_${pi}_${ei}`,
+            category: 'event',
+            categoryLabel: '📜 イベント',
+            refId: ev.scene,
+            plane: p.plane || '',
+            location: ev.location || '',
+            title: ev.scene || '',
+            subMeta: choiceSummary,
+            warningText: ev.notes || '',
+            sourceUrl: ev.url || p.url || 'https://wikiwiki.jp/magivaca/%E3%83%81%E3%83%A3%E3%83%BC%E3%83%88',
+            sourceOrder: 200 + (evCounter++)
+          };
+          const placement = resolveTimelinePlacement(rawItem);
+          items.push(Object.assign(rawItem, placement));
+        });
+      });
+    }
+
+    // ソート: stepOrder 昇順 -> sourceOrder 昇順
+    items.sort((a, b) => {
+      if (a.stepOrder !== b.stepOrder) return a.stepOrder - b.stepOrder;
+      return a.sourceOrder - b.sourceOrder;
+    });
+
+    return items;
+  }
+  window.buildMissableTimelineItems = buildMissableTimelineItems;
+
+  function jumpFromTimelineToSource(category, refId) {
+    if (category === 'spirit') {
+      const spirit = (typeof SPIRITS_DATA !== 'undefined' ? SPIRITS_DATA : []).find(s => s.id === refId);
+      currentFilters.element = 'all';
+      currentFilters.plane = 'all';
+      currentFilters.reqTag = 'all';
+      currentFilters.onlyWarning = false;
+      currentFilters.hideCompleted = false;
+      currentFilters.planeProgressOnly = false;
+      currentFilters.query = spirit ? spirit.locationClean : refId;
+      const searchInput = document.getElementById('search-input');
+      if (searchInput) searchInput.value = currentFilters.query;
+      renderSpiritsList();
+      window.switchTab('tab-spirits');
+      return;
+    }
+
+    if (category === 'chest') {
+      const chest = (typeof CHESTS_DATA !== 'undefined' ? CHESTS_DATA : []).find(c => c.id === refId);
+      chestPlane = 'all';
+      chestOnlyUnchecked = false;
+      chestOnlyMissable = false;
+      chestOnlyStar = false;
+      chestSearchQuery = chest ? chest.item : refId;
+      if (chest && collapsedAreas.has(chest.area)) {
+        collapsedAreas.delete(chest.area);
+      }
+      renderChestsTab();
+      window.switchTab('tab-chests');
+      setTimeout(() => {
+        if (typeof document !== 'undefined' && document.querySelector) {
+          const card = document.querySelector(`[data-chest-id="${refId}"]`);
+          if (card && card.scrollIntoView) {
+            card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            card.classList.add('chest-card-highlight');
+            setTimeout(() => card.classList.remove('chest-card-highlight'), 2000);
+          }
+        }
+      }, 100);
+      return;
+    }
+
+    if (category === 'event') {
+      storyPlane = 'all';
+      renderStoryTab();
+      window.switchTab('tab-story');
+      setTimeout(() => {
+        if (typeof document !== 'undefined' && document.querySelectorAll) {
+          const cards = document.querySelectorAll('.story-card');
+          for (const card of cards) {
+            if (card.getAttribute && card.getAttribute('data-story-scene') === refId) {
+              if (card.scrollIntoView) card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+              break;
+            }
+          }
+        }
+      }, 100);
+    }
+  }
+  window.jumpFromTimelineToSource = jumpFromTimelineToSource;
+
+  function renderTimelineTab() {
+    const container = document.getElementById('timeline-tab-content');
+    if (!container) return;
+
+    const allItems = buildMissableTimelineItems();
+    const totalCount = allItems.length;
+    const checkedCount = allItems.filter(it => checkedTimeline.has(it.timelineId)).length;
+    const pct = totalCount > 0 ? Math.round((checkedCount / totalCount) * 100) : 0;
+
+    const spiritCount = allItems.filter(it => it.category === 'spirit').length;
+    const chestCount = allItems.filter(it => it.category === 'chest').length;
+    const eventCount = allItems.filter(it => it.category === 'event').length;
+    const undeterminedCount = allItems.filter(it => it.groupKey === 'undetermined').length;
+
+    const filteredItems = allItems.filter(it => {
+      if (timelineCategoryFilter !== 'all' && it.category !== timelineCategoryFilter) return false;
+      if (timelineGroupFilter !== 'all' && it.groupKey !== timelineGroupFilter) return false;
+      if (timelineOnlyUnchecked && checkedTimeline.has(it.timelineId)) return false;
+      return true;
+    });
+
+    // グループごとに束ねる（順序を維持）
+    const groups = [];
+    const groupMap = new Map();
+    filteredItems.forEach(it => {
+      if (!groupMap.has(it.groupKey)) {
+        const g = {
+          groupKey: it.groupKey,
+          groupTitle: it.groupTitle,
+          items: []
+        };
+        groupMap.set(it.groupKey, g);
+        groups.push(g);
+      }
+      groupMap.get(it.groupKey).items.push(it);
+    });
+
+    let html = `
+      <div class="guide-section">
+        <h2>⏰ 取り返しのつかない要素（時限要素）統合タイムライン</h2>
+        <p style="font-size:0.92rem; color:var(--text-secondary); margin-bottom:14px;">
+          サイト内の<strong>「精霊（${spiritCount}件）」「宝箱（${chestCount}件）」「ストーリー選択肢・イベント（${eventCount}件）」</strong>に散らばっている取り返しのつかない要素（計<strong>${totalCount}件</strong>）を、ストーリー進行順のタイムラインで一括確認・現地チェックできるページです。
+        </p>
+
+        <!-- Nintendo Switch Online 前提の注記 -->
+        <div class="timeline-nso-callout" style="background:#eff6ff; border:1px solid #93c5fd; border-left:5px solid #2563eb; border-radius:var(--radius-md); padding:12px 16px; margin-bottom:16px; font-size:0.86rem; color:#1e3a8a; line-height:1.6;">
+          <div style="font-weight:700; font-size:0.94rem; margin-bottom:4px;">🎮 Nintendo Switch Online（GBA版）でプレイ中の方へ</div>
+          <div>
+            Switch Online版の<strong>「どこでもセーブ（中断セーブ）」</strong>や<strong>「巻き戻し機能」</strong>を活用することで、直前の選択肢ミスや時間経過イベント（レーミッツ宮殿門の自動開封やガラムマサラ14Fの擬態消失など）のリスクは大幅に下げられます。<br>
+            ただし、<strong>長期間進行してから発覚するフラグ消滅</strong>（スノウヘア撃破後のトルーナ村寄り道忘れ、ずんどこ穴のドワーフ説得前のトースト3未回収、カエルグミ累計捕獲数オーバー、闇精霊ニルヴァの仲間にしすぎ、タンドーリでのクライン割り、シサバレイ制覇前の光覚醒など）は巻き戻しだけでは戻れない場合があるため、原作仕様どおり全項目を掲載しています。
+          </div>
+        </div>
+
+        <!-- タイムライン専用進捗バー -->
+        <div class="collection-progress-bar-wrap" style="margin-bottom:16px;">
+          <div>
+            <strong>⏰ 時限要素の確認・回収進捗:</strong>
+            <span style="font-size:1.1rem; font-weight:bold; color:var(--accent); margin-left:8px;">${checkedCount} / ${totalCount} 件 (${pct}%)</span>
+            <span style="font-size:0.78rem; color:var(--text-muted); display:block; margin-top:2px;">
+              ※タイムライン専用キー（<code>magivaca_timeline_checklist_v1</code>）で独立保存。精霊・宝箱タブの個別チェック状態は上書きせず「参照バッジ」として併記します。
+            </span>
+          </div>
+          <div style="flex:1; max-width:280px;">
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" style="width:${pct}%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- フィルターパネル -->
+        <div class="filter-card" style="margin-bottom:18px; padding:12px 14px;">
+          <div style="display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin-bottom:10px;">
+            <span style="font-size:0.82rem; font-weight:700; color:var(--text-secondary);">種別:</span>
+            <button type="button" class="filter-btn tl-cat-btn ${timelineCategoryFilter === 'all' ? 'active' : ''}" data-cat="all">すべて (${totalCount})</button>
+            <button type="button" class="filter-btn tl-cat-btn ${timelineCategoryFilter === 'spirit' ? 'active' : ''}" data-cat="spirit">🧚 精霊 (${spiritCount})</button>
+            <button type="button" class="filter-btn tl-cat-btn ${timelineCategoryFilter === 'chest' ? 'active' : ''}" data-cat="chest">🧰 宝箱 (${chestCount})</button>
+            <button type="button" class="filter-btn tl-cat-btn ${timelineCategoryFilter === 'event' ? 'active' : ''}" data-cat="event">📜 イベント (${eventCount})</button>
+          </div>
+          <div style="display:flex; flex-wrap:wrap; gap:8px; align-items:center; justify-content:space-between;">
+            <div style="display:flex; flex-wrap:wrap; gap:6px; align-items:center;">
+              <span style="font-size:0.82rem; font-weight:700; color:var(--text-secondary);">進行帯:</span>
+              <button type="button" class="filter-btn tl-grp-btn ${timelineGroupFilter === 'all' ? 'active' : ''}" data-grp="all">全区間</button>
+              <button type="button" class="filter-btn tl-grp-btn ${timelineGroupFilter === 'matter' ? 'active' : ''}" data-grp="matter">物質</button>
+              <button type="button" class="filter-btn tl-grp-btn ${timelineGroupFilter === 'light' ? 'active' : ''}" data-grp="light">光</button>
+              <button type="button" class="filter-btn tl-grp-btn ${timelineGroupFilter === 'dark' ? 'active' : ''}" data-grp="dark">闇</button>
+              <button type="button" class="filter-btn tl-grp-btn ${timelineGroupFilter === 'death' ? 'active' : ''}" data-grp="death">死</button>
+              <button type="button" class="filter-btn tl-grp-btn ${timelineGroupFilter === 'garam' ? 'active' : ''}" data-grp="garam">クリア後</button>
+              <button type="button" class="filter-btn tl-grp-btn ${timelineGroupFilter === 'undetermined' ? 'active' : ''}" data-grp="undetermined">❓ 順序未確定 (${undeterminedCount})</button>
+            </div>
+            <label class="checkbox-toggle-label">
+              <input type="checkbox" id="tl-filter-unchecked" ${timelineOnlyUnchecked ? 'checked' : ''}>
+              <span>未チェックのみ表示</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="timeline-groups-container">
+    `;
+
+    if (groups.length === 0) {
+      html += `
+        <div class="empty-state" style="padding:28px; text-align:center; color:var(--text-muted);">
+          条件に一致する時限要素はありません。
+        </div>
+      `;
+    } else {
+      groups.forEach(group => {
+        const isUndetermined = group.groupKey === 'undetermined';
+        html += `
+          <div class="timeline-group-block ${isUndetermined ? 'timeline-group-undetermined' : ''}" style="margin-bottom:24px;">
+            <h3 class="timeline-group-heading" style="font-size:1.05rem; color:${isUndetermined ? '#b45309' : 'var(--accent)'}; margin-bottom:10px; padding-bottom:6px; border-bottom:2px solid ${isUndetermined ? '#fcd34d' : 'var(--accent-light)'}; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:6px;">
+              <span>${escapeHtml(group.groupTitle)}</span>
+              <span class="badge ${isUndetermined ? 'badge-warning' : 'badge-plane'}">${group.items.length} 件</span>
+            </h3>
+            ${isUndetermined ? `
+              <div style="font-size:0.83rem; color:#92400e; background:#fffbeb; border:1px solid #fde68a; border-radius:var(--radius-sm); padding:8px 12px; margin-bottom:12px;">
+                ⚠️ 以下の項目は、既存データ（シナリオチャート・選択肢・宝箱一覧）内に該当ロケーションの進行ステップが存在しない、またはプレイ時間・累積捕獲数等の全体条件であるため、推測で順序を作らず「順序未確定」として分離表示しています。
+              </div>
+            ` : ''}
+            <div class="timeline-step-list" style="display:flex; flex-direction:column; gap:10px; border-left:3px solid ${isUndetermined ? '#f59e0b' : 'var(--accent)'}; padding-left:12px; margin-left:4px;">
+        `;
+
+        let lastStepLabel = '';
+        group.items.forEach(item => {
+          const isChecked = checkedTimeline.has(item.timelineId);
+          if (item.stepLabel !== lastStepLabel) {
+            lastStepLabel = item.stepLabel;
+            html += `
+              <div class="timeline-step-marker" style="font-size:0.84rem; font-weight:700; color:var(--text-secondary); margin-top:4px; display:flex; align-items:center; gap:6px;">
+                <span style="display:inline-block; width:8px; height:8px; border-radius:50%; background:${isUndetermined ? '#f59e0b' : 'var(--accent)'};"></span>
+                <span>${escapeHtml(item.stepLabel)}</span>
+              </div>
+            `;
+          }
+
+          // 既存チェック（精霊・宝箱）の読み取り専用参照バッジ
+          let refBadgeHtml = '';
+          if (item.category === 'spirit') {
+            const spiritChecked = checkedSpirits.has(item.refId);
+            refBadgeHtml = `<span class="badge" style="font-size:0.74rem; background:${spiritChecked ? '#dcfce7' : '#f1f5f9'}; color:${spiritChecked ? '#166534' : '#475569'}; border:1px solid ${spiritChecked ? '#86efac' : '#cbd5e1'};">参照(精霊タブ): ${spiritChecked ? '✅ 仲間済' : '未チェック'}</span>`;
+          } else if (item.category === 'chest') {
+            const chestChecked = checkedChests.has(item.refId);
+            refBadgeHtml = `<span class="badge" style="font-size:0.74rem; background:${chestChecked ? '#dcfce7' : '#f1f5f9'}; color:${chestChecked ? '#166534' : '#475569'}; border:1px solid ${chestChecked ? '#86efac' : '#cbd5e1'};">参照(宝箱タブ): ${chestChecked ? '✅ 開封済' : '未開封'}</span>`;
+          }
+
+          const jumpLabel = item.category === 'spirit'
+            ? '🧚 精霊一覧へ移動'
+            : (item.category === 'chest' ? '🧰 宝箱マップへ移動' : '📜 選択肢タブへ移動');
+
+          html += `
+            <div class="collection-card timeline-item-card ${isChecked ? 'checked' : ''} missable" data-timeline-id="${escapeHtml(item.timelineId)}" style="margin-bottom:0;">
+              <input type="checkbox" class="collection-checkbox tl-item-chk" data-tl-id="${escapeHtml(item.timelineId)}" ${isChecked ? 'checked' : ''} aria-label="${escapeHtml(item.title)} を確認済みにする">
+              <div class="collection-content" style="width:100%;">
+                <div class="collection-header-row" style="display:flex; flex-wrap:wrap; justify-content:space-between; align-items:flex-start; gap:6px;">
+                  <div>
+                    <span class="badge badge-warning" style="margin-right:6px;">${escapeHtml(item.categoryLabel)}</span>
+                    <strong class="collection-title" style="font-size:0.95rem;">${escapeHtml(item.title)}</strong>
+                  </div>
+                  <div style="display:flex; flex-wrap:wrap; gap:4px; align-items:center;">
+                    <span class="badge badge-plane">${escapeHtml(item.plane)}</span>
+                    ${refBadgeHtml}
+                  </div>
+                </div>
+
+                <div style="font-size:0.83rem; color:var(--text-secondary); margin-top:4px;">
+                  📍 <strong>場所:</strong> ${escapeHtml(item.location)}
+                  ${item.subMeta ? `<br>🔹 <span>${escapeHtml(item.subMeta)}</span>` : ''}
+                </div>
+
+                <div class="story-notes" style="margin-top:8px; padding:8px 10px; background:#fff1f2; border-left:3px solid #e11d48; border-radius:4px; font-size:0.84rem; color:#881337;">
+                  <strong>⚠️ 時限・取り返し注意:</strong> ${escapeHtml(item.warningText)}
+                </div>
+
+                ${item.undeterminedReason ? `
+                  <div style="margin-top:6px; font-size:0.79rem; color:#92400e; background:#fef3c7; padding:5px 8px; border-radius:4px;">
+                    <strong>❓ 順序未確定の理由:</strong> ${escapeHtml(item.undeterminedReason)}
+                  </div>
+                ` : ''}
+
+                <div style="display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:8px; margin-top:8px; padding-top:6px; border-top:1px dashed var(--border-color); font-size:0.8rem;">
+                  <button type="button" class="btn btn-sm btn-outline tl-jump-btn" data-cat="${escapeHtml(item.category)}" data-ref="${escapeHtml(item.refId)}" style="padding:3px 10px; font-size:0.78rem;">
+                    ${jumpLabel} →
+                  </button>
+                  <a href="${escapeHtml(item.sourceUrl)}" target="_blank" rel="noopener noreferrer" style="color:var(--accent);">
+                    📖 出典Wikiを確認 ↗
+                  </a>
+                </div>
+              </div>
+            </div>
+          `;
+        });
+
+        html += `
+            </div>
+          </div>
+        `;
+      });
+    }
+
+    html += `
+        </div>
+      </div>
+    `;
+
+    container.innerHTML = html;
+
+    // イベントバインド
+    container.querySelectorAll('.tl-cat-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        timelineCategoryFilter = btn.dataset.cat;
+        renderTimelineTab();
+      });
+    });
+
+    container.querySelectorAll('.tl-grp-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        timelineGroupFilter = btn.dataset.grp;
+        renderTimelineTab();
+      });
+    });
+
+    const unchkEl = document.getElementById('tl-filter-unchecked');
+    if (unchkEl) {
+      unchkEl.addEventListener('change', (e) => {
+        timelineOnlyUnchecked = e.target.checked;
+        renderTimelineTab();
+      });
+    }
+
+    container.querySelectorAll('.tl-item-chk').forEach(chk => {
+      chk.addEventListener('change', () => {
+        toggleTimelineItem(chk.dataset.tlId);
+      });
+    });
+
+    container.querySelectorAll('.tl-jump-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        jumpFromTimelineToSource(btn.dataset.cat, btn.dataset.ref);
+      });
+    });
+  }
+  window.renderTimelineTab = renderTimelineTab;
+
   // Update UI Function
   function updateUI() {
     updateProgressUI();
@@ -3153,6 +3771,7 @@ let collapsedMaps = new Set();
     renderOfuroTab();
     renderSystemTab();
     renderGuidesTab();
+    renderTimelineTab();
   }
   window.updateUI = updateUI;
   window.renderMonstersTab = renderMonstersTab;
@@ -3287,7 +3906,8 @@ let collapsedMaps = new Set();
             magicNotes: Array.from(checkedMagicNotes),
             mimicCoins: Array.from(checkedMimicCoins),
             records: Array.from(checkedRecords),
-            chests: Array.from(checkedChests)
+            chests: Array.from(checkedChests),
+            timeline: Array.from(checkedTimeline)
           };
           exportTextarea.value = JSON.stringify(fullBackup, null, 2);
         }
@@ -3336,6 +3956,7 @@ let collapsedMaps = new Set();
             if (Array.isArray(parsed.mimicCoins)) checkedMimicCoins = new Set(parsed.mimicCoins);
             if (Array.isArray(parsed.records)) checkedRecords = new Set(parsed.records);
             if (Array.isArray(parsed.chests)) checkedChests = new Set(parsed.chests);
+            if (Array.isArray(parsed.timeline)) checkedTimeline = new Set(parsed.timeline);
           } else {
             alert('無効なデータ形式です。');
             return;

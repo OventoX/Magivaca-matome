@@ -2230,3 +2230,33 @@ a:hover {
   padding: 4px 8px;
   border-radius: 4px;
 }
+
+/* ==========================================================================
+   Missable Elements Integrated Timeline (Phase 10)
+   ========================================================================== */
+.timeline-item-card {
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.timeline-item-card.checked {
+  opacity: 0.68;
+  background-color: var(--bg-subtle);
+}
+
+@media (max-width: 767px) {
+  .timeline-step-list {
+    padding-left: 8px !important;
+    margin-left: 2px !important;
+  }
+  .timeline-item-card {
+    padding: 10px 10px !important;
+    gap: 8px !important;
+  }
+  .timeline-item-card .collection-title {
+    font-size: 0.9rem !important;
+  }
+  .timeline-nso-callout {
+    padding: 10px 12px !important;
+    font-size: 0.82rem !important;
+  }
+}
