@@ -48,14 +48,26 @@
         <button type="button" class="tab-btn" data-tab="tab-complete-guide">
           <span>⚠️ 精霊コンプ手順</span>
         </button>
+        <button type="button" class="tab-btn" data-tab="tab-items">
+          <span>📦 アイテム図鑑・逆引き</span>
+        </button>
+        <button type="button" class="tab-btn" data-tab="tab-monsters">
+          <span>👾 モンスター＆ドロップ</span>
+        </button>
+        <button type="button" class="tab-btn" data-tab="tab-story">
+          <span>📜 ストーリー選択肢</span>
+        </button>
+        <button type="button" class="tab-btn" data-tab="tab-collections">
+          <span>📋 収集チェックリスト</span>
+        </button>
         <button type="button" class="tab-btn" data-tab="tab-leveling">
-          <span>📈 レベリング（経験値稼ぎ）</span>
+          <span>📈 レベリング</span>
         </button>
         <button type="button" class="tab-btn" data-tab="tab-chart">
           <span>🗺️ シナリオチャート</span>
         </button>
         <button type="button" class="tab-btn" data-tab="tab-ofuro">
-          <span>♨️ お風呂セット入手</span>
+          <span>♨️ お風呂セット</span>
         </button>
         <button type="button" class="tab-btn" data-tab="tab-system">
           <span>⚙️ システム解説</span>
@@ -91,6 +103,10 @@
             <label class="checkbox-toggle-label">
               <input type="checkbox" id="filter-hide-completed">
               <span>仲間済みを非表示</span>
+            </label>
+            <label class="checkbox-toggle-label" title="選択中プレーンでまだ仲間にできていない精霊のみに絞り込みます">
+              <input type="checkbox" id="filter-plane-progress-only">
+              <span>🎯 選択プレーンの未収集のみ</span>
             </label>
           </div>
         </div>
@@ -136,6 +152,34 @@
     <!-- Tab 2: Complete Guide & Warnings -->
     <section id="tab-complete-guide" class="tab-content" aria-labelledby="tab-complete-guide">
       <div id="complete-guide-tab-content">
+        <!-- Injected by app.js -->
+      </div>
+    </section>
+
+    <!-- Tab: Items Database & Reverse Lookup -->
+    <section id="tab-items" class="tab-content" aria-labelledby="tab-items">
+      <div id="items-tab-content">
+        <!-- Injected by app.js -->
+      </div>
+    </section>
+
+    <!-- Tab: Monsters & Drop Rates -->
+    <section id="tab-monsters" class="tab-content" aria-labelledby="tab-monsters">
+      <div id="monsters-tab-content">
+        <!-- Injected by app.js -->
+      </div>
+    </section>
+
+    <!-- Tab: Story Choices & Dialogue -->
+    <section id="tab-story" class="tab-content" aria-labelledby="tab-story">
+      <div id="story-tab-content">
+        <!-- Injected by app.js -->
+      </div>
+    </section>
+
+    <!-- Tab: Collections Checklist (Magic Notes, Mimic Coins, Records) -->
+    <section id="tab-collections" class="tab-content" aria-labelledby="tab-collections">
+      <div id="collections-tab-content">
         <!-- Injected by app.js -->
       </div>
     </section>
