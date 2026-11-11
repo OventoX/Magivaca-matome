@@ -1819,6 +1819,153 @@ a:hover {
   border-radius: 12px;
 }
 
+.badge-map-shanil {
+  background-color: #ecfdf5;
+  color: #047857;
+  border: 1px solid #a7f3d0;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 12px;
+}
+
+.badge-shanil-source {
+  background-color: #f3f4f6;
+  color: #4b5563;
+  border: 1px solid #e5e7eb;
+  font-size: 0.68rem;
+  padding: 2px 6px;
+  border-radius: 10px;
+}
+
+.badge-shanil-pos {
+  background-color: #fef2f2;
+  color: #b91c1c;
+  border: 1px solid #fecaca;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 1px 6px;
+  border-radius: 10px;
+}
+
+.loc-shanil {
+  font-size: 0.76rem;
+  color: var(--text-muted);
+  margin-left: 4px;
+}
+
+.chest-diff-note {
+  font-size: 0.75rem;
+  color: #4b5563;
+  background-color: #f9fafb;
+  border-left: 3px solid #9ca3af;
+  padding: 4px 8px;
+  margin-top: 6px;
+  border-radius: 0 4px 4px 0;
+  line-height: 1.35;
+}
+
+.map-zoom-tip {
+  font-size: 0.74rem;
+  color: var(--text-muted);
+  text-align: center;
+  margin-top: 4px;
+  margin-bottom: 8px;
+}
+
+.shanil-mark-table-container {
+  margin: 12px 0 8px 0;
+  background: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-sm);
+  padding: 10px 12px;
+}
+
+.shanil-table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 8px;
+  font-size: 0.85rem;
+  color: var(--text-primary);
+}
+
+.shanil-table-note {
+  font-size: 0.74rem;
+  color: var(--text-muted);
+}
+
+.shanil-mark-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.8rem;
+}
+
+.shanil-mark-table th,
+.shanil-mark-table td {
+  padding: 6px 8px;
+  border-bottom: 1px solid var(--border-light);
+  text-align: left;
+  vertical-align: middle;
+}
+
+.shanil-mark-table th {
+  background-color: #f8fafc;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.shanil-mark-table tr:last-child td {
+  border-bottom: none;
+}
+
+.badge-shanil-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: #fee2e2;
+  color: #dc2626;
+  font-weight: 700;
+  font-size: 0.82rem;
+  border: 1px solid #fca5a5;
+}
+
+.badge-shanil-circle.none {
+  background-color: #f1f5f9;
+  color: #94a3b8;
+  border-color: #cbd5e1;
+}
+
+.mark-chest-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin: 2px 6px 2px 0;
+  padding: 2px 6px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.78rem;
+  transition: all 0.15s ease;
+}
+
+.mark-chest-item.is-opened {
+  background: #f0fdf4;
+  border-color: #bbf7d0;
+  text-decoration: line-through;
+  opacity: 0.75;
+}
+
+.mark-chest-name {
+  color: var(--text-primary);
+}
+
 .chest-map-desc {
   font-size: 0.82rem;
   color: var(--text-secondary);

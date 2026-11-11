@@ -10877,7 +10877,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": true,
     "missableReason": "ゲーム序盤の学校出発時に消滅（取り返しがつかない）",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_1.html",
+    "shanilPlace": "図書室",
+    "shanilMark": "①",
+    "shanilItem": "バンダナ（宝）マジックリスト（宝）ビニールシャツ（宝）木のくつ（宝）",
+    "diffNote": "相川氏サイト表記:「バンダナ（宝）マジックリスト（宝）ビニールシャツ（宝）木のくつ（宝）」"
   },
   {
     "id": "chest_002",
@@ -10891,7 +10896,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": true,
     "missableReason": "ゲーム序盤の学校出発時に消滅（取り返しがつかない）",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_1.html",
+    "shanilPlace": "図書室",
+    "shanilMark": "①",
+    "shanilItem": "バンダナ（宝）マジックリスト（宝）ビニールシャツ（宝）木のくつ（宝）",
+    "diffNote": "相川氏サイト表記:「バンダナ（宝）マジックリスト（宝）ビニールシャツ（宝）木のくつ（宝）」"
   },
   {
     "id": "chest_003",
@@ -10905,7 +10915,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": true,
     "missableReason": "ゲーム序盤の学校出発時に消滅（取り返しがつかない）",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_1.html",
+    "shanilPlace": "図書室",
+    "shanilMark": "①",
+    "shanilItem": "バンダナ（宝）マジックリスト（宝）ビニールシャツ（宝）木のくつ（宝）",
+    "diffNote": "相川氏サイト表記:「バンダナ（宝）マジックリスト（宝）ビニールシャツ（宝）木のくつ（宝）」"
   },
   {
     "id": "chest_004",
@@ -10919,7 +10934,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": true,
     "missableReason": "ゲーム序盤の学校出発時に消滅（取り返しがつかない）",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_1.html",
+    "shanilPlace": "図書室",
+    "shanilMark": "①",
+    "shanilItem": "ぱっちんどめ（宝）愛のシール（貼）カエルグミ緑（宝）ミミズグミ黄（宝）",
+    "diffNote": "相川氏サイト表記:「ぱっちんどめ（宝）愛のシール（貼）カエルグミ緑（宝）ミミズグミ黄（宝）」"
   },
   {
     "id": "chest_005",
@@ -10933,7 +10953,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": true,
     "missableReason": "ゲーム序盤の学校出発時に消滅（取り返しがつかない）",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_1.html",
+    "shanilPlace": "図書室",
+    "shanilMark": "①",
+    "shanilItem": "ぱっちんどめ（宝）愛のシール（貼）カエルグミ緑（宝）ミミズグミ黄（宝）",
+    "diffNote": "相川氏サイト表記:「ぱっちんどめ（宝）愛のシール（貼）カエルグミ緑（宝）ミミズグミ黄（宝）」"
   },
   {
     "id": "chest_006",
@@ -10947,7 +10972,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": true,
     "missableReason": "ゲーム序盤の学校出発時に消滅（取り返しがつかない）",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_1.html",
+    "shanilPlace": "図書室",
+    "shanilMark": "①",
+    "shanilItem": "ぱっちんどめ（宝）愛のシール（貼）カエルグミ緑（宝）ミミズグミ黄（宝）",
+    "diffNote": "相川氏サイト表記:「ぱっちんどめ（宝）愛のシール（貼）カエルグミ緑（宝）ミミズグミ黄（宝）」"
   },
   {
     "id": "chest_007",
@@ -10961,7 +10991,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": true,
     "missableReason": "ゲーム序盤の学校出発時に消滅（取り返しがつかない）",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_1.html",
+    "shanilPlace": "図書室",
+    "shanilMark": "①",
+    "shanilItem": "バンダナ（宝）マジックリスト（宝）ビニールシャツ（宝）木のくつ（宝）",
+    "diffNote": "相川氏サイト表記:「バンダナ（宝）マジックリスト（宝）ビニールシャツ（宝）木のくつ（宝）」"
   },
   {
     "id": "chest_008",
@@ -10975,7 +11010,12 @@ var CHESTS_DATA = [
     "note": "戦闘あり宝箱発見数にカウントされない",
     "missable": true,
     "missableReason": "海岸の洞窟最奥のワープ進入時に消滅（取り返しがつかない）",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_2.html",
+    "shanilPlace": "海岸の洞窟",
+    "shanilMark": "①",
+    "shanilItem": "まつぼっくり×６（宝）",
+    "diffNote": "相川氏サイト表記:「まつぼっくり×６（宝）」"
   },
   {
     "id": "chest_009",
@@ -10989,7 +11029,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_3.html",
+    "shanilPlace": "小川の丸太橋",
+    "shanilMark": "①",
+    "shanilItem": "ドクナのしっぽ×１（落）ミミズグミ黄×３（宝）",
+    "diffNote": "相川氏サイト表記:「ドクナのしっぽ×１（落）ミミズグミ黄×３（宝）」"
   },
   {
     "id": "chest_010",
@@ -11003,7 +11048,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_3.html",
+    "shanilPlace": "小川の丸太橋",
+    "shanilMark": "①",
+    "shanilItem": "ドクナのしっぽ×１（落）ミミズグミ黄×３（宝）",
+    "diffNote": "相川氏サイト表記:「ドクナのしっぽ×１（落）ミミズグミ黄×３（宝）」"
   },
   {
     "id": "chest_011",
@@ -11017,7 +11067,12 @@ var CHESTS_DATA = [
     "note": "崖上",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_3.html",
+    "shanilPlace": "小川の丸太橋",
+    "shanilMark": "①",
+    "shanilItem": "リーフボム（宝）バンダナ（宝）フッかのしっぽ×３（宝）",
+    "diffNote": "相川氏サイト表記:「リーフボム（宝）バンダナ（宝）フッかのしっぽ×３（宝）」"
   },
   {
     "id": "chest_012",
@@ -11031,7 +11086,12 @@ var CHESTS_DATA = [
     "note": "崖上",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_3.html",
+    "shanilPlace": "小川の丸太橋",
+    "shanilMark": "①",
+    "shanilItem": "リーフボム（宝）バンダナ（宝）フッかのしっぽ×３（宝）",
+    "diffNote": "相川氏サイト表記:「リーフボム（宝）バンダナ（宝）フッかのしっぽ×３（宝）」"
   },
   {
     "id": "chest_013",
@@ -11045,7 +11105,12 @@ var CHESTS_DATA = [
     "note": "崖上",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_3.html",
+    "shanilPlace": "小川の丸太橋",
+    "shanilMark": "①",
+    "shanilItem": "リーフボム（宝）バンダナ（宝）フッかのしっぽ×３（宝）",
+    "diffNote": "相川氏サイト表記:「リーフボム（宝）バンダナ（宝）フッかのしっぽ×３（宝）」"
   },
   {
     "id": "chest_014",
@@ -11059,7 +11124,12 @@ var CHESTS_DATA = [
     "note": "東側",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_3.html",
+    "shanilPlace": "カエルグミの森",
+    "shanilMark": "②",
+    "shanilItem": "木のくつ（宝）マジックリスト（宝）ビニールシャツ（宝）",
+    "diffNote": "相川氏サイト表記:「木のくつ（宝）マジックリスト（宝）ビニールシャツ（宝）」"
   },
   {
     "id": "chest_015",
@@ -11073,7 +11143,12 @@ var CHESTS_DATA = [
     "note": "西側",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_3.html",
+    "shanilPlace": "カエルグミの森",
+    "shanilMark": "②",
+    "shanilItem": "木のくつ（宝）マジックリスト（宝）ビニールシャツ（宝）",
+    "diffNote": "相川氏サイト表記:「木のくつ（宝）マジックリスト（宝）ビニールシャツ（宝）」"
   },
   {
     "id": "chest_016",
@@ -11087,7 +11162,12 @@ var CHESTS_DATA = [
     "note": "西側",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_3.html",
+    "shanilPlace": "カエルグミの森",
+    "shanilMark": "②",
+    "shanilItem": "木のくつ（宝）マジックリスト（宝）ビニールシャツ（宝）",
+    "diffNote": "相川氏サイト表記:「木のくつ（宝）マジックリスト（宝）ビニールシャツ（宝）」"
   },
   {
     "id": "chest_017",
@@ -11101,7 +11181,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_3.html",
+    "shanilPlace": "森の洞窟・西",
+    "shanilMark": "④",
+    "shanilItem": "レザーキャップ（宝）ハモニック金貨（宝）",
+    "diffNote": "相川氏サイト表記:「レザーキャップ（宝）ハモニック金貨（宝）」"
   },
   {
     "id": "chest_018",
@@ -11115,7 +11200,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_3.html",
+    "shanilPlace": "森の洞窟・西",
+    "shanilMark": "④",
+    "shanilItem": "レザーキャップ（宝）ハモニック金貨（宝）",
+    "diffNote": "相川氏サイト表記:「レザーキャップ（宝）ハモニック金貨（宝）」"
   },
   {
     "id": "chest_019",
@@ -11129,7 +11219,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_3.html",
+    "shanilPlace": "森の洞窟・小部屋",
+    "shanilMark": "⑤",
+    "shanilItem": "ドクナのしっぽ×５（宝）チューリップ（宝）",
+    "diffNote": "相川氏サイト表記:「ドクナのしっぽ×５（宝）チューリップ（宝）」"
   },
   {
     "id": "chest_020",
@@ -11143,7 +11238,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_3.html",
+    "shanilPlace": "森の洞窟・小部屋",
+    "shanilMark": "⑤",
+    "shanilItem": "ドクナのしっぽ×５（宝）チューリップ（宝）",
+    "diffNote": "相川氏サイト表記:「ドクナのしっぽ×５（宝）チューリップ（宝）」"
   },
   {
     "id": "chest_021",
@@ -11157,7 +11257,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_3.html",
+    "shanilPlace": "森の洞窟・東",
+    "shanilMark": "⑥",
+    "shanilItem": "ミーロリ銀貨×２（宝）旅人のシャツ（宝）モンスター図鑑（貰）",
+    "diffNote": "相川氏サイト表記:「ミーロリ銀貨×２（宝）旅人のシャツ（宝）モンスター図鑑（貰）」"
   },
   {
     "id": "chest_022",
@@ -11171,7 +11276,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_3.html",
+    "shanilPlace": "森の洞窟・東",
+    "shanilMark": "⑥",
+    "shanilItem": "ミーロリ銀貨×２（宝）旅人のシャツ（宝）モンスター図鑑（貰）",
+    "diffNote": "相川氏サイト表記:「ミーロリ銀貨×２（宝）旅人のシャツ（宝）モンスター図鑑（貰）」"
   },
   {
     "id": "chest_023",
@@ -11185,7 +11295,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_4.html",
+    "shanilPlace": "森の洞窟・東",
+    "shanilMark": "①",
+    "shanilItem": "音のシール（宝）火のシール（宝）",
+    "diffNote": "相川氏サイト表記:「音のシール（宝）火のシール（宝）」"
   },
   {
     "id": "chest_024",
@@ -11199,7 +11314,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_4.html",
+    "shanilPlace": "森の洞窟・東",
+    "shanilMark": "①",
+    "shanilItem": "音のシール（宝）火のシール（宝）",
+    "diffNote": "相川氏サイト表記:「音のシール（宝）火のシール（宝）」"
   },
   {
     "id": "chest_025",
@@ -11213,7 +11333,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_4.html",
+    "shanilPlace": "森の洞窟・小部屋",
+    "shanilMark": "②",
+    "shanilItem": "レザーバンド（宝）愛のシール（宝）",
+    "diffNote": "相川氏サイト表記:「レザーバンド（宝）愛のシール（宝）」"
   },
   {
     "id": "chest_026",
@@ -11227,7 +11352,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_4.html",
+    "shanilPlace": "森の洞窟・小部屋",
+    "shanilMark": "②",
+    "shanilItem": "レザーバンド（宝）愛のシール（宝）",
+    "diffNote": "相川氏サイト表記:「レザーバンド（宝）愛のシール（宝）」"
   },
   {
     "id": "chest_027",
@@ -11241,7 +11371,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_5.html",
+    "shanilPlace": "ベナコンチャ遺跡",
+    "shanilMark": "①",
+    "shanilItem": "マジックリスト（宝）シビナのしっぽ（宝）フッカのしっぽ×２（宝）",
+    "diffNote": "相川氏サイト表記:「マジックリスト（宝）シビナのしっぽ（宝）フッカのしっぽ×２（宝）」"
   },
   {
     "id": "chest_028",
@@ -11255,7 +11390,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_5.html",
+    "shanilPlace": "ベナコンチャ遺跡",
+    "shanilMark": "①",
+    "shanilItem": "マジックリスト（宝）シビナのしっぽ（宝）フッカのしっぽ×２（宝）",
+    "diffNote": "相川氏サイト表記:「マジックリスト（宝）シビナのしっぽ（宝）フッカのしっぽ×２（宝）」"
   },
   {
     "id": "chest_029",
@@ -11269,7 +11409,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_5.html",
+    "shanilPlace": "ベナコンチャ遺跡",
+    "shanilMark": "①",
+    "shanilItem": "マジックリスト（宝）シビナのしっぽ（宝）フッカのしっぽ×２（宝）",
+    "diffNote": "相川氏サイト表記:「マジックリスト（宝）シビナのしっぽ（宝）フッカのしっぽ×２（宝）」"
   },
   {
     "id": "chest_030",
@@ -11283,7 +11428,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_5.html",
+    "shanilPlace": "ベナコンチャ北",
+    "shanilMark": "④",
+    "shanilItem": "レザーマント（宝）バオバブリング（宝）",
+    "diffNote": "相川氏サイト表記:「レザーマント（宝）バオバブリング（宝）」"
   },
   {
     "id": "chest_031",
@@ -11297,7 +11447,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_5.html",
+    "shanilPlace": "ベナコンチャ北",
+    "shanilMark": "④",
+    "shanilItem": "レザーマント（宝）バオバブリング（宝）",
+    "diffNote": "相川氏サイト表記:「レザーマント（宝）バオバブリング（宝）」"
   },
   {
     "id": "chest_032",
@@ -11311,7 +11466,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_5.html",
+    "shanilPlace": "ベナコンチャ東",
+    "shanilMark": "②",
+    "shanilItem": "旅人のシャツ（宝）チューリップ（宝）スパークボム（宝）古のシール（宝）",
+    "diffNote": "相川氏サイト表記:「旅人のシャツ（宝）チューリップ（宝）スパークボム（宝）古のシール（宝）」"
   },
   {
     "id": "chest_033",
@@ -11325,7 +11485,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_5.html",
+    "shanilPlace": "ベナコンチャ東",
+    "shanilMark": "②",
+    "shanilItem": "旅人のシャツ（宝）チューリップ（宝）スパークボム（宝）古のシール（宝）",
+    "diffNote": "相川氏サイト表記:「旅人のシャツ（宝）チューリップ（宝）スパークボム（宝）古のシール（宝）」"
   },
   {
     "id": "chest_034",
@@ -11339,7 +11504,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_5.html",
+    "shanilPlace": "ベナコンチャ東",
+    "shanilMark": "②",
+    "shanilItem": "旅人のシャツ（宝）チューリップ（宝）スパークボム（宝）古のシール（宝）",
+    "diffNote": "相川氏サイト表記:「旅人のシャツ（宝）チューリップ（宝）スパークボム（宝）古のシール（宝）」"
   },
   {
     "id": "chest_035",
@@ -11353,7 +11523,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_5.html",
+    "shanilPlace": "ベナコンチャ東",
+    "shanilMark": "②",
+    "shanilItem": "旅人のシャツ（宝）チューリップ（宝）スパークボム（宝）古のシール（宝）",
+    "diffNote": "相川氏サイト表記:「旅人のシャツ（宝）チューリップ（宝）スパークボム（宝）古のシール（宝）」"
   },
   {
     "id": "chest_036",
@@ -11367,7 +11542,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_5.html",
+    "shanilPlace": "ベナコンチャ西",
+    "shanilMark": "③",
+    "shanilItem": "４００ブラー（宝）",
+    "diffNote": "相川氏サイト表記:「４００ブラー（宝）」"
   },
   {
     "id": "chest_037",
@@ -11381,7 +11561,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_5.html",
+    "shanilPlace": "ベナコンチャ南西",
+    "shanilMark": "⑤",
+    "shanilItem": "旅人のくつ（宝）",
+    "diffNote": null
   },
   {
     "id": "chest_038",
@@ -11395,7 +11580,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_5.html",
+    "shanilPlace": "ベナコンチャ南",
+    "shanilMark": "⑥",
+    "shanilItem": "まつぼっくり×５（宝）",
+    "diffNote": "相川氏サイト表記:「まつぼっくり×５（宝）」"
   },
   {
     "id": "chest_039",
@@ -11409,7 +11599,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_5.html",
+    "shanilPlace": "ベナコンチャ南東",
+    "shanilMark": "⑦",
+    "shanilItem": "レザーブーツ（宝）カチューシャ（宝）",
+    "diffNote": "相川氏サイト表記:「レザーブーツ（宝）カチューシャ（宝）」"
   },
   {
     "id": "chest_040",
@@ -11423,7 +11618,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_5.html",
+    "shanilPlace": "ベナコンチャ南東",
+    "shanilMark": "⑦",
+    "shanilItem": "レザーブーツ（宝）カチューシャ（宝）",
+    "diffNote": "相川氏サイト表記:「レザーブーツ（宝）カチューシャ（宝）」"
   },
   {
     "id": "chest_041",
@@ -11437,7 +11637,12 @@ var CHESTS_DATA = [
     "note": "開門からの時間経過で開封済になる(ワープすると全て開封済になる)この場合宝箱発見数にカウントされないピップルスの邪魔をしない場合の秒数は右下 4.9秒 左下 6.3秒左上 11.5秒 右上 13.8秒",
     "missable": true,
     "missableReason": "開門イベントの時間経過で自動開封され消滅（数秒〜十数秒の猶予のみ）",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_7.html",
+    "shanilPlace": "レーミッツ・宮殿門",
+    "shanilMark": "④",
+    "shanilItem": "ミミズグミ黄（宝）500ブラー（宝）シルバーリング（宝）スパイク（宝）",
+    "diffNote": "相川氏サイト表記:「ミミズグミ黄（宝）500ブラー（宝）シルバーリング（宝）スパイク（宝）」"
   },
   {
     "id": "chest_042",
@@ -11451,7 +11656,12 @@ var CHESTS_DATA = [
     "note": "開門時左下の宝箱（猶予 6.3秒で自動開封）",
     "missable": true,
     "missableReason": "開門イベントの時間経過で自動開封され消滅（数秒〜十数秒の猶予のみ）",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_7.html",
+    "shanilPlace": "宮殿内部・西階段",
+    "shanilMark": "⑬",
+    "shanilItem": "ミミズグミ黄（宝）ドクナのしっぽ（宝）",
+    "diffNote": "相川氏サイト表記:「ミミズグミ黄（宝）ドクナのしっぽ（宝）」"
   },
   {
     "id": "chest_043",
@@ -11465,7 +11675,12 @@ var CHESTS_DATA = [
     "note": "開門時左上の宝箱（猶予 11.5秒で自動開封）",
     "missable": true,
     "missableReason": "開門イベントの時間経過で自動開封され消滅（数秒〜十数秒の猶予のみ）",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_7.html",
+    "shanilPlace": "宮殿内部・鳥の間",
+    "shanilMark": "⑱",
+    "shanilItem": "キャムティ金貨（宝）シルバーリング（宝）",
+    "diffNote": "相川氏サイト表記:「キャムティ金貨（宝）シルバーリング（宝）」"
   },
   {
     "id": "chest_044",
@@ -11479,7 +11694,12 @@ var CHESTS_DATA = [
     "note": "開門時右上の宝箱（猶予 13.8秒で自動開封）",
     "missable": true,
     "missableReason": "開門イベントの時間経過で自動開封され消滅（数秒〜十数秒の猶予のみ）",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_7.html",
+    "shanilPlace": "宮殿内部地下入口",
+    "shanilMark": "⑲",
+    "shanilItem": "スパイク（宝）400ブラー（宝）アルティ銀貨（宝）",
+    "diffNote": "相川氏サイト表記:「スパイク（宝）400ブラー（宝）アルティ銀貨（宝）」"
   },
   {
     "id": "chest_045",
@@ -11493,7 +11713,12 @@ var CHESTS_DATA = [
     "note": "壁の角",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_7.html",
+    "shanilPlace": "レーミッツ・北東",
+    "shanilMark": "①",
+    "shanilItem": "ガニック金貨（落）ハモニック金貨（落）ミーロリ銀貨×２（宝）",
+    "diffNote": "相川氏サイト表記:「ガニック金貨（落）ハモニック金貨（落）ミーロリ銀貨×２（宝）」"
   },
   {
     "id": "chest_046",
@@ -11507,7 +11732,12 @@ var CHESTS_DATA = [
     "note": "トピアリーの迷宮を抜けた先",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_7.html",
+    "shanilPlace": "レーミッツ・北東",
+    "shanilMark": "①",
+    "shanilItem": "ガニック金貨（落）ハモニック金貨（落）ミーロリ銀貨×２（宝）",
+    "diffNote": "相川氏サイト表記:「ガニック金貨（落）ハモニック金貨（落）ミーロリ銀貨×２（宝）」"
   },
   {
     "id": "chest_047",
@@ -11521,7 +11751,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_7.html",
+    "shanilPlace": "レーミッツ・西",
+    "shanilMark": "⑤",
+    "shanilItem": "レザーピアス（宝）",
+    "diffNote": null
   },
   {
     "id": "chest_048",
@@ -11535,7 +11770,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_7.html",
+    "shanilPlace": "トピアリーの迷宮",
+    "shanilMark": "⑦",
+    "shanilItem": "シビナのしっぽ（落）シーブスハット（宝）",
+    "diffNote": "相川氏サイト表記:「シビナのしっぽ（落）シーブスハット（宝）」"
   },
   {
     "id": "chest_049",
@@ -11549,7 +11789,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_7.html",
+    "shanilPlace": "トピアリーの迷宮",
+    "shanilMark": "⑦",
+    "shanilItem": "ウールのぼうし（宝）赤いリボン（宝）アルティ銀貨（宝）マヒナのしっぽ（落）",
+    "diffNote": "相川氏サイト表記:「ウールのぼうし（宝）赤いリボン（宝）アルティ銀貨（宝）マヒナのしっぽ（落）」"
   },
   {
     "id": "chest_050",
@@ -11563,7 +11808,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_7.html",
+    "shanilPlace": "トピアリーの迷宮",
+    "shanilMark": "⑦",
+    "shanilItem": "ウールのぼうし（宝）赤いリボン（宝）アルティ銀貨（宝）マヒナのしっぽ（落）",
+    "diffNote": "相川氏サイト表記:「ウールのぼうし（宝）赤いリボン（宝）アルティ銀貨（宝）マヒナのしっぽ（落）」"
   },
   {
     "id": "chest_051",
@@ -11577,7 +11827,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_7.html",
+    "shanilPlace": "トピアリーの迷宮",
+    "shanilMark": "⑦",
+    "shanilItem": "ウールのぼうし（宝）赤いリボン（宝）アルティ銀貨（宝）マヒナのしっぽ（落）",
+    "diffNote": "相川氏サイト表記:「ウールのぼうし（宝）赤いリボン（宝）アルティ銀貨（宝）マヒナのしっぽ（落）」"
   },
   {
     "id": "chest_052",
@@ -11591,7 +11846,12 @@ var CHESTS_DATA = [
     "note": "ナナメに取るか鳥の間から進入",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_7.html",
+    "shanilPlace": "宮殿内部・入口",
+    "shanilMark": "⑧",
+    "shanilItem": "まつぼっくり（宝）美のシール（宝）ガニック金貨（落）",
+    "diffNote": "相川氏サイト表記:「まつぼっくり（宝）美のシール（宝）ガニック金貨（落）」"
   },
   {
     "id": "chest_053",
@@ -11605,7 +11865,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_7.html",
+    "shanilPlace": "宮殿内部・入口",
+    "shanilMark": "⑧",
+    "shanilItem": "まつぼっくり（宝）美のシール（宝）ガニック金貨（落）",
+    "diffNote": "相川氏サイト表記:「まつぼっくり（宝）美のシール（宝）ガニック金貨（落）」"
   },
   {
     "id": "chest_054",
@@ -11619,7 +11884,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_7.html",
+    "shanilPlace": "宮殿内部・入口",
+    "shanilMark": "⑧",
+    "shanilItem": "でこぼこはっぱ（宝）ラヴボム（宝）あなあきはっぱ×２（宝）光のシール（宝）",
+    "diffNote": "相川氏サイト表記:「でこぼこはっぱ（宝）ラヴボム（宝）あなあきはっぱ×２（宝）光のシール（宝）」"
   },
   {
     "id": "chest_055",
@@ -11633,7 +11903,12 @@ var CHESTS_DATA = [
     "note": "ナナメに取るか東階段下から進入",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_7.html",
+    "shanilPlace": "宮殿内部・入口",
+    "shanilMark": "⑧",
+    "shanilItem": "でこぼこはっぱ（宝）ラヴボム（宝）あなあきはっぱ×２（宝）光のシール（宝）",
+    "diffNote": "相川氏サイト表記:「でこぼこはっぱ（宝）ラヴボム（宝）あなあきはっぱ×２（宝）光のシール（宝）」"
   },
   {
     "id": "chest_056",
@@ -11647,7 +11922,12 @@ var CHESTS_DATA = [
     "note": "東階段の隠し通路から進入",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_7.html",
+    "shanilPlace": "宮殿内部・入口",
+    "shanilMark": "⑧",
+    "shanilItem": "でこぼこはっぱ（宝）ラヴボム（宝）あなあきはっぱ×２（宝）光のシール（宝）",
+    "diffNote": "相川氏サイト表記:「でこぼこはっぱ（宝）ラヴボム（宝）あなあきはっぱ×２（宝）光のシール（宝）」"
   },
   {
     "id": "chest_057",
@@ -11661,7 +11941,12 @@ var CHESTS_DATA = [
     "note": "西階段の隠し通路から進入",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_7.html",
+    "shanilPlace": "宮殿内部・入口",
+    "shanilMark": "⑧",
+    "shanilItem": "でこぼこはっぱ（宝）ラヴボム（宝）あなあきはっぱ×２（宝）光のシール（宝）",
+    "diffNote": "相川氏サイト表記:「でこぼこはっぱ（宝）ラヴボム（宝）あなあきはっぱ×２（宝）光のシール（宝）」"
   },
   {
     "id": "chest_058",
@@ -11675,7 +11960,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_7.html",
+    "shanilPlace": "宮殿内部・小部屋",
+    "shanilMark": "⑩",
+    "shanilItem": "400ブラー（宝）石のシール（宝）ガニック金貨（落）",
+    "diffNote": "相川氏サイト表記:「400ブラー（宝）石のシール（宝）ガニック金貨（落）」"
   },
   {
     "id": "chest_059",
@@ -11689,7 +11979,12 @@ var CHESTS_DATA = [
     "note": "(22,14)の壁を壊す",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_7.html",
+    "shanilPlace": "宮殿内部・小部屋",
+    "shanilMark": "⑩",
+    "shanilItem": "400ブラー（宝）石のシール（宝）ガニック金貨（落）",
+    "diffNote": "相川氏サイト表記:「400ブラー（宝）石のシール（宝）ガニック金貨（落）」"
   },
   {
     "id": "chest_060",
@@ -11703,7 +11998,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_7.html",
+    "shanilPlace": "宮殿内部・客間",
+    "shanilMark": "⑪",
+    "shanilItem": "ラシモフ銀貨×２（宝）獣のシール（宝）革のジャケット",
+    "diffNote": "相川氏サイト表記:「ラシモフ銀貨×２（宝）獣のシール（宝）革のジャケット」"
   },
   {
     "id": "chest_061",
@@ -11717,7 +12017,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilPlace": "宮殿内部・客間",
+    "shanilMark": "⑪",
+    "shanilItem": "ラシモフ銀貨×２（宝）",
+    "diffNote": "Wikiでは「ラシモフ金貨 x2」と記載、相川氏チャートでは「ラシモフ銀貨×２」と記載（Wiki優先）",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_7.html"
   },
   {
     "id": "chest_062",
@@ -11731,7 +12036,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_7.html",
+    "shanilPlace": "宮殿内部・客間",
+    "shanilMark": "⑪",
+    "shanilItem": "ラシモフ銀貨×２（宝）獣のシール（宝）革のジャケット",
+    "diffNote": "相川氏サイト表記:「ラシモフ銀貨×２（宝）獣のシール（宝）革のジャケット」"
   },
   {
     "id": "chest_063",
@@ -11745,7 +12055,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_7.html",
+    "shanilPlace": "宮殿内部・応接間",
+    "shanilMark": "⑨",
+    "shanilItem": "小さいオカリナ（宝）",
+    "diffNote": null
   },
   {
     "id": "chest_064",
@@ -11759,7 +12074,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_7.html",
+    "shanilPlace": "宮殿内部・廊下",
+    "shanilMark": "⑫",
+    "shanilItem": "虫メガネ（宝）200ブラー（宝）ヘリオン金貨（宝）",
+    "diffNote": "相川氏サイト表記:「虫メガネ（宝）200ブラー（宝）ヘリオン金貨（宝）」"
   },
   {
     "id": "chest_065",
@@ -11773,7 +12093,12 @@ var CHESTS_DATA = [
     "note": "ナナメに取る",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_7.html",
+    "shanilPlace": "宮殿内部・廊下",
+    "shanilMark": "⑫",
+    "shanilItem": "虫メガネ（宝）200ブラー（宝）ヘリオン金貨（宝）",
+    "diffNote": "相川氏サイト表記:「虫メガネ（宝）200ブラー（宝）ヘリオン金貨（宝）」"
   },
   {
     "id": "chest_066",
@@ -11787,7 +12112,12 @@ var CHESTS_DATA = [
     "note": "カエルグミ赤を取るか愛のかりゅうどを退かすと取れる",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_7.html",
+    "shanilPlace": "宮殿内部・廊下",
+    "shanilMark": "⑫",
+    "shanilItem": "虫メガネ（宝）200ブラー（宝）ヘリオン金貨（宝）",
+    "diffNote": "相川氏サイト表記:「虫メガネ（宝）200ブラー（宝）ヘリオン金貨（宝）」"
   },
   {
     "id": "chest_067",
@@ -11801,7 +12131,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_7.html",
+    "shanilPlace": "宮殿内部・西階段",
+    "shanilMark": "⑬",
+    "shanilItem": "ミミズグミ黄（宝）ドクナのしっぽ（宝）",
+    "diffNote": "相川氏サイト表記:「ミミズグミ黄（宝）ドクナのしっぽ（宝）」"
   },
   {
     "id": "chest_068",
@@ -11815,7 +12150,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_7.html",
+    "shanilPlace": "宮殿内部・西階段",
+    "shanilMark": "⑬",
+    "shanilItem": "ミミズグミ黄（宝）ドクナのしっぽ（宝）",
+    "diffNote": "相川氏サイト表記:「ミミズグミ黄（宝）ドクナのしっぽ（宝）」"
   },
   {
     "id": "chest_069",
@@ -11829,7 +12169,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_7.html",
+    "shanilPlace": "宮殿内部・鳥の間",
+    "shanilMark": "⑱",
+    "shanilItem": "キャムティ金貨（宝）シルバーリング（宝）",
+    "diffNote": "相川氏サイト表記:「キャムティ金貨（宝）シルバーリング（宝）」"
   },
   {
     "id": "chest_070",
@@ -11843,7 +12188,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_7.html",
+    "shanilPlace": "レーミッツ・宮殿門",
+    "shanilMark": "④",
+    "shanilItem": "ミミズグミ黄（宝）500ブラー（宝）シルバーリング（宝）スパイク（宝）",
+    "diffNote": "相川氏サイト表記:「ミミズグミ黄（宝）500ブラー（宝）シルバーリング（宝）スパイク（宝）」"
   },
   {
     "id": "chest_071",
@@ -11857,7 +12207,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_7.html",
+    "shanilPlace": "宮殿内部地下入口",
+    "shanilMark": "⑲",
+    "shanilItem": "スパイク（宝）400ブラー（宝）アルティ銀貨（宝）",
+    "diffNote": "相川氏サイト表記:「スパイク（宝）400ブラー（宝）アルティ銀貨（宝）」"
   },
   {
     "id": "chest_072",
@@ -11871,7 +12226,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_7.html",
+    "shanilPlace": "宮殿内部地下入口",
+    "shanilMark": "⑲",
+    "shanilItem": "スパイク（宝）400ブラー（宝）アルティ銀貨（宝）",
+    "diffNote": "相川氏サイト表記:「スパイク（宝）400ブラー（宝）アルティ銀貨（宝）」"
   },
   {
     "id": "chest_073",
@@ -11885,7 +12245,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_7.html",
+    "shanilPlace": "トピアリーの迷宮",
+    "shanilMark": "⑦",
+    "shanilItem": "ウールのぼうし（宝）赤いリボン（宝）アルティ銀貨（宝）マヒナのしっぽ（落）",
+    "diffNote": "相川氏サイト表記:「ウールのぼうし（宝）赤いリボン（宝）アルティ銀貨（宝）マヒナのしっぽ（落）」"
   },
   {
     "id": "chest_074",
@@ -11899,7 +12264,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_7.html",
+    "shanilPlace": "宮殿内部・休憩所",
+    "shanilMark": "⑳",
+    "shanilItem": "マヒナのしっぽ（宝）キャムティ金貨×３（宝）",
+    "diffNote": "相川氏サイト表記:「マヒナのしっぽ（宝）キャムティ金貨×３（宝）」"
   },
   {
     "id": "chest_075",
@@ -11913,7 +12283,12 @@ var CHESTS_DATA = [
     "note": "(10,15)の壁を壊す",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_7.html",
+    "shanilPlace": "宮殿内部・休憩所",
+    "shanilMark": "⑳",
+    "shanilItem": "マヒナのしっぽ（宝）キャムティ金貨×３（宝）",
+    "diffNote": "相川氏サイト表記:「マヒナのしっぽ（宝）キャムティ金貨×３（宝）」"
   },
   {
     "id": "chest_076",
@@ -11927,7 +12302,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_7.html",
+    "shanilPlace": "宮殿内部・休憩所",
+    "shanilMark": "⑳",
+    "shanilItem": "ヘリオン金貨×３（宝）ヘリオン金貨（宝）",
+    "diffNote": "相川氏サイト表記:「ヘリオン金貨×３（宝）ヘリオン金貨（宝）」"
   },
   {
     "id": "chest_077",
@@ -11941,7 +12321,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_7.html",
+    "shanilPlace": "レーミッツ・南西",
+    "shanilMark": "⑥",
+    "shanilItem": "ヘリオン金貨（落）",
+    "diffNote": null
   },
   {
     "id": "chest_078",
@@ -11955,7 +12340,12 @@ var CHESTS_DATA = [
     "note": "(17,32)の壁を壊す",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_7.html",
+    "shanilPlace": "宮殿内部・東階段",
+    "shanilMark": "⑭",
+    "shanilItem": "ドクナのしっぽ×２（宝）キャムティ金貨×２（宝）",
+    "diffNote": "相川氏サイト表記:「ドクナのしっぽ×２（宝）キャムティ金貨×２（宝）」"
   },
   {
     "id": "chest_079",
@@ -11969,7 +12359,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_7.html",
+    "shanilPlace": "宮殿内部・東階段",
+    "shanilMark": "⑭",
+    "shanilItem": "ドクナのしっぽ×２（宝）キャムティ金貨×２（宝）",
+    "diffNote": "相川氏サイト表記:「ドクナのしっぽ×２（宝）キャムティ金貨×２（宝）」"
   },
   {
     "id": "chest_080",
@@ -11983,7 +12378,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_7.html",
+    "shanilPlace": "宮殿内部東階段下",
+    "shanilMark": "⑮",
+    "shanilItem": "雷のシール（宝）",
+    "diffNote": null
   },
   {
     "id": "chest_081",
@@ -11997,7 +12397,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_7.html",
+    "shanilPlace": "宮殿内部・西広場",
+    "shanilMark": "⑰",
+    "shanilItem": "ハモニック金貨×２（宝）へリオン金貨（落）火のシール（宝）",
+    "diffNote": "相川氏サイト表記:「ハモニック金貨×２（宝）へリオン金貨（落）火のシール（宝）」"
   },
   {
     "id": "chest_082",
@@ -12011,7 +12416,12 @@ var CHESTS_DATA = [
     "note": "隠し通路の先",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_7.html",
+    "shanilPlace": "宮殿内部・小部屋",
+    "shanilMark": "⑩",
+    "shanilItem": "火のシール（貼）",
+    "diffNote": "相川氏サイト表記:「火のシール（貼）」"
   },
   {
     "id": "chest_083",
@@ -12025,7 +12435,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_7.html",
+    "shanilPlace": "宮殿内部西階段下",
+    "shanilMark": "⑯",
+    "shanilItem": "クレセント銀貨×２（宝）キャムティ金貨×２（宝）",
+    "diffNote": "相川氏サイト表記:「クレセント銀貨×２（宝）キャムティ金貨×２（宝）」"
   },
   {
     "id": "chest_084",
@@ -12039,7 +12454,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_7.html",
+    "shanilPlace": "宮殿内部西階段下",
+    "shanilMark": "⑯",
+    "shanilItem": "クレセント銀貨×２（宝）キャムティ金貨×２（宝）",
+    "diffNote": "相川氏サイト表記:「クレセント銀貨×２（宝）キャムティ金貨×２（宝）」"
   },
   {
     "id": "chest_085",
@@ -12053,7 +12473,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_7.html",
+    "shanilPlace": "宮殿内部・地下",
+    "shanilMark": "㉑",
+    "shanilItem": "ガニック金貨×２（宝）クレセント銀貨×２（宝）",
+    "diffNote": "相川氏サイト表記:「ガニック金貨×２（宝）クレセント銀貨×２（宝）」"
   },
   {
     "id": "chest_086",
@@ -12067,7 +12492,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_7.html",
+    "shanilPlace": "宮殿内部・地下",
+    "shanilMark": "㉑",
+    "shanilItem": "ガニック金貨×２（宝）クレセント銀貨×２（宝）",
+    "diffNote": "相川氏サイト表記:「ガニック金貨×２（宝）クレセント銀貨×２（宝）」"
   },
   {
     "id": "chest_087",
@@ -12081,7 +12511,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_7.html",
+    "shanilPlace": "宮殿内部・地下",
+    "shanilMark": "㉑",
+    "shanilItem": "460ブラー（宝）スパイク（宝）",
+    "diffNote": "相川氏サイト表記:「460ブラー（宝）スパイク（宝）」"
   },
   {
     "id": "chest_088",
@@ -12095,7 +12530,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_7.html",
+    "shanilPlace": "宮殿内部・地下",
+    "shanilMark": "㉑",
+    "shanilItem": "460ブラー（宝）スパイク（宝）",
+    "diffNote": "相川氏サイト表記:「460ブラー（宝）スパイク（宝）」"
   },
   {
     "id": "chest_089",
@@ -12109,7 +12549,12 @@ var CHESTS_DATA = [
     "note": "茂みに隠れてよく見えない",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilPlace": "トピアリーの迷宮 / レーミッツ・南東",
+    "shanilMark": "⑦ / ③",
+    "shanilItem": "アルティ銀貨（宝/落）",
+    "diffNote": "Wikiのエリア分類は「～ピップルスタウン」だが場所は「レーミッツ・西(宮殿外)」、相川氏ではレーミッツ全域マップに該当",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_8.html"
   },
   {
     "id": "chest_090",
@@ -12123,7 +12568,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_9.html",
+    "shanilPlace": "ラ・ロッシュ２F",
+    "shanilMark": "②",
+    "shanilItem": "ヘリオン金貨(宝)シーブスリング(宝)ミーロリ銀貨(宝)",
+    "diffNote": "相川氏サイト表記:「ヘリオン金貨(宝)シーブスリング(宝)ミーロリ銀貨(宝)」"
   },
   {
     "id": "chest_091",
@@ -12137,7 +12587,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_9.html",
+    "shanilPlace": "ラ・ロッシュ２F",
+    "shanilMark": "②",
+    "shanilItem": "ヘリオン金貨(宝)シーブスリング(宝)ミーロリ銀貨(宝)",
+    "diffNote": "相川氏サイト表記:「ヘリオン金貨(宝)シーブスリング(宝)ミーロリ銀貨(宝)」"
   },
   {
     "id": "chest_092",
@@ -12151,7 +12606,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_9.html",
+    "shanilPlace": "ラ・ロッシュ２F",
+    "shanilMark": "②",
+    "shanilItem": "ヘリオン金貨(宝)シーブスリング(宝)ミーロリ銀貨(宝)",
+    "diffNote": "相川氏サイト表記:「ヘリオン金貨(宝)シーブスリング(宝)ミーロリ銀貨(宝)」"
   },
   {
     "id": "chest_093",
@@ -12165,7 +12625,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_9.html",
+    "shanilPlace": "ラ・ロッシュ５F",
+    "shanilMark": "⑤",
+    "shanilItem": "クレセント銀貨(宝)キャムティ金貨(宝)シーブスマント(宝)",
+    "diffNote": "相川氏サイト表記:「クレセント銀貨(宝)キャムティ金貨(宝)シーブスマント(宝)」"
   },
   {
     "id": "chest_094",
@@ -12179,7 +12644,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_9.html",
+    "shanilPlace": "ラ・ロッシュ５F",
+    "shanilMark": "⑤",
+    "shanilItem": "クレセント銀貨(宝)キャムティ金貨(宝)シーブスマント(宝)",
+    "diffNote": "相川氏サイト表記:「クレセント銀貨(宝)キャムティ金貨(宝)シーブスマント(宝)」"
   },
   {
     "id": "chest_095",
@@ -12193,7 +12663,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_9.html",
+    "shanilPlace": "ラ・ロッシュ５F",
+    "shanilMark": "⑤",
+    "shanilItem": "クレセント銀貨(宝)キャムティ金貨(宝)シーブスマント(宝)",
+    "diffNote": "相川氏サイト表記:「クレセント銀貨(宝)キャムティ金貨(宝)シーブスマント(宝)」"
   },
   {
     "id": "chest_096",
@@ -12207,7 +12682,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_10.html",
+    "shanilPlace": "ゲアラヴァ村（イベンセ岩場２から行く）",
+    "shanilMark": "②",
+    "shanilItem": "ヘルメット",
+    "diffNote": null
   },
   {
     "id": "chest_097",
@@ -12221,7 +12701,12 @@ var CHESTS_DATA = [
     "note": "マップ左側",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_11.html",
+    "shanilPlace": "キードモンガ１階",
+    "shanilMark": "①",
+    "shanilItem": "スパークボム×３(宝)ラシモフ銀貨（ガ）ラバーソウル(宝)",
+    "diffNote": "相川氏サイト表記:「スパークボム×３(宝)ラシモフ銀貨（ガ）ラバーソウル(宝)」"
   },
   {
     "id": "chest_098",
@@ -12235,7 +12720,12 @@ var CHESTS_DATA = [
     "note": "マップ右側",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_11.html",
+    "shanilPlace": "キードモンガ１階",
+    "shanilMark": "①",
+    "shanilItem": "スパークボム×３(宝)ラシモフ銀貨（ガ）ラバーソウル(宝)",
+    "diffNote": "相川氏サイト表記:「スパークボム×３(宝)ラシモフ銀貨（ガ）ラバーソウル(宝)」"
   },
   {
     "id": "chest_099",
@@ -12249,7 +12739,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_11.html",
+    "shanilPlace": "キードモンガ２階",
+    "shanilMark": "②",
+    "shanilItem": "へリオン金貨（落）フルフェイス(宝)ラシモフ銀貨（ガ）リザードスキン(宝)",
+    "diffNote": "相川氏サイト表記:「へリオン金貨（落）フルフェイス(宝)ラシモフ銀貨（ガ）リザードスキン(宝)」"
   },
   {
     "id": "chest_100",
@@ -12263,7 +12758,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_11.html",
+    "shanilPlace": "キードモンガ２階",
+    "shanilMark": "②",
+    "shanilItem": "ファイアーボム×２(宝)ハモニック金貨（落）",
+    "diffNote": "相川氏サイト表記:「ファイアーボム×２(宝)ハモニック金貨（落）」"
   },
   {
     "id": "chest_101",
@@ -12277,7 +12777,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_11.html",
+    "shanilPlace": "キードモンガ２階",
+    "shanilMark": "②",
+    "shanilItem": "へリオン金貨（落）フルフェイス(宝)ラシモフ銀貨（ガ）リザードスキン(宝)",
+    "diffNote": "相川氏サイト表記:「へリオン金貨（落）フルフェイス(宝)ラシモフ銀貨（ガ）リザードスキン(宝)」"
   },
   {
     "id": "chest_102",
@@ -12291,7 +12796,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_11.html",
+    "shanilPlace": "キードモンガ３階",
+    "shanilMark": "③",
+    "shanilItem": "アルティ銀貨（落）ヒスイのピアス(宝)ぺブルボム×３(宝)",
+    "diffNote": "相川氏サイト表記:「アルティ銀貨（落）ヒスイのピアス(宝)ぺブルボム×３(宝)」"
   },
   {
     "id": "chest_103",
@@ -12305,7 +12815,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_11.html",
+    "shanilPlace": "キードモンガ３階",
+    "shanilMark": "③",
+    "shanilItem": "アルティ銀貨（落）ヒスイのピアス(宝)ぺブルボム×３(宝)",
+    "diffNote": "相川氏サイト表記:「アルティ銀貨（落）ヒスイのピアス(宝)ぺブルボム×３(宝)」"
   },
   {
     "id": "chest_104",
@@ -12319,7 +12834,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_11.html",
+    "shanilPlace": "キードモンガ３階",
+    "shanilMark": "③",
+    "shanilItem": "ハモニック金貨（落）ラバーソウル(宝)クレセント銀貨（落）",
+    "diffNote": "相川氏サイト表記:「ハモニック金貨（落）ラバーソウル(宝)クレセント銀貨（落）」"
   },
   {
     "id": "chest_105",
@@ -12333,7 +12853,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_11.html",
+    "shanilPlace": "キードモンガ１階（降）",
+    "shanilMark": "①",
+    "shanilItem": "クレセント銀貨（ガ）プラチナリング(宝)ウインドボム×４(宝)へリオン金貨（落）",
+    "diffNote": "相川氏サイト表記:「クレセント銀貨（ガ）プラチナリング(宝)ウインドボム×４(宝)へリオン金貨（落）」"
   },
   {
     "id": "chest_106",
@@ -12347,7 +12872,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_11.html",
+    "shanilPlace": "キードモンガ１階",
+    "shanilMark": "①",
+    "shanilItem": "ミーロリ銀貨（ガ）アルティ銀貨（落）ミーロリ銀貨（落）",
+    "diffNote": "相川氏サイト表記:「ミーロリ銀貨（ガ）アルティ銀貨（落）ミーロリ銀貨（落）」"
   },
   {
     "id": "chest_107",
@@ -12361,7 +12891,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/1",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_11.html",
+    "shanilPlace": "キードモンガ工場",
+    "shanilMark": "⑫",
+    "shanilItem": "職人の魂（貰）シーブスブーツ(宝)",
+    "diffNote": "相川氏サイト表記:「職人の魂（貰）シーブスブーツ(宝)」"
   },
   {
     "id": "chest_108",
@@ -12375,7 +12910,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_2.html",
+    "shanilPlace": "氷の島",
+    "shanilMark": "①",
+    "shanilItem": "ネコタイツ(宝)",
+    "diffNote": null
   },
   {
     "id": "chest_109",
@@ -12389,7 +12929,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_2.html",
+    "shanilPlace": "ジェラ風穴１",
+    "shanilMark": "①",
+    "shanilItem": "アンテナ(宝)ミーロリ銀貨×４(宝)",
+    "diffNote": "相川氏サイト表記:「アンテナ(宝)ミーロリ銀貨×４(宝)」"
   },
   {
     "id": "chest_110",
@@ -12403,7 +12948,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_2.html",
+    "shanilPlace": "ジェラ風穴１",
+    "shanilMark": "①",
+    "shanilItem": "アンテナ(宝)ミーロリ銀貨×４(宝)",
+    "diffNote": "相川氏サイト表記:「アンテナ(宝)ミーロリ銀貨×４(宝)」"
   },
   {
     "id": "chest_111",
@@ -12417,7 +12967,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_2.html",
+    "shanilPlace": "ジェラ風穴２",
+    "shanilMark": "②",
+    "shanilItem": "ネコタイツ(宝)１０００ブラー(宝)",
+    "diffNote": "相川氏サイト表記:「ネコタイツ(宝)１０００ブラー(宝)」"
   },
   {
     "id": "chest_112",
@@ -12431,7 +12986,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_2.html",
+    "shanilPlace": "ジェラ風穴２",
+    "shanilMark": "②",
+    "shanilItem": "ネコタイツ(宝)１０００ブラー(宝)",
+    "diffNote": "相川氏サイト表記:「ネコタイツ(宝)１０００ブラー(宝)」"
   },
   {
     "id": "chest_113",
@@ -12445,7 +13005,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_2.html",
+    "shanilPlace": "ジェラ風穴３",
+    "shanilMark": "③",
+    "shanilItem": "カエルグミ青×６(宝)シーブスピアス(宝)",
+    "diffNote": "相川氏サイト表記:「カエルグミ青×６(宝)シーブスピアス(宝)」"
   },
   {
     "id": "chest_114",
@@ -12459,7 +13024,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_2.html",
+    "shanilPlace": "ジェラ風穴３",
+    "shanilMark": "③",
+    "shanilItem": "カエルグミ青×６(宝)シーブスピアス(宝)",
+    "diffNote": "相川氏サイト表記:「カエルグミ青×６(宝)シーブスピアス(宝)」"
   },
   {
     "id": "chest_115",
@@ -12473,7 +13043,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_2.html",
+    "shanilPlace": "ジェラ風穴４",
+    "shanilMark": "④",
+    "shanilItem": "ローズクォーツ(宝)",
+    "diffNote": null
   },
   {
     "id": "chest_116",
@@ -12487,7 +13062,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_2.html",
+    "shanilPlace": "ジェラ風穴５",
+    "shanilMark": "⑤",
+    "shanilItem": "ガニック金貨×２(宝)",
+    "diffNote": "相川氏サイト表記:「ガニック金貨×２(宝)」"
   },
   {
     "id": "chest_117",
@@ -12501,7 +13081,12 @@ var CHESTS_DATA = [
     "note": "マップ西側",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_3.html",
+    "shanilPlace": "レヒカフ沼周辺７",
+    "shanilMark": "⑦",
+    "shanilItem": "フッカのしっぽ×３(宝)",
+    "diffNote": "相川氏サイト表記:「フッカのしっぽ×３(宝)」"
   },
   {
     "id": "chest_118",
@@ -12515,7 +13100,12 @@ var CHESTS_DATA = [
     "note": "リギニオ密林入口側",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilPlace": "レヒカフ沼周辺７",
+    "shanilMark": "①",
+    "shanilItem": "鉄のゲタ(宝)",
+    "diffNote": "相川氏チャートではリギニオ密林編（d_4.html）の表に「レヒカフ沼周辺７: 鉄のゲタ(宝)」として掲載",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_3.html"
   },
   {
     "id": "chest_119",
@@ -12529,7 +13119,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_4.html",
+    "shanilPlace": "リギニオ密林１",
+    "shanilMark": "①",
+    "shanilItem": "肉球ハンド(宝)ハモニック金貨×２(宝)",
+    "diffNote": "相川氏サイト表記:「肉球ハンド(宝)ハモニック金貨×２(宝)」"
   },
   {
     "id": "chest_120",
@@ -12543,7 +13138,12 @@ var CHESTS_DATA = [
     "note": "密林８の階段から進入",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_4.html",
+    "shanilPlace": "リギニオ密林１",
+    "shanilMark": "①",
+    "shanilItem": "肉球ハンド(宝)ハモニック金貨×２(宝)",
+    "diffNote": "相川氏サイト表記:「肉球ハンド(宝)ハモニック金貨×２(宝)」"
   },
   {
     "id": "chest_121",
@@ -12557,7 +13157,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_4.html",
+    "shanilPlace": "リギニオ密林２",
+    "shanilMark": "②",
+    "shanilItem": "フォースハット(宝)",
+    "diffNote": null
   },
   {
     "id": "chest_122",
@@ -12571,7 +13176,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_4.html",
+    "shanilPlace": "リギニオ密林３",
+    "shanilMark": "③",
+    "shanilItem": "肉球ブーツ(宝)１２００ブラー(宝)",
+    "diffNote": "相川氏サイト表記:「肉球ブーツ(宝)１２００ブラー(宝)」"
   },
   {
     "id": "chest_123",
@@ -12585,7 +13195,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_4.html",
+    "shanilPlace": "リギニオ密林３",
+    "shanilMark": "③",
+    "shanilItem": "肉球ブーツ(宝)１２００ブラー(宝)",
+    "diffNote": "相川氏サイト表記:「肉球ブーツ(宝)１２００ブラー(宝)」"
   },
   {
     "id": "chest_124",
@@ -12599,7 +13214,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_4.html",
+    "shanilPlace": "リギニオ密林４",
+    "shanilMark": "④",
+    "shanilItem": "ドクナのしっぽ（落）シビナのしっぽ×３(宝)",
+    "diffNote": "相川氏サイト表記:「ドクナのしっぽ（落）シビナのしっぽ×３(宝)」"
   },
   {
     "id": "chest_125",
@@ -12613,7 +13233,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_4.html",
+    "shanilPlace": "リギニオ密林４",
+    "shanilMark": "④",
+    "shanilItem": "ドクナのしっぽ（落）クラブシェル(宝)アルティ銀貨（落）",
+    "diffNote": "相川氏サイト表記:「ドクナのしっぽ（落）クラブシェル(宝)アルティ銀貨（落）」"
   },
   {
     "id": "chest_126",
@@ -12627,7 +13252,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_4.html",
+    "shanilPlace": "リギニオ密林６",
+    "shanilMark": "⑥",
+    "shanilItem": "フッカのしっぽ×４(宝)パパイヤの実(宝)",
+    "diffNote": "相川氏サイト表記:「フッカのしっぽ×４(宝)パパイヤの実(宝)」"
   },
   {
     "id": "chest_127",
@@ -12641,7 +13271,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_4.html",
+    "shanilPlace": "リギニオ密林６",
+    "shanilMark": "⑥",
+    "shanilItem": "フッカのしっぽ×４(宝)パパイヤの実(宝)",
+    "diffNote": "相川氏サイト表記:「フッカのしっぽ×４(宝)パパイヤの実(宝)」"
   },
   {
     "id": "chest_128",
@@ -12655,7 +13290,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_5.html",
+    "shanilPlace": "クムヤムト砂漠１",
+    "shanilMark": "①",
+    "shanilItem": "ウィングハット(宝)",
+    "diffNote": null
   },
   {
     "id": "chest_129",
@@ -12669,7 +13309,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_5.html",
+    "shanilPlace": "クムヤムト砂漠２",
+    "shanilMark": "②",
+    "shanilItem": "ウィングリスト(宝)マヒナのしっぽ（落）",
+    "diffNote": "相川氏サイト表記:「ウィングリスト(宝)マヒナのしっぽ（落）」"
   },
   {
     "id": "chest_130",
@@ -12683,7 +13328,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_5.html",
+    "shanilPlace": "クムヤムト砂漠３",
+    "shanilMark": "③",
+    "shanilItem": "ミーロリ銀貨×５(宝)",
+    "diffNote": "相川氏サイト表記:「ミーロリ銀貨×５(宝)」"
   },
   {
     "id": "chest_131",
@@ -12697,7 +13347,12 @@ var CHESTS_DATA = [
     "note": "ブルスケッタ含め2体を起こした場合に出現。3体目を起こすと消滅してしまう",
     "missable": true,
     "missableReason": "ブルスケッタ含め2体を起こした場合に出現。3体目を起こすと消滅してしまう",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_5.html",
+    "shanilPlace": "※ずんどこ穴",
+    "shanilMark": "⑤",
+    "shanilItem": "やさぐれたドワーフ一人・フォースマント(宝)",
+    "diffNote": "相川氏サイト表記:「やさぐれたドワーフ一人・フォースマント(宝)」"
   },
   {
     "id": "chest_132",
@@ -12711,7 +13366,12 @@ var CHESTS_DATA = [
     "note": "ブルスケッタ含め3体を起こした場合に出現。4体目を起こすと消滅してしまう",
     "missable": true,
     "missableReason": "ブルスケッタ含め3体を起こした場合に出現。4体目を起こすと消滅してしまう",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_5.html",
+    "shanilPlace": "※ずんどこ穴",
+    "shanilMark": "⑥",
+    "shanilItem": "やさぐれたドワーフ二人・フォースブーツ(宝)",
+    "diffNote": "相川氏サイト表記:「やさぐれたドワーフ二人・フォースブーツ(宝)」"
   },
   {
     "id": "chest_133",
@@ -12725,7 +13385,12 @@ var CHESTS_DATA = [
     "note": "ブルスケッタ含め4体を起こした場合、または5体全員を起こして未クリアの場合に出現。5体全員を起こしてゲームクリア済になると消滅してしまう",
     "missable": true,
     "missableReason": "ブルスケッタ含め4体を起こした場合、または5体全員を起こして未クリアの場合に出現。5体全員を起こしてゲームクリア済になると消滅してしまう",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_5.html",
+    "shanilPlace": "※ずんどこ穴",
+    "shanilMark": "⑦",
+    "shanilItem": "やさぐれたドワーフ三人・フォースピアス(宝)",
+    "diffNote": "相川氏サイト表記:「やさぐれたドワーフ三人・フォースピアス(宝)」"
   },
   {
     "id": "chest_134",
@@ -12739,7 +13404,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_5.html",
+    "shanilPlace": "アクアビット城１",
+    "shanilMark": "①",
+    "shanilItem": "ヘリオン金貨×２(宝)１００ブラー(宝)",
+    "diffNote": "相川氏サイト表記:「ヘリオン金貨×２(宝)１００ブラー(宝)」"
   },
   {
     "id": "chest_135",
@@ -12753,7 +13423,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_5.html",
+    "shanilPlace": "アクアビット城１",
+    "shanilMark": "①",
+    "shanilItem": "ヘリオン金貨×２(宝)１００ブラー(宝)",
+    "diffNote": "相川氏サイト表記:「ヘリオン金貨×２(宝)１００ブラー(宝)」"
   },
   {
     "id": "chest_136",
@@ -12767,7 +13442,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_5.html",
+    "shanilPlace": "アクアビット城２",
+    "shanilMark": "②",
+    "shanilItem": "１６００ブラー(宝)２５００ブラー(宝)",
+    "diffNote": "相川氏サイト表記:「１６００ブラー(宝)２５００ブラー(宝)」"
   },
   {
     "id": "chest_137",
@@ -12781,7 +13461,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_5.html",
+    "shanilPlace": "アクアビット城２",
+    "shanilMark": "②",
+    "shanilItem": "１６００ブラー(宝)２５００ブラー(宝)",
+    "diffNote": "相川氏サイト表記:「１６００ブラー(宝)２５００ブラー(宝)」"
   },
   {
     "id": "chest_138",
@@ -12795,7 +13480,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_5.html",
+    "shanilPlace": "アクアビット城３",
+    "shanilMark": "③",
+    "shanilItem": "トータスシェル(宝)",
+    "diffNote": null
   },
   {
     "id": "chest_139",
@@ -12809,7 +13499,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_5.html",
+    "shanilPlace": "アクアビット城４",
+    "shanilMark": "④",
+    "shanilItem": "ウィングシャツ(宝)",
+    "diffNote": null
   },
   {
     "id": "chest_140",
@@ -12823,7 +13518,12 @@ var CHESTS_DATA = [
     "note": "2つ並んでる宝箱の左",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_6.html",
+    "shanilPlace": "カエル沼",
+    "shanilMark": "①",
+    "shanilItem": "ドクナのしっぽ（落）ゴルゴンリング(宝)パンサーシャツ(宝)",
+    "diffNote": "相川氏サイト表記:「ドクナのしっぽ（落）ゴルゴンリング(宝)パンサーシャツ(宝)」"
   },
   {
     "id": "chest_141",
@@ -12837,7 +13537,12 @@ var CHESTS_DATA = [
     "note": "茂みに隠れてよく見えない",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_6.html",
+    "shanilPlace": "カエル沼",
+    "shanilMark": "①",
+    "shanilItem": "ドクナのしっぽ（落）ゴルゴンリング(宝)パンサーシャツ(宝)",
+    "diffNote": "相川氏サイト表記:「ドクナのしっぽ（落）ゴルゴンリング(宝)パンサーシャツ(宝)」"
   },
   {
     "id": "chest_142",
@@ -12851,7 +13556,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_6.html",
+    "shanilPlace": "エニグマの森・北",
+    "shanilMark": "②",
+    "shanilItem": "ミーロリ銀貨×４(宝)マスカットの実(宝)",
+    "diffNote": "相川氏サイト表記:「ミーロリ銀貨×４(宝)マスカットの実(宝)」"
   },
   {
     "id": "chest_143",
@@ -12865,7 +13575,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_6.html",
+    "shanilPlace": "エニグマの森・北",
+    "shanilMark": "②",
+    "shanilItem": "ミーロリ銀貨×４(宝)マスカットの実(宝)",
+    "diffNote": "相川氏サイト表記:「ミーロリ銀貨×４(宝)マスカットの実(宝)」"
   },
   {
     "id": "chest_144",
@@ -12879,7 +13594,12 @@ var CHESTS_DATA = [
     "note": "茂みに隠れてよく見えない",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_6.html",
+    "shanilPlace": "エニグマの森・北",
+    "shanilMark": "②",
+    "shanilItem": "アルティ銀貨×２(宝)りんごの実(宝)",
+    "diffNote": "相川氏サイト表記:「アルティ銀貨×２(宝)りんごの実(宝)」"
   },
   {
     "id": "chest_145",
@@ -12893,7 +13613,12 @@ var CHESTS_DATA = [
     "note": "2つ並んでる宝箱の右",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_6.html",
+    "shanilPlace": "エニグマの森・北",
+    "shanilMark": "②",
+    "shanilItem": "アルティ銀貨×２(宝)りんごの実(宝)",
+    "diffNote": "相川氏サイト表記:「アルティ銀貨×２(宝)りんごの実(宝)」"
   },
   {
     "id": "chest_146",
@@ -12907,7 +13632,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilPlace": "ツリーマンの集落",
+    "shanilMark": "④",
+    "shanilItem": "アンテナ(宝)",
+    "diffNote": "Wikiでは「東の森」分類だがツリーマン集落はエニグマの森奥にあり、相川氏ではエニグマの森マップ（d_6.html）に対応",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_7.html"
   },
   {
     "id": "chest_147",
@@ -12921,7 +13651,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilPlace": "ツリーマンの集落",
+    "shanilMark": "④",
+    "shanilItem": "鉄のゲタ(宝)",
+    "diffNote": "Wikiでは「東の森」分類だがツリーマン集落はエニグマの森奥にあり、相川氏ではエニグマの森マップ（d_6.html）に対応",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_7.html"
   },
   {
     "id": "chest_148",
@@ -12935,7 +13670,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilPlace": "ツリーマンの集落",
+    "shanilMark": "④",
+    "shanilItem": "ドクロのリボン(宝)",
+    "diffNote": "Wikiでは「東の森」分類だがツリーマン集落はエニグマの森奥にあり、相川氏ではエニグマの森マップ（d_6.html）に対応",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_7.html"
   },
   {
     "id": "chest_149",
@@ -12949,7 +13689,12 @@ var CHESTS_DATA = [
     "note": "茂みに隠れてよく見えない",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_7.html",
+    "shanilPlace": "ヒトデ花の原っぱ",
+    "shanilMark": "②",
+    "shanilItem": "フッカのしっぽ（落）ライチの実（宝）",
+    "diffNote": "相川氏サイト表記:「フッカのしっぽ（落）ライチの実（宝）」"
   },
   {
     "id": "chest_150",
@@ -12963,7 +13708,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_7.html",
+    "shanilPlace": "ヒトデ花の原っぱ",
+    "shanilMark": "②",
+    "shanilItem": "フッカのしっぽ（落）ライチの実（宝）",
+    "diffNote": "相川氏サイト表記:「フッカのしっぽ（落）ライチの実（宝）」"
   },
   {
     "id": "chest_151",
@@ -12977,7 +13727,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_7.html",
+    "shanilPlace": "モルビエ火山入口",
+    "shanilMark": "⑥",
+    "shanilItem": "マヒナのしっぽ（落）ヘリオン金貨×２（宝）",
+    "diffNote": "相川氏サイト表記:「マヒナのしっぽ（落）ヘリオン金貨×２（宝）」"
   },
   {
     "id": "chest_152",
@@ -12991,7 +13746,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_7.html",
+    "shanilPlace": "モルビエ火山入口",
+    "shanilMark": "⑥",
+    "shanilItem": "カエルグミ赤×２（宝）",
+    "diffNote": "相川氏サイト表記:「カエルグミ赤×２（宝）」"
   },
   {
     "id": "chest_153",
@@ -13005,7 +13765,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_7.html",
+    "shanilPlace": "謎の遺跡",
+    "shanilMark": "⑤",
+    "shanilItem": "ウィングブーツ（宝）",
+    "diffNote": null
   },
   {
     "id": "chest_154",
@@ -13019,7 +13784,12 @@ var CHESTS_DATA = [
     "note": "2つ並んでる宝箱の左",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_8.html",
+    "shanilPlace": "モルビエ火山１",
+    "shanilMark": "①",
+    "shanilItem": "ミミズグミ赤×３（宝）キメラシェル（宝）１２００ブラー（宝）",
+    "diffNote": "相川氏サイト表記:「ミミズグミ赤×３（宝）キメラシェル（宝）１２００ブラー（宝）」"
   },
   {
     "id": "chest_155",
@@ -13033,7 +13803,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_8.html",
+    "shanilPlace": "モルビエ火山２",
+    "shanilMark": "②",
+    "shanilItem": "こんにゃくイモ（宝）マヒナのしっぽ×４（宝）",
+    "diffNote": "相川氏サイト表記:「こんにゃくイモ（宝）マヒナのしっぽ×４（宝）」"
   },
   {
     "id": "chest_156",
@@ -13047,7 +13822,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_8.html",
+    "shanilPlace": "モルビエ火山２",
+    "shanilMark": "②",
+    "shanilItem": "こんにゃくイモ（宝）マヒナのしっぽ×４（宝）",
+    "diffNote": "相川氏サイト表記:「こんにゃくイモ（宝）マヒナのしっぽ×４（宝）」"
   },
   {
     "id": "chest_157",
@@ -13061,7 +13841,12 @@ var CHESTS_DATA = [
     "note": "2つ並んでる宝箱の左",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_8.html",
+    "shanilPlace": "モルビエ火山２",
+    "shanilMark": "②",
+    "shanilItem": "ファイアーボム×３（宝）ミミズグミ赤×３",
+    "diffNote": "相川氏サイト表記:「ファイアーボム×３（宝）ミミズグミ赤×３」"
   },
   {
     "id": "chest_158",
@@ -13075,7 +13860,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_8.html",
+    "shanilPlace": "モルビエ火山２",
+    "shanilMark": "②",
+    "shanilItem": "ファイアーボム×３（宝）ミミズグミ赤×３",
+    "diffNote": "相川氏サイト表記:「ファイアーボム×３（宝）ミミズグミ赤×３」"
   },
   {
     "id": "chest_159",
@@ -13089,7 +13879,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_8.html",
+    "shanilPlace": "モルビエ火山４",
+    "shanilMark": "④",
+    "shanilItem": "１０９０ブラー（宝）５６０ブラー（宝）ミミズグミ赤（宝）１１００ブラー（宝）",
+    "diffNote": "相川氏サイト表記:「１０９０ブラー（宝）５６０ブラー（宝）ミミズグミ赤（宝）１１００ブラー（宝）」"
   },
   {
     "id": "chest_160",
@@ -13103,7 +13898,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_8.html",
+    "shanilPlace": "モルビエ火山４",
+    "shanilMark": "④",
+    "shanilItem": "１０９０ブラー（宝）５６０ブラー（宝）ミミズグミ赤（宝）１１００ブラー（宝）",
+    "diffNote": "相川氏サイト表記:「１０９０ブラー（宝）５６０ブラー（宝）ミミズグミ赤（宝）１１００ブラー（宝）」"
   },
   {
     "id": "chest_161",
@@ -13117,7 +13917,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_8.html",
+    "shanilPlace": "モルビエ火山４",
+    "shanilMark": "④",
+    "shanilItem": "１０９０ブラー（宝）５６０ブラー（宝）ミミズグミ赤（宝）１１００ブラー（宝）",
+    "diffNote": "相川氏サイト表記:「１０９０ブラー（宝）５６０ブラー（宝）ミミズグミ赤（宝）１１００ブラー（宝）」"
   },
   {
     "id": "chest_162",
@@ -13131,7 +13936,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_8.html",
+    "shanilPlace": "モルビエ火山４",
+    "shanilMark": "④",
+    "shanilItem": "１０９０ブラー（宝）５６０ブラー（宝）ミミズグミ赤（宝）１１００ブラー（宝）",
+    "diffNote": "相川氏サイト表記:「１０９０ブラー（宝）５６０ブラー（宝）ミミズグミ赤（宝）１１００ブラー（宝）」"
   },
   {
     "id": "chest_163",
@@ -13145,7 +13955,12 @@ var CHESTS_DATA = [
     "note": "2つ並んでる宝箱の左",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_8.html",
+    "shanilPlace": "モルビエ火山１",
+    "shanilMark": "①",
+    "shanilItem": "ミミズグミ赤×３（宝）キメラシェル（宝）１２００ブラー（宝）",
+    "diffNote": "相川氏サイト表記:「ミミズグミ赤×３（宝）キメラシェル（宝）１２００ブラー（宝）」"
   },
   {
     "id": "chest_164",
@@ -13159,7 +13974,12 @@ var CHESTS_DATA = [
     "note": "4つ並んでる宝箱の左から2番目",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_8.html",
+    "shanilPlace": "モルビエ火山１",
+    "shanilMark": "①",
+    "shanilItem": "ミミズグミ赤×３（宝）キメラシェル（宝）１２００ブラー（宝）",
+    "diffNote": "相川氏サイト表記:「ミミズグミ赤×３（宝）キメラシェル（宝）１２００ブラー（宝）」"
   },
   {
     "id": "chest_165",
@@ -13173,7 +13993,12 @@ var CHESTS_DATA = [
     "note": "8つ並んでる宝箱の2行目の一番左",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_8.html",
+    "shanilPlace": "モルビエ火山６",
+    "shanilMark": "⑥",
+    "shanilItem": "クォーツレンズ（宝）ミミズグミ赤×２（宝）",
+    "diffNote": "相川氏サイト表記:「クォーツレンズ（宝）ミミズグミ赤×２（宝）」"
   },
   {
     "id": "chest_166",
@@ -13187,7 +14012,12 @@ var CHESTS_DATA = [
     "note": "8つ並んでる宝箱の2行目の中央",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_8.html",
+    "shanilPlace": "モルビエ火山６",
+    "shanilMark": "⑥",
+    "shanilItem": "クォーツレンズ（宝）ミミズグミ赤×２（宝）",
+    "diffNote": "相川氏サイト表記:「クォーツレンズ（宝）ミミズグミ赤×２（宝）」"
   },
   {
     "id": "chest_167",
@@ -13201,7 +14031,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_9.html",
+    "shanilPlace": "バソリモ村・民家",
+    "shanilMark": "③",
+    "shanilItem": "ミミズグミ赤（宝）アルティ銀貨×２（宝）",
+    "diffNote": "相川氏サイト表記:「ミミズグミ赤（宝）アルティ銀貨×２（宝）」"
   },
   {
     "id": "chest_168",
@@ -13215,7 +14050,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_9.html",
+    "shanilPlace": "バソリモ村・民家",
+    "shanilMark": "③",
+    "shanilItem": "ミミズグミ赤（宝）アルティ銀貨×２（宝）",
+    "diffNote": "相川氏サイト表記:「ミミズグミ赤（宝）アルティ銀貨×２（宝）」"
   },
   {
     "id": "chest_169",
@@ -13229,7 +14069,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_9.html",
+    "shanilPlace": "バソリモ村・民家",
+    "shanilMark": "③",
+    "shanilItem": "ぺブルボム×４（宝）１２５０ブラー（宝）",
+    "diffNote": "相川氏サイト表記:「ぺブルボム×４（宝）１２５０ブラー（宝）」"
   },
   {
     "id": "chest_170",
@@ -13243,7 +14088,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_9.html",
+    "shanilPlace": "バソリモ村・民家",
+    "shanilMark": "③",
+    "shanilItem": "ぺブルボム×４（宝）１２５０ブラー（宝）",
+    "diffNote": "相川氏サイト表記:「ぺブルボム×４（宝）１２５０ブラー（宝）」"
   },
   {
     "id": "chest_171",
@@ -13257,7 +14107,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_9.html",
+    "shanilPlace": "ブラウニーの穴４",
+    "shanilMark": "④",
+    "shanilItem": "１２００ブラー（宝）カエルグミ赤×２（宝）",
+    "diffNote": "相川氏サイト表記:「１２００ブラー（宝）カエルグミ赤×２（宝）」"
   },
   {
     "id": "chest_172",
@@ -13271,7 +14126,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_9.html",
+    "shanilPlace": "ブラウニーの穴４",
+    "shanilMark": "④",
+    "shanilItem": "ウインドボム×４（宝）カエルグミ赤×３（宝）バグボム×２（宝）",
+    "diffNote": "相川氏サイト表記:「ウインドボム×４（宝）カエルグミ赤×３（宝）バグボム×２（宝）」"
   },
   {
     "id": "chest_173",
@@ -13285,7 +14145,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_9.html",
+    "shanilPlace": "ブラウニーの穴４",
+    "shanilMark": "④",
+    "shanilItem": "ウインドボム×４（宝）カエルグミ赤×３（宝）バグボム×２（宝）",
+    "diffNote": "相川氏サイト表記:「ウインドボム×４（宝）カエルグミ赤×３（宝）バグボム×２（宝）」"
   },
   {
     "id": "chest_174",
@@ -13299,7 +14164,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_9.html",
+    "shanilPlace": "ブラウニーの穴４",
+    "shanilMark": "④",
+    "shanilItem": "ウインドボム×４（宝）カエルグミ赤×３（宝）バグボム×２（宝）",
+    "diffNote": "相川氏サイト表記:「ウインドボム×４（宝）カエルグミ赤×３（宝）バグボム×２（宝）」"
   },
   {
     "id": "chest_175",
@@ -13313,7 +14183,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_9.html",
+    "shanilPlace": "ブラウニーの穴４",
+    "shanilMark": "④",
+    "shanilItem": "ウインドボム×４（宝）カエルグミ赤×３（宝）バグボム×２（宝）",
+    "diffNote": "相川氏サイト表記:「ウインドボム×４（宝）カエルグミ赤×３（宝）バグボム×２（宝）」"
   },
   {
     "id": "chest_176",
@@ -13327,7 +14202,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_9.html",
+    "shanilPlace": "ブラウニーの穴４",
+    "shanilMark": "④",
+    "shanilItem": "２５００ブラー（宝）ラヴボム×６（宝）アビスボム×５（宝）２０００ブラー（宝）スパークボム×６（宝）",
+    "diffNote": "相川氏サイト表記:「２５００ブラー（宝）ラヴボム×６（宝）アビスボム×５（宝）２０００ブラー（宝）スパークボム×６（宝）」"
   },
   {
     "id": "chest_177",
@@ -13341,7 +14221,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_9.html",
+    "shanilPlace": "ブラウニーの穴４",
+    "shanilMark": "④",
+    "shanilItem": "２５００ブラー（宝）ラヴボム×６（宝）アビスボム×５（宝）２０００ブラー（宝）スパークボム×６（宝）",
+    "diffNote": "相川氏サイト表記:「２５００ブラー（宝）ラヴボム×６（宝）アビスボム×５（宝）２０００ブラー（宝）スパークボム×６（宝）」"
   },
   {
     "id": "chest_178",
@@ -13355,7 +14240,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_9.html",
+    "shanilPlace": "ブラウニーの穴４",
+    "shanilMark": "④",
+    "shanilItem": "２５００ブラー（宝）ラヴボム×６（宝）アビスボム×５（宝）２０００ブラー（宝）スパークボム×６（宝）",
+    "diffNote": "相川氏サイト表記:「２５００ブラー（宝）ラヴボム×６（宝）アビスボム×５（宝）２０００ブラー（宝）スパークボム×６（宝）」"
   },
   {
     "id": "chest_179",
@@ -13369,7 +14259,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_9.html",
+    "shanilPlace": "ブラウニーの穴４",
+    "shanilMark": "④",
+    "shanilItem": "２５００ブラー（宝）ラヴボム×６（宝）アビスボム×５（宝）２０００ブラー（宝）スパークボム×６（宝）",
+    "diffNote": "相川氏サイト表記:「２５００ブラー（宝）ラヴボム×６（宝）アビスボム×５（宝）２０００ブラー（宝）スパークボム×６（宝）」"
   },
   {
     "id": "chest_180",
@@ -13383,7 +14278,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_9.html",
+    "shanilPlace": "ブラウニーの穴４",
+    "shanilMark": "④",
+    "shanilItem": "２５００ブラー（宝）ラヴボム×６（宝）アビスボム×５（宝）２０００ブラー（宝）スパークボム×６（宝）",
+    "diffNote": "相川氏サイト表記:「２５００ブラー（宝）ラヴボム×６（宝）アビスボム×５（宝）２０００ブラー（宝）スパークボム×６（宝）」"
   },
   {
     "id": "chest_181",
@@ -13397,7 +14297,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilPlace": "キスニカ鉱山入口",
+    "shanilMark": "④",
+    "shanilItem": "ウィングピアス（宝）",
+    "diffNote": "相川氏チャートではバソリモ村編（d_9.html）の表に「キスニカ鉱山入口: ウィングピアス（宝）」として掲載",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_10.html"
   },
   {
     "id": "chest_182",
@@ -13411,7 +14316,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_10.html",
+    "shanilPlace": "キスニカ鉱山１",
+    "shanilMark": "①",
+    "shanilItem": "ソニックボム×８（宝）ラシモフ銀貨×３（宝）",
+    "diffNote": "相川氏サイト表記:「ソニックボム×８（宝）ラシモフ銀貨×３（宝）」"
   },
   {
     "id": "chest_183",
@@ -13425,7 +14335,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_10.html",
+    "shanilPlace": "キスニカ鉱山１",
+    "shanilMark": "①",
+    "shanilItem": "ソニックボム×８（宝）ラシモフ銀貨×３（宝）",
+    "diffNote": "相川氏サイト表記:「ソニックボム×８（宝）ラシモフ銀貨×３（宝）」"
   },
   {
     "id": "chest_184",
@@ -13439,7 +14354,12 @@ var CHESTS_DATA = [
     "note": "鉱山１左下から進入",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_10.html",
+    "shanilPlace": "キスニカ鉱山３",
+    "shanilMark": "③",
+    "shanilItem": "キャムティ金貨×３（宝）",
+    "diffNote": "相川氏サイト表記:「キャムティ金貨×３（宝）」"
   },
   {
     "id": "chest_185",
@@ -13453,7 +14373,12 @@ var CHESTS_DATA = [
     "note": "鉱山２左下から進入",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_10.html",
+    "shanilPlace": "キスニカ鉱山３（２）",
+    "shanilMark": "③",
+    "shanilItem": "レトロボム×８（宝）",
+    "diffNote": "相川氏サイト表記:「レトロボム×８（宝）」"
   },
   {
     "id": "chest_186",
@@ -13467,7 +14392,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_10.html",
+    "shanilPlace": "キスニカ鉱山４",
+    "shanilMark": "④",
+    "shanilItem": "こんにゃくイモ（宝）リーフボム×３（宝）",
+    "diffNote": "相川氏サイト表記:「こんにゃくイモ（宝）リーフボム×３（宝）」"
   },
   {
     "id": "chest_187",
@@ -13481,7 +14411,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_10.html",
+    "shanilPlace": "キスニカ鉱山４",
+    "shanilMark": "④",
+    "shanilItem": "こんにゃくイモ（宝）リーフボム×３（宝）",
+    "diffNote": "相川氏サイト表記:「こんにゃくイモ（宝）リーフボム×３（宝）」"
   },
   {
     "id": "chest_188",
@@ -13495,7 +14430,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_10.html",
+    "shanilPlace": "キスニカ鉱山５",
+    "shanilMark": "⑤",
+    "shanilItem": "ガニック金貨（落）ラシモフ銀貨（落）こんにゃくイモ（宝）",
+    "diffNote": "相川氏サイト表記:「ガニック金貨（落）ラシモフ銀貨（落）こんにゃくイモ（宝）」"
   },
   {
     "id": "chest_189",
@@ -13509,7 +14449,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_10.html",
+    "shanilPlace": "キスニカ鉱山６",
+    "shanilMark": "⑥",
+    "shanilItem": "こんにゃくイモ（宝）ライフボム×３（宝）ミーロリ銀貨（落）",
+    "diffNote": "相川氏サイト表記:「こんにゃくイモ（宝）ライフボム×３（宝）ミーロリ銀貨（落）」"
   },
   {
     "id": "chest_190",
@@ -13523,7 +14468,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_10.html",
+    "shanilPlace": "キスニカ鉱山６",
+    "shanilMark": "⑥",
+    "shanilItem": "こんにゃくイモ（宝）ライフボム×３（宝）ミーロリ銀貨（落）",
+    "diffNote": "相川氏サイト表記:「こんにゃくイモ（宝）ライフボム×３（宝）ミーロリ銀貨（落）」"
   },
   {
     "id": "chest_191",
@@ -13537,7 +14487,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_10.html",
+    "shanilPlace": "キスニカ鉱山７",
+    "shanilMark": "⑦",
+    "shanilItem": "セキナのしっぽ×３（宝）１０５０ブラー（宝）バグボム×５（宝）",
+    "diffNote": "相川氏サイト表記:「セキナのしっぽ×３（宝）１０５０ブラー（宝）バグボム×５（宝）」"
   },
   {
     "id": "chest_192",
@@ -13551,7 +14506,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_10.html",
+    "shanilPlace": "キスニカ鉱山７",
+    "shanilMark": "⑦",
+    "shanilItem": "セキナのしっぽ×３（宝）１０５０ブラー（宝）バグボム×５（宝）",
+    "diffNote": "相川氏サイト表記:「セキナのしっぽ×３（宝）１０５０ブラー（宝）バグボム×５（宝）」"
   },
   {
     "id": "chest_193",
@@ -13565,7 +14525,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_10.html",
+    "shanilPlace": "キスニカ鉱山７",
+    "shanilMark": "⑦",
+    "shanilItem": "セキナのしっぽ×３（宝）１０５０ブラー（宝）バグボム×５（宝）",
+    "diffNote": "相川氏サイト表記:「セキナのしっぽ×３（宝）１０５０ブラー（宝）バグボム×５（宝）」"
   },
   {
     "id": "chest_194",
@@ -13579,7 +14544,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_10.html",
+    "shanilPlace": "キスニカ鉱山８",
+    "shanilMark": "⑧",
+    "shanilItem": "カエルグミ赤×２（宝）",
+    "diffNote": "相川氏サイト表記:「カエルグミ赤×２（宝）」"
   },
   {
     "id": "chest_195",
@@ -13593,7 +14563,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_10.html",
+    "shanilPlace": "キスニカ鉱山８（２）",
+    "shanilMark": "⑧",
+    "shanilItem": "アメジスト（宝）",
+    "diffNote": null
   },
   {
     "id": "chest_196",
@@ -13607,7 +14582,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_10.html",
+    "shanilPlace": "キスニカ鉱山９",
+    "shanilMark": "⑨",
+    "shanilItem": "トルマリン（宝）黄色いキララ（宝）",
+    "diffNote": "相川氏サイト表記:「トルマリン（宝）黄色いキララ（宝）」"
   },
   {
     "id": "chest_197",
@@ -13621,7 +14601,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_10.html",
+    "shanilPlace": "キスニカ鉱山９",
+    "shanilMark": "⑨",
+    "shanilItem": "トルマリン（宝）黄色いキララ（宝）",
+    "diffNote": "相川氏サイト表記:「トルマリン（宝）黄色いキララ（宝）」"
   },
   {
     "id": "chest_198",
@@ -13635,7 +14620,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_10.html",
+    "shanilPlace": "キスニカ鉱山１０",
+    "shanilMark": "⑩",
+    "shanilItem": "赤いキララ（宝）サファイア（宝）",
+    "diffNote": "相川氏サイト表記:「赤いキララ（宝）サファイア（宝）」"
   },
   {
     "id": "chest_199",
@@ -13649,7 +14639,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_10.html",
+    "shanilPlace": "キスニカ鉱山１０",
+    "shanilMark": "⑩",
+    "shanilItem": "赤いキララ（宝）サファイア（宝）",
+    "diffNote": "相川氏サイト表記:「赤いキララ（宝）サファイア（宝）」"
   },
   {
     "id": "chest_200",
@@ -13663,7 +14658,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_10.html",
+    "shanilPlace": "キスニカ鉱山１１",
+    "shanilMark": "⑪",
+    "shanilItem": "白いキララ（宝）光るキララ（宝）ルビー（宝）",
+    "diffNote": "相川氏サイト表記:「白いキララ（宝）光るキララ（宝）ルビー（宝）」"
   },
   {
     "id": "chest_201",
@@ -13677,7 +14677,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_10.html",
+    "shanilPlace": "キスニカ鉱山１１",
+    "shanilMark": "⑪",
+    "shanilItem": "白いキララ（宝）光るキララ（宝）ルビー（宝）",
+    "diffNote": "相川氏サイト表記:「白いキララ（宝）光るキララ（宝）ルビー（宝）」"
   },
   {
     "id": "chest_202",
@@ -13691,7 +14696,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/2",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_10.html",
+    "shanilPlace": "キスニカ鉱山１１",
+    "shanilMark": "⑪",
+    "shanilItem": "白いキララ（宝）光るキララ（宝）ルビー（宝）",
+    "diffNote": "相川氏サイト表記:「白いキララ（宝）光るキララ（宝）ルビー（宝）」"
   },
   {
     "id": "chest_203",
@@ -13705,7 +14715,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_2.html",
+    "shanilPlace": "タンドーリ１",
+    "shanilMark": "①",
+    "shanilItem": "レインボウボム×８（宝）",
+    "diffNote": "相川氏サイト表記:「レインボウボム×８（宝）」"
   },
   {
     "id": "chest_204",
@@ -13719,7 +14734,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_2.html",
+    "shanilPlace": "タンドーリ２",
+    "shanilMark": "②",
+    "shanilItem": "ラシモフ銀貨（宝）ポイズンボム×７（宝）",
+    "diffNote": "相川氏サイト表記:「ラシモフ銀貨（宝）ポイズンボム×７（宝）」"
   },
   {
     "id": "chest_205",
@@ -13733,7 +14753,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_2.html",
+    "shanilPlace": "タンドーリ２",
+    "shanilMark": "②",
+    "shanilItem": "ラシモフ銀貨（宝）ポイズンボム×７（宝）",
+    "diffNote": "相川氏サイト表記:「ラシモフ銀貨（宝）ポイズンボム×７（宝）」"
   },
   {
     "id": "chest_206",
@@ -13747,7 +14772,12 @@ var CHESTS_DATA = [
     "note": "タンドーリ内の移動の目印では無い",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_2.html",
+    "shanilPlace": "タンドーリ３",
+    "shanilMark": "③",
+    "shanilItem": "サファイア（宝）レイザーボム×７（宝）１８７０ブラー（宝）",
+    "diffNote": "相川氏サイト表記:「サファイア（宝）レイザーボム×７（宝）１８７０ブラー（宝）」"
   },
   {
     "id": "chest_207",
@@ -13761,7 +14791,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_2.html",
+    "shanilPlace": "タンドーリ３",
+    "shanilMark": "③",
+    "shanilItem": "サファイア（宝）レイザーボム×７（宝）１８７０ブラー（宝）",
+    "diffNote": "相川氏サイト表記:「サファイア（宝）レイザーボム×７（宝）１８７０ブラー（宝）」"
   },
   {
     "id": "chest_208",
@@ -13775,7 +14810,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_2.html",
+    "shanilPlace": "タンドーリ３",
+    "shanilMark": "③",
+    "shanilItem": "サファイア（宝）レイザーボム×７（宝）１８７０ブラー（宝）",
+    "diffNote": "相川氏サイト表記:「サファイア（宝）レイザーボム×７（宝）１８７０ブラー（宝）」"
   },
   {
     "id": "chest_209",
@@ -13789,7 +14829,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_2.html",
+    "shanilPlace": "タンドーリ４",
+    "shanilMark": "④",
+    "shanilItem": "デイモンリング（宝）",
+    "diffNote": null
   },
   {
     "id": "chest_210",
@@ -13803,7 +14848,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_2.html",
+    "shanilPlace": "タンドーリ５",
+    "shanilMark": "⑤",
+    "shanilItem": "セキナのしっぽ×４（宝）",
+    "diffNote": "相川氏サイト表記:「セキナのしっぽ×４（宝）」"
   },
   {
     "id": "chest_211",
@@ -13817,7 +14867,12 @@ var CHESTS_DATA = [
     "note": "3つある宝箱のうち左",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_3.html",
+    "shanilPlace": "荒廃の地２",
+    "shanilMark": "②",
+    "shanilItem": "プレートメイル（宝）カエルグミ赤(宝)",
+    "diffNote": "相川氏サイト表記:「プレートメイル（宝）カエルグミ赤(宝)」"
   },
   {
     "id": "chest_212",
@@ -13831,7 +14886,12 @@ var CHESTS_DATA = [
     "note": "3つある宝箱のうち中央",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_3.html",
+    "shanilPlace": "荒廃の地２",
+    "shanilMark": "②",
+    "shanilItem": "プレートメイル（宝）カエルグミ赤(宝)",
+    "diffNote": "相川氏サイト表記:「プレートメイル（宝）カエルグミ赤(宝)」"
   },
   {
     "id": "chest_213",
@@ -13845,7 +14905,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_3.html",
+    "shanilPlace": "荒廃の地３",
+    "shanilMark": "③",
+    "shanilItem": "フォースリング(宝)みみせん(宝)オストリッチ(宝)",
+    "diffNote": "相川氏サイト表記:「フォースリング(宝)みみせん(宝)オストリッチ(宝)」"
   },
   {
     "id": "chest_214",
@@ -13859,7 +14924,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_3.html",
+    "shanilPlace": "荒廃の地３",
+    "shanilMark": "③",
+    "shanilItem": "フォースリング(宝)みみせん(宝)オストリッチ(宝)",
+    "diffNote": "相川氏サイト表記:「フォースリング(宝)みみせん(宝)オストリッチ(宝)」"
   },
   {
     "id": "chest_215",
@@ -13873,7 +14943,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_3.html",
+    "shanilPlace": "荒廃の地３",
+    "shanilMark": "③",
+    "shanilItem": "フォースリング(宝)みみせん(宝)オストリッチ(宝)",
+    "diffNote": "相川氏サイト表記:「フォースリング(宝)みみせん(宝)オストリッチ(宝)」"
   },
   {
     "id": "chest_216",
@@ -13887,7 +14962,12 @@ var CHESTS_DATA = [
     "note": "荒廃の地１から進入",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilPlace": "荒廃の地６",
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": "相川氏チャートには未記載（Wikiのみ掲載の宝箱のため無理に対応させずWiki表記を維持）",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_3.html"
   },
   {
     "id": "chest_217",
@@ -13901,7 +14981,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_3.html",
+    "shanilPlace": "荒廃の地２",
+    "shanilMark": "②",
+    "shanilItem": "プレートメイル（宝）カエルグミ赤(宝)",
+    "diffNote": "相川氏サイト表記:「プレートメイル（宝）カエルグミ赤(宝)」"
   },
   {
     "id": "chest_218",
@@ -13915,7 +15000,12 @@ var CHESTS_DATA = [
     "note": "戦闘あり",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_4.html",
+    "shanilPlace": "ピラミッド１",
+    "shanilMark": "①",
+    "shanilItem": "カエルグミ青×５（宝）カエルグミ赤×２(宝)",
+    "diffNote": "相川氏サイト表記:「カエルグミ青×５（宝）カエルグミ赤×２(宝)」"
   },
   {
     "id": "chest_219",
@@ -13929,7 +15019,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_4.html",
+    "shanilPlace": "ピラミッド１",
+    "shanilMark": "①",
+    "shanilItem": "カエルグミ青×５（宝）カエルグミ赤×２(宝)",
+    "diffNote": "相川氏サイト表記:「カエルグミ青×５（宝）カエルグミ赤×２(宝)」"
   },
   {
     "id": "chest_220",
@@ -13943,7 +15038,12 @@ var CHESTS_DATA = [
     "note": "戦闘あり開扉: 水",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_4.html",
+    "shanilPlace": "ピラミッド２",
+    "shanilMark": "②",
+    "shanilItem": "こんにゃくイモ(宝)ヘリオン金貨×５(宝)",
+    "diffNote": "相川氏サイト表記:「こんにゃくイモ(宝)ヘリオン金貨×５(宝)」"
   },
   {
     "id": "chest_221",
@@ -13957,7 +15057,12 @@ var CHESTS_DATA = [
     "note": "戦闘あり開扉: 火",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_4.html",
+    "shanilPlace": "ピラミッド２",
+    "shanilMark": "②",
+    "shanilItem": "こんにゃくイモ(宝)ヘリオン金貨×５(宝)",
+    "diffNote": "相川氏サイト表記:「こんにゃくイモ(宝)ヘリオン金貨×５(宝)」"
   },
   {
     "id": "chest_222",
@@ -13971,7 +15076,12 @@ var CHESTS_DATA = [
     "note": "戦闘あり開扉: 石",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_4.html",
+    "shanilPlace": "ピラミッド３",
+    "shanilMark": "③",
+    "shanilItem": "あなあきはっぱ×３(宝)カエルグミ青×８(宝)ミーロリ銀貨×１２(宝)ガニック金貨×９(宝)",
+    "diffNote": "相川氏サイト表記:「あなあきはっぱ×３(宝)カエルグミ青×８(宝)ミーロリ銀貨×１２(宝)ガニック金貨×９(宝)」"
   },
   {
     "id": "chest_223",
@@ -13985,7 +15095,12 @@ var CHESTS_DATA = [
     "note": "戦闘あり開扉: 木",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_4.html",
+    "shanilPlace": "ピラミッド３",
+    "shanilMark": "③",
+    "shanilItem": "あなあきはっぱ×３(宝)カエルグミ青×８(宝)ミーロリ銀貨×１２(宝)ガニック金貨×９(宝)",
+    "diffNote": "相川氏サイト表記:「あなあきはっぱ×３(宝)カエルグミ青×８(宝)ミーロリ銀貨×１２(宝)ガニック金貨×９(宝)」"
   },
   {
     "id": "chest_224",
@@ -13999,7 +15114,12 @@ var CHESTS_DATA = [
     "note": "戦闘あり",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_4.html",
+    "shanilPlace": "ピラミッド３",
+    "shanilMark": "③",
+    "shanilItem": "あなあきはっぱ×３(宝)カエルグミ青×８(宝)ミーロリ銀貨×１２(宝)ガニック金貨×９(宝)",
+    "diffNote": "相川氏サイト表記:「あなあきはっぱ×３(宝)カエルグミ青×８(宝)ミーロリ銀貨×１２(宝)ガニック金貨×９(宝)」"
   },
   {
     "id": "chest_225",
@@ -14013,7 +15133,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilPlace": "ピラミッド３",
+    "shanilMark": "③",
+    "shanilItem": "カエルグミ青×８(宝)",
+    "diffNote": "Wikiでは「カエルグミ緑 x8」と記載、相川氏チャートでは「カエルグミ青×８」と記載（Wiki優先）",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_4.html"
   },
   {
     "id": "chest_226",
@@ -14027,7 +15152,12 @@ var CHESTS_DATA = [
     "note": "戦闘あり開扉: 石",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_4.html",
+    "shanilPlace": "ピラミッド４",
+    "shanilMark": "④",
+    "shanilItem": "ミーロリ銀貨×６(宝)ハモニック金貨×５(宝)ブラックシェル(宝)みみせん(宝)",
+    "diffNote": "相川氏サイト表記:「ミーロリ銀貨×６(宝)ハモニック金貨×５(宝)ブラックシェル(宝)みみせん(宝)」"
   },
   {
     "id": "chest_227",
@@ -14041,7 +15171,12 @@ var CHESTS_DATA = [
     "note": "戦闘あり開扉: 石",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_4.html",
+    "shanilPlace": "ピラミッド４",
+    "shanilMark": "④",
+    "shanilItem": "ミーロリ銀貨×６(宝)ハモニック金貨×５(宝)ブラックシェル(宝)みみせん(宝)",
+    "diffNote": "相川氏サイト表記:「ミーロリ銀貨×６(宝)ハモニック金貨×５(宝)ブラックシェル(宝)みみせん(宝)」"
   },
   {
     "id": "chest_228",
@@ -14055,7 +15190,12 @@ var CHESTS_DATA = [
     "note": "戦闘あり開扉: 石獣",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_4.html",
+    "shanilPlace": "ピラミッド４",
+    "shanilMark": "④",
+    "shanilItem": "ミーロリ銀貨×６(宝)ハモニック金貨×５(宝)ブラックシェル(宝)みみせん(宝)",
+    "diffNote": "相川氏サイト表記:「ミーロリ銀貨×６(宝)ハモニック金貨×５(宝)ブラックシェル(宝)みみせん(宝)」"
   },
   {
     "id": "chest_229",
@@ -14069,7 +15209,12 @@ var CHESTS_DATA = [
     "note": "戦闘あり開扉: 石古",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_4.html",
+    "shanilPlace": "ピラミッド４",
+    "shanilMark": "④",
+    "shanilItem": "ミーロリ銀貨×６(宝)ハモニック金貨×５(宝)ブラックシェル(宝)みみせん(宝)",
+    "diffNote": "相川氏サイト表記:「ミーロリ銀貨×６(宝)ハモニック金貨×５(宝)ブラックシェル(宝)みみせん(宝)」"
   },
   {
     "id": "chest_230",
@@ -14083,7 +15228,12 @@ var CHESTS_DATA = [
     "note": "戦闘あり開扉: 雷",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_4.html",
+    "shanilPlace": "ピラミッド５",
+    "shanilMark": "⑤",
+    "shanilItem": "ラシモフ銀貨×１０(宝)クレセント銀貨×１３(宝)",
+    "diffNote": "相川氏サイト表記:「ラシモフ銀貨×１０(宝)クレセント銀貨×１３(宝)」"
   },
   {
     "id": "chest_231",
@@ -14097,7 +15247,12 @@ var CHESTS_DATA = [
     "note": "戦闘あり開扉: 風",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_4.html",
+    "shanilPlace": "ピラミッド５",
+    "shanilMark": "⑤",
+    "shanilItem": "ラシモフ銀貨×１０(宝)クレセント銀貨×１３(宝)",
+    "diffNote": "相川氏サイト表記:「ラシモフ銀貨×１０(宝)クレセント銀貨×１３(宝)」"
   },
   {
     "id": "chest_232",
@@ -14111,7 +15266,12 @@ var CHESTS_DATA = [
     "note": "戦闘あり",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_4.html",
+    "shanilPlace": "ピラミッド６",
+    "shanilMark": "⑥",
+    "shanilItem": "石の魚(宝)まつぼっくり×１３(宝)キャムティ金貨×６(宝)アルティ銀貨×１１(宝)",
+    "diffNote": "相川氏サイト表記:「石の魚(宝)まつぼっくり×１３(宝)キャムティ金貨×６(宝)アルティ銀貨×１１(宝)」"
   },
   {
     "id": "chest_233",
@@ -14125,7 +15285,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_4.html",
+    "shanilPlace": "ピラミッド６",
+    "shanilMark": "⑥",
+    "shanilItem": "石の魚(宝)まつぼっくり×１３(宝)キャムティ金貨×６(宝)アルティ銀貨×１１(宝)",
+    "diffNote": "相川氏サイト表記:「石の魚(宝)まつぼっくり×１３(宝)キャムティ金貨×６(宝)アルティ銀貨×１１(宝)」"
   },
   {
     "id": "chest_234",
@@ -14139,7 +15304,12 @@ var CHESTS_DATA = [
     "note": "戦闘あり開扉: 古",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_4.html",
+    "shanilPlace": "ピラミッド６",
+    "shanilMark": "⑥",
+    "shanilItem": "石の魚(宝)まつぼっくり×１３(宝)キャムティ金貨×６(宝)アルティ銀貨×１１(宝)",
+    "diffNote": "相川氏サイト表記:「石の魚(宝)まつぼっくり×１３(宝)キャムティ金貨×６(宝)アルティ銀貨×１１(宝)」"
   },
   {
     "id": "chest_235",
@@ -14153,7 +15323,12 @@ var CHESTS_DATA = [
     "note": "戦闘あり開扉: 音",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_4.html",
+    "shanilPlace": "ピラミッド６",
+    "shanilMark": "⑥",
+    "shanilItem": "石の魚(宝)まつぼっくり×１３(宝)キャムティ金貨×６(宝)アルティ銀貨×１１(宝)",
+    "diffNote": "相川氏サイト表記:「石の魚(宝)まつぼっくり×１３(宝)キャムティ金貨×６(宝)アルティ銀貨×１１(宝)」"
   },
   {
     "id": "chest_236",
@@ -14167,7 +15342,12 @@ var CHESTS_DATA = [
     "note": "戦闘あり開扉: 木",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_4.html",
+    "shanilPlace": "ピラミッド７",
+    "shanilMark": "⑦",
+    "shanilItem": "こんにゃくイモ(宝)デイモンリング(宝)光るキララ(宝)",
+    "diffNote": "相川氏サイト表記:「こんにゃくイモ(宝)デイモンリング(宝)光るキララ(宝)」"
   },
   {
     "id": "chest_237",
@@ -14181,7 +15361,12 @@ var CHESTS_DATA = [
     "note": "戦闘あり開扉: 木虫",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_4.html",
+    "shanilPlace": "ピラミッド７",
+    "shanilMark": "⑦",
+    "shanilItem": "こんにゃくイモ(宝)デイモンリング(宝)光るキララ(宝)",
+    "diffNote": "相川氏サイト表記:「こんにゃくイモ(宝)デイモンリング(宝)光るキララ(宝)」"
   },
   {
     "id": "chest_238",
@@ -14195,7 +15380,12 @@ var CHESTS_DATA = [
     "note": "戦闘あり開扉: 木毒",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_4.html",
+    "shanilPlace": "ピラミッド７",
+    "shanilMark": "⑦",
+    "shanilItem": "こんにゃくイモ(宝)デイモンリング(宝)光るキララ(宝)",
+    "diffNote": "相川氏サイト表記:「こんにゃくイモ(宝)デイモンリング(宝)光るキララ(宝)」"
   },
   {
     "id": "chest_239",
@@ -14209,7 +15399,12 @@ var CHESTS_DATA = [
     "note": "戦闘あり開扉: 刃毒光",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_4.html",
+    "shanilPlace": "ピラミッド８",
+    "shanilMark": "⑧",
+    "shanilItem": "ヘビーメタル(宝)カシスの実(宝)ガラスのくつ(宝)ダイヤモンド（宝）",
+    "diffNote": "相川氏サイト表記:「ヘビーメタル(宝)カシスの実(宝)ガラスのくつ(宝)ダイヤモンド（宝）」"
   },
   {
     "id": "chest_240",
@@ -14223,7 +15418,12 @@ var CHESTS_DATA = [
     "note": "戦闘あり開扉: 刃毒愛",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_4.html",
+    "shanilPlace": "ピラミッド８",
+    "shanilMark": "⑧",
+    "shanilItem": "ヘビーメタル(宝)カシスの実(宝)ガラスのくつ(宝)ダイヤモンド（宝）",
+    "diffNote": "相川氏サイト表記:「ヘビーメタル(宝)カシスの実(宝)ガラスのくつ(宝)ダイヤモンド（宝）」"
   },
   {
     "id": "chest_241",
@@ -14237,7 +15437,12 @@ var CHESTS_DATA = [
     "note": "戦闘あり開扉: 音虫美",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_4.html",
+    "shanilPlace": "ピラミッド８",
+    "shanilMark": "⑧",
+    "shanilItem": "ヘビーメタル(宝)カシスの実(宝)ガラスのくつ(宝)ダイヤモンド（宝）",
+    "diffNote": "相川氏サイト表記:「ヘビーメタル(宝)カシスの実(宝)ガラスのくつ(宝)ダイヤモンド（宝）」"
   },
   {
     "id": "chest_242",
@@ -14251,7 +15456,12 @@ var CHESTS_DATA = [
     "note": "戦闘あり開扉: 音虫闇",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_4.html",
+    "shanilPlace": "ピラミッド８",
+    "shanilMark": "⑧",
+    "shanilItem": "ヘビーメタル(宝)カシスの実(宝)ガラスのくつ(宝)ダイヤモンド（宝）",
+    "diffNote": "相川氏サイト表記:「ヘビーメタル(宝)カシスの実(宝)ガラスのくつ(宝)ダイヤモンド（宝）」"
   },
   {
     "id": "chest_243",
@@ -14265,7 +15475,12 @@ var CHESTS_DATA = [
     "note": "戦闘あり開扉: 刃毒光木愛",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_4.html",
+    "shanilPlace": "ピラミッド９",
+    "shanilMark": "⑨",
+    "shanilItem": "りゅうのヒゲ(宝)ドリアンの実(宝)パラボラ(宝)カエルのシャツ(宝)フローライト(宝)輝くキララ(宝)",
+    "diffNote": "相川氏サイト表記:「りゅうのヒゲ(宝)ドリアンの実(宝)パラボラ(宝)カエルのシャツ(宝)フローライト(宝)輝くキララ(宝)」"
   },
   {
     "id": "chest_244",
@@ -14279,7 +15494,12 @@ var CHESTS_DATA = [
     "note": "戦闘あり開扉: 刃毒光水古",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_4.html",
+    "shanilPlace": "ピラミッド９",
+    "shanilMark": "⑨",
+    "shanilItem": "りゅうのヒゲ(宝)ドリアンの実(宝)パラボラ(宝)カエルのシャツ(宝)フローライト(宝)輝くキララ(宝)",
+    "diffNote": "相川氏サイト表記:「りゅうのヒゲ(宝)ドリアンの実(宝)パラボラ(宝)カエルのシャツ(宝)フローライト(宝)輝くキララ(宝)」"
   },
   {
     "id": "chest_245",
@@ -14293,7 +15513,12 @@ var CHESTS_DATA = [
     "note": "戦闘あり開扉: 刃毒愛石風",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_4.html",
+    "shanilPlace": "ピラミッド９",
+    "shanilMark": "⑨",
+    "shanilItem": "りゅうのヒゲ(宝)ドリアンの実(宝)パラボラ(宝)カエルのシャツ(宝)フローライト(宝)輝くキララ(宝)",
+    "diffNote": "相川氏サイト表記:「りゅうのヒゲ(宝)ドリアンの実(宝)パラボラ(宝)カエルのシャツ(宝)フローライト(宝)輝くキララ(宝)」"
   },
   {
     "id": "chest_246",
@@ -14307,7 +15532,12 @@ var CHESTS_DATA = [
     "note": "戦闘あり開扉: 刃毒愛雷音",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_4.html",
+    "shanilPlace": "ピラミッド９",
+    "shanilMark": "⑨",
+    "shanilItem": "りゅうのヒゲ(宝)ドリアンの実(宝)パラボラ(宝)カエルのシャツ(宝)フローライト(宝)輝くキララ(宝)",
+    "diffNote": "相川氏サイト表記:「りゅうのヒゲ(宝)ドリアンの実(宝)パラボラ(宝)カエルのシャツ(宝)フローライト(宝)輝くキララ(宝)」"
   },
   {
     "id": "chest_247",
@@ -14321,7 +15551,12 @@ var CHESTS_DATA = [
     "note": "戦闘あり開扉: 刃毒光木",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilPlace": "ピラミッド９",
+    "shanilMark": "⑨",
+    "shanilItem": "りゅうのヒゲ(宝)",
+    "diffNote": "アイテム名表記ゆれ（Wiki: りゅうのひげ / 相川氏: りゅうのヒゲ）",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_4.html"
   },
   {
     "id": "chest_248",
@@ -14335,7 +15570,12 @@ var CHESTS_DATA = [
     "note": "戦闘あり開扉: 刃毒光水",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_4.html",
+    "shanilPlace": "ピラミッド９",
+    "shanilMark": "⑨",
+    "shanilItem": "りゅうのヒゲ(宝)ドリアンの実(宝)パラボラ(宝)カエルのシャツ(宝)フローライト(宝)輝くキララ(宝)",
+    "diffNote": "相川氏サイト表記:「りゅうのヒゲ(宝)ドリアンの実(宝)パラボラ(宝)カエルのシャツ(宝)フローライト(宝)輝くキララ(宝)」"
   },
   {
     "id": "chest_249",
@@ -14349,7 +15589,12 @@ var CHESTS_DATA = [
     "note": "戦闘あり開扉: 音虫美水毒",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_4.html",
+    "shanilPlace": "ピラミッド１０",
+    "shanilMark": "⑩",
+    "shanilItem": "シルバーシェル(宝)ニャムワーム（宝）スーパーアフロ（宝）イヌハナ（宝）オリハルコン（宝）楽園ブーツ（宝）",
+    "diffNote": "相川氏サイト表記:「シルバーシェル(宝)ニャムワーム（宝）スーパーアフロ（宝）イヌハナ（宝）オリハルコン（宝）楽園ブーツ（宝）」"
   },
   {
     "id": "chest_250",
@@ -14363,7 +15608,12 @@ var CHESTS_DATA = [
     "note": "戦闘あり開扉: 音虫美雷闇",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_4.html",
+    "shanilPlace": "ピラミッド１０",
+    "shanilMark": "⑩",
+    "shanilItem": "シルバーシェル(宝)ニャムワーム（宝）スーパーアフロ（宝）イヌハナ（宝）オリハルコン（宝）楽園ブーツ（宝）",
+    "diffNote": "相川氏サイト表記:「シルバーシェル(宝)ニャムワーム（宝）スーパーアフロ（宝）イヌハナ（宝）オリハルコン（宝）楽園ブーツ（宝）」"
   },
   {
     "id": "chest_251",
@@ -14377,7 +15627,12 @@ var CHESTS_DATA = [
     "note": "戦闘あり開扉: 音虫闇風",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_4.html",
+    "shanilPlace": "ピラミッド１０",
+    "shanilMark": "⑩",
+    "shanilItem": "シルバーシェル(宝)ニャムワーム（宝）スーパーアフロ（宝）イヌハナ（宝）オリハルコン（宝）楽園ブーツ（宝）",
+    "diffNote": "相川氏サイト表記:「シルバーシェル(宝)ニャムワーム（宝）スーパーアフロ（宝）イヌハナ（宝）オリハルコン（宝）楽園ブーツ（宝）」"
   },
   {
     "id": "chest_252",
@@ -14391,7 +15646,12 @@ var CHESTS_DATA = [
     "note": "戦闘あり開扉: 音虫闇風刃",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_4.html",
+    "shanilPlace": "ピラミッド１０",
+    "shanilMark": "⑩",
+    "shanilItem": "シルバーシェル(宝)ニャムワーム（宝）スーパーアフロ（宝）イヌハナ（宝）オリハルコン（宝）楽園ブーツ（宝）",
+    "diffNote": "相川氏サイト表記:「シルバーシェル(宝)ニャムワーム（宝）スーパーアフロ（宝）イヌハナ（宝）オリハルコン（宝）楽園ブーツ（宝）」"
   },
   {
     "id": "chest_253",
@@ -14405,7 +15665,12 @@ var CHESTS_DATA = [
     "note": "戦闘あり開扉: 音虫闇火",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_4.html",
+    "shanilPlace": "ピラミッド１０",
+    "shanilMark": "⑩",
+    "shanilItem": "シルバーシェル(宝)ニャムワーム（宝）スーパーアフロ（宝）イヌハナ（宝）オリハルコン（宝）楽園ブーツ（宝）",
+    "diffNote": "相川氏サイト表記:「シルバーシェル(宝)ニャムワーム（宝）スーパーアフロ（宝）イヌハナ（宝）オリハルコン（宝）楽園ブーツ（宝）」"
   },
   {
     "id": "chest_254",
@@ -14419,7 +15684,12 @@ var CHESTS_DATA = [
     "note": "戦闘あり開扉: 音虫闇火光",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_4.html",
+    "shanilPlace": "ピラミッド１０",
+    "shanilMark": "⑩",
+    "shanilItem": "シルバーシェル(宝)ニャムワーム（宝）スーパーアフロ（宝）イヌハナ（宝）オリハルコン（宝）楽園ブーツ（宝）",
+    "diffNote": "相川氏サイト表記:「シルバーシェル(宝)ニャムワーム（宝）スーパーアフロ（宝）イヌハナ（宝）オリハルコン（宝）楽園ブーツ（宝）」"
   },
   {
     "id": "chest_255",
@@ -14433,7 +15703,12 @@ var CHESTS_DATA = [
     "note": "戦闘あり",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_4.html",
+    "shanilPlace": "ピラミッド１１",
+    "shanilMark": "⑪",
+    "shanilItem": "でこぼこはっぱ×３(宝)モヒカンヘルム(宝)ギザギザはっぱ×３(宝)クォーツレンズ(宝)",
+    "diffNote": "相川氏サイト表記:「でこぼこはっぱ×３(宝)モヒカンヘルム(宝)ギザギザはっぱ×３(宝)クォーツレンズ(宝)」"
   },
   {
     "id": "chest_256",
@@ -14447,7 +15722,12 @@ var CHESTS_DATA = [
     "note": "戦闘あり",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_4.html",
+    "shanilPlace": "ピラミッド１１",
+    "shanilMark": "⑪",
+    "shanilItem": "でこぼこはっぱ×３(宝)モヒカンヘルム(宝)ギザギザはっぱ×３(宝)クォーツレンズ(宝)",
+    "diffNote": "相川氏サイト表記:「でこぼこはっぱ×３(宝)モヒカンヘルム(宝)ギザギザはっぱ×３(宝)クォーツレンズ(宝)」"
   },
   {
     "id": "chest_257",
@@ -14461,7 +15741,12 @@ var CHESTS_DATA = [
     "note": "戦闘あり",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_4.html",
+    "shanilPlace": "ピラミッド１１",
+    "shanilMark": "⑪",
+    "shanilItem": "でこぼこはっぱ×３(宝)モヒカンヘルム(宝)ギザギザはっぱ×３(宝)クォーツレンズ(宝)",
+    "diffNote": "相川氏サイト表記:「でこぼこはっぱ×３(宝)モヒカンヘルム(宝)ギザギザはっぱ×３(宝)クォーツレンズ(宝)」"
   },
   {
     "id": "chest_258",
@@ -14475,7 +15760,12 @@ var CHESTS_DATA = [
     "note": "戦闘あり",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_4.html",
+    "shanilPlace": "ピラミッド１１",
+    "shanilMark": "⑪",
+    "shanilItem": "でこぼこはっぱ×３(宝)モヒカンヘルム(宝)ギザギザはっぱ×３(宝)クォーツレンズ(宝)",
+    "diffNote": "相川氏サイト表記:「でこぼこはっぱ×３(宝)モヒカンヘルム(宝)ギザギザはっぱ×３(宝)クォーツレンズ(宝)」"
   },
   {
     "id": "chest_259",
@@ -14489,7 +15779,12 @@ var CHESTS_DATA = [
     "note": "ピラミッド１１中央の隠し通路から進入",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_4.html",
+    "shanilPlace": "ピラミッド１２",
+    "shanilMark": "⑫",
+    "shanilItem": "オストリッチ(宝)バグボム×３(宝)",
+    "diffNote": "相川氏サイト表記:「オストリッチ(宝)バグボム×３(宝)」"
   },
   {
     "id": "chest_260",
@@ -14503,7 +15798,12 @@ var CHESTS_DATA = [
     "note": "〃",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_4.html",
+    "shanilPlace": "ピラミッド１２",
+    "shanilMark": "⑫",
+    "shanilItem": "オストリッチ(宝)バグボム×３(宝)",
+    "diffNote": "相川氏サイト表記:「オストリッチ(宝)バグボム×３(宝)」"
   },
   {
     "id": "chest_261",
@@ -14517,7 +15817,12 @@ var CHESTS_DATA = [
     "note": "ここまでの全やさぐれドワーフも起こした場合に出現。これ以外の段数での拾得物はずんどこ穴を参照",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilPlace": "※ずんどこ穴（2人目救出）",
+    "shanilMark": "④",
+    "shanilItem": "やさぐれたドワーフ二人・フォースブーツ(宝)",
+    "diffNote": "Wikiでは「荒廃の地(～ラキューオ)」に分類されているが実際はずんどこ穴の宝箱。相川氏ではクムヤムト砂漠編に掲載",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_5.html"
   },
   {
     "id": "chest_262",
@@ -14531,7 +15836,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_5.html",
+    "shanilPlace": "ラキューオ１",
+    "shanilMark": "①",
+    "shanilItem": "キャムティ金貨×２(宝)",
+    "diffNote": "相川氏サイト表記:「キャムティ金貨×２(宝)」"
   },
   {
     "id": "chest_263",
@@ -14545,7 +15855,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_5.html",
+    "shanilPlace": "ラキューオ４",
+    "shanilMark": "④",
+    "shanilItem": "こんにゃくイモ(宝)",
+    "diffNote": null
   },
   {
     "id": "chest_264",
@@ -14559,7 +15874,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_5.html",
+    "shanilPlace": "ラキューオ５",
+    "shanilMark": "⑤",
+    "shanilItem": "光のシール(宝)スーパーアフロ(宝)",
+    "diffNote": "相川氏サイト表記:「光のシール(宝)スーパーアフロ(宝)」"
   },
   {
     "id": "chest_265",
@@ -14573,7 +15893,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_5.html",
+    "shanilPlace": "ラキューオ６",
+    "shanilMark": "⑥",
+    "shanilItem": "みみせん(宝)",
+    "diffNote": null
   },
   {
     "id": "chest_266",
@@ -14587,7 +15912,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_6.html",
+    "shanilPlace": "死の回廊３",
+    "shanilMark": "③",
+    "shanilItem": "皮ひも(宝)",
+    "diffNote": null
   },
   {
     "id": "chest_267",
@@ -14601,7 +15931,12 @@ var CHESTS_DATA = [
     "note": "5つ並んでる宝箱の一番左",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilPlace": "死の回廊・出口",
+    "shanilMark": "③",
+    "shanilItem": "皮ひも(宝)",
+    "diffNote": "Wikiでは「暗闇の地」に分類されているが場所は「死の回廊・出口」。相川氏では死の回廊編（e_6.html）に掲載",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_7.html"
   },
   {
     "id": "chest_268",
@@ -14615,7 +15950,12 @@ var CHESTS_DATA = [
     "note": "暗闇の地２右下から進入",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_7.html",
+    "shanilPlace": "暗闇の地１",
+    "shanilMark": "①",
+    "shanilItem": "アルティ銀貨（落）ガニック金貨×２(宝)",
+    "diffNote": "相川氏サイト表記:「アルティ銀貨（落）ガニック金貨×２(宝)」"
   },
   {
     "id": "chest_269",
@@ -14629,7 +15969,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_7.html",
+    "shanilPlace": "暗闇の地２",
+    "shanilMark": "②",
+    "shanilItem": "ヘビーメタル(宝)でこぼこはっぱ（落）イボイボはっぱ（落）",
+    "diffNote": "相川氏サイト表記:「ヘビーメタル(宝)でこぼこはっぱ（落）イボイボはっぱ（落）」"
   },
   {
     "id": "chest_270",
@@ -14643,7 +15988,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_7.html",
+    "shanilPlace": "暗闇の地４",
+    "shanilMark": "④",
+    "shanilItem": "クレセント銀貨×３(宝)",
+    "diffNote": "相川氏サイト表記:「クレセント銀貨×３(宝)」"
   },
   {
     "id": "chest_271",
@@ -14657,7 +16007,12 @@ var CHESTS_DATA = [
     "note": "暗闇の地３左上の隠し通路から進入",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_7.html",
+    "shanilPlace": "暗闇の地５",
+    "shanilMark": "⑤",
+    "shanilItem": "ガラスのくつ(宝)セキナのしっぽ×６(宝)",
+    "diffNote": "相川氏サイト表記:「ガラスのくつ(宝)セキナのしっぽ×６(宝)」"
   },
   {
     "id": "chest_272",
@@ -14671,7 +16026,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_7.html",
+    "shanilPlace": "暗闇の地５",
+    "shanilMark": "⑤",
+    "shanilItem": "ガラスのくつ(宝)セキナのしっぽ×６(宝)",
+    "diffNote": "相川氏サイト表記:「ガラスのくつ(宝)セキナのしっぽ×６(宝)」"
   },
   {
     "id": "chest_273",
@@ -14685,7 +16045,12 @@ var CHESTS_DATA = [
     "note": "暗闇の地５左上から進入",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_7.html",
+    "shanilPlace": "失意の沼１",
+    "shanilMark": "①",
+    "shanilItem": "パラボラ(宝)ガニック金貨×２(宝)",
+    "diffNote": "相川氏サイト表記:「パラボラ(宝)ガニック金貨×２(宝)」"
   },
   {
     "id": "chest_274",
@@ -14699,7 +16064,12 @@ var CHESTS_DATA = [
     "note": "失意の沼２左上から進入",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_7.html",
+    "shanilPlace": "暗闇の地１",
+    "shanilMark": "①",
+    "shanilItem": "アルティ銀貨（落）ガニック金貨×２(宝)",
+    "diffNote": "相川氏サイト表記:「アルティ銀貨（落）ガニック金貨×２(宝)」"
   },
   {
     "id": "chest_275",
@@ -14713,7 +16083,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_7.html",
+    "shanilPlace": "失意の沼２",
+    "shanilMark": "②",
+    "shanilItem": "こんにゃくイモ(宝)こんにゃくイモ(宝)",
+    "diffNote": "相川氏サイト表記:「こんにゃくイモ(宝)こんにゃくイモ(宝)」"
   },
   {
     "id": "chest_276",
@@ -14727,7 +16102,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_7.html",
+    "shanilPlace": "失意の沼２",
+    "shanilMark": "②",
+    "shanilItem": "こんにゃくイモ(宝)こんにゃくイモ(宝)",
+    "diffNote": "相川氏サイト表記:「こんにゃくイモ(宝)こんにゃくイモ(宝)」"
   },
   {
     "id": "chest_277",
@@ -14741,7 +16121,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_7.html",
+    "shanilPlace": "失意の沼１",
+    "shanilMark": "①",
+    "shanilItem": "セキナのしっぽ×７(宝)",
+    "diffNote": "相川氏サイト表記:「セキナのしっぽ×７(宝)」"
   },
   {
     "id": "chest_278",
@@ -14755,7 +16140,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_8.html",
+    "shanilPlace": "モギナス魔窟１",
+    "shanilMark": "①",
+    "shanilItem": "クレセント銀貨×３(宝)",
+    "diffNote": "相川氏サイト表記:「クレセント銀貨×３(宝)」"
   },
   {
     "id": "chest_279",
@@ -14769,7 +16159,12 @@ var CHESTS_DATA = [
     "note": "3つ並んでる宝箱の真ん中",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_8.html",
+    "shanilPlace": "モギナス魔窟２",
+    "shanilMark": "②",
+    "shanilItem": "楽園ブーツ(宝)フッカのしっぽ×８(宝)",
+    "diffNote": "相川氏サイト表記:「楽園ブーツ(宝)フッカのしっぽ×８(宝)」"
   },
   {
     "id": "chest_280",
@@ -14783,7 +16178,12 @@ var CHESTS_DATA = [
     "note": "2つ並んでる宝箱の右",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_8.html",
+    "shanilPlace": "モギナス魔窟２",
+    "shanilMark": "②",
+    "shanilItem": "楽園ブーツ(宝)フッカのしっぽ×８(宝)",
+    "diffNote": "相川氏サイト表記:「楽園ブーツ(宝)フッカのしっぽ×８(宝)」"
   },
   {
     "id": "chest_281",
@@ -14797,7 +16197,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_8.html",
+    "shanilPlace": "モギナス魔窟３",
+    "shanilMark": "③",
+    "shanilItem": "スーパーアフロ(宝)デイモンリング×３(宝)キャムティ金貨（落）",
+    "diffNote": "相川氏サイト表記:「スーパーアフロ(宝)デイモンリング×３(宝)キャムティ金貨（落）」"
   },
   {
     "id": "chest_282",
@@ -14811,7 +16216,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_8.html",
+    "shanilPlace": "モギナス魔窟３",
+    "shanilMark": "③",
+    "shanilItem": "スーパーアフロ(宝)デイモンリング×３(宝)キャムティ金貨（落）",
+    "diffNote": "相川氏サイト表記:「スーパーアフロ(宝)デイモンリング×３(宝)キャムティ金貨（落）」"
   },
   {
     "id": "chest_283",
@@ -14825,7 +16235,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_8.html",
+    "shanilPlace": "モギナス魔窟４",
+    "shanilMark": "④",
+    "shanilItem": "カエルのシャツ(宝)",
+    "diffNote": null
   },
   {
     "id": "chest_284",
@@ -14839,7 +16254,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_8.html",
+    "shanilPlace": "モギナス魔窟６",
+    "shanilMark": "⑥",
+    "shanilItem": "ブラックシェル(宝)あなあきはっぱ（落）",
+    "diffNote": "相川氏サイト表記:「ブラックシェル(宝)あなあきはっぱ（落）」"
   },
   {
     "id": "chest_285",
@@ -14853,7 +16273,12 @@ var CHESTS_DATA = [
     "note": "2つ並んでる宝箱の左",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_8.html",
+    "shanilPlace": "モギナス魔窟７",
+    "shanilMark": "⑦",
+    "shanilItem": "バグボム×３(宝)ドラゴンシェル(宝)りゅうのひげ(宝)ルビー(宝)",
+    "diffNote": "相川氏サイト表記:「バグボム×３(宝)ドラゴンシェル(宝)りゅうのひげ(宝)ルビー(宝)」"
   },
   {
     "id": "chest_286",
@@ -14867,7 +16292,12 @@ var CHESTS_DATA = [
     "note": "2つある宝箱のうち右",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_8.html",
+    "shanilPlace": "モギナス魔窟７",
+    "shanilMark": "⑦",
+    "shanilItem": "バグボム×３(宝)ドラゴンシェル(宝)りゅうのひげ(宝)ルビー(宝)",
+    "diffNote": "相川氏サイト表記:「バグボム×３(宝)ドラゴンシェル(宝)りゅうのひげ(宝)ルビー(宝)」"
   },
   {
     "id": "chest_287",
@@ -14881,7 +16311,12 @@ var CHESTS_DATA = [
     "note": "2つ並んでる宝箱の左",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_8.html",
+    "shanilPlace": "モギナス魔窟７",
+    "shanilMark": "⑦",
+    "shanilItem": "バグボム×３(宝)ドラゴンシェル(宝)りゅうのひげ(宝)ルビー(宝)",
+    "diffNote": "相川氏サイト表記:「バグボム×３(宝)ドラゴンシェル(宝)りゅうのひげ(宝)ルビー(宝)」"
   },
   {
     "id": "chest_288",
@@ -14895,7 +16330,12 @@ var CHESTS_DATA = [
     "note": "モギナス魔窟８から進入",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_8.html",
+    "shanilPlace": "モギナス魔窟７",
+    "shanilMark": "⑦",
+    "shanilItem": "バグボム×３(宝)ドラゴンシェル(宝)りゅうのひげ(宝)ルビー(宝)",
+    "diffNote": "相川氏サイト表記:「バグボム×３(宝)ドラゴンシェル(宝)りゅうのひげ(宝)ルビー(宝)」"
   },
   {
     "id": "chest_289",
@@ -14909,7 +16349,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_8.html",
+    "shanilPlace": "モギナス魔窟９",
+    "shanilMark": "⑨",
+    "shanilItem": "こんにゃくイモ(宝)イヌハナ(宝)",
+    "diffNote": "相川氏サイト表記:「こんにゃくイモ(宝)イヌハナ(宝)」"
   },
   {
     "id": "chest_290",
@@ -14923,7 +16368,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_8.html",
+    "shanilPlace": "モギナス魔窟９",
+    "shanilMark": "⑨",
+    "shanilItem": "こんにゃくイモ(宝)イヌハナ(宝)",
+    "diffNote": "相川氏サイト表記:「こんにゃくイモ(宝)イヌハナ(宝)」"
   },
   {
     "id": "chest_291",
@@ -14937,7 +16387,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_8.html",
+    "shanilPlace": "モギナス魔窟１１",
+    "shanilMark": "⑪",
+    "shanilItem": "フローライト(宝)",
+    "diffNote": null
   },
   {
     "id": "chest_292",
@@ -14951,7 +16406,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_8.html",
+    "shanilPlace": "モギナス魔窟１４",
+    "shanilMark": "⑭",
+    "shanilItem": "マジックリスト(宝)セキナのしっぽ×５(宝)",
+    "diffNote": "相川氏サイト表記:「マジックリスト(宝)セキナのしっぽ×５(宝)」"
   },
   {
     "id": "chest_293",
@@ -14965,7 +16425,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/3",
+    "shanilUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_8.html",
+    "shanilPlace": "モギナス魔窟１４",
+    "shanilMark": "⑭",
+    "shanilItem": "マジックリスト(宝)セキナのしっぽ×５(宝)",
+    "diffNote": "相川氏サイト表記:「マジックリスト(宝)セキナのしっぽ×５(宝)」"
   },
   {
     "id": "chest_294",
@@ -14979,7 +16444,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_295",
@@ -14993,7 +16463,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_296",
@@ -15007,7 +16482,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_297",
@@ -15021,7 +16501,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_298",
@@ -15035,7 +16520,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_299",
@@ -15049,7 +16539,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_300",
@@ -15063,7 +16558,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_301",
@@ -15077,7 +16577,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_302",
@@ -15091,7 +16596,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_303",
@@ -15105,7 +16615,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_304",
@@ -15119,7 +16634,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_305",
@@ -15133,7 +16653,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_306",
@@ -15147,7 +16672,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_307",
@@ -15161,7 +16691,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_308",
@@ -15175,7 +16710,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_309",
@@ -15189,7 +16729,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_310",
@@ -15203,7 +16748,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_311",
@@ -15217,7 +16767,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_312",
@@ -15231,7 +16786,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_313",
@@ -15245,7 +16805,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_314",
@@ -15259,7 +16824,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_315",
@@ -15273,7 +16843,12 @@ var CHESTS_DATA = [
     "note": "2つ並んでる宝箱の左",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_316",
@@ -15287,7 +16862,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_317",
@@ -15301,7 +16881,12 @@ var CHESTS_DATA = [
     "note": "2つ並んでる宝箱の左",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_318",
@@ -15315,7 +16900,12 @@ var CHESTS_DATA = [
     "note": "2つある宝箱のうち上開封後にバグが発生する場合がある",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_319",
@@ -15329,7 +16919,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_320",
@@ -15343,7 +16938,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_321",
@@ -15357,7 +16957,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_322",
@@ -15371,7 +16976,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_323",
@@ -15385,7 +16995,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_324",
@@ -15399,7 +17014,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_325",
@@ -15413,7 +17033,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_326",
@@ -15427,7 +17052,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_327",
@@ -15441,7 +17071,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_328",
@@ -15455,7 +17090,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_329",
@@ -15469,7 +17109,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_330",
@@ -15483,7 +17128,12 @@ var CHESTS_DATA = [
     "note": "5つある宝箱のうち左上所持金が最大(999999)の場合は入手不可",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_331",
@@ -15497,7 +17147,12 @@ var CHESTS_DATA = [
     "note": "5つある宝箱のうち中央",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_332",
@@ -15511,7 +17166,12 @@ var CHESTS_DATA = [
     "note": "5つある宝箱のうち右下",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_333",
@@ -15525,7 +17185,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_334",
@@ -15539,7 +17204,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_335",
@@ -15553,7 +17223,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_336",
@@ -15567,7 +17242,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_337",
@@ -15581,7 +17261,12 @@ var CHESTS_DATA = [
     "note": "2つある宝箱のうち左",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_338",
@@ -15595,7 +17280,12 @@ var CHESTS_DATA = [
     "note": "2つある宝箱のうち左",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_339",
@@ -15609,7 +17299,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_340",
@@ -15623,7 +17318,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_341",
@@ -15637,7 +17337,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_342",
@@ -15651,7 +17356,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_343",
@@ -15665,7 +17375,12 @@ var CHESTS_DATA = [
     "note": "3つある宝箱のうち左下",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_344",
@@ -15679,7 +17394,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_345",
@@ -15693,7 +17413,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_346",
@@ -15707,7 +17432,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_347",
@@ -15721,7 +17451,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_348",
@@ -15735,7 +17470,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_349",
@@ -15749,7 +17489,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_350",
@@ -15763,7 +17508,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_351",
@@ -15777,7 +17527,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_352",
@@ -15791,7 +17546,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_353",
@@ -15805,7 +17565,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_354",
@@ -15819,7 +17584,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_355",
@@ -15833,7 +17603,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_356",
@@ -15847,7 +17622,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_357",
@@ -15861,7 +17641,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_358",
@@ -15875,7 +17660,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_359",
@@ -15889,7 +17679,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_360",
@@ -15903,7 +17698,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_361",
@@ -15917,7 +17717,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_362",
@@ -15931,7 +17736,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_363",
@@ -15945,7 +17755,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_364",
@@ -15959,7 +17774,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_365",
@@ -15973,7 +17793,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_366",
@@ -15987,7 +17812,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_367",
@@ -16001,7 +17831,12 @@ var CHESTS_DATA = [
     "note": "2つある宝箱のうち左",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_368",
@@ -16015,7 +17850,12 @@ var CHESTS_DATA = [
     "note": "2つある宝箱のうち左",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_369",
@@ -16029,7 +17869,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_370",
@@ -16043,7 +17888,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_371",
@@ -16057,7 +17907,12 @@ var CHESTS_DATA = [
     "note": "2つある宝箱のうち左",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_372",
@@ -16071,7 +17926,12 @@ var CHESTS_DATA = [
     "note": "2つある宝箱のうち左",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_373",
@@ -16085,7 +17945,12 @@ var CHESTS_DATA = [
     "note": "5つ並んでる宝箱の左から2番目",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_374",
@@ -16099,7 +17964,12 @@ var CHESTS_DATA = [
     "note": "2つ並んでる宝箱の左",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_375",
@@ -16113,7 +17983,12 @@ var CHESTS_DATA = [
     "note": "2つある宝箱のうち左所持金が最大(999999)の場合は入手不可",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_376",
@@ -16127,7 +18002,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_377",
@@ -16141,7 +18021,12 @@ var CHESTS_DATA = [
     "note": "2つある宝箱のうち右",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_378",
@@ -16155,7 +18040,12 @@ var CHESTS_DATA = [
     "note": "2つある宝箱のうち右",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_379",
@@ -16169,7 +18059,12 @@ var CHESTS_DATA = [
     "note": "2つある宝箱のうち左",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_380",
@@ -16183,7 +18078,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_381",
@@ -16197,7 +18097,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_382",
@@ -16211,7 +18116,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_383",
@@ -16225,7 +18135,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_384",
@@ -16239,7 +18154,12 @@ var CHESTS_DATA = [
     "note": "4つある宝箱のうち右下",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_385",
@@ -16253,7 +18173,12 @@ var CHESTS_DATA = [
     "note": "4つある宝箱のうち左上",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_386",
@@ -16267,7 +18192,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_387",
@@ -16281,7 +18211,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_388",
@@ -16295,7 +18230,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_389",
@@ -16309,7 +18249,12 @@ var CHESTS_DATA = [
     "note": "2つある宝箱のうち左",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_390",
@@ -16323,7 +18268,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_391",
@@ -16337,7 +18287,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_392",
@@ -16351,7 +18306,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_393",
@@ -16365,7 +18325,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_394",
@@ -16379,7 +18344,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_395",
@@ -16393,7 +18363,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_396",
@@ -16407,7 +18382,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_397",
@@ -16421,7 +18401,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_398",
@@ -16435,7 +18420,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_399",
@@ -16449,7 +18439,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_400",
@@ -16463,7 +18458,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_401",
@@ -16477,7 +18477,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_402",
@@ -16491,7 +18496,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_403",
@@ -16505,7 +18515,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_404",
@@ -16519,7 +18534,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_405",
@@ -16533,7 +18553,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_406",
@@ -16547,7 +18572,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_407",
@@ -16561,7 +18591,12 @@ var CHESTS_DATA = [
     "note": "2つある宝箱のうち上",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_408",
@@ -16575,7 +18610,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_409",
@@ -16589,7 +18629,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_410",
@@ -16603,7 +18648,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_411",
@@ -16617,7 +18667,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_412",
@@ -16631,7 +18686,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_413",
@@ -16645,7 +18705,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_414",
@@ -16659,7 +18724,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_415",
@@ -16673,7 +18743,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_416",
@@ -16687,7 +18762,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_417",
@@ -16701,7 +18781,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_418",
@@ -16715,7 +18800,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_419",
@@ -16729,7 +18819,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_420",
@@ -16743,7 +18838,12 @@ var CHESTS_DATA = [
     "note": "2つある宝箱のうち上",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_421",
@@ -16757,7 +18857,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_422",
@@ -16771,7 +18876,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_423",
@@ -16785,7 +18895,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_424",
@@ -16799,7 +18914,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_425",
@@ -16813,7 +18933,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_426",
@@ -16827,7 +18952,12 @@ var CHESTS_DATA = [
     "note": "2つある宝箱のうち左",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_427",
@@ -16841,7 +18971,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_428",
@@ -16855,7 +18990,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_429",
@@ -16869,7 +19009,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_430",
@@ -16883,7 +19028,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_431",
@@ -16897,7 +19047,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_432",
@@ -16911,7 +19066,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_433",
@@ -16925,7 +19085,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_434",
@@ -16939,7 +19104,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_435",
@@ -16953,7 +19123,12 @@ var CHESTS_DATA = [
     "note": "3つある宝箱のうち一番左",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_436",
@@ -16967,7 +19142,12 @@ var CHESTS_DATA = [
     "note": "3つある宝箱のうち一番右",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_437",
@@ -16981,7 +19161,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_438",
@@ -16995,7 +19180,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_439",
@@ -17009,7 +19199,12 @@ var CHESTS_DATA = [
     "note": "2つある宝箱のうち左",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_440",
@@ -17023,7 +19218,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_441",
@@ -17037,7 +19237,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_442",
@@ -17051,7 +19256,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_443",
@@ -17065,7 +19275,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_444",
@@ -17079,7 +19294,12 @@ var CHESTS_DATA = [
     "note": "マップ左下の隠し通路2つ並んでる宝箱の右",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_445",
@@ -17093,7 +19313,12 @@ var CHESTS_DATA = [
     "note": "マップ上の隠し通路",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_446",
@@ -17107,7 +19332,12 @@ var CHESTS_DATA = [
     "note": "マップ右の隠し通路5つ並んでる宝箱の一番上",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_447",
@@ -17121,7 +19351,12 @@ var CHESTS_DATA = [
     "note": "マップ下の隠し通路",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_448",
@@ -17135,7 +19370,12 @@ var CHESTS_DATA = [
     "note": "マップ左の隠し通路開封後マップ切替により外見が未開封になる(バグ)",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_449",
@@ -17149,7 +19389,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_450",
@@ -17163,7 +19408,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_451",
@@ -17177,7 +19427,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_452",
@@ -17191,7 +19446,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   },
   {
     "id": "chest_453",
@@ -17205,7 +19465,12 @@ var CHESTS_DATA = [
     "note": "",
     "missable": false,
     "missableReason": "",
-    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4"
+    "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E6%8B%BE%E5%BE%97%E7%89%A9/4",
+    "shanilPlace": null,
+    "shanilMark": null,
+    "shanilItem": null,
+    "diffNote": null,
+    "shanilUrl": null
   }
 ];
 
@@ -17265,7 +19530,6 @@ var CHESTS_META = {
   }
 };
 
-
 if (typeof window !== 'undefined') {
   window.CHESTS_DATA = CHESTS_DATA;
   window.CHESTS_META = CHESTS_META;
@@ -17278,6 +19542,530 @@ if (typeof module !== 'undefined' && module.exports) {
 
 // === CHEST MAP ASSETS ===
 const CHEST_MAP_ASSETS = {
+  "shanil": {
+    "キャンプ場（ウィルオウィスプ・ヴァレンシア海岸）": {
+        "sourceType": "shanil",
+        "sourceName": "相川ともき氏のマジカルバケーション攻略サイト",
+        "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_1.html",
+        "credit": "相川ともき氏のマジカルバケーション攻略サイト（許諾/情報提供に基づく攻略マップ引用）",
+        "maps": [
+            {
+                "id": "willowisp",
+                "label": "ウィルオウィスプ",
+                "file": "img/maps/shanil/map_willowisp.gif",
+                "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_1.html",
+                "desc": "キャンプ場・ウィルオウィスプ周辺マップ（①ヴァレンシア海岸方面、②学校）"
+            },
+            {
+                "id": "varensia",
+                "label": "ヴァレンシア海岸",
+                "file": "img/maps/shanil/map_varensia.gif",
+                "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_2.html",
+                "desc": "ヴァレンシア海岸マップ（①ウィルオウィスプ方面、②海岸洞窟）"
+            }
+        ]
+    },
+    "ミモレットの森": {
+        "sourceType": "shanil",
+        "sourceName": "相川ともき氏のマジカルバケーション攻略サイト",
+        "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_3.html",
+        "credit": "相川ともき氏のマジカルバケーション攻略サイト（許諾/情報提供に基づく攻略マップ引用）",
+        "maps": [
+            {
+                "id": "mimorett",
+                "label": "ミモレットの森〜森の洞窟",
+                "file": "img/maps/shanil/map_mimorett.gif",
+                "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_3.html",
+                "desc": "ミモレットの森・森の洞窟ダンジョンマップ（①〜③ミモレットの森、④森の洞窟入口）"
+            }
+        ]
+    },
+    "森の洞窟": {
+        "sourceType": "shanil",
+        "sourceName": "相川ともき氏のマジカルバケーション攻略サイト",
+        "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_3.html",
+        "credit": "相川ともき氏のマジカルバケーション攻略サイト（許諾/情報提供に基づく攻略マップ引用）",
+        "maps": [
+            {
+                "id": "mimorett_cave",
+                "label": "森の洞窟",
+                "file": "img/maps/shanil/map_mimorett.gif",
+                "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_3.html",
+                "desc": "森の洞窟ダンジョンマップ（⑤森の洞窟西、⑥小部屋、⑦森の洞窟東）"
+            }
+        ]
+    },
+    "トルーナ村": {
+        "sourceType": "shanil",
+        "sourceName": "相川ともき氏のマジカルバケーション攻略サイト",
+        "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_4.html",
+        "credit": "相川ともき氏のマジカルバケーション攻略サイト（許諾/情報提供に基づく攻略マップ引用）",
+        "maps": [
+            {
+                "id": "toruna",
+                "label": "トルーナ村（地下洞窟）",
+                "file": "img/maps/shanil/map_toruna.gif",
+                "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_4.html",
+                "desc": "トルーナ村地下洞窟マップ（①森の洞窟東出口、②トルーナ村入口、③村地下小部屋）"
+            }
+        ]
+    },
+    "ベナコンチャ遺跡": {
+        "sourceType": "shanil",
+        "sourceName": "相川ともき氏のマジカルバケーション攻略サイト",
+        "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_5.html",
+        "credit": "相川ともき氏のマジカルバケーション攻略サイト（許諾/情報提供に基づく攻略マップ引用）",
+        "maps": [
+            {
+                "id": "benakoncha",
+                "label": "ベナコンチャ遺跡 全域",
+                "file": "img/maps/shanil/map_benakoncha.gif",
+                "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_5.html",
+                "desc": "ベナコンチャ遺跡全域マップ（①遺跡中央、②東、③西、④北、⑤南西、⑥南、⑦南東）"
+            }
+        ]
+    },
+    "レーミッツ宮殿外": {
+        "sourceType": "shanil",
+        "sourceName": "相川ともき氏のマジカルバケーション攻略サイト",
+        "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_7.html",
+        "credit": "相川ともき氏のマジカルバケーション攻略サイト（許諾/情報提供に基づく攻略マップ引用）",
+        "maps": [
+            {
+                "id": "remitu_outer",
+                "label": "レーミッツ宮殿外・トピアリー",
+                "file": "img/maps/shanil/map_remitu.gif",
+                "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_7.html",
+                "desc": "レーミッツ全域マップ（①北東、②東、③南東、④宮殿門、⑤西、⑥南西、⑦トピアリーの迷宮）"
+            }
+        ]
+    },
+    "レーミッツ宮殿内": {
+        "sourceType": "shanil",
+        "sourceName": "相川ともき氏のマジカルバケーション攻略サイト",
+        "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_7.html",
+        "credit": "相川ともき氏のマジカルバケーション攻略サイト（許諾/情報提供に基づく攻略マップ引用）",
+        "maps": [
+            {
+                "id": "remitu_inner",
+                "label": "レーミッツ宮殿内部",
+                "file": "img/maps/shanil/map_remitu.gif",
+                "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_7.html",
+                "desc": "レーミッツ宮殿内部マップ（⑧入口、⑨応接間、⑩小部屋、⑪客間、⑫廊下、⑬西階段、⑭東階段、⑮東階段下、⑯西階段下、⑰西広場、⑱鳥の間、⑲地下入口、⑳休憩所、㉑地下）"
+            }
+        ]
+    },
+    "～ピップルスタウン": {
+        "sourceType": "shanil",
+        "sourceName": "相川ともき氏のマジカルバケーション攻略サイト",
+        "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_8.html",
+        "credit": "相川ともき氏のマジカルバケーション攻略サイト（許諾/情報提供に基づく攻略マップ引用）",
+        "maps": [
+            {
+                "id": "ibense",
+                "label": "イベンセ岩場〜ピップルスタウン",
+                "file": "img/maps/shanil/map_ibense.gif",
+                "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_8.html",
+                "desc": "イベンセ岩場〜ピップルスタウン道中マップ（①イベンセ岩場1、②ロッシュの川べり、③ロッシュの1本橋）"
+            }
+        ]
+    },
+    "ラ・ロッシュの塔": {
+        "sourceType": "shanil",
+        "sourceName": "相川ともき氏のマジカルバケーション攻略サイト",
+        "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_9.html",
+        "credit": "相川ともき氏のマジカルバケーション攻略サイト（許諾/情報提供に基づく攻略マップ引用）",
+        "maps": [
+            {
+                "id": "rosh",
+                "label": "ラ・ロッシュの塔",
+                "file": "img/maps/shanil/map_rosh.gif",
+                "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_9.html",
+                "desc": "ラ・ロッシュの塔マップ（①1F〜2F、②3F〜5F、③6F最上階）"
+            }
+        ]
+    },
+    "～ゲアラヴァ村": {
+        "sourceType": "shanil",
+        "sourceName": "相川ともき氏のマジカルバケーション攻略サイト",
+        "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_10.html",
+        "credit": "相川ともき氏のマジカルバケーション攻略サイト（許諾/情報提供に基づく攻略マップ引用）",
+        "maps": [
+            {
+                "id": "gearava",
+                "label": "ロッシュの1本橋〜ゲアラヴァ村",
+                "file": "img/maps/shanil/map_gearava.gif",
+                "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_10.html",
+                "desc": "ロッシュの1本橋〜ゲアラヴァ村マップ（①ロッシュの1本橋、②イベンセ岩場1、③ゲアラヴァ村）"
+            }
+        ]
+    },
+    "キードモンガ": {
+        "sourceType": "shanil",
+        "sourceName": "相川ともき氏のマジカルバケーション攻略サイト",
+        "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_11.html",
+        "credit": "相川ともき氏のマジカルバケーション攻略サイト（許諾/情報提供に基づく攻略マップ引用）",
+        "maps": [
+            {
+                "id": "kido",
+                "label": "キード・モンガ",
+                "file": "img/maps/shanil/map_kido.gif",
+                "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/l_11.html",
+                "desc": "キード・モンガダンジョンマップ（①〜⑫各フロア・洞穴）"
+            }
+        ]
+    },
+    "氷の島・ジェラ風穴": {
+        "sourceType": "shanil",
+        "sourceName": "相川ともき氏のマジカルバケーション攻略サイト",
+        "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_2.html",
+        "credit": "相川ともき氏のマジカルバケーション攻略サイト（許諾/情報提供に基づく攻略マップ引用）",
+        "maps": [
+            {
+                "id": "jyera",
+                "label": "ジェラ風穴",
+                "file": "img/maps/shanil/map_jyera.gif",
+                "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_2.html",
+                "desc": "ジェラ風穴マップ（①〜⑤風穴各層）"
+            },
+            {
+                "id": "masara",
+                "label": "マサラティ村・氷の島",
+                "file": "img/maps/shanil/map_masara.gif",
+                "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_2.html",
+                "desc": "マサラティ村〜氷の島周辺マップ"
+            }
+        ]
+    },
+    "タピオカティ村": {
+        "sourceType": "shanil",
+        "sourceName": "相川ともき氏のマジカルバケーション攻略サイト",
+        "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_3.html",
+        "credit": "相川ともき氏のマジカルバケーション攻略サイト（許諾/情報提供に基づく攻略マップ引用）",
+        "maps": [
+            {
+                "id": "rehi7",
+                "label": "レヒカフ沼周辺７",
+                "file": "img/maps/shanil/map_rehi7.png",
+                "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_3.html",
+                "desc": "レヒカフ沼周辺７マップ（タピオカティ村手前）"
+            },
+            {
+                "id": "tapioka",
+                "label": "タピオカティ村",
+                "file": "img/maps/shanil/map_tapioka.png",
+                "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_3.html",
+                "desc": "タピオカティ村集落マップ"
+            }
+        ]
+    },
+    "リギニオ密林": {
+        "sourceType": "shanil",
+        "sourceName": "相川ともき氏のマジカルバケーション攻略サイト",
+        "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_4.html",
+        "credit": "相川ともき氏のマジカルバケーション攻略サイト（許諾/情報提供に基づく攻略マップ引用）",
+        "maps": [
+            {
+                "id": "riginio_shanil",
+                "label": "リギニオ密林（相川ともき氏マップ）",
+                "file": "img/maps/shanil/map_riginio.png",
+                "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_4.html",
+                "desc": "リギニオ密林ダンジョンマップ（①〜⑧各ルートと宝箱配置）"
+            },
+            {
+                "id": "riginio_wiki",
+                "label": "リギニオ密林（Wikiマップ）",
+                "file": "img/maps/map_riginio.png",
+                "sourceUrl": "https://wikiwiki.jp/magivaca/%E3%83%AA%E3%82%AE%E3%83%8B%E3%82%AA%E5%AF%86%E6%9E%97",
+                "desc": "Wiki掲載のリギニオ密林フロア図"
+            }
+        ]
+    },
+    "クムヤムト砂漠": {
+        "sourceType": "shanil",
+        "sourceName": "相川ともき氏のマジカルバケーション攻略サイト",
+        "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_5.html",
+        "credit": "相川ともき氏のマジカルバケーション攻略サイト（許諾/情報提供に基づく攻略マップ引用）",
+        "maps": [
+            {
+                "id": "kumuyamuto",
+                "label": "クムヤムト砂漠",
+                "file": "img/maps/shanil/map_kumuyamuto.png",
+                "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_5.html",
+                "desc": "クムヤムト砂漠全域マップ（①〜③砂漠各所、ずんどこ穴入口）"
+            }
+        ]
+    },
+    "ずんどこ穴": {
+        "sourceType": "shanil",
+        "sourceName": "相川ともき氏のマジカルバケーション攻略サイト",
+        "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_5.html",
+        "credit": "相川ともき氏のマジカルバケーション攻略サイト（許諾/情報提供に基づく攻略マップ引用）",
+        "maps": [
+            {
+                "id": "zundoko",
+                "label": "クムヤムト砂漠（ずんどこ穴）",
+                "file": "img/maps/shanil/map_kumuyamuto.png",
+                "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_5.html",
+                "desc": "クムヤムト砂漠マップ（ずんどこ穴は砂漠内地下洞穴、ドワーフの救出人数で宝箱入手）"
+            }
+        ]
+    },
+    "アクアビット城": {
+        "sourceType": "shanil",
+        "sourceName": "相川ともき氏のマジカルバケーション攻略サイト",
+        "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_5.html",
+        "credit": "相川ともき氏のマジカルバケーション攻略サイト（許諾/情報提供に基づく攻略マップ引用）",
+        "maps": [
+            {
+                "id": "aquabit",
+                "label": "アクアビット城",
+                "file": "img/maps/shanil/map_aquabit.png",
+                "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_5.html",
+                "desc": "アクアビット城ダンジョンマップ（①〜④各フロア）"
+            }
+        ]
+    },
+    "エニグマの森": {
+        "sourceType": "shanil",
+        "sourceName": "相川ともき氏のマジカルバケーション攻略サイト",
+        "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_6.html",
+        "credit": "相川ともき氏のマジカルバケーション攻略サイト（許諾/情報提供に基づく攻略マップ引用）",
+        "maps": [
+            {
+                "id": "eniguma",
+                "label": "エニグマの森",
+                "file": "img/maps/shanil/map_eniguma.png",
+                "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_6.html",
+                "desc": "エニグマの森全域マップ（①カエル沼、②森北、③森沼、ツリーマン集落）"
+            }
+        ]
+    },
+    "東の森": {
+        "sourceType": "shanil",
+        "sourceName": "相川ともき氏のマジカルバケーション攻略サイト",
+        "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_7.html",
+        "credit": "相川ともき氏のマジカルバケーション攻略サイト（許諾/情報提供に基づく攻略マップ引用）",
+        "maps": [
+            {
+                "id": "higasinomori",
+                "label": "東の森",
+                "file": "img/maps/shanil/map_higasinomori.png",
+                "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_7.html",
+                "desc": "東の森ダンジョンマップ（①クガンテ村南、②ヒトデ花の原っぱ、③文鳥の里、④東の森2、⑤謎の遺跡、⑥モルビエ火山手前）"
+            }
+        ]
+    },
+    "モルビエ火山": {
+        "sourceType": "shanil",
+        "sourceName": "相川ともき氏のマジカルバケーション攻略サイト",
+        "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_8.html",
+        "credit": "相川ともき氏のマジカルバケーション攻略サイト（許諾/情報提供に基づく攻略マップ引用）",
+        "maps": [
+            {
+                "id": "morubie",
+                "label": "モルビエ火山",
+                "file": "img/maps/shanil/map_morubie.gif",
+                "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_8.html",
+                "desc": "モルビエ火山ダンジョンマップ（①火口入口、②〜④火道各層）"
+            }
+        ]
+    },
+    "バソリモ村": {
+        "sourceType": "shanil",
+        "sourceName": "相川ともき氏のマジカルバケーション攻略サイト",
+        "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_9.html",
+        "credit": "相川ともき氏のマジカルバケーション攻略サイト（許諾/情報提供に基づく攻略マップ引用）",
+        "maps": [
+            {
+                "id": "basorimo",
+                "label": "バソリモ村",
+                "file": "img/maps/shanil/map_basorimo.png",
+                "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_9.html",
+                "desc": "バソリモ村集落マップ（①村入口、②村広場、③民家、④キスニカ鉱山入口）"
+            }
+        ]
+    },
+    "ブラウニーの穴": {
+        "sourceType": "shanil",
+        "sourceName": "相川ともき氏のマジカルバケーション攻略サイト",
+        "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_9.html",
+        "credit": "相川ともき氏のマジカルバケーション攻略サイト（許諾/情報提供に基づく攻略マップ引用）",
+        "maps": [
+            {
+                "id": "brownie",
+                "label": "ブラウニーの穴",
+                "file": "img/maps/shanil/map_brownie.png",
+                "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_9.html",
+                "desc": "ブラウニーの穴ダンジョンマップ（①〜⑥各層）"
+            }
+        ]
+    },
+    "キスニカ鉱山": {
+        "sourceType": "shanil",
+        "sourceName": "相川ともき氏のマジカルバケーション攻略サイト",
+        "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_10.html",
+        "credit": "相川ともき氏のマジカルバケーション攻略サイト（許諾/情報提供に基づく攻略マップ引用）",
+        "maps": [
+            {
+                "id": "kisunika",
+                "label": "キスニカ鉱山",
+                "file": "img/maps/shanil/map_kisunika.png",
+                "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/d_10.html",
+                "desc": "キスニカ鉱山ダンジョンマップ（①〜⑪各坑道）"
+            }
+        ]
+    },
+    "タンドーリ": {
+        "sourceType": "shanil",
+        "sourceName": "相川ともき氏のマジカルバケーション攻略サイト",
+        "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_2.html",
+        "credit": "相川ともき氏のマジカルバケーション攻略サイト（許諾/情報提供に基づく攻略マップ引用）",
+        "maps": [
+            {
+                "id": "tandori",
+                "label": "タンドーリ",
+                "file": "img/maps/shanil/map_tandori.png",
+                "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_2.html",
+                "desc": "タンドーリ集落・周辺マップ（①〜⑤各区画）"
+            }
+        ]
+    },
+    "荒廃の地(～モイロロト村)": {
+        "sourceType": "shanil",
+        "sourceName": "相川ともき氏のマジカルバケーション攻略サイト",
+        "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_3.html",
+        "credit": "相川ともき氏のマジカルバケーション攻略サイト（許諾/情報提供に基づく攻略マップ引用）",
+        "maps": [
+            {
+                "id": "moiroroto",
+                "label": "荒廃の地２〜モイロロト村",
+                "file": "img/maps/shanil/map_moiroroto.png",
+                "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_3.html",
+                "desc": "荒廃の地２〜モイロロト村マップ（①荒廃の地2、②荒廃の地3、③モイロロト村、④荒廃の地4）"
+            }
+        ]
+    },
+    "ピラミッド": {
+        "sourceType": "shanil",
+        "sourceName": "相川ともき氏のマジカルバケーション攻略サイト",
+        "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_4.html",
+        "credit": "相川ともき氏のマジカルバケーション攻略サイト（許諾/情報提供に基づく攻略マップ引用）",
+        "maps": [
+            {
+                "id": "piramido",
+                "label": "ピラミッド 全域",
+                "file": "img/maps/shanil/map_piramido.png",
+                "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_4.html",
+                "desc": "ピラミッド階層マップ（①〜⑭各フロア・迷宮）"
+            }
+        ]
+    },
+    "荒廃の地(～ラキューオ)": {
+        "sourceType": "shanil",
+        "sourceName": "相川ともき氏のマジカルバケーション攻略サイト",
+        "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_5.html",
+        "credit": "相川ともき氏のマジカルバケーション攻略サイト（許諾/情報提供に基づく攻略マップ引用）",
+        "maps": [
+            {
+                "id": "rakyuo_ruins",
+                "label": "ラキューオ周辺",
+                "file": "img/maps/shanil/map_rakyuo.png",
+                "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_5.html",
+                "desc": "ラキューオ周辺荒廃の地マップ"
+            }
+        ]
+    },
+    "ラキューオ": {
+        "sourceType": "shanil",
+        "sourceName": "相川ともき氏のマジカルバケーション攻略サイト",
+        "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_5.html",
+        "credit": "相川ともき氏のマジカルバケーション攻略サイト（許諾/情報提供に基づく攻略マップ引用）",
+        "maps": [
+            {
+                "id": "rakyuo",
+                "label": "ラキューオ",
+                "file": "img/maps/shanil/map_rakyuo.png",
+                "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_5.html",
+                "desc": "ラキューオ集落マップ（①〜⑤各フロア・施設）"
+            }
+        ]
+    },
+    "死の回廊": {
+        "sourceType": "shanil",
+        "sourceName": "相川ともき氏のマジカルバケーション攻略サイト",
+        "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_6.html",
+        "credit": "相川ともき氏のマジカルバケーション攻略サイト（許諾/情報提供に基づく攻略マップ引用）",
+        "maps": [
+            {
+                "id": "sinokairou",
+                "label": "死の回廊",
+                "file": "img/maps/shanil/map_sinokairou.gif",
+                "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_6.html",
+                "desc": "死の回廊マップ（①〜③回廊各階、出口）"
+            }
+        ]
+    },
+    "暗闇の地": {
+        "sourceType": "shanil",
+        "sourceName": "相川ともき氏のマジカルバケーション攻略サイト",
+        "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_7.html",
+        "credit": "相川ともき氏のマジカルバケーション攻略サイト（許諾/情報提供に基づく攻略マップ引用）",
+        "maps": [
+            {
+                "id": "kurayami_land",
+                "label": "暗闇の地・失意の沼",
+                "file": "img/maps/shanil/map_kurayami.gif",
+                "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_7.html",
+                "desc": "暗闇の地・失意の沼マップ（①〜⑤暗闇の地各所、⑥〜⑦失意の沼）"
+            }
+        ]
+    },
+    "失意の沼": {
+        "sourceType": "shanil",
+        "sourceName": "相川ともき氏のマジカルバケーション攻略サイト",
+        "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_7.html",
+        "credit": "相川ともき氏のマジカルバケーション攻略サイト（許諾/情報提供に基づく攻略マップ引用）",
+        "maps": [
+            {
+                "id": "situi_swamp",
+                "label": "失意の沼",
+                "file": "img/maps/shanil/map_kurayami.gif",
+                "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_7.html",
+                "desc": "失意の沼マップ（⑥〜⑦沼各所）"
+            }
+        ]
+    },
+    "モギナス魔窟": {
+        "sourceType": "shanil",
+        "sourceName": "相川ともき氏のマジカルバケーション攻略サイト",
+        "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_8.html",
+        "credit": "相川ともき氏のマジカルバケーション攻略サイト（許諾/情報提供に基づく攻略マップ引用）",
+        "maps": [
+            {
+                "id": "moginasu1",
+                "label": "モギナス魔窟 階層1",
+                "file": "img/maps/shanil/map_moginasu1.png",
+                "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_8.html",
+                "desc": "モギナス魔窟 第1フロアマップ"
+            },
+            {
+                "id": "moginasu2",
+                "label": "モギナス魔窟 階層2",
+                "file": "img/maps/shanil/map_moginasu2.png",
+                "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_8.html",
+                "desc": "モギナス魔窟 第2フロアマップ"
+            },
+            {
+                "id": "moginasu3",
+                "label": "モギナス魔窟 階層3",
+                "file": "img/maps/shanil/map_moginasu3.png",
+                "sourceUrl": "https://www5f.biglobe.ne.jp/~shanil/mv/data/chart/e_8.html",
+                "desc": "モギナス魔窟 第3フロアマップ（最奥）"
+            }
+        ]
+    }
+},
   "real": {
     "ガラムマサラ": {
       "type": "real",

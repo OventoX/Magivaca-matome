@@ -27,6 +27,8 @@
 let garamSelectedFloor = 1;
 let garamViewMode = 'floor'; // 'floor' or 'all'
 let lidonahySelectedSubmap = 'リドナヒー4';
+let selectedShanilSubmaps = {}; // areaKey -> submapId
+let shanilViewModes = {}; // areaKey -> 'map' or 'schematic'
 let collapsedMaps = new Set();
   let collapsedAreas = new Set();
 
@@ -1606,6 +1608,18 @@ let collapsedMaps = new Set();
   }
   window.setLidonahySubmap = setLidonahySubmap;
 
+  function setShanilSubmap(areaKey, submapId) {
+    selectedShanilSubmaps[areaKey] = submapId;
+    renderChestsTab();
+  }
+  window.setShanilSubmap = setShanilSubmap;
+
+  function setShanilViewMode(areaKey, mode) {
+    shanilViewModes[areaKey] = mode;
+    renderChestsTab();
+  }
+  window.setShanilViewMode = setShanilViewMode;
+
   // SVG Schematic Generator
   function renderSchematicSvg(defn, areaChests, areaKey) {
     if (!defn || !defn.grid) return '';
@@ -1837,7 +1851,7 @@ let collapsedMaps = new Set();
         `;
       }
 
-      if (areaName === 'リギニオ密林') {
+      if (areaName === 'リギニオ密林' && (!CHEST_MAP_ASSETS.shanil || !CHEST_MAP_ASSETS.shanil[areaName])) {
         return `
           <div class="chest-area-map-container" id="map-container-${areaKey.replace(/[^a-zA-Z0-9_]/g, '_')}">
             <div class="chest-map-header">
@@ -1862,6 +1876,141 @@ let collapsedMaps = new Set();
           </div>
         `;
       }
+    }
+
+    // 2. Shanil map areas (相川ともき氏のマジカルバケーション攻略サイト出典マップ)
+    if (CHEST_MAP_ASSETS.shanil && CHEST_MAP_ASSETS.shanil[areaName]) {
+      const shanilMeta = CHEST_MAP_ASSETS.shanil[areaName];
+      const viewMode = shanilViewModes[areaKey] || 'map'; // 'map' or 'schematic'
+
+      // Submap selection
+      const activeSubmapId = selectedShanilSubmaps[areaKey] || (shanilMeta.maps && shanilMeta.maps[0] ? shanilMeta.maps[0].id : '');
+      const activeSubmap = (shanilMeta.maps && shanilMeta.maps.find(m => m.id === activeSubmapId)) || (shanilMeta.maps ? shanilMeta.maps[0] : null);
+
+      // Submap tabs (if more than 1 map)
+      let tabsHtml = '';
+      if (shanilMeta.maps && shanilMeta.maps.length > 1) {
+        tabsHtml = `
+          <div class="map-subtabs" style="margin-bottom:8px;">
+            ${shanilMeta.maps.map(sm => {
+              const isAct = sm.id === activeSubmap.id;
+              return `<button type="button" class="map-subtab-btn ${isAct ? 'active' : ''}" onclick="window.setShanilSubmap('${escapeHtml(areaKey)}', '${escapeHtml(sm.id)}')">${escapeHtml(sm.label)}</button>`;
+            }).join('')}
+          </div>
+        `;
+      }
+
+      // View mode toggle button (if schematic also exists)
+      const hasSchematic = CHEST_MAP_ASSETS.schematic && CHEST_MAP_ASSETS.schematic[areaName];
+      const viewToggleBtn = hasSchematic ? `
+        <button type="button" class="btn btn-xs btn-outline" style="margin-left:6px;" onclick="window.setShanilViewMode('${escapeHtml(areaKey)}', '${viewMode === 'map' ? 'schematic' : 'map'}')">
+          ${viewMode === 'map' ? '📊 模式図(SVG)に切替' : '🗺️ 相川氏マップに切替'}
+        </button>
+      ` : '';
+
+      // Red circle reference table (赤丸番号と宝箱対応表)
+      const markGroups = new Map();
+      allChestsInArea.forEach(c => {
+        const mark = c.shanilMark || '-';
+        const place = c.shanilPlace || c.mapName || '-';
+        const groupKey = mark + '___' + place;
+        if (!markGroups.has(groupKey)) {
+          markGroups.set(groupKey, { mark, place, chests: [] });
+        }
+        markGroups.get(groupKey).chests.push(c);
+      });
+
+      let markTableRows = '';
+      markGroups.forEach((grp) => {
+        const openedCount = grp.chests.filter(c => checkedChests.has(c.id)).length;
+        const allDone = openedCount === grp.chests.length && grp.chests.length > 0;
+        const markBadge = grp.mark !== '-' ? `<span class="badge-shanil-circle">${escapeHtml(grp.mark)}</span>` : '<span class="badge-shanil-circle none">-</span>';
+        
+        const chestBadges = grp.chests.map(c => {
+          const isOp = checkedChests.has(c.id);
+          return `<label class="mark-chest-item ${isOp ? 'is-opened' : ''}">
+            <input type="checkbox" ${isOp ? 'checked' : ''} onchange="window.toggleChest('${c.id}')">
+            <span class="mark-chest-name">${escapeHtml(c.item)}</span>
+            ${c.missable ? '<span class="badge-xs badge-missable">消滅注意</span>' : ''}
+          </label>`;
+        }).join('');
+
+        const statusText = allDone ? '<span style="color:#15803d; font-weight:600;">✅ 完了</span>' : `<span style="color:var(--text-secondary);">${openedCount}/${grp.chests.length}個</span>`;
+
+        markTableRows += `
+          <tr>
+            <td class="col-mark">${markBadge}</td>
+            <td class="col-place"><strong>${escapeHtml(grp.place)}</strong></td>
+            <td class="col-chests">${chestBadges}</td>
+            <td class="col-status">${statusText}</td>
+          </tr>
+        `;
+      });
+
+      return `
+        <div class="chest-area-map-container" id="map-container-${areaKey.replace(/[^a-zA-Z0-9_]/g, '_')}">
+          <div class="chest-map-header">
+            <div class="chest-map-title-row">
+              <span class="badge-map-shanil">🗺️ ダンジョンマップ</span>
+              <span class="chest-map-title-text">${escapeHtml(activeSubmap ? activeSubmap.label : areaName)}</span>
+              <span class="badge-shanil-source" title="相川ともき氏の攻略サイト出典">相川ともき氏サイト出典</span>
+            </div>
+            <div style="display:flex; gap:6px; align-items:center;">
+              ${viewToggleBtn}
+              <button type="button" class="btn btn-xs btn-outline" onclick="window.toggleMapCollapse('${areaKey}')">
+                ${isMapCollapsed ? '🗺️ マップを表示' : '▲ 折りたたむ'}
+              </button>
+            </div>
+          </div>
+          ${!isMapCollapsed ? `
+            ${viewMode === 'map' && activeSubmap ? `
+              <div class="chest-map-desc">
+                ${escapeHtml(activeSubmap.desc || 'マップ上の赤い○＋数字が各場所に対応しています。')}
+              </div>
+              ${tabsHtml}
+              <div class="chest-real-map-wrapper">
+                <a href="${activeSubmap.file}" target="_blank" title="クリックして原寸表示">
+                  <img src="${activeSubmap.file}" alt="${escapeHtml(activeSubmap.label)} マップ" class="chest-real-map-img" loading="lazy">
+                </a>
+              </div>
+              <div class="map-zoom-tip">🔍 クリックまたはタップで画像を別タブで原寸拡大表示できます</div>
+            ` : `
+              <div class="chest-map-desc">模式図（部屋のつながりと宝箱数）を表示中</div>
+              ${hasSchematic ? renderSchematicSvg(CHEST_MAP_ASSETS.schematic[areaName], allChestsInArea, areaKey) : ''}
+            `}
+
+            <!-- 赤丸番号・場所・宝箱対応表 -->
+            <div class="shanil-mark-table-container">
+              <div class="shanil-table-header">
+                <strong>📍 マップ赤丸番号と宝箱の対応表</strong>
+                <span class="shanil-table-note">（マップ上の赤丸番号順 / チェックボックスで開封記録可能）</span>
+              </div>
+              <div class="table-responsive">
+                <table class="shanil-mark-table">
+                  <thead>
+                    <tr>
+                      <th style="width:50px;">番号</th>
+                      <th style="width:140px;">場所</th>
+                      <th>宝箱アイテム</th>
+                      <th style="width:75px;">状態</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    ${markTableRows}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <!-- 出典・クレジット表記 -->
+            <div class="map-credit-box">
+              出典: <a href="${escapeHtml(activeSubmap && activeSubmap.sourceUrl ? activeSubmap.sourceUrl : shanilMeta.sourceUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(shanilMeta.sourceName)} ↗</a>
+              | ${escapeHtml(shanilMeta.credit)}
+              | <a href="${escapeHtml(planeUrl)}" target="_blank" rel="noopener noreferrer">Wiki拾得物ページ ↗</a>
+            </div>
+          ` : ''}
+        </div>
+      `;
     }
 
     // 2. Schematic areas (32 areas)
@@ -2111,12 +2260,15 @@ let collapsedMaps = new Set();
                   <span class="chest-num">#${escapeHtml(c.number || '-')}</span>
                   <strong class="chest-item-name">${escapeHtml(c.item)}</strong>
                   ${c.missable ? '<span class="badge badge-missable">⚠️ 期間限定</span>' : ''}
+                  ${c.shanilMark ? `<span class="badge badge-shanil-pos" title="相川ともき氏マップ上の対応位置: ${escapeHtml(c.shanilPlace || '')}">🗺️ マップ ${escapeHtml(c.shanilMark)}</span>` : ''}
                 </div>
                 <div class="chest-card-loc">
                   <span class="loc-map">📍 ${escapeHtml(c.mapName)}</span>
                   <span class="loc-coord">座標: <code>${escapeHtml(c.coord || '-')}</code></span>
+                  ${c.shanilPlace ? `<span class="loc-shanil" title="相川ともき氏チャートでの場所表記">（マップ名: ${escapeHtml(c.shanilPlace)}）</span>` : ''}
                 </div>
                 ${c.note ? `<div class="chest-card-note">${escapeHtml(c.note)}</div>` : ''}
+                ${c.diffNote ? `<div class="chest-diff-note">ℹ️ <strong>相川氏サイト照合:</strong> ${escapeHtml(c.diffNote)}</div>` : ''}
                 ${c.missable ? `<div class="chest-missable-reason">⚠️ <strong>消滅条件:</strong> ${escapeHtml(c.missableReason)}</div>` : ''}
               </div>
             </div>
