@@ -19,6 +19,118 @@
       .trim();
   }
 
+  // Helper: 文字列から一意かつ再現可能な整数ハッシュ値を算出する関数
+  function getDeterministicHash(str) {
+    let hash = 0;
+    const s = String(str || '');
+    for (let i = 0; i < s.length; i++) {
+      hash = ((hash << 5) - hash) + s.charCodeAt(i);
+      hash |= 0;
+    }
+    return Math.abs(hash);
+  }
+
+  // Helper: エリア地形テーマ（森・洞窟・火山・水辺・遺跡など）のスタイル定義
+  function getAreaTheme(areaName) {
+    const name = areaName || '';
+    if (/洞窟|穴|風穴|鉱山|魔窟|地下|ジェラ/.test(name)) {
+      return {
+        type: 'cave',
+        label: '洞窟・坑道',
+        bgGradStart: '#f8fafc',
+        bgGradEnd: '#f1f5f9',
+        dotColor: '#94a3b8',
+        borderColor: '#cbd5e1',
+        pathBase: '#e2e8f0',
+        pathStroke: '#64748b',
+        nodeDefaultBg: '#ffffff',
+        nodeDefaultStroke: '#cbd5e1',
+        themeIcon: '🪨'
+      };
+    }
+    if (/森|密林|樹海|ヴァレンシア|ミモレット|エニグマ|キャンプ|平原/.test(name)) {
+      return {
+        type: 'forest',
+        label: '森林・自然',
+        bgGradStart: '#f7faf7',
+        bgGradEnd: '#f0f5f0',
+        dotColor: '#86efac',
+        borderColor: '#bbf7d0',
+        pathBase: '#e2e8f0',
+        pathStroke: '#52796f',
+        nodeDefaultBg: '#ffffff',
+        nodeDefaultStroke: '#cbd5e1',
+        themeIcon: '🌲'
+      };
+    }
+    if (/火山|砂漠|荒廃|モルビエ|クムヤムト|タンドーリ/.test(name)) {
+      return {
+        type: 'volcano_desert',
+        label: '火山・荒野',
+        bgGradStart: '#fdfbf7',
+        bgGradEnd: '#fff7ed',
+        dotColor: '#fed7aa',
+        borderColor: '#fed7aa',
+        pathBase: '#ffedd5',
+        pathStroke: '#c2410c',
+        nodeDefaultBg: '#ffffff',
+        nodeDefaultStroke: '#e2e8f0',
+        themeIcon: '🏜️'
+      };
+    }
+    if (/水|城|アクア|沼|湿地|湖|タピオカティ/.test(name)) {
+      return {
+        type: 'water',
+        label: '水辺・城郭',
+        bgGradStart: '#f0f9ff',
+        bgGradEnd: '#e0f2fe',
+        dotColor: '#7dd3fc',
+        borderColor: '#bae6fd',
+        pathBase: '#e0f2fe',
+        pathStroke: '#0284c7',
+        nodeDefaultBg: '#ffffff',
+        nodeDefaultStroke: '#cbd5e1',
+        themeIcon: '💧'
+      };
+    }
+    // デフォルト: 遺跡・塔・宮殿・ピラミッド・古代回廊
+    return {
+      type: 'ruins',
+      label: '遺跡・回廊',
+      bgGradStart: '#fafaf9',
+      bgGradEnd: '#f5f5f4',
+      dotColor: '#d6d3d1',
+      borderColor: '#e7e5e4',
+      pathBase: '#e7e5e4',
+      pathStroke: '#78716c',
+      nodeDefaultBg: '#ffffff',
+      nodeDefaultStroke: '#cbd5e1',
+      themeIcon: '🏛️'
+    };
+  }
+
+  // Helper: 模式図ノードから対応する宝箱カードへのスムーズスクロール
+  function scrollToMapChest(nodeName) {
+    if (!nodeName || typeof document === 'undefined') return;
+    const norm = normalizeMapName(nodeName).toLowerCase();
+    const cards = document.querySelectorAll('.chest-card');
+    for (const card of cards) {
+      const locEl = card.querySelector('.loc-map');
+      if (locEl) {
+        const txt = normalizeMapName(locEl.textContent).toLowerCase();
+        if (txt.includes(norm) || norm.includes(txt)) {
+          card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          card.classList.add('chest-card-highlight');
+          setTimeout(() => {
+            card.classList.remove('chest-card-highlight');
+          }, 2000);
+          return;
+        }
+      }
+    }
+  }
+  window.scrollToMapChest = scrollToMapChest;
+
   // State: Checklists
   let checkedSpirits = new Set();
   let checkedMagicNotes = new Set();
@@ -1630,7 +1742,7 @@ let collapsedMaps = new Set();
   }
   window.setShanilViewMode = setShanilViewMode;
 
-  // SVG Schematic Generator
+  // SVG Schematic Generator (Organic Map Layout + Natural Paths + Compass + Theming)
   function renderSchematicSvg(defn, areaChests, areaKey) {
     if (!defn || !defn.grid) return '';
     const grid = defn.grid;
@@ -1640,6 +1752,11 @@ let collapsedMaps = new Set();
       if (grid[r].length > ncols) ncols = grid[r].length;
     }
     
+    // エリア名から地形テーマを取得
+    const areaName = defn.title ? defn.title.replace(/ 模式図.*$/, '').trim() : '';
+    const theme = getAreaTheme(areaName);
+    
+    // ノードごとの宝箱集計
     const nodeStats = {};
     for (let r = 0; r < nrows; r++) {
       for (let c = 0; c < grid[r].length; c++) {
@@ -1663,71 +1780,179 @@ let collapsedMaps = new Set();
       }
     }
 
-    const cellW = 118;
-    const cellH = 54;
-    const gapX = 16;
-    const gapY = 14;
-    const padX = 14;
-    const padY = 28;
+    const cellW = 126;
+    const cellH = 60;
+    const gapX = 26;
+    const gapY = 24;
+    const padX = 20;
+    const padY = 32;
     
     const totalW = padX * 2 + ncols * cellW + (ncols - 1) * gapX;
     const totalH = padY * 2 + nrows * cellH + (nrows - 1) * gapY;
     
-    let svg = `<svg viewBox="0 0 ${totalW} ${totalH}" class="area-schematic-svg" xmlns="http://www.w3.org/2000/svg">`;
-    svg += `<rect width="${totalW}" height="${totalH}" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>`;
-    
-    // Legend
-    svg += `<g transform="translate(${padX}, 17)" font-size="9.5" font-family="sans-serif">`;
-    svg += `<circle cx="5" cy="-3" r="3.5" fill="#f59e0b"/>`;
-    svg += `<text x="13" y="0" fill="#475569">🎁 宝箱あり</text>`;
-    svg += `<circle cx="85" cy="-3" r="3.5" fill="#10b981"/>`;
-    svg += `<text x="93" y="0" fill="#475569">✅ 開封完了</text>`;
-    svg += `<circle cx="165" cy="-3" r="3.5" fill="#3b82f6"/>`;
-    svg += `<text x="173" y="0" fill="#475569">🚪 出入口/通路</text>`;
-    svg += `</g>`;
-    
-    // Connections
+    // 各ノードの配置計算（大きさ・縦横比・オフセットに変化をつける）
+    const nodeLayout = [];
     for (let r = 0; r < nrows; r++) {
+      nodeLayout[r] = [];
       for (let c = 0; c < grid[r].length; c++) {
-        if (!grid[r][c]) continue;
-        const x1 = padX + c * (cellW + gapX) + cellW / 2;
-        const y1 = padY + r * (cellH + gapY) + cellH / 2;
-        
-        // Horizontal
-        if (c + 1 < grid[r].length && grid[r][c + 1]) {
-          const x2 = padX + (c + 1) * (cellW + gapX) + cellW / 2;
-          svg += `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y1}" stroke="#cbd5e1" stroke-width="1.8" stroke-dasharray="3,3"/>`;
+        const node = grid[r][c];
+        if (!node) {
+          nodeLayout[r][c] = null;
+          continue;
         }
-        // Vertical
-        if (r + 1 < nrows && c < grid[r + 1].length && grid[r + 1][c]) {
-          const y2 = padY + (r + 1) * (cellH + gapY) + cellH / 2;
-          svg += `<line x1="${x1}" y1="${y1}" x2="${x1}" y2="${y2}" stroke="#cbd5e1" stroke-width="1.8" stroke-dasharray="3,3"/>`;
+        const stat = nodeStats[node.name] || { total: 0, opened: 0 };
+        const hash = getDeterministicHash(node.name + '_' + r + '_' + c);
+        const name = node.name;
+        const isEntrance = node.entrance;
+
+        // 部屋タイプ・重要度判定
+        const isLarge = /広場|ホール|大回廊|中心|宮殿|湖|神殿|遺跡|ピラミッド|中庭|オアシス|山頂|火口|本堂|城/.test(name) || stat.total >= 2;
+        const isPassage = (/通路|小道|道|細道|連絡|連絡路|階段/.test(name) || isEntrance) && stat.total === 0;
+
+        let w, h, rx;
+        if (isLarge) {
+          w = 124 + (hash % 9); // 124〜132px
+          h = 58 + ((hash >> 2) % 7); // 58〜64px
+          rx = 10;
+        } else if (isPassage) {
+          w = 106 + (hash % 9); // 106〜114px
+          h = 48 + ((hash >> 2) % 5); // 48〜52px
+          rx = 6;
+        } else {
+          w = 116 + (hash % 9); // 116〜124px
+          h = 54 + ((hash >> 2) % 7); // 54〜60px
+          rx = 8;
         }
+
+        // セル中央からの微小ジッター（隣接セルと重ならない範囲で配置に有機的な変化）
+        const dx = ((hash % 11) - 5) * 1.3; // 約 -6.5px 〜 +6.5px
+        const dy = (((hash >> 4) % 9) - 4) * 1.1; // 約 -4.4px 〜 +4.4px
+
+        const cellCenterX = padX + c * (cellW + gapX) + cellW / 2 + dx;
+        const cellCenterY = padY + r * (cellH + gapY) + cellH / 2 + dy;
+
+        const x = cellCenterX - w / 2;
+        const y = cellCenterY - h / 2;
+
+        nodeLayout[r][c] = {
+          node,
+          stat,
+          w,
+          h,
+          rx,
+          x,
+          y,
+          cx: cellCenterX,
+          cy: cellCenterY,
+          isLarge,
+          isPassage,
+          hash
+        };
       }
     }
 
-    // Nodes
+    const svgId = 'svg-schem-' + Math.abs(getDeterministicHash(areaKey || 'default'));
+    let svg = `<svg viewBox="0 0 ${totalW} ${totalH}" class="area-schematic-svg" xmlns="http://www.w3.org/2000/svg">`;
+    
+    // Defs: グラデーション・パターン・シャドウ
+    svg += `<defs>
+      <linearGradient id="${svgId}-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="${theme.bgGradStart}"/>
+        <stop offset="100%" stop-color="${theme.bgGradEnd}"/>
+      </linearGradient>
+      <pattern id="${svgId}-dots" x="0" y="0" width="16" height="16" patternUnits="userSpaceOnUse">
+        <circle cx="2" cy="2" r="0.8" fill="${theme.dotColor}" opacity="0.35"/>
+      </pattern>
+      <filter id="${svgId}-shadow" x="-8%" y="-8%" width="116%" height="116%">
+        <feDropShadow dx="0" dy="1.2" stdDeviation="2" flood-color="#0f172a" flood-opacity="0.06"/>
+      </filter>
+    </defs>`;
+
+    // Background
+    svg += `<rect width="${totalW}" height="${totalH}" rx="10" fill="url(#${svgId}-bg)" stroke="${theme.borderColor}" stroke-width="1.2"/>`;
+    svg += `<rect width="${totalW}" height="${totalH}" rx="10" fill="url(#${svgId}-dots)"/>`;
+
+    // Legend & Compass Header
+    svg += `<g transform="translate(${padX}, 18)" font-size="9.5" font-family="sans-serif">`;
+    svg += `<rect x="0" y="-12" width="232" height="18" rx="4" fill="rgba(255,255,255,0.75)" stroke="#e2e8f0" stroke-width="0.8"/>`;
+    svg += `<circle cx="10" cy="-3" r="3.5" fill="#f59e0b"/>`;
+    svg += `<text x="18" y="0" fill="#475569">🎁 宝箱あり</text>`;
+    svg += `<circle cx="82" cy="-3" r="3.5" fill="#10b981"/>`;
+    svg += `<text x="90" y="0" fill="#475569">✅ 開封完了</text>`;
+    svg += `<circle cx="154" cy="-3" r="3.5" fill="#3b82f6"/>`;
+    svg += `<text x="162" y="0" fill="#475569">🚪 出入口/通路</text>`;
+    svg += `</g>`;
+
+    // Compass (North indicator)
+    svg += `<g transform="translate(${totalW - 24}, 20)" class="schematic-compass" pointer-events="none">`;
+    svg += `<circle cx="0" cy="0" r="11" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2" filter="url(#${svgId}-shadow)"/>`;
+    svg += `<polygon points="0,-7 2.8,0 -2.8,0" fill="#dc2626"/>`;
+    svg += `<polygon points="0,7 2.8,0 -2.8,0" fill="#94a3b8"/>`;
+    svg += `<circle cx="0" cy="0" r="1.3" fill="#ffffff"/>`;
+    svg += `<text x="0" y="-8.5" font-size="6.5" font-weight="bold" fill="#dc2626" text-anchor="middle">N</text>`;
+    svg += `</g>`;
+
+    // Connections (Natural Paths with Bezier curves)
+    let pathsHtml = '';
     for (let r = 0; r < nrows; r++) {
       for (let c = 0; c < grid[r].length; c++) {
-        const node = grid[r][c];
-        if (!node) continue;
-        const x = padX + c * (cellW + gapX);
-        const y = padY + r * (cellH + gapY);
-        
-        const stat = nodeStats[node.name] || { total: 0, opened: 0 };
+        const item1 = nodeLayout[r][c];
+        if (!item1) continue;
+
+        // Horizontal Connection: (r, c) <-> (r, c+1)
+        if (c + 1 < grid[r].length && nodeLayout[r][c + 1]) {
+          const item2 = nodeLayout[r][c + 1];
+          const x1 = item1.x + item1.w;
+          const y1 = item1.cy;
+          const x2 = item2.x;
+          const y2 = item2.cy;
+          const midX = (x1 + x2) / 2;
+          const pathD = `M ${x1.toFixed(1)} ${y1.toFixed(1)} C ${midX.toFixed(1)} ${y1.toFixed(1)}, ${midX.toFixed(1)} ${y2.toFixed(1)}, ${x2.toFixed(1)} ${y2.toFixed(1)}`;
+          // Base path (border)
+          pathsHtml += `<path d="${pathD}" fill="none" stroke="${theme.pathBase}" stroke-width="4.5" stroke-linecap="round"/>`;
+          // Foreground path (texture)
+          pathsHtml += `<path d="${pathD}" fill="none" stroke="${theme.pathStroke}" stroke-width="2" stroke-linecap="round" stroke-dasharray="4,3"/>`;
+        }
+
+        // Vertical Connection: (r, c) <-> (r+1, c)
+        if (r + 1 < nrows && c < grid[r + 1].length && nodeLayout[r + 1][c]) {
+          const item2 = nodeLayout[r + 1][c];
+          const x1 = item1.cx;
+          const y1 = item1.y + item1.h;
+          const x2 = item2.cx;
+          const y2 = item2.y;
+          const midY = (y1 + y2) / 2;
+          const pathD = `M ${x1.toFixed(1)} ${y1.toFixed(1)} C ${x1.toFixed(1)} ${midY.toFixed(1)}, ${x2.toFixed(1)} ${midY.toFixed(1)}, ${x2.toFixed(1)} ${y2.toFixed(1)}`;
+          // Base path (border)
+          pathsHtml += `<path d="${pathD}" fill="none" stroke="${theme.pathBase}" stroke-width="4.5" stroke-linecap="round"/>`;
+          // Foreground path (texture)
+          pathsHtml += `<path d="${pathD}" fill="none" stroke="${theme.pathStroke}" stroke-width="2" stroke-linecap="round" stroke-dasharray="4,3"/>`;
+        }
+      }
+    }
+    svg += pathsHtml;
+
+    // Nodes (Rooms with distinct styles, rounded shapes, badges, icons)
+    for (let r = 0; r < nrows; r++) {
+      for (let c = 0; c < grid[r].length; c++) {
+        const item = nodeLayout[r][c];
+        if (!item) continue;
+        const node = item.node;
+        const stat = item.stat;
         const hasChests = stat.total > 0;
         const allOpened = hasChests && stat.opened === stat.total;
         const isEntrance = node.entrance;
-        
-        let rectFill = "#ffffff";
-        let rectStroke = "#cbd5e1";
-        let strokeW = "1";
+        const note = node.note || '';
+
+        let rectFill = theme.nodeDefaultBg;
+        let rectStroke = theme.nodeDefaultStroke;
+        let strokeW = "1.2";
         let textFill = "#334155";
-        
+
         if (allOpened) {
           rectFill = "#f0fdf4";
           rectStroke = "#10b981";
-          strokeW = "1.5";
+          strokeW = "1.6";
           textFill = "#166534";
         } else if (hasChests) {
           rectFill = "#fffbeb";
@@ -1740,32 +1965,52 @@ let collapsedMaps = new Set();
           strokeW = "1.5";
           textFill = "#1e40af";
         }
-        
-        svg += `<g class="schematic-node" transform="translate(${x},${y})">`;
-        svg += `<rect width="${cellW}" height="${cellH}" rx="6" fill="${rectFill}" stroke="${rectStroke}" stroke-width="${strokeW}"/>`;
-        
+
+        // Room Icon detection
+        let roomIcon = '';
+        if (/階段|B1F|1F|2F|上層|下層|昇降|登り|下り/.test(node.name) || /階段/.test(note)) {
+          roomIcon = '🪜';
+        } else if (/ワープ|転送/.test(node.name) || /ワープ/.test(note)) {
+          roomIcon = '🌀';
+        } else if (isEntrance || /入口|出口|学校|キャンプ/.test(node.name)) {
+          roomIcon = '🚪';
+        }
+
+        svg += `<g class="schematic-node" transform="translate(${item.x.toFixed(1)},${item.y.toFixed(1)})" style="cursor: pointer;" onclick="window.scrollToMapChest('${escapeHtml(node.name)}');" filter="url(#${svgId}-shadow)">`;
+        svg += `<rect width="${item.w}" height="${item.h}" rx="${item.rx}" fill="${rectFill}" stroke="${rectStroke}" stroke-width="${strokeW}"/>`;
+
+        // Room Title
         const name = escapeHtml(node.name);
+        const textX = item.w / 2;
+        let lineY = item.h / 2 + (hasChests ? -3 : 2);
+
         if (name.length > 9) {
           const line1 = name.slice(0, 8);
           const line2 = name.slice(8);
-          svg += `<text x="${cellW / 2}" y="${cellH / 2 - 5}" font-size="9.5" font-weight="600" fill="${textFill}" text-anchor="middle">${line1}</text>`;
-          svg += `<text x="${cellW / 2}" y="${cellH / 2 + 7}" font-size="8.5" fill="${textFill}" text-anchor="middle">${line2}</text>`;
+          const iconPrefix = roomIcon ? `${roomIcon} ` : '';
+          svg += `<text x="${textX}" y="${item.h / 2 - 6}" font-size="9.5" font-weight="600" fill="${textFill}" text-anchor="middle">${iconPrefix}${line1}</text>`;
+          svg += `<text x="${textX}" y="${item.h / 2 + 6}" font-size="8.5" fill="${textFill}" text-anchor="middle">${line2}</text>`;
         } else {
-          svg += `<text x="${cellW / 2}" y="${cellH / 2 + (hasChests ? -2 : 3)}" font-size="10.5" font-weight="600" fill="${textFill}" text-anchor="middle">${name}</text>`;
+          const iconPrefix = roomIcon ? `${roomIcon} ` : '';
+          svg += `<text x="${textX}" y="${lineY}" font-size="10" font-weight="600" fill="${textFill}" text-anchor="middle">${iconPrefix}${name}</text>`;
         }
-        
+
+        // Chest Badge / Status
         if (hasChests) {
           let badgeBg = allOpened ? "#dcfce7" : "#fef3c7";
           let badgeStroke = allOpened ? "#10b981" : "#f59e0b";
           let badgeText = allOpened ? `✅ ${stat.total}個済` : (stat.opened > 0 ? `🎁 ${stat.opened}/${stat.total}済` : `🎁 ${stat.total}個`);
           let badgeColor = allOpened ? "#15803d" : "#b45309";
-          
-          svg += `<rect x="${cellW / 2 - 27}" y="${cellH - 16}" width="54" height="12" rx="3" fill="${badgeBg}" stroke="${badgeStroke}" stroke-width="0.8"/>`;
-          svg += `<text x="${cellW / 2}" y="${cellH - 7}" font-size="8.5" font-weight="bold" fill="${badgeColor}" text-anchor="middle">${badgeText}</text>`;
+          const badgeW = 58;
+
+          svg += `<rect x="${(item.w - badgeW) / 2}" y="${item.h - 16}" width="${badgeW}" height="12" rx="3.5" fill="${badgeBg}" stroke="${badgeStroke}" stroke-width="0.8"/>`;
+          svg += `<text x="${textX}" y="${item.h - 7}" font-size="8.5" font-weight="bold" fill="${badgeColor}" text-anchor="middle">${badgeText}</text>`;
         } else if (isEntrance) {
-          svg += `<text x="${cellW / 2}" y="${cellH - 6}" font-size="8" fill="#3b82f6" text-anchor="middle">出入口</text>`;
+          svg += `<text x="${textX}" y="${item.h - 6}" font-size="8" font-weight="bold" fill="#3b82f6" text-anchor="middle">出入口</text>`;
+        } else if (note && note.length <= 6) {
+          svg += `<text x="${textX}" y="${item.h - 6}" font-size="7.5" fill="#94a3b8" text-anchor="middle">${escapeHtml(note)}</text>`;
         }
-        
+
         svg += `</g>`;
       }
     }
@@ -1781,8 +2026,8 @@ let collapsedMaps = new Set();
     const openedChests = floorChests.filter(c => checkedChests.has(c.id)).length;
     const allOpened = (totalChests > 0 && openedChests === totalChests);
 
-    const width = 360;
-    const height = 150;
+    const width = 380;
+    const height = 160;
 
     let statusBg = isTreasureFloor ? (allOpened ? '#dcfce7' : '#fef3c7') : '#f1f5f9';
     let statusStroke = isTreasureFloor ? (allOpened ? '#10b981' : '#f59e0b') : '#cbd5e1';
@@ -1791,42 +2036,79 @@ let collapsedMaps = new Set();
 
     let svg = `<svg class="area-schematic-svg" viewBox="0 0 ${width} ${height}" width="${width}" height="${height}" xmlns="http://www.w3.org/2000/svg">`;
     svg += `<defs>
-      <filter id="shadow-garam" x="-5%" y="-5%" width="110%" height="110%"><feDropShadow dx="0" dy="1" stdDeviation="2" flood-opacity="0.06"/></filter>
+      <linearGradient id="garam-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#fafaf9"/>
+        <stop offset="100%" stop-color="#f5f5f4"/>
+      </linearGradient>
+      <pattern id="garam-dots" x="0" y="0" width="16" height="16" patternUnits="userSpaceOnUse">
+        <circle cx="2" cy="2" r="0.8" fill="#d6d3d1" opacity="0.35"/>
+      </pattern>
+      <filter id="shadow-garam" x="-8%" y="-8%" width="116%" height="116%">
+        <feDropShadow dx="0" dy="1.5" stdDeviation="2.5" flood-color="#1c1917" flood-opacity="0.07"/>
+      </filter>
     </defs>`;
 
     // Background
-    svg += `<rect x="0" y="0" width="${width}" height="${height}" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>`;
+    svg += `<rect x="0" y="0" width="${width}" height="${height}" rx="10" fill="url(#garam-bg)" stroke="#e7e5e4" stroke-width="1.2"/>`;
+    svg += `<rect x="0" y="0" width="${width}" height="${height}" rx="10" fill="url(#garam-dots)"/>`;
 
     // Header row
-    svg += `<text x="16" y="25" font-size="12" font-weight="bold" fill="#1e293b">ガラムマサラ ${floor}F 模式図</text>`;
-    svg += `<rect x="${width - 150}" y="11" width="136" height="20" rx="10" fill="${statusBg}" stroke="${statusStroke}" stroke-width="1"/>`;
-    svg += `<text x="${width - 82}" y="25" font-size="10" font-weight="bold" fill="${statusTextColor}" text-anchor="middle">${statusText}</text>`;
+    svg += `<text x="18" y="27" font-size="12" font-weight="bold" fill="#1e293b">ガラムマサラ ${floor}F 模式図</text>`;
+    svg += `<rect x="${width - 176}" y="13" width="140" height="20" rx="10" fill="${statusBg}" stroke="${statusStroke}" stroke-width="1"/>`;
+    svg += `<text x="${width - 106}" y="27" font-size="9.5" font-weight="bold" fill="${statusTextColor}" text-anchor="middle">${statusText}</text>`;
+
+    // Compass
+    svg += `<g transform="translate(${width - 20}, 23)" class="schematic-compass" pointer-events="none">`;
+    svg += `<circle cx="0" cy="0" r="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1" filter="url(#shadow-garam)"/>`;
+    svg += `<polygon points="0,-6 2.5,0 -2.5,0" fill="#dc2626"/>`;
+    svg += `<polygon points="0,6 2.5,0 -2.5,0" fill="#94a3b8"/>`;
+    svg += `<circle cx="0" cy="0" r="1" fill="#ffffff"/>`;
+    svg += `<text x="0" y="-7" font-size="5.5" font-weight="bold" fill="#dc2626" text-anchor="middle">N</text>`;
+    svg += `</g>`;
+
+    // Passages (Natural Dungeon Corridor)
+    // Left corridor: x: 104 -> 134, y: 92
+    svg += `<path d="M 104 92 C 119 92, 119 92, 134 92" fill="none" stroke="#e2e8f0" stroke-width="5" stroke-linecap="round"/>`;
+    svg += `<path d="M 104 92 C 119 92, 119 92, 134 92" fill="none" stroke="#78716c" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="4,3"/>`;
+
+    // Right corridor: x: 246 -> 276, y: 92
+    svg += `<path d="M 246 92 C 261 92, 261 92, 276 92" fill="none" stroke="#e2e8f0" stroke-width="5" stroke-linecap="round"/>`;
+    svg += `<path d="M 246 92 C 261 92, 261 92, 276 92" fill="none" stroke="#78716c" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="4,3"/>`;
 
     // Previous Floor / Downstairs
-    svg += `<rect x="24" y="52" width="80" height="72" rx="6" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5" filter="url(#shadow-garam)"/>`;
-    svg += `<text x="64" y="76" font-size="10" font-weight="bold" fill="#3b82f6" text-anchor="middle">${floor === 1 ? '入口' : `${floor - 1}Fへ`}</text>`;
-    svg += `<text x="64" y="94" font-size="9" fill="#64748b" text-anchor="middle">▲ 階段</text>`;
+    svg += `<g transform="translate(20, 52)" filter="url(#shadow-garam)">`;
+    svg += `<rect width="84" height="76" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.3"/>`;
+    svg += `<text x="42" y="32" font-size="10.5" font-weight="bold" fill="#3b82f6" text-anchor="middle">${floor === 1 ? '地上入口' : `${floor - 1}Fへ`}</text>`;
+    svg += `<text x="42" y="52" font-size="9.5" fill="#64748b" text-anchor="middle">🪜 ▲ 昇り階段</text>`;
+    svg += `</g>`;
 
-    // Center / Treasure room
-    let centerFill = isTreasureFloor ? '#fefce8' : '#f8fafc';
-    let centerStroke = isTreasureFloor ? '#facc15' : '#cbd5e1';
-    svg += `<rect x="136" y="46" width="88" height="82" rx="6" fill="${centerFill}" stroke="${centerStroke}" stroke-width="1.8" filter="url(#shadow-garam)"/>`;
-    svg += `<text x="180" y="70" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">${isTreasureFloor ? '宝箱フロア' : '連絡通路'}</text>`;
+    // Center / Treasure room or Corridor
     if (isTreasureFloor) {
-      svg += `<text x="180" y="88" font-size="9.5" font-weight="bold" fill="#b45309" text-anchor="middle">🎁 宝箱 ${totalChests}個</text>`;
-      svg += `<text x="180" y="106" font-size="8.5" fill="#64748b" text-anchor="middle">モンスター警戒</text>`;
+      let centerFill = allOpened ? '#f0fdf4' : '#fffbeb';
+      let centerStroke = allOpened ? '#10b981' : '#f59e0b';
+      let centerTitleColor = allOpened ? '#15803d' : '#92400e';
+
+      svg += `<g transform="translate(134, 44)" filter="url(#shadow-garam)">`;
+      svg += `<rect width="112" height="92" rx="10" fill="${centerFill}" stroke="${centerStroke}" stroke-width="2"/>`;
+      svg += `<text x="56" y="28" font-size="11" font-weight="bold" fill="${centerTitleColor}" text-anchor="middle">🎁 宝箱フロア</text>`;
+      svg += `<rect x="18" y="38" width="76" height="18" rx="4" fill="${statusBg}" stroke="${statusStroke}" stroke-width="0.8"/>`;
+      svg += `<text x="56" y="51" font-size="9" font-weight="bold" fill="${statusTextColor}" text-anchor="middle">宝箱 ${openedChests}/${totalChests}個</text>`;
+      svg += `<text x="56" y="74" font-size="8.5" fill="#64748b" text-anchor="middle">⚠️ モンスター警戒</text>`;
+      svg += `</g>`;
     } else {
-      svg += `<text x="180" y="92" font-size="9" fill="#64748b" text-anchor="middle">通常フロア</text>`;
+      svg += `<g transform="translate(142, 52)" filter="url(#shadow-garam)">`;
+      svg += `<rect width="96" height="76" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.3"/>`;
+      svg += `<text x="48" y="34" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">連絡通路</text>`;
+      svg += `<text x="48" y="52" font-size="9" fill="#64748b" text-anchor="middle">通常フロア</text>`;
+      svg += `</g>`;
     }
 
     // Next Floor / Upstairs
-    svg += `<rect x="256" y="52" width="80" height="72" rx="6" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5" filter="url(#shadow-garam)"/>`;
-    svg += `<text x="296" y="76" font-size="10" font-weight="bold" fill="#10b981" text-anchor="middle">${floor === 50 ? '最深部(ボス)' : `${floor + 1}Fへ`}</text>`;
-    svg += `<text x="296" y="94" font-size="9" fill="#64748b" text-anchor="middle">▼ 階段</text>`;
-
-    // Passage lines
-    svg += `<line x1="104" y1="88" x2="136" y2="88" stroke="#94a3b8" stroke-width="3" stroke-linecap="round"/>`;
-    svg += `<line x1="224" y1="88" x2="256" y2="88" stroke="#94a3b8" stroke-width="3" stroke-linecap="round"/>`;
+    svg += `<g transform="translate(276, 52)" filter="url(#shadow-garam)">`;
+    svg += `<rect width="84" height="76" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.3"/>`;
+    svg += `<text x="42" y="32" font-size="10.5" font-weight="bold" fill="#10b981" text-anchor="middle">${floor === 50 ? '最深部(ボス)' : `${floor + 1}Fへ`}</text>`;
+    svg += `<text x="42" y="52" font-size="9.5" fill="#64748b" text-anchor="middle">🪜 ▼ 降り階段</text>`;
+    svg += `</g>`;
 
     svg += `</svg>`;
     return svg;
