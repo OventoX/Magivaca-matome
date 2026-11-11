@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>マジカルバケーション 攻略サポート - 精霊データベース＆チェックリスト</title>
-  <meta name="description" content="GBAソフト『マジカルバケーション』の精霊全112体データベース＆コンプリート支援チェックリスト。属性・プレーン絞り込み、取り返しのつかない要素の警告、金貨銀貨稼ぎメモ。">
+  <title>マジカルバケーション 攻略サポート - 精霊データベース＆総合攻略</title>
+  <meta name="description" content="GBA『マジカルバケーション』の攻略支援サイト。精霊112体チェックリスト、レベリング適地、シナリオチャート要点、システム解説、ピラニア金貨銀貨法則を収録。">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -19,7 +19,7 @@
         </div>
         <div class="header-actions">
           <button type="button" class="btn" id="btn-backup" title="チェック進捗のエクスポート / インポート">
-            <span>💾 データのバックアップ</span>
+            <span>💾 データ管理</span>
           </button>
           <button type="button" class="btn btn-danger" id="btn-reset-checklist" title="全チェックの解除">
             <span>🔄 リセット</span>
@@ -30,7 +30,7 @@
       <!-- Overall Progress Bar -->
       <div class="progress-section">
         <div class="progress-info">
-          <span>精霊コンプリート進捗</span>
+          <span>精霊コンプリート進捗（端末内保存）</span>
           <span class="progress-count" id="overall-progress-count">0 / 112 (0%)</span>
         </div>
         <div class="progress-bar-bg" role="progressbar" aria-valuemin="0" aria-valuemax="100">
@@ -39,14 +39,23 @@
       </div>
     </div>
 
-    <!-- Navigation Tabs -->
+    <!-- Navigation Tabs (横スクロール対応) -->
     <nav class="nav-tabs" aria-label="メインナビゲーション">
-      <div class="header-container" style="padding:0; display:flex; flex-direction:row;">
+      <div class="nav-tabs-wrapper">
         <button type="button" class="tab-btn active" data-tab="tab-spirits">
-          <span>🧚 精霊一覧・チェックリスト</span>
+          <span>🧚 精霊一覧・チェック</span>
         </button>
         <button type="button" class="tab-btn" data-tab="tab-complete-guide">
-          <span>⚠️ コンプリート手順・警告</span>
+          <span>⚠️ 精霊コンプ手順</span>
+        </button>
+        <button type="button" class="tab-btn" data-tab="tab-leveling">
+          <span>📈 レベリング（経験値稼ぎ）</span>
+        </button>
+        <button type="button" class="tab-btn" data-tab="tab-chart">
+          <span>🗺️ シナリオチャート</span>
+        </button>
+        <button type="button" class="tab-btn" data-tab="tab-system">
+          <span>⚙️ システム解説</span>
         </button>
         <button type="button" class="tab-btn" data-tab="tab-guides">
           <span>🐟 稼ぎ・寿命ガイド</span>
@@ -59,8 +68,7 @@
   <main class="main-container">
 
     <!-- Tab 1: Spirits Database & Checklist -->
-    <section id="tab-spirits" class="tab-content active" aria-labelledby="tab-spirits-btn">
-      
+    <section id="tab-spirits" class="tab-content active" aria-labelledby="tab-spirits">
       <!-- Element Tracker Mini-Grid -->
       <div class="element-grid" id="element-tracker-grid" aria-label="属性別進捗・絞り込み">
         <!-- Injected by app.js -->
@@ -72,7 +80,7 @@
           <div class="search-input-wrapper">
             <input type="text" id="search-input" class="search-input" placeholder="🔍 居場所・要求アイテム・備考で検索... (例: 銀貨, ドワーフ, アクアビット)" autocomplete="off">
           </div>
-          <div style="display:flex; gap:16px; align-items:center; flex-wrap:wrap;">
+          <div style="display:flex; gap:14px; align-items:center; flex-wrap:wrap;">
             <label class="checkbox-toggle-label">
               <input type="checkbox" id="filter-warning-only">
               <span>⚠️ 取り返しのつかない要素のみ</span>
@@ -123,14 +131,35 @@
     </section>
 
     <!-- Tab 2: Complete Guide & Warnings -->
-    <section id="tab-complete-guide" class="tab-content" aria-labelledby="tab-complete-btn">
+    <section id="tab-complete-guide" class="tab-content" aria-labelledby="tab-complete-guide">
       <div id="complete-guide-tab-content">
         <!-- Injected by app.js -->
       </div>
     </section>
 
-    <!-- Tab 3: Piranha & Lifespan Guides -->
-    <section id="tab-guides" class="tab-content" aria-labelledby="tab-guides-btn">
+    <!-- Tab 3: Leveling Guide (NEW) -->
+    <section id="tab-leveling" class="tab-content" aria-labelledby="tab-leveling">
+      <div id="leveling-tab-content">
+        <!-- Injected by app.js -->
+      </div>
+    </section>
+
+    <!-- Tab 4: Scenario Charts (NEW) -->
+    <section id="tab-chart" class="tab-content" aria-labelledby="tab-chart">
+      <div id="chart-tab-content">
+        <!-- Injected by app.js -->
+      </div>
+    </section>
+
+    <!-- Tab 5: System Guide (NEW) -->
+    <section id="tab-system" class="tab-content" aria-labelledby="tab-system">
+      <div id="system-tab-content">
+        <!-- Injected by app.js -->
+      </div>
+    </section>
+
+    <!-- Tab 6: Piranha & Lifespan Guides -->
+    <section id="tab-guides" class="tab-content" aria-labelledby="tab-guides">
       <div id="guides-tab-content">
         <!-- Injected by app.js -->
       </div>
@@ -146,7 +175,9 @@
         <button type="button" class="close-btn" id="modal-close-btn">&times;</button>
       </div>
       <div class="modal-body">
-        <p>進捗データ（JSON）をコピーして保存するか、過去のバックアップデータを貼り付けて復元できます。</p>
+        <p style="font-size:0.88rem; color:var(--text-secondary);">
+          進捗データ（JSON）をコピーして保存するか、過去のバックアップデータを貼り付けて復元できます。
+        </p>
         <textarea id="backup-textarea" class="modal-textarea" placeholder="JSONデータがここに表示されます"></textarea>
       </div>
       <div class="modal-footer">
@@ -160,10 +191,10 @@
   <footer class="app-footer">
     <div class="footer-container">
       <p>
-        一次情報出典: <a href="https://wikiwiki.jp/magivaca/" target="_blank" rel="noopener noreferrer">マジカルバケーション攻略Wiki</a>（<a href="https://wikiwiki.jp/magivaca/%E7%B2%BE%E9%9C%8A" target="_blank" rel="noopener noreferrer">精霊ページ</a>）
+        一次情報出典: <a href="https://wikiwiki.jp/magivaca/" target="_blank" rel="noopener noreferrer">マジカルバケーション攻略Wiki</a>
       </p>
       <p>
-        本サイトは任天堂・ブラウニーブラウン公式とは無関係のファンメイド支援ツールです。<br>
+        本サイトは任天堂・ブラウニーブラウン公式とは無関係の非公式攻略支援ツールです。<br>
         プレイヤーのチェック進捗データはすべてお使いのブラウザ内（localStorage）にのみ保存され、外部サーバへ送信されることはありません。
       </p>
     </div>

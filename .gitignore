@@ -7,6 +7,7 @@ Thumbs.db
 # Temporary HTML cache
 *.html
 !index.html
+wiki_cache/
 
 # Ignore py in root only
 /*.py
