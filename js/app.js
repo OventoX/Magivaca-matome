@@ -11,6 +11,7 @@
   const STORAGE_KEY_RECORDS = 'magivaca_records_v1';
   const STORAGE_KEY_CHESTS = 'magivaca_chest_checklist_v1';
   const STORAGE_KEY_TIMELINE = 'magivaca_timeline_checklist_v1';
+  const STORAGE_KEY_GUMMY_CALC = 'magivaca_gummy_calc_v1';
 
   // Helper: 全角数字を半角数字に変換して正規化する共通関数
   function normalizeMapName(str) {
@@ -145,6 +146,19 @@
   let timelineGroupFilter = 'all'; // 'all' | 'matter' | 'light' | 'dark' | 'death' | 'garam' | 'undetermined'
   let timelineOnlyUnchecked = false;
 
+  // State: Garam Masala Frog Gummy Calculator (Phase 11)
+  let gummyCalcState = {
+    currentFloor: 1,
+    targetFloor: 50,
+    heldGummies: 0,
+    calcMode: 'min', // 'min' (要求数1維持・最小基準) | 'sim' (Wiki増減仕様シミュレーション)
+    difficulty: 'ナミ', // 'ヌル' | 'ナミ' | 'オニ'
+    feedColor: 'green', // 'green' | 'blue' | 'red'
+    startRequirement: 1, // 1..20
+    useMimicReduction: true, // 各階の擬態撃破による要求数減少を適用するか
+    tableExpanded: true
+  };
+
   // State: Chests Tab
   let chestPlane = 'all';
   let chestSearchQuery = '';
@@ -259,8 +273,24 @@ let collapsedMaps = new Set();
         const arr = JSON.parse(savedTimeline);
         if (Array.isArray(arr)) checkedTimeline = new Set(arr);
       }
+
+      const savedGummyCalc = localStorage.getItem(STORAGE_KEY_GUMMY_CALC);
+      if (savedGummyCalc) {
+        const obj = JSON.parse(savedGummyCalc);
+        if (obj && typeof obj === 'object') {
+          gummyCalcState = Object.assign({}, gummyCalcState, obj);
+        }
+      }
     } catch (e) {
       console.warn('Failed to load state from localStorage:', e);
+    }
+  }
+
+  function saveGummyCalcState() {
+    try {
+      localStorage.setItem(STORAGE_KEY_GUMMY_CALC, JSON.stringify(gummyCalcState));
+    } catch (e) {
+      console.warn('Failed to save gummy calculator state:', e);
     }
   }
 
@@ -2182,6 +2212,7 @@ let collapsedMaps = new Set();
     return svg;
   }
 
+
   // Garam Masala Dynamic Floor Schematic Generator (100% Original SVG)
   function renderGaramFloorSvg(floor, floorChests, checkedChests) {
     const totalChests = floorChests.length;
@@ -2277,6 +2308,456 @@ let collapsedMaps = new Set();
     return svg;
   }
 
+  // ==========================================================================
+  // Phase 11: キヤシカゥアのツボ・カエルグミ必要数＆周回計算機（ガラムマサラ支援）
+  // ==========================================================================
+  function calculateGaramGummyRequirement(overrideState) {
+    const st = Object.assign({}, gummyCalcState, overrideState || {});
+    const startF = Math.max(1, Math.min(50, parseInt(st.currentFloor, 10) || 1));
+    const rawEndF = Math.max(1, Math.min(50, parseInt(st.targetFloor, 10) || 50));
+    const endF = Math.max(startF, rawEndF);
+    const held = Math.max(0, parseInt(st.heldGummies, 10) || 0);
+    const mode = st.calcMode === 'sim' ? 'sim' : 'min';
+    const diff = ['ヌル', 'ナミ', 'オニ'].includes(st.difficulty) ? st.difficulty : 'ナミ';
+    const color = ['green', 'blue', 'red'].includes(st.feedColor) ? st.feedColor : 'green';
+    const initReq = Math.max(1, Math.min(20, parseInt(st.startRequirement, 10) || 1));
+    const useMimic = Boolean(st.useMimicReduction);
+
+    const floorsSrc = (typeof GARAM_TSUBO_DATA !== 'undefined' && Array.isArray(GARAM_TSUBO_DATA.floors))
+      ? GARAM_TSUBO_DATA.floors
+      : [];
+
+    let curReq = mode === 'sim' ? initReq : 1;
+    let totalPotsInRange = 0;
+    let totalRequired = 0;
+
+    // 難易度・色別の1ツボ投入後変化量（Wiki仕様: https://wikiwiki.jp/magivaca/%E3%82%AC%E3%83%A9%E3%83%A0%E3%83%9E%E3%82%B5%E3%83%A9#h3_content_1_2）
+    function getNextReqAfterFeed(reqVal) {
+      if (color === 'green') {
+        const d = diff === 'ヌル' ? 1 : 2;
+        return Math.min(20, Math.max(1, reqVal + d));
+      }
+      if (color === 'blue') {
+        return Math.min(20, Math.max(1, reqVal + 1));
+      }
+      // red
+      if (diff === 'ヌル') return 1;
+      if (diff === 'ナミ') return Math.min(20, Math.max(1, reqVal - 1));
+      return reqVal; // オニ: ±0
+    }
+
+    // 擬態1体撃破あたりの要求数変化量（Wiki仕様: 緑はヌル-2/ナミ-2/オニ-1、青はヌル-1/ナミ-1/オニ±0）
+    function getMimicSingleDelta(mimicColor) {
+      if (mimicColor === '緑') {
+        return diff === 'オニ' ? -1 : -2;
+      }
+      if (mimicColor === '青') {
+        return diff === 'オニ' ? 0 : -1;
+      }
+      return 0;
+    }
+
+    const rows = floorsSrc.map(fObj => {
+      const inRange = fObj.floor >= startF && fObj.floor <= endF;
+      let floorReq = 0;
+      const startReqOnFloor = inRange ? curReq : 1;
+
+      if (mode === 'min') {
+        // 要求数1維持の最小基準（1ツボ＝1個）
+        floorReq = fObj.potCount;
+      } else {
+        // Wiki増減仕様シミュレーション
+        let tempReq = inRange ? curReq : initReq;
+        if (useMimic && fObj.mimicCount > 0) {
+          const perMimicDelta = getMimicSingleDelta(fObj.mimicColor);
+          if (perMimicDelta !== 0) {
+            tempReq = Math.min(20, Math.max(1, tempReq + perMimicDelta * fObj.mimicCount));
+          }
+        }
+        for (let p = 0; p < fObj.potCount; p++) {
+          floorReq += tempReq;
+          tempReq = getNextReqAfterFeed(tempReq);
+        }
+        if (inRange) {
+          curReq = tempReq;
+        }
+      }
+
+      if (inRange) {
+        totalPotsInRange += fObj.potCount;
+        totalRequired += floorReq;
+      }
+
+      return Object.assign({}, fObj, {
+        inRange,
+        floorRequired: floorReq,
+        rangeCumulativeRequired: inRange ? totalRequired : 0,
+        startReqOnFloor,
+        endReqOnFloor: inRange ? curReq : 1
+      });
+    });
+
+    const shortfall = Math.max(0, totalRequired - held);
+    const surplus = Math.max(0, held - totalRequired);
+
+    return {
+      currentFloor: startF,
+      targetFloor: endF,
+      heldGummies: held,
+      calcMode: mode,
+      difficulty: diff,
+      feedColor: color,
+      startRequirement: initReq,
+      useMimicReduction: useMimic,
+      totalPotsInRange,
+      totalRequired,
+      shortfall,
+      surplus,
+      rows
+    };
+  }
+  window.calculateGaramGummyRequirement = calculateGaramGummyRequirement;
+
+  function updateGummyCalcParam(key, val) {
+    if (key === 'currentFloor' || key === 'targetFloor' || key === 'heldGummies' || key === 'startRequirement') {
+      gummyCalcState[key] = parseInt(val, 10) || 0;
+      if (key === 'currentFloor' && gummyCalcState.targetFloor < gummyCalcState.currentFloor) {
+        gummyCalcState.targetFloor = gummyCalcState.currentFloor;
+      }
+      if (key === 'targetFloor' && gummyCalcState.targetFloor < gummyCalcState.currentFloor) {
+        gummyCalcState.currentFloor = gummyCalcState.targetFloor;
+      }
+    } else if (key === 'useMimicReduction' || key === 'tableExpanded') {
+      gummyCalcState[key] = Boolean(val);
+    } else {
+      gummyCalcState[key] = val;
+    }
+    saveGummyCalcState();
+    renderChestsTab();
+  }
+  window.updateGummyCalcParam = updateGummyCalcParam;
+
+  function openGaramGummyCalculator() {
+    chestPlane = 'ガラムマサラ';
+    chestOnlyUnchecked = false;
+    chestOnlyMissable = false;
+    chestOnlyStar = false;
+    chestSearchQuery = '';
+    collapsedAreas.delete('ガラムマサラ_ガラムマサラ');
+    collapsedMaps.delete('ガラムマサラ_ガラムマサラ');
+    renderChestsTab();
+    window.switchTab('tab-chests');
+    setTimeout(() => {
+      if (typeof document !== 'undefined' && document.getElementById) {
+        const el = document.getElementById('garam-gummy-calc-panel');
+        if (el && el.scrollIntoView) {
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }
+    }, 100);
+  }
+  window.openGaramGummyCalculator = openGaramGummyCalculator;
+
+  function jumpToGummyDropLookup(targetTab, queryStr) {
+    if (targetTab === 'items') {
+      lookupQuery = queryStr || 'カエルグミ';
+      renderItemsTab();
+      window.switchTab('tab-items');
+      setTimeout(() => {
+        if (typeof document !== 'undefined' && document.getElementById) {
+          const inp = document.getElementById('item-lookup-input');
+          if (inp && inp.scrollIntoView) inp.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+      }, 100);
+    } else if (targetTab === 'monsters') {
+      monsterSearchQuery = queryStr || 'カエルグミ';
+      monsterSelectedElement = 'all';
+      monsterTypeFilter = 'all';
+      renderMonstersTab();
+      window.switchTab('tab-monsters');
+    }
+  }
+  window.jumpToGummyDropLookup = jumpToGummyDropLookup;
+
+  function renderGaramGummyCalculatorHtml() {
+    if (typeof GARAM_TSUBO_DATA === 'undefined') return '';
+    const res = calculateGaramGummyRequirement();
+
+    // 集め先（ITEM_DROP_INDEX からのカエルグミ緑・青トップ狩場 ＆ モンスター逆引き）
+    const greenDrops = (typeof ITEM_DROP_INDEX !== 'undefined' && Array.isArray(ITEM_DROP_INDEX['カエルグミ(緑)']))
+      ? ITEM_DROP_INDEX['カエルグミ(緑)'].slice().sort((a, b) => parseFloat(b.rate) - parseFloat(a.rate))
+      : [];
+    const blueDrops = (typeof ITEM_DROP_INDEX !== 'undefined' && Array.isArray(ITEM_DROP_INDEX['カエルグミ(青)']))
+      ? ITEM_DROP_INDEX['カエルグミ(青)'].slice().sort((a, b) => parseFloat(b.rate) - parseFloat(a.rate))
+      : [];
+
+    const greenMonsters = (typeof REGULAR_MONSTERS_DATA !== 'undefined' && Array.isArray(REGULAR_MONSTERS_DATA))
+      ? REGULAR_MONSTERS_DATA.filter(m => Array.isArray(m.drops) && m.drops.some(d => d.includes('カエルグミ緑'))).slice(0, 6)
+      : [];
+    const blueMonsters = (typeof REGULAR_MONSTERS_DATA !== 'undefined' && Array.isArray(REGULAR_MONSTERS_DATA))
+      ? REGULAR_MONSTERS_DATA.filter(m => Array.isArray(m.drops) && m.drops.some(d => d.includes('カエルグミ青'))).slice(0, 6)
+      : [];
+
+    let floorSelectStart = '';
+    let floorSelectEnd = '';
+    for (let f = 1; f <= 50; f++) {
+      floorSelectStart += `<option value="${f}" ${f === res.currentFloor ? 'selected' : ''}>${f}F</option>`;
+      floorSelectEnd += `<option value="${f}" ${f === res.targetFloor ? 'selected' : ''}>${f}F</option>`;
+    }
+
+    let reqSelectHtml = '';
+    for (let r = 1; r <= 20; r++) {
+      reqSelectHtml += `<option value="${r}" ${r === res.startRequirement ? 'selected' : ''}>${r}個</option>`;
+    }
+
+    // テーブル行の生成（指定範囲内の行の合計 === res.totalRequired）
+    const tableRowsHtml = res.rows.map(r => {
+      const rowBg = r.inRange ? '#ffffff' : '#f8fafc';
+      const rowOpacity = r.inRange ? '1' : '0.55';
+      const mimicBadge = r.mimicCount > 0
+        ? `<span class="badge" style="background:${r.mimicColor === '緑' ? '#dcfce7' : '#dbeafe'}; color:${r.mimicColor === '緑' ? '#166534' : '#1e40af'}; font-size:0.75rem;">擬態(${escapeHtml(r.mimicColor)})×${r.mimicCount}</span>`
+        : (r.wildGummyCount > 0
+          ? `<span class="badge" style="background:#fef9c3; color:#854d0e; font-size:0.75rem;">野生(${escapeHtml(r.wildGummyColor)})×${r.wildGummyCount}</span>`
+          : `<span style="color:var(--text-muted); font-size:0.78rem;">${escapeHtml(r.fieldGummyOrMimic)}</span>`);
+
+      return `
+        <tr class="gummy-calc-row ${r.inRange ? 'in-range' : 'out-of-range'}" data-floor="${r.floor}" data-in-range="${r.inRange ? '1' : '0'}" data-floor-req="${r.floorRequired}" style="background:${rowBg}; opacity:${rowOpacity};">
+          <td style="font-weight:700; white-space:nowrap;">
+            ${r.floor}F
+            ${r.inRange ? '<span style="color:#16a34a; font-size:0.72rem;">●対象</span>' : ''}
+          </td>
+          <td style="white-space:nowrap;">
+            <strong>${r.potCount}個</strong>
+            <div style="font-size:0.73rem; color:var(--text-muted);">${escapeHtml(r.potRange)}</div>
+          </td>
+          <td style="font-weight:700; color:${r.inRange ? 'var(--accent)' : 'var(--text-muted)'};">
+            ${r.floorRequired}個
+            ${res.calcMode === 'sim' && r.inRange && r.potCount > 0 ? `<div style="font-size:0.71rem; color:var(--text-secondary);">要求:${r.startReqOnFloor}→${r.endReqOnFloor}</div>` : ''}
+          </td>
+          <td style="font-weight:600;">
+            ${r.inRange ? `${r.rangeCumulativeRequired}個` : '-'}
+            <div style="font-size:0.71rem; color:var(--text-muted);">1F累計ツボ:${r.cumulativePots}</div>
+          </td>
+          <td style="font-size:0.75rem; color:#92400e; background:#fffbeb;">
+            ${escapeHtml(r.shortestPathPotCount)}
+          </td>
+          <td>
+            ${mimicBadge}
+          </td>
+          <td style="font-size:0.78rem;">
+            ${escapeHtml(r.gummyChests)}
+          </td>
+          <td style="font-size:0.76rem; white-space:nowrap;">
+            緑:${escapeHtml(r.dropRateGreen)} / 青:${escapeHtml(r.dropRateBlue)}
+          </td>
+          <td style="font-size:0.76rem; white-space:nowrap;">
+            <a href="${escapeHtml(r.sourceUrl)}" target="_blank" rel="noopener noreferrer">詳細 ↗</a> |
+            <a href="${escapeHtml(r.overviewUrl)}" target="_blank" rel="noopener noreferrer">概要 ↗</a>
+          </td>
+        </tr>
+      `;
+    }).join('');
+
+    return `
+      <div class="gummy-calc-container" id="garam-gummy-calc-panel" style="margin-top:16px; background:#f8fafc; border:2px solid #86efac; border-radius:var(--radius-md); padding:16px;">
+        <div style="display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:8px; margin-bottom:10px; border-bottom:2px solid #bbf7d0; padding-bottom:8px;">
+          <div>
+            <h4 style="margin:0; font-size:1.05rem; color:#166534; display:flex; align-items:center; gap:6px;">
+              <span>🐸 キヤシカゥアのツボ・カエルグミ必要数＆周回計算機</span>
+              <span class="badge" style="background:#dcfce7; color:#166534; font-size:0.75rem;">ガラムマサラ全50階対応</span>
+            </h4>
+            <p style="margin:4px 0 0 0; font-size:0.82rem; color:var(--text-secondary);">
+              現在階・手持ちカエルグミ数・目標階から、目標階までに必要なカエルグミ累計個数と不足数を逆算します（入力値は <code>magivaca_gummy_calc_v1</code> に独立保存）。
+            </p>
+          </div>
+          <div style="font-size:0.78rem;">
+            <a href="${escapeHtml(GARAM_TSUBO_DATA.rulesSourceUrl)}" target="_blank" rel="noopener noreferrer" class="btn-ext-link wiki">📖 ツボ仕様出典 ↗</a>
+            <a href="${escapeHtml(GARAM_TSUBO_DATA.chartIndexSourceUrl)}" target="_blank" rel="noopener noreferrer" class="btn-ext-link wiki">📖 全50階攻略表出典 ↗</a>
+          </div>
+        </div>
+
+        <!-- 調査結果・未確認範囲の明示ボックス -->
+        <div style="background:#fffbeb; border:1px solid #fde68a; border-left:4px solid #f59e0b; border-radius:4px; padding:8px 12px; margin-bottom:12px; font-size:0.8rem; color:#92400e; line-height:1.5;">
+          <div><strong>📌 Wiki出典データと未確認範囲の明示（捏造なし）:</strong></div>
+          <div>・<strong>確認済み（全50階収録）:</strong> Wiki『<a href="https://wikiwiki.jp/magivaca/%E3%82%AC%E3%83%A9%E3%83%A0%E3%83%9E%E3%82%B5%E3%83%A9/0" target="_blank" rel="noopener noreferrer" style="color:#b45309; text-decoration:underline;">ガラムマサラ/0〜5</a>』に基づく全宝箱回収時の各階消去ツボ数（1F〜49Fにツボ#1〜#173の計<strong>173個</strong>、50Fは0個）、および『<a href="${escapeHtml(GARAM_TSUBO_DATA.rulesSourceUrl)}" target="_blank" rel="noopener noreferrer" style="color:#b45309; text-decoration:underline;">キヤシカゥアのツボ</a>』『<a href="${escapeHtml(GARAM_TSUBO_DATA.mimicSourceUrl)}" target="_blank" rel="noopener noreferrer" style="color:#b45309; text-decoration:underline;">カエルグミの擬態</a>』に明記された要求数増減仕様（初期1・最小1・最大20、投入色と難易度による増減、擬態撃破による減少）。</div>
+          <div>・<strong>未確認の範囲:</strong> ${escapeHtml(GARAM_TSUBO_DATA.unconfirmedRangeNote)}</div>
+        </div>
+
+        <!-- 入力フォーム -->
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(170px, 1fr)); gap:10px; background:#ffffff; padding:12px; border:1px solid var(--border-light); border-radius:var(--radius-sm); margin-bottom:12px;">
+          <div>
+            <label for="gummy-calc-current-floor" style="display:block; font-size:0.78rem; font-weight:700; color:var(--text-secondary); margin-bottom:4px;">📍 現在階（開始階）</label>
+            <select id="gummy-calc-current-floor" class="chest-floor-select" style="width:100%;" onchange="window.updateGummyCalcParam('currentFloor', this.value)">
+              ${floorSelectStart}
+            </select>
+          </div>
+          <div>
+            <label for="gummy-calc-target-floor" style="display:block; font-size:0.78rem; font-weight:700; color:var(--text-secondary); margin-bottom:4px;">🏁 目標階（到達目標）</label>
+            <select id="gummy-calc-target-floor" class="chest-floor-select" style="width:100%;" onchange="window.updateGummyCalcParam('targetFloor', this.value)">
+              ${floorSelectEnd}
+            </select>
+          </div>
+          <div>
+            <label for="gummy-calc-held" style="display:block; font-size:0.78rem; font-weight:700; color:var(--text-secondary); margin-bottom:4px;">🐸 手持ちカエルグミ数</label>
+            <input type="number" id="gummy-calc-held" min="0" max="999" value="${res.heldGummies}" class="chest-search-input" style="width:100%; min-width:0; padding:6px 10px;" onchange="window.updateGummyCalcParam('heldGummies', this.value)">
+          </div>
+          <div>
+            <label for="gummy-calc-mode" style="display:block; font-size:0.78rem; font-weight:700; color:var(--text-secondary); margin-bottom:4px;">⚙️ 計算モード</label>
+            <select id="gummy-calc-mode" class="chest-floor-select" style="width:100%;" onchange="window.updateGummyCalcParam('calcMode', this.value)">
+              <option value="min" ${res.calcMode === 'min' ? 'selected' : ''}>基準計算（要求数1維持＝1ツボ1個）</option>
+              <option value="sim" ${res.calcMode === 'sim' ? 'selected' : ''}>Wiki増減シミュレーション（難易度・擬態反映）</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Wiki増減仕様オプション（シミュレーションモード時または仕様確認用） -->
+        <div style="background:#ffffff; padding:10px 12px; border:1px solid var(--border-light); border-radius:var(--radius-sm); margin-bottom:12px; font-size:0.82rem;">
+          <div style="font-weight:700; color:var(--text-primary); margin-bottom:6px;">
+            🔄 Wiki明記の要求数増減仕様（<a href="${escapeHtml(GARAM_TSUBO_DATA.rulesSourceUrl)}" target="_blank" rel="noopener noreferrer">出典: キヤシカゥアのツボ ↗</a>）
+          </div>
+          <div style="display:flex; flex-wrap:wrap; gap:12px; align-items:center; margin-bottom:6px;">
+            <label style="display:inline-flex; align-items:center; gap:4px;">
+              <span>難易度:</span>
+              <select id="gummy-calc-diff" class="chest-floor-select" style="padding:3px 6px; font-size:0.8rem;" onchange="window.updateGummyCalcParam('difficulty', this.value)">
+                <option value="ヌル" ${res.difficulty === 'ヌル' ? 'selected' : ''}>ヌル</option>
+                <option value="ナミ" ${res.difficulty === 'ナミ' ? 'selected' : ''}>ナミ</option>
+                <option value="オニ" ${res.difficulty === 'オニ' ? 'selected' : ''}>オニ</option>
+              </select>
+            </label>
+            <label style="display:inline-flex; align-items:center; gap:4px;">
+              <span>投入するグミ色:</span>
+              <select id="gummy-calc-color" class="chest-floor-select" style="padding:3px 6px; font-size:0.8rem;" onchange="window.updateGummyCalcParam('feedColor', this.value)">
+                <option value="green" ${res.feedColor === 'green' ? 'selected' : ''}>カエルグミ緑（ヌル+1 / ナミ+2 / オニ+2）</option>
+                <option value="blue" ${res.feedColor === 'blue' ? 'selected' : ''}>カエルグミ青（全難易度+1）</option>
+                <option value="red" ${res.feedColor === 'red' ? 'selected' : ''}>カエルグミ赤（ヌル=1 / ナミ-1 / オニ±0）</option>
+              </select>
+            </label>
+            <label style="display:inline-flex; align-items:center; gap:4px;">
+              <span>現在階の初期要求数:</span>
+              <select id="gummy-calc-init-req" class="chest-floor-select" style="padding:3px 6px; font-size:0.8rem;" onchange="window.updateGummyCalcParam('startRequirement', this.value)">
+                ${reqSelectHtml}
+              </select>
+            </label>
+            <label style="display:inline-flex; align-items:center; gap:5px; cursor:pointer;">
+              <input type="checkbox" id="gummy-calc-use-mimic" ${res.useMimicReduction ? 'checked' : ''} onchange="window.updateGummyCalcParam('useMimicReduction', this.checked)">
+              <span>各階の擬態撃破で要求数を減らす（緑:ヌル/ナミ-2・オニ-1、青:ヌル/ナミ-1・オニ±0）</span>
+            </label>
+          </div>
+          <div style="font-size:0.76rem; color:var(--text-muted);">
+            ※基準計算モードでは「マップ切替での擬態狩りや赤グミ等で常に要求数1を維持した場合の最小必要数（＝対象範囲のツボ総数）」を算出し、Wiki増減シミュレーションモードでは上記条件でそのまま進んだ場合の各階要求数を算出します。いずれのモードでも下表の対象階合計と累計必要個数が完全一致します。
+          </div>
+        </div>
+
+        <!-- 計算結果サマリー -->
+        <div class="chest-stats-grid" style="margin-bottom:14px;">
+          <div class="chest-stat-box" style="background:#ffffff;">
+            <div class="chest-stat-label">対象区間（${res.currentFloor}F 〜 ${res.targetFloor}F）のツボ総数</div>
+            <div class="chest-stat-val" id="gummy-calc-total-pots">${res.totalPotsInRange} 個</div>
+            <div style="font-size:0.75rem; color:var(--text-muted);">全50階合計: 173個（50Fは0個）</div>
+          </div>
+          <div class="chest-stat-box" style="background:#ffffff;">
+            <div class="chest-stat-label">目標階までに必要な累計個数</div>
+            <div class="chest-stat-val" id="gummy-calc-total-req" style="color:var(--accent);">${res.totalRequired} 個</div>
+            <div style="font-size:0.75rem; color:var(--text-muted);">${res.calcMode === 'min' ? '要求数1維持（最小基準）' : `シミュレーション(${res.difficulty})`}</div>
+          </div>
+          <div class="chest-stat-box" style="background:#ffffff;">
+            <div class="chest-stat-label">現在の手持ちカエルグミ</div>
+            <div class="chest-stat-val" id="gummy-calc-held-display">${res.heldGummies} 個</div>
+          </div>
+          <div class="chest-stat-box" style="background:${res.shortfall > 0 ? '#fff1f2' : '#f0fdf4'}; border-color:${res.shortfall > 0 ? '#fecdd3' : '#bbf7d0'};">
+            <div class="chest-stat-label">${res.shortfall > 0 ? '⚠️ あと何個必要か（不足数）' : '✅ 判定結果（余剰数）'}</div>
+            <div class="chest-stat-val" id="gummy-calc-shortfall" style="color:${res.shortfall > 0 ? '#e11d48' : '#15803d'};">
+              ${res.shortfall > 0 ? `あと ${res.shortfall} 個不足` : `充足（余り ${res.surplus} 個）`}
+            </div>
+          </div>
+        </div>
+
+        <!-- 集め先の提示（ITEM_DROP_INDEX 連携） -->
+        <div style="background:#ffffff; border:1px solid ${res.shortfall > 0 ? '#fca5a5' : 'var(--border-light)'}; border-radius:var(--radius-sm); padding:12px; margin-bottom:14px;">
+          <div style="display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:8px; margin-bottom:8px;">
+            <strong style="font-size:0.9rem; color:${res.shortfall > 0 ? '#b91c1c' : '#166534'};">
+              ${res.shortfall > 0 ? `🧭 カエルグミが ${res.shortfall} 個不足しています — おすすめ集め先・ドロップ逆引き導線` : '🧭 カエルグミの主な集め先・ドロップ逆引き（ITEM_DROP_INDEX連携）'}
+            </strong>
+            <div style="display:flex; gap:6px; flex-wrap:wrap;">
+              <button type="button" class="btn btn-xs btn-outline" onclick="window.jumpToGummyDropLookup('items', 'カエルグミ')">📦 アイテム逆引きで「カエルグミ」を開く →</button>
+              <button type="button" class="btn btn-xs btn-outline" onclick="window.jumpToGummyDropLookup('monsters', 'カエルグミ')">👾 モンスター図鑑で「カエルグミ」を検索 →</button>
+            </div>
+          </div>
+          <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); gap:10px; font-size:0.8rem;">
+            <div style="background:#f0fdf4; border:1px solid #bbf7d0; border-radius:4px; padding:8px 10px;">
+              <div style="font-weight:700; color:#166534; margin-bottom:4px;">🟢 カエルグミ(緑) 高確率ドロップマップ（ITEM_DROP_INDEX上位）</div>
+              <div style="color:#14532d; line-height:1.5;">
+                ${greenDrops.slice(0, 6).map(d => `${escapeHtml(d.map)} (<strong>${escapeHtml(d.rate)}</strong>)`).join(' ／ ')}
+              </div>
+              <div style="margin-top:4px; color:#166534; font-size:0.76rem;">
+                👾 ドロップモンスター例: ${greenMonsters.map(m => escapeHtml(m.name)).join('、')} ほか（＋ガラムマサラ3F・17F・43Fの野生緑グミ×14、各階擬態(緑)のマップ切替復活）
+              </div>
+            </div>
+            <div style="background:#eff6ff; border:1px solid #bfdbfe; border-radius:4px; padding:8px 10px;">
+              <div style="font-weight:700; color:#1e40af; margin-bottom:4px;">🔵 カエルグミ(青) 高確率ドロップマップ（ITEM_DROP_INDEX上位）</div>
+              <div style="color:#1e3a8a; line-height:1.5;">
+                ${blueDrops.slice(0, 6).map(d => `${escapeHtml(d.map)} (<strong>${escapeHtml(d.rate)}</strong>)`).join(' ／ ')}
+              </div>
+              <div style="margin-top:4px; color:#1e40af; font-size:0.76rem;">
+                👾 ドロップモンスター例: ${blueMonsters.map(m => escapeHtml(m.name)).join('、')} ほか（＋ガラムマサラ24F・40Fの野生青グミ×14、各階擬態(青)のマップ切替復活）
+              </div>
+            </div>
+          </div>
+          <div style="margin-top:8px; font-size:0.77rem; color:var(--text-secondary); background:#f8fafc; padding:6px 8px; border-radius:4px;">
+            🔴 <strong>カエルグミ(赤)について:</strong> ${escapeHtml(GARAM_TSUBO_DATA.redGummyDropNote)}
+          </div>
+        </div>
+
+        <!-- 階ごとの要求数テーブル（全50階・各行に出典リンクつき） -->
+        <div>
+          <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-bottom:8px;">
+            <strong style="font-size:0.9rem; color:var(--text-primary);">
+              📊 ガラムマサラ全50階 階層別キヤシカゥアのツボ要求数・擬態・カエルグミ一覧表
+            </strong>
+            <button type="button" class="btn btn-xs btn-outline" onclick="window.updateGummyCalcParam('tableExpanded', ${!gummyCalcState.tableExpanded})">
+              ${gummyCalcState.tableExpanded ? '▲ テーブルを折りたたむ' : '▼ 全50階テーブルを展開する'}
+            </button>
+          </div>
+          ${gummyCalcState.tableExpanded ? `
+            <div class="table-responsive" style="max-height:420px; overflow-y:auto; border:1px solid var(--border-light); border-radius:4px; background:#ffffff;">
+              <table class="data-table" id="garam-tsubo-req-table" style="margin:0; font-size:0.8rem;">
+                <thead style="position:sticky; top:0; z-index:2; background:#f1f5f9;">
+                  <tr>
+                    <th>階</th>
+                    <th>ツボ数(全宝箱回収)</th>
+                    <th>この階の必要グミ数</th>
+                    <th>区間内累計(${res.currentFloor}F〜)</th>
+                    <th>最短通過のみ</th>
+                    <th>フロア内擬態・野生</th>
+                    <th>グミ宝箱</th>
+                    <th>ドロップ期待値(100戦)</th>
+                    <th>出典リンク</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  ${tableRowsHtml}
+                </tbody>
+                <tfoot style="background:#f8fafc; font-weight:700;">
+                  <tr>
+                    <td>合計 (${res.currentFloor}F〜${res.targetFloor}F)</td>
+                    <td>${res.totalPotsInRange}個</td>
+                    <td id="gummy-table-sum-cell" style="color:var(--accent);">${res.totalRequired}個</td>
+                    <td>${res.totalRequired}個</td>
+                    <td>未確認</td>
+                    <td colspan="4" style="font-weight:normal; font-size:0.76rem; color:var(--text-secondary);">
+                      ※対象階（${res.currentFloor}F〜${res.targetFloor}F）の「この階の必要グミ数」合計（${res.totalRequired}個）は、上部計算機の累計必要個数（${res.totalRequired}個）と完全一致します。
+                    </td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+          ` : ''}
+        </div>
+      </div>
+    `;
+  }
+  window.renderGaramGummyCalculatorHtml = renderGaramGummyCalculatorHtml;
+
   // Area Map & Schematic Section Renderer (100% Original SVG + Direct Source Links)
   function renderAreaMapSection(areaName, planeName, areaChests, allChestsInArea) {
     if (typeof CHEST_MAP_ASSETS === 'undefined') return '';
@@ -2338,6 +2819,7 @@ let collapsedMaps = new Set();
               <span class="ext-link-note">※他者著作物への配慮のため、実マップ画像の自サイトへの複製掲載は行わず、Wiki直接リンクでご案内しています。</span>
             </div>
           ` : ''}
+          ${renderGaramGummyCalculatorHtml()}
         </div>
       `;
     }
@@ -2499,10 +2981,18 @@ let collapsedMaps = new Set();
         </p>
 
         <!-- 収集チェックリストとの相互リンク -->
-        <div class="note-box" style="margin-bottom:14px; background:#eff6ff; border-color:#bfdbfe; color:#1e3a8a; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:8px;">
+        <div class="note-box" style="margin-bottom:10px; background:#eff6ff; border-color:#bfdbfe; color:#1e3a8a; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:8px;">
           <span>💡 <strong>収集チェックリスト連携:</strong> ミミック等のハズレ宝箱から出るコイン一覧は [📋 収集チェックリスト] タブで管理できます。</span>
           <button type="button" class="btn btn-sm btn-outline" onclick="window.switchTab('tab-collections')" style="font-size:0.8rem; padding:3px 10px; background:#fff;">
             📋 収集チェックリストを開く
+          </button>
+        </div>
+
+        <!-- ガラムマサラ：カエルグミ必要数＆周回計算機への導線 (Phase 11) -->
+        <div class="note-box" style="margin-bottom:14px; background:#f0fdf4; border-color:#86efac; color:#166534; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:8px;">
+          <span>🐸 <strong>ガラムマサラ攻略支援:</strong> 「キヤシカゥアのツボ」の階層別カエルグミ必要数・不足数逆算＆ドロップ集め先計算機をガラムマサラ欄に搭載しています。</span>
+          <button type="button" class="btn btn-sm btn-outline" onclick="window.openGaramGummyCalculator()" style="font-size:0.8rem; padding:3px 10px; background:#fff; border-color:#16a34a; color:#166534; font-weight:700;">
+            🐸 カエルグミ必要数＆周回計算機へ移動
           </button>
         </div>
 
@@ -2915,6 +3405,15 @@ let collapsedMaps = new Set();
               <div style="margin-top:4px; font-size:0.88rem; color:var(--warning-text);">${escapeHtml(plane.missable)}</div>
             </div>
           </div>
+
+          ${plane.id === 'garam' ? `
+            <div class="note-box" style="margin-top:14px; background:#f0fdf4; border-color:#86efac; color:#166534; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:8px;">
+              <span>🐸 <strong>ガラムマサラ攻略支援:</strong> キヤシカゥアのツボの階層別カエルグミ必要数・不足数逆算計算機を利用できます。</span>
+              <button type="button" class="btn btn-sm btn-outline" onclick="window.openGaramGummyCalculator()" style="font-size:0.8rem; padding:3px 10px; background:#fff; border-color:#16a34a; color:#166534; font-weight:700;">
+                🐸 カエルグミ必要数＆周回計算機を開く →
+              </button>
+            </div>
+          ` : ''}
 
           <div style="font-size:0.8rem; color:var(--text-muted); margin-top:14px; text-align:right;">
             出典: <a href="${escapeHtml(plane.url)}" target="_blank" rel="noopener noreferrer">Wiki「${escapeHtml(plane.name)}」</a>
