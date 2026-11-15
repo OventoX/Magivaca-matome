@@ -3550,6 +3550,19 @@ let collapsedMaps = new Set();
                 <a href="${escapeHtml(sec.url)}" target="_blank" rel="noopener noreferrer" style="font-size:0.8rem;">Wiki該当節 ↗</a>
               </div>
               <div style="font-size:0.88rem; color:var(--text-secondary); line-height:1.6; white-space:pre-wrap;">${escapeHtml(sec.content)}</div>
+              ${sec.finder ? `
+                <div class="amigo-finder-box" style="margin-top:14px; padding:12px 14px; background:var(--bg-subtle); border:1px solid var(--border-medium); border-left:4px solid var(--accent); border-radius:var(--radius-sm);">
+                  <div style="font-weight:600; font-size:0.92rem; color:var(--text-primary); margin-bottom:6px; display:flex; align-items:center; gap:6px;">
+                    <span>🤝</span><span>${escapeHtml(sec.finder.title)}</span>
+                  </div>
+                  <p style="font-size:0.86rem; color:var(--text-secondary); line-height:1.6; margin:0 0 8px 0;">
+                    ${escapeHtml(sec.finder.description)}
+                  </p>
+                  <div style="font-size:0.8rem; color:var(--warning-text); line-height:1.5;">
+                    ⚠️ ${escapeHtml(sec.finder.caution)}
+                  </div>
+                </div>
+              ` : ''}
             </div>
           `).join('')}
         </div>
