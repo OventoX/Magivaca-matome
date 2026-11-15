@@ -13,6 +13,26 @@
   const STORAGE_KEY_TIMELINE = 'magivaca_timeline_checklist_v1';
   const STORAGE_KEY_GUMMY_CALC = 'magivaca_gummy_calc_v1';
 
+  // 精霊の属性ごとのフィールドでの姿（出典：攻略Wiki「精霊」ページ）
+  const SPIRIT_FIELD_APPEARANCE = {
+    '火': '燭台とロウソク',
+    '風': '羽',
+    '毒': '紫の液体が入った瓶',
+    '美': '鏡',
+    '刃': '剣',
+    '音': '音符',
+    '石': '岩',
+    '虫': '小さな虫3匹',
+    '木': '木の枝',
+    '獣': '獣の足跡',
+    '水': '水たまり',
+    '雷': '電球',
+    '古': '歯車',
+    '闇': '回転するドクロ',
+    '光': 'キラキラ',
+    '愛': '点滅するハート'
+  };
+
   // Helper: 全角数字を半角数字に変換して正規化する共通関数
   function normalizeMapName(str) {
     if (str === null || str === undefined) return '';
@@ -671,6 +691,17 @@ let collapsedMaps = new Set();
         </div>
       ` : '';
 
+      // Field Appearance HTML (属性ごとのフィールドでの姿)
+      const fieldForm = Object.prototype.hasOwnProperty.call(SPIRIT_FIELD_APPEARANCE, s.element)
+        ? SPIRIT_FIELD_APPEARANCE[s.element]
+        : null;
+      const fieldFormHtml = fieldForm ? `
+        <div class="detail-row">
+          <span class="detail-key">フィールドでの姿</span>
+          <span class="detail-val">${escapeHtml(fieldForm)}</span>
+        </div>
+      ` : '';
+
       card.innerHTML = `
         <div class="card-header">
           <div class="card-title-group">
@@ -698,6 +729,7 @@ let collapsedMaps = new Set();
             <span class="detail-key">要求</span>
             <span class="detail-val requirement-highlight">${escapeHtml(reqVal)}</span>
           </div>
+          ${fieldFormHtml}
           ${remarksVal}
           ${warningHtml}
         </div>
@@ -705,7 +737,7 @@ let collapsedMaps = new Set();
         <div class="card-footer">
           <span>タグ: ${escapeHtml(s.reqTags ? s.reqTags.join(', ') : '-')}</span>
           <a href="${escapeHtml(s.sourceUrl)}" target="_blank" rel="noopener noreferrer" class="source-link" title="一次情報Wikiの該当節を開く">
-            出典Wiki ↗
+            Wikiで詳細を見る ↗
           </a>
         </div>
       `;
