@@ -253,6 +253,7 @@ let collapsedMaps = new Set();
     }
 
     window.scrollTo({ top: 0, behavior: 'smooth' });
+    scheduleStickyTableUpdate();
   };
 
   // Load state from localStorage
@@ -4515,11 +4516,113 @@ let collapsedMaps = new Set();
     }
   }
 
+  // ヘッダー実高さの計測＆--header-h設定、および横スクロール表のページスクロール連動見出し固定
+  function updateHeaderHeight() {
+    if (typeof document === 'undefined' || typeof document.querySelector !== 'function') return 0;
+    const header = document.querySelector('.app-header');
+    if (!header) return 0;
+    const h = header.offsetHeight || 0;
+    if (document.documentElement && document.documentElement.style && typeof document.documentElement.style.setProperty === 'function') {
+      document.documentElement.style.setProperty('--header-h', `${h}px`);
+    }
+    return h;
+  }
+
+  let stickyTableRaf = null;
+  function updateStickyTableHeaders() {
+    if (typeof document === 'undefined' || typeof window === 'undefined' || typeof document.querySelectorAll !== 'function') return;
+    const headerH = updateHeaderHeight();
+    const tables = document.querySelectorAll('.data-table-container > .data-table, .data-table-wrapper > .data-table');
+    for (let i = 0; i < tables.length; i++) {
+      const table = tables[i];
+      const thead = table.tHead;
+      if (!thead) continue;
+      const container = table.parentElement;
+      if (!container) continue;
+      if (typeof table.getBoundingClientRect !== 'function') continue;
+
+      const rect = table.getBoundingClientRect();
+      if (rect.height === 0) {
+        if (thead.style.transform) {
+          thead.style.transform = '';
+          thead.style.position = '';
+          thead.style.zIndex = '';
+        }
+        continue;
+      }
+
+      // 内部スクロールボックス（max-height付き）内の表はCSSのtop:0 stickyに委ねる
+      if (typeof window.getComputedStyle === 'function') {
+        const cs = window.getComputedStyle(container);
+        if (cs && cs.maxHeight && cs.maxHeight !== 'none') {
+          if (thead.style.transform) {
+            thead.style.transform = '';
+            thead.style.position = '';
+            thead.style.zIndex = '';
+          }
+          continue;
+        }
+      }
+
+      const theadH = thead.offsetHeight || 0;
+      if (rect.top < headerH && (rect.bottom - theadH) > headerH) {
+        const offset = Math.min(headerH - rect.top, rect.height - theadH);
+        thead.style.transform = `translate3d(0, ${offset}px, 0)`;
+        thead.style.position = 'relative';
+        thead.style.zIndex = '40';
+      } else if (rect.top < headerH && (rect.bottom - theadH) <= headerH) {
+        const maxOffset = Math.max(0, rect.height - theadH);
+        thead.style.transform = `translate3d(0, ${maxOffset}px, 0)`;
+        thead.style.position = 'relative';
+        thead.style.zIndex = '40';
+      } else {
+        if (thead.style.transform) {
+          thead.style.transform = '';
+          thead.style.position = '';
+          thead.style.zIndex = '';
+        }
+      }
+    }
+  }
+
+  function scheduleStickyTableUpdate() {
+    if (typeof window !== 'undefined' && typeof window.requestAnimationFrame === 'function') {
+      if (stickyTableRaf !== null) return;
+      stickyTableRaf = window.requestAnimationFrame(() => {
+        stickyTableRaf = null;
+        updateStickyTableHeaders();
+      });
+    } else {
+      updateStickyTableHeaders();
+    }
+  }
+
+  function setupStickyTableObservers() {
+    updateHeaderHeight();
+    updateStickyTableHeaders();
+
+    if (typeof window !== 'undefined' && typeof window.addEventListener === 'function') {
+      window.addEventListener('scroll', scheduleStickyTableUpdate, { passive: true });
+      window.addEventListener('resize', scheduleStickyTableUpdate, { passive: true });
+    }
+
+    if (typeof ResizeObserver !== 'undefined' && typeof document !== 'undefined' && typeof document.querySelector === 'function') {
+      const header = document.querySelector('.app-header');
+      if (header) {
+        const ro = new ResizeObserver(() => {
+          scheduleStickyTableUpdate();
+        });
+        ro.observe(header);
+      }
+    }
+  }
+
   // Init
   function init() {
     loadState();
     setupEvents();
     updateUI();
+    setupStickyTableObservers();
   }
 
   window.addEventListener('DOMContentLoaded', init);
