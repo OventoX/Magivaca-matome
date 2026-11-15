@@ -1452,6 +1452,13 @@ a:hover {
   .elem-filter-arrow {
     font-size: 0.78rem;
     color: var(--accent);
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .elem-arrow-icon {
+    display: inline-block;
     transition: transform 0.2s ease;
   }
 
@@ -1466,7 +1473,7 @@ a:hover {
     gap: 6px;
   }
 
-  .element-filter-accordion.expanded .elem-filter-arrow {
+  .element-filter-accordion.expanded .elem-arrow-icon {
     transform: rotate(180deg);
   }
 

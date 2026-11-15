@@ -541,9 +541,7 @@ let collapsedMaps = new Set();
         accordionLabel.textContent = `属性フィルター: すべて (${prog.checkedCount} / ${prog.total})`;
       } else {
         const counts = prog.elemCounts[currentFilters.element] || { total: 7, checked: 0 };
-        const meta = ELEMENT_META[currentFilters.element];
-        const icon = meta ? meta.icon : '✨';
-        accordionLabel.textContent = `属性フィルター: ${icon} ${currentFilters.element} (${counts.checked} / ${counts.total})`;
+        accordionLabel.textContent = `属性フィルター: ${currentFilters.element} (${counts.checked} / ${counts.total})`;
       }
     }
   }
