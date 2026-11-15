@@ -1,49 +1,56 @@
 /* ==========================================================================
-   マジカルバケーション 攻略サポート - 落ち着いたドキュメント志向デザイン
+   マジカルバケーション 攻略サポート - 本家GBA風 絵本調＆羊皮紙デザイン
    ========================================================================== */
 
 :root {
-  /* 基調カラー：白〜淡いグレー */
-  --bg-page: #f8fafc;           /* 全体背景：清潔感のある極薄いスレートグレー */
-  --bg-surface: #ffffff;        /* ヘッダー・カード・パネル背景：白 */
-  --bg-subtle: #f1f5f9;         /* テーブル見出し、検索欄等の薄い背景 */
-  --bg-hover: #e2e8f0;          /* ホバー時背景 */
-  --bg-checked: #f0fdf4;        /* チェック済みカード背景：淡いミント */
+  /* 基調カラー：羊皮紙クリーム */
+  --bg-page: #f7ecd2;           /* 全体背景：羊皮紙クリーム */
+  --bg-surface: #fdf6dd;        /* カード・パネル背景：生成りクリーム */
+  --bg-subtle: #f2e3c2;         /* 見出し帯、検索欄等の淡いクリーム */
+  --bg-hover: #efdcb2;          /* ホバー時背景 */
+  --bg-checked: #e9f5d8;        /* チェック済みカード背景：若緑 */
   
-  /* ボーダー・境界線 */
-  --border-light: #e2e8f0;      /* 基本ボーダー */
-  --border-medium: #cbd5e1;     /* 区切り線・強調ボーダー */
-  --border-focus: #2563eb;      /* フォーカス時 */
+  /* ボーダー・境界線（金茶〜枠茶） */
+  --border-light: #c9a86a;      /* 基本ボーダー：金茶 */
+  --border-medium: #6b4a2a;     /* 強調ボーダー：枠茶 */
+  --border-focus: #35b6e8;      /* フォーカス時：空シアン */
   
-  /* テキストカラー（高コントラストで視認性重視） */
-  --text-primary: #0f172a;      /* 本文：濃いスレートブラック（視認性抜群） */
-  --text-secondary: #334155;    /* 見出し・準主文：ダークスレート */
-  --text-muted: #64748b;        /* 補足・ラベル：ミディアムスレート */
-  --text-dim: #94a3b8;          /* 注記・非活性：淡いスレート */
+  /* テキストカラー（文字茶ベース） */
+  --text-primary: #3a2418;      /* 本文：文字茶 */
+  --text-secondary: #6b4a2a;    /* 準主文：枠茶 */
+  --text-muted: #7c5c3e;        /* 補足・ラベル */
+  --text-dim: #9e8264;          /* 注記・非活性 */
   
-  /* アクセントカラー（彩度を抑えたクラシックネイビー1色に統一） */
-  --accent: #1e3a8a;            /* ディープネイビー */
-  --accent-hover: #172554;
-  --accent-light: #eff6ff;      /* タブアクティブ等の薄いブルー */
-  --accent-border: #bfdbfe;
+  /* アクセントカラー（橙〜金グラデーション、金トリム、差し色シアン） */
+  --accent: #b85314;            /* 文字・強調用濃い橙（コントラスト確保） */
+  --accent-hover: #96410c;
+  --accent-light: #fcebc7;      /* 淡い橙金背景 */
+  --accent-border: #c9973f;     /* 金トリム */
+  --accent-grad: linear-gradient(180deg, #f2b544 0%, #e07b2a 100%);
+  --plaque-grad: linear-gradient(180deg, #3a2418 0%, #2e1c10 100%);
+  --gold-trim: #c9973f;
+  --sky-cyan: #35b6e8;
+  --link-color: #156b8f;        /* クリーム地上でも読みやすい空シアン系 */
   
-  /* 警告・注意（彩度を抑えた品のあるトーン） */
-  --warning-bg: #fff1f2;        /* 淡いローズ */
-  --warning-border: #f43f5e;
-  --warning-text: #9f1239;
+  /* 警告・注意 */
+  --warning-bg: #fde8e4;        /* 温かみのある淡赤 */
+  --warning-border: #d9483b;
+  --warning-text: #992218;
   
-  /* 成功・完了 */
-  --success-color: #16a34a;
-  --success-bg: #dcfce7;
-  --success-border: #86efac;
+  /* 成功・完了（ティール〜若緑） */
+  --success-color: #2e8f6e;
+  --success-bg: #e9f5d8;
+  --success-border: #2e8f6e;
   
-  /* 角丸と影（過度な演出を廃止し最小限に） */
-  --radius-sm: 4px;
-  --radius-md: 6px;
-  --radius-lg: 8px;
+  /* 角丸と二重枠・影 */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 12px;
   
-  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-sm: 0 2px 5px rgba(58, 36, 24, 0.14);
+  --shadow-md: 0 4px 10px rgba(58, 36, 24, 0.2);
+  --frame-double-shadow: inset 0 0 0 2px #fdf6dd, inset 0 0 0 4px #c9a86a, 0 2px 6px rgba(58, 36, 24, 0.18);
+  --frame-double-checked: inset 0 0 0 2px #e9f5d8, inset 0 0 0 4px #2e8f6e, 0 2px 6px rgba(46, 143, 110, 0.15);
 }
 
 /* Base Reset */
@@ -56,6 +63,8 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
   background-color: var(--bg-page);
+  background-image: linear-gradient(180deg, #f7ecd2 0%, #f2e0b8 100%);
+  background-attachment: fixed;
   color: var(--text-primary);
   line-height: 1.65;
   font-size: 15px;
@@ -65,25 +74,30 @@ body {
   flex-direction: column;
 }
 
+h1, h2, h3, h4 {
+  font-family: "Hiragino Maru Gothic ProN", "Hiragino Sans", "Noto Sans JP", "Yu Gothic", sans-serif;
+  font-weight: 700;
+}
+
 a {
-  color: var(--accent);
+  color: var(--link-color);
   text-decoration: underline;
   text-underline-offset: 2px;
   transition: color 0.15s;
 }
 
 a:hover {
-  color: #1d4ed8;
+  color: #1d8bb8;
 }
 
-/* Header & Navigation */
+/* Header & Navigation (濃茶プラーク＋金トリム様式) */
 .app-header {
-  background-color: var(--bg-surface);
-  border-bottom: 1px solid var(--border-light);
+  background: var(--plaque-grad);
+  border-bottom: 2px solid var(--gold-trim);
   position: sticky;
   top: 0;
   z-index: 100;
-  box-shadow: var(--shadow-sm);
+  box-shadow: inset 0 -1px 0 rgba(253, 246, 221, 0.25), 0 3px 8px rgba(46, 28, 16, 0.3);
 }
 
 .header-container {
@@ -106,24 +120,26 @@ a:hover {
 .brand-title {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
 }
 
 .brand-title h1 {
   font-size: 1.25rem;
   font-weight: 700;
-  color: var(--text-primary);
-  letter-spacing: -0.01em;
+  color: #f7ecd2;
+  letter-spacing: 0.01em;
+  text-shadow: 0 2px 3px rgba(20, 10, 5, 0.7);
 }
 
 .brand-badge {
   font-size: 0.75rem;
-  background-color: var(--bg-subtle);
-  color: var(--text-muted);
-  border: 1px solid var(--border-light);
-  padding: 2px 8px;
-  border-radius: var(--radius-sm);
-  font-weight: 500;
+  background: var(--accent-grad);
+  color: #3a2418;
+  border: 1.5px solid var(--gold-trim);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  padding: 2px 9px;
+  border-radius: 999px;
+  font-weight: 700;
 }
 
 .header-actions {
@@ -134,48 +150,52 @@ a:hover {
 
 .btn {
   background-color: var(--bg-surface);
-  color: var(--text-secondary);
-  border: 1px solid var(--border-medium);
+  color: var(--text-primary);
+  border: 1.5px solid var(--border-medium);
   padding: 6px 12px;
   border-radius: var(--radius-sm);
   font-size: 0.85rem;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
   gap: 6px;
   transition: all 0.15s ease;
+  box-shadow: 0 1px 2px rgba(58, 36, 24, 0.15);
 }
 
 .btn:hover {
-  background-color: var(--bg-subtle);
+  background-color: var(--bg-hover);
   color: var(--text-primary);
-  border-color: var(--text-muted);
+  border-color: var(--border-medium);
 }
 
 .btn-primary {
-  background-color: var(--accent);
-  border-color: var(--accent);
-  color: #ffffff;
+  background: var(--accent-grad);
+  border: 1.5px solid var(--border-medium);
+  color: #3a2418;
+  font-weight: 700;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35), 0 1px 3px rgba(58, 36, 24, 0.25);
 }
 
 .btn-primary:hover {
-  background-color: var(--accent-hover);
-  border-color: var(--accent-hover);
+  background: linear-gradient(180deg, #f6c45e 0%, #e88936 100%);
+  border-color: var(--border-medium);
+  color: #2e1c10;
 }
 
 .btn-danger {
-  color: #b91c1c;
-  border-color: #fca5a5;
-  background-color: #fef2f2;
+  color: #992218;
+  border: 1.5px solid #d9483b;
+  background-color: #fde8e4;
 }
 
 .btn-danger:hover {
-  background-color: #fee2e2;
-  border-color: #ef4444;
+  background-color: #fad2ca;
+  border-color: #b82d20;
 }
 
-/* Global Progress Bar */
+/* Global Progress Bar (本家HPゲージ風) */
 .progress-section {
   display: flex;
   flex-direction: column;
@@ -186,36 +206,38 @@ a:hover {
   display: flex;
   justify-content: space-between;
   font-size: 0.82rem;
-  color: var(--text-muted);
+  color: #e6d5b2;
   font-weight: 500;
 }
 
 .progress-count {
   font-weight: 700;
-  color: var(--text-primary);
+  color: #f2b544;
 }
 
 .progress-bar-bg {
   width: 100%;
-  height: 6px;
-  background-color: var(--bg-subtle);
-  border-radius: 3px;
+  height: 9px;
+  background-color: #1f140d;
+  border-radius: 999px;
   overflow: hidden;
-  border: 1px solid var(--border-light);
+  border: 1.5px solid var(--gold-trim);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.6);
 }
 
 .progress-bar-fill {
   height: 100%;
-  background-color: var(--accent);
+  background: linear-gradient(90deg, #e04f33 0%, #f2b544 50%, #4ade80 100%);
+  border-radius: 999px;
   width: 0%;
   transition: width 0.25s ease;
 }
 
-/* Navigation Tabs (複数行折り返し表示・横スクロール不要) */
+/* Navigation Tabs (複数行折り返し表示・本家メニュー項目様式) */
 .nav-tabs {
-  background-color: var(--bg-surface);
-  border-top: 1px solid var(--border-light);
-  border-bottom: 1px solid var(--border-light);
+  background-color: var(--bg-subtle);
+  border-top: 1px solid var(--gold-trim);
+  border-bottom: 2px solid var(--border-medium);
 }
 
 .nav-tabs-wrapper {
@@ -228,11 +250,11 @@ a:hover {
 }
 
 .tab-btn {
-  padding: 8px 14px;
-  background: transparent;
-  border: 1px solid transparent;
+  padding: 7px 13px;
+  background-color: var(--bg-surface);
+  border: 1.5px solid var(--border-light);
   border-radius: var(--radius-sm);
-  color: var(--text-muted);
+  color: var(--text-primary);
   font-size: 0.88rem;
   font-weight: 600;
   cursor: pointer;
@@ -242,19 +264,20 @@ a:hover {
   transition: all 0.15s ease;
   white-space: nowrap;
   flex-shrink: 0;
+  box-shadow: 0 1px 2px rgba(58, 36, 24, 0.1);
 }
 
 .tab-btn:hover {
   color: var(--text-primary);
-  background-color: var(--bg-subtle);
-  border-color: var(--border-light);
+  background-color: var(--bg-hover);
+  border-color: var(--border-medium);
 }
 
 .tab-btn.active {
-  color: var(--accent);
-  background-color: var(--accent-light);
-  border-color: var(--accent-border);
-  box-shadow: 0 1px 2px rgba(30, 58, 138, 0.08);
+  color: #f7ecd2;
+  background: var(--plaque-grad);
+  border: 1.5px solid var(--gold-trim);
+  box-shadow: inset 0 0 0 1px rgba(242, 181, 68, 0.35), 0 2px 4px rgba(46, 28, 16, 0.25);
 }
 
 /* Main Container */
@@ -284,8 +307,8 @@ a:hover {
 
 .element-chip {
   background-color: var(--bg-surface);
-  border: 1px solid var(--border-light);
-  border-radius: var(--radius-sm);
+  border: 1.5px solid var(--border-light);
+  border-radius: 8px;
   padding: 6px 10px;
   display: flex;
   align-items: center;
@@ -293,16 +316,23 @@ a:hover {
   cursor: pointer;
   transition: all 0.15s;
   user-select: none;
+  box-shadow: 0 1px 2px rgba(58, 36, 24, 0.08);
 }
 
 .element-chip:hover {
   border-color: var(--border-medium);
-  background-color: var(--bg-subtle);
+  background-color: var(--bg-hover);
 }
 
 .element-chip.selected {
-  border-color: var(--accent);
-  background-color: var(--accent-light);
+  border-color: var(--border-medium);
+  background: var(--accent-grad);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 3px rgba(58, 36, 24, 0.2);
+}
+
+.element-chip.selected .elem-name,
+.element-chip.selected .chip-count {
+  color: #3a2418;
 }
 
 .element-chip.completed {
@@ -347,14 +377,14 @@ a:hover {
 /* Filter Card */
 .filter-card {
   background-color: var(--bg-surface);
-  border: 1px solid var(--border-light);
+  border: 2px solid var(--border-medium);
   border-radius: var(--radius-md);
   padding: 16px;
   margin-bottom: 16px;
   display: flex;
   flex-direction: column;
   gap: 12px;
-  box-shadow: var(--shadow-sm);
+  box-shadow: var(--frame-double-shadow);
 }
 
 .search-box-row {
@@ -372,7 +402,7 @@ a:hover {
 .search-input {
   width: 100%;
   background-color: var(--bg-subtle);
-  border: 1px solid var(--border-light);
+  border: 1.5px solid var(--border-light);
   border-radius: var(--radius-sm);
   padding: 8px 12px;
   color: var(--text-primary);
@@ -382,8 +412,9 @@ a:hover {
 }
 
 .search-input:focus {
-  border-color: var(--accent);
-  background-color: #ffffff;
+  border-color: var(--border-focus);
+  background-color: #fffdf5;
+  box-shadow: 0 0 0 2px rgba(53, 182, 232, 0.2);
 }
 
 .search-input::placeholder {
@@ -411,26 +442,29 @@ a:hover {
 }
 
 .filter-btn {
-  background-color: var(--bg-subtle);
+  background-color: var(--bg-surface);
   border: 1px solid var(--border-light);
-  color: var(--text-secondary);
-  padding: 3px 10px;
+  color: var(--text-primary);
+  padding: 4px 10px;
   border-radius: var(--radius-sm);
   font-size: 0.8rem;
+  font-weight: 500;
   cursor: pointer;
   transition: all 0.15s;
 }
 
 .filter-btn:hover {
   background-color: var(--bg-hover);
+  border-color: var(--border-medium);
   color: var(--text-primary);
 }
 
 .filter-btn.active {
-  background-color: var(--accent);
-  border-color: var(--accent);
-  color: #ffffff;
-  font-weight: 600;
+  background: var(--accent-grad);
+  border-color: var(--border-medium);
+  color: #3a2418;
+  font-weight: 700;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35);
 }
 
 .checkbox-toggle-label {
@@ -473,28 +507,30 @@ a:hover {
 
 .spirit-card {
   background-color: var(--bg-surface);
-  border: 1px solid var(--border-light);
+  border: 2px solid var(--border-medium);
   border-radius: var(--radius-md);
-  padding: 14px 16px;
+  padding: 15px 16px;
   display: flex;
   flex-direction: column;
   gap: 8px;
-  transition: border-color 0.15s, background-color 0.15s;
+  transition: border-color 0.15s, background-color 0.15s, transform 0.12s;
   cursor: pointer;
-  box-shadow: var(--shadow-sm);
+  box-shadow: var(--frame-double-shadow);
 }
 
 .spirit-card:hover {
   border-color: var(--border-medium);
+  background-color: #fffaf0;
 }
 
 .spirit-card.checked {
   background-color: var(--bg-checked);
   border-color: var(--success-border);
+  box-shadow: var(--frame-double-checked);
 }
 
 .spirit-card.has-warning {
-  border-left: 4px solid var(--warning-border);
+  border-left: 5px solid var(--warning-border);
 }
 
 .card-header {
@@ -636,7 +672,7 @@ a:hover {
 
 .source-link {
   font-size: 0.75rem;
-  color: var(--accent);
+  color: var(--link-color);
   display: inline-flex;
   align-items: center;
   gap: 2px;
@@ -648,11 +684,11 @@ a:hover {
 
 .content-section {
   background-color: var(--bg-surface);
-  border: 1px solid var(--border-light);
+  border: 2px solid var(--border-medium);
   border-radius: var(--radius-md);
   padding: 24px;
   margin-bottom: 24px;
-  box-shadow: var(--shadow-sm);
+  box-shadow: var(--frame-double-shadow);
 }
 
 .section-header {
@@ -661,13 +697,33 @@ a:hover {
   margin-bottom: 18px;
 }
 
-.section-title {
+.section-title,
+.guide-section > h2 {
+  font-family: "Hiragino Maru Gothic ProN", "Hiragino Sans", "Noto Sans JP", "Yu Gothic", sans-serif;
   font-size: 1.25rem;
   font-weight: 700;
   color: var(--text-primary);
   display: flex;
   align-items: center;
   gap: 8px;
+}
+
+.guide-section > h2 {
+  border-bottom: 2px solid var(--border-light);
+  padding-bottom: 8px;
+  margin-bottom: 14px;
+}
+
+.section-title::before,
+.guide-section > h2::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23e07b2a' stroke='%236b4a2a' stroke-width='1.5' d='M12 2l2.6 6.8L22 9.6l-5.4 4.8L18.2 22 12 18.2 5.8 22l1.6-7.6L2 9.6l7.4-.8z'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .section-desc {
@@ -707,11 +763,11 @@ a:hover {
 /* Spot / Chart Cards */
 .doc-card {
   background-color: var(--bg-surface);
-  border: 1px solid var(--border-light);
+  border: 2px solid var(--border-medium);
   border-radius: var(--radius-md);
   padding: 16px;
   margin-bottom: 14px;
-  box-shadow: var(--shadow-sm);
+  box-shadow: var(--frame-double-shadow);
 }
 
 .doc-card-header {
@@ -811,14 +867,23 @@ a:hover {
   background-color: var(--bg-subtle);
 }
 
-/* Footer */
+/* Footer (濃茶プラーク様式) */
 .app-footer {
-  background-color: var(--bg-surface);
-  border-top: 1px solid var(--border-light);
+  background: var(--plaque-grad);
+  border-top: 2px solid var(--gold-trim);
   padding: 24px 16px;
   margin-top: auto;
   font-size: 0.8rem;
-  color: var(--text-muted);
+  color: #e6d5b2;
+  box-shadow: inset 0 1px 0 rgba(253, 246, 221, 0.2);
+}
+
+.app-footer a {
+  color: #56ccf2;
+}
+
+.app-footer a:hover {
+  color: #8be0fa;
 }
 
 .footer-container {
@@ -831,7 +896,7 @@ a:hover {
   text-align: center;
 }
 
-/* Modal */
+/* Modal (二重枠＋クリーム地＋濃茶ヘッダー帯) */
 .modal-overlay {
   display: none;
   position: fixed;
@@ -839,7 +904,7 @@ a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(15, 23, 42, 0.4);
+  background: rgba(46, 28, 16, 0.55);
   z-index: 1000;
   justify-content: center;
   align-items: center;
@@ -852,41 +917,54 @@ a:hover {
 
 .modal-content {
   background-color: var(--bg-surface);
-  border: 1px solid var(--border-medium);
+  border: 2px solid var(--border-medium);
   border-radius: var(--radius-md);
   max-width: 500px;
   width: 100%;
-  padding: 20px;
-  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+  padding: 0;
+  overflow: hidden;
+  box-shadow: var(--frame-double-shadow), 0 12px 30px rgba(46, 28, 16, 0.35);
   display: flex;
   flex-direction: column;
-  gap: 14px;
 }
 
 .modal-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: var(--plaque-grad);
+  border-bottom: 2px solid var(--gold-trim);
+  padding: 12px 18px;
+  margin: 4px 4px 0 4px;
+  border-radius: 6px 6px 0 0;
 }
 
 .modal-header h3 {
-  font-size: 1.1rem;
-  color: var(--text-primary);
+  font-size: 1.05rem;
+  color: #f7ecd2;
 }
 
 .close-btn {
   background: none;
   border: none;
-  color: var(--text-muted);
+  color: #f7ecd2;
   font-size: 1.4rem;
   cursor: pointer;
+  line-height: 1;
+}
+
+.modal-body {
+  padding: 16px 20px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .modal-textarea {
   width: 100%;
   height: 120px;
   background-color: var(--bg-subtle);
-  border: 1px solid var(--border-light);
+  border: 1.5px solid var(--border-light);
   border-radius: var(--radius-sm);
   padding: 8px;
   color: var(--text-primary);
@@ -898,6 +976,7 @@ a:hover {
   display: flex;
   justify-content: flex-end;
   gap: 8px;
+  padding: 8px 20px 18px;
 }
 
 /* ==========================================================================
@@ -942,7 +1021,7 @@ a:hover {
 /* Data Tables */
 .data-table-container {
   overflow-x: auto;
-  border: 1px solid var(--border-light);
+  border: 2px solid var(--border-medium);
   border-radius: var(--radius-md);
   background-color: var(--bg-surface);
   margin-top: 14px;
@@ -960,9 +1039,9 @@ a:hover {
 .data-table th {
   background-color: var(--bg-subtle);
   color: var(--text-secondary);
-  font-weight: 600;
+  font-weight: 700;
   padding: 10px 12px;
-  border-bottom: 1px solid var(--border-medium);
+  border-bottom: 2px solid var(--border-medium);
   white-space: nowrap;
 }
 
@@ -977,17 +1056,17 @@ a:hover {
 }
 
 .data-table tr:hover td {
-  background-color: #f8fafc;
+  background-color: var(--bg-hover);
 }
 
 /* Reverse Lookup Area */
 .lookup-card {
   background-color: var(--bg-surface);
-  border: 1px solid var(--border-light);
+  border: 2px solid var(--border-medium);
   border-radius: var(--radius-md);
   padding: 16px 20px;
   margin-bottom: 20px;
-  box-shadow: var(--shadow-sm);
+  box-shadow: var(--frame-double-shadow);
 }
 
 .lookup-card h3 {
@@ -1008,7 +1087,7 @@ a:hover {
 
 .lookup-result-box {
   background-color: var(--bg-subtle);
-  border: 1px solid var(--border-light);
+  border: 1.5px solid var(--border-light);
   border-radius: var(--radius-sm);
   padding: 12px;
   font-size: 0.88rem;
@@ -1017,16 +1096,16 @@ a:hover {
 /* Story Choice Cards */
 .story-card {
   background-color: var(--bg-surface);
-  border: 1px solid var(--border-light);
+  border: 2px solid var(--border-medium);
   border-radius: var(--radius-md);
   margin-bottom: 16px;
   padding: 16px 20px;
-  box-shadow: var(--shadow-sm);
+  box-shadow: var(--frame-double-shadow);
   transition: border-color 0.15s ease;
 }
 
 .story-card.missable {
-  border-left: 4px solid var(--warning-border);
+  border-left: 5px solid var(--warning-border);
 }
 
 .story-card-header {
@@ -1089,20 +1168,21 @@ a:hover {
 /* Collection Checklist Items */
 .collection-card {
   background-color: var(--bg-surface);
-  border: 1px solid var(--border-light);
+  border: 2px solid var(--border-medium);
   border-radius: var(--radius-md);
   padding: 14px 18px;
   margin-bottom: 12px;
   display: flex;
   align-items: flex-start;
   gap: 14px;
-  box-shadow: var(--shadow-sm);
+  box-shadow: var(--frame-double-shadow);
   transition: all 0.15s ease;
 }
 
 .collection-card.checked {
   background-color: var(--bg-checked);
   border-color: var(--success-border);
+  box-shadow: var(--frame-double-checked);
 }
 
 .collection-checkbox {
@@ -1275,8 +1355,8 @@ a:hover {
   }
 
   .progress-bar-bg {
-    height: 4px;
-    border-radius: 2px;
+    height: 6px;
+    border-radius: 999px;
   }
 
   /* 2. Navigation Tabs: 1-row smooth horizontal scroll with visible scrollbar & end fade */
@@ -1287,8 +1367,8 @@ a:hover {
     -webkit-overflow-scrolling: touch;
     scrollbar-width: thin;
     scrollbar-color: var(--border-medium) transparent;
-    border-top: 1px solid var(--border-light);
-    border-bottom: 1px solid var(--border-light);
+    border-top: 1px solid var(--gold-trim);
+    border-bottom: 2px solid var(--border-medium);
     mask-image: linear-gradient(to right, black calc(100% - 24px), transparent 100%);
     -webkit-mask-image: linear-gradient(to right, black calc(100% - 24px), transparent 100%);
   }
@@ -1630,25 +1710,27 @@ a:hover {
 }
 
 .chest-card {
-  background-color: #ffffff;
-  border: 1px solid var(--border-light);
-  border-radius: var(--radius-sm);
-  padding: 12px 14px;
+  background-color: var(--bg-surface);
+  border: 2px solid var(--border-medium);
+  border-radius: var(--radius-md);
+  padding: 13px 15px;
   display: flex;
   gap: 12px;
   align-items: flex-start;
   transition: all 0.15s ease;
   position: relative;
+  box-shadow: var(--frame-double-shadow);
 }
 
 .chest-card:hover {
   border-color: var(--border-medium);
-  box-shadow: var(--shadow-sm);
+  background-color: #fffaf0;
 }
 
 .chest-card.is-opened {
   background-color: var(--bg-checked);
   border-color: var(--success-border);
+  box-shadow: var(--frame-double-checked);
 }
 
 .chest-card.is-opened .chest-item-name {
@@ -1657,7 +1739,7 @@ a:hover {
 }
 
 .chest-card.is-missable {
-  border-left: 4px solid var(--warning-border);
+  border-left: 5px solid var(--warning-border);
 }
 
 .chest-card-checkbox {
@@ -1912,7 +1994,7 @@ a:hover {
 }
 
 .shanil-mark-table th {
-  background-color: #f8fafc;
+  background-color: var(--bg-subtle);
   font-weight: 600;
   color: var(--text-secondary);
 }
@@ -1928,17 +2010,17 @@ a:hover {
   width: 22px;
   height: 22px;
   border-radius: 50%;
-  background-color: #fee2e2;
-  color: #dc2626;
+  background-color: var(--warning-bg);
+  color: var(--warning-text);
   font-weight: 700;
   font-size: 0.82rem;
-  border: 1px solid #fca5a5;
+  border: 1px solid var(--warning-border);
 }
 
 .badge-shanil-circle.none {
-  background-color: #f1f5f9;
-  color: #94a3b8;
-  border-color: #cbd5e1;
+  background-color: var(--bg-subtle);
+  color: var(--text-dim);
+  border-color: var(--border-light);
 }
 
 .mark-chest-item {
@@ -1947,8 +2029,8 @@ a:hover {
   gap: 4px;
   margin: 2px 6px 2px 0;
   padding: 2px 6px;
-  background: #f8fafc;
-  border: 1px solid #e2e8f0;
+  background: var(--bg-subtle);
+  border: 1px solid var(--border-light);
   border-radius: 4px;
   cursor: pointer;
   font-size: 0.78rem;
@@ -1956,8 +2038,8 @@ a:hover {
 }
 
 .mark-chest-item.is-opened {
-  background: #f0fdf4;
-  border-color: #bbf7d0;
+  background: var(--success-bg);
+  border-color: var(--success-border);
   text-decoration: line-through;
   opacity: 0.75;
 }
@@ -2151,9 +2233,10 @@ a:hover {
 }
 
 .map-subtab-btn.active {
-  background-color: var(--accent);
-  color: #ffffff;
-  border-color: var(--accent);
+  background: var(--accent-grad);
+  color: #3a2418;
+  border-color: var(--border-medium);
+  font-weight: 700;
 }
 
 /* ==========================================================================
@@ -2167,11 +2250,11 @@ a:hover {
 }
 
 .monster-card {
-  background: #ffffff;
-  border: 1px solid var(--border-light);
-  border-radius: var(--radius-sm);
-  padding: 14px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  background: var(--bg-surface);
+  border: 2px solid var(--border-medium);
+  border-radius: var(--radius-md);
+  padding: 15px;
+  box-shadow: var(--frame-double-shadow);
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -2180,55 +2263,58 @@ a:hover {
 
 .monster-card:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: var(--frame-double-shadow), 0 6px 14px rgba(58, 36, 24, 0.22);
 }
 
 .monster-card.is-boss {
-  border-color: #f59e0b;
-  background: #fffdf5;
+  border-color: var(--border-medium);
+  background: #fff9e6;
+  box-shadow: inset 0 0 0 2px #fff9e6, inset 0 0 0 4px var(--gold-trim), 0 3px 8px rgba(58, 36, 24, 0.22);
 }
 
 .badge-boss {
-  background: #fef3c7;
-  color: #b45309;
-  font-weight: bold;
+  background: var(--accent-grad);
+  color: #3a2418;
+  border: 1px solid var(--border-medium);
+  font-weight: 700;
 }
 
 .badge-num {
-  background: #f1f5f9;
-  color: #475569;
+  background: var(--bg-subtle);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-light);
   font-weight: 600;
   font-family: monospace;
 }
 
 .monster-loc-tag {
   display: inline-block;
-  background: #f8fafc;
-  border: 1px solid #e2e8f0;
-  border-radius: 4px;
+  background: var(--bg-subtle);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-sm);
   padding: 2px 7px;
   font-size: 0.8rem;
-  color: #334155;
+  color: var(--text-primary);
   margin: 2px 4px 2px 0;
 }
 
 .monster-desc-box {
-  background: #f8fafc;
-  border-left: 3px solid #cbd5e1;
+  background: var(--bg-subtle);
+  border-left: 3px solid var(--border-light);
   padding: 6px 10px;
   font-size: 0.82rem;
-  color: #475569;
-  border-radius: 0 4px 4px 0;
+  color: var(--text-secondary);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
   line-height: 1.45;
 }
 
 .monster-drops-box {
   font-size: 0.82rem;
-  color: #15803d;
-  background: #f0fdf4;
-  border: 1px solid #bbf7d0;
+  color: var(--success-color);
+  background: var(--success-bg);
+  border: 1px solid var(--success-border);
   padding: 4px 8px;
-  border-radius: 4px;
+  border-radius: var(--radius-sm);
 }
 
 /* ==========================================================================
