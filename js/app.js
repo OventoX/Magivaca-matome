@@ -3694,7 +3694,7 @@ let collapsedMaps = new Set();
           <div style="display:flex; flex-direction:column; gap:8px;">
             ${lifespan.details.map(r => `
               <div style="background:var(--bg-subtle); padding:10px 14px; border-radius:var(--radius-sm); font-size:0.85rem; border-left:3px solid var(--accent);">
-                <strong>${escapeHtml(r.item)}:</strong> ${escapeHtml(r.rule)}
+                <strong>${escapeHtml(r.name)}:</strong> ${escapeHtml(r.rule)}
               </div>
             `).join('')}
           </div>
