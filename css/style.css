@@ -856,7 +856,7 @@ a:hover {
 
 /* Tables */
 .data-table-wrapper {
-  overflow-x: auto;
+  overflow-x: clip;
   margin: 12px 0;
   border: 1px solid var(--border-light);
   border-radius: var(--radius-sm);
@@ -1043,7 +1043,7 @@ a:hover {
 
 /* Data Tables */
 .data-table-container {
-  overflow-x: auto;
+  overflow-x: clip;
   border: 2px solid var(--border-medium);
   border-radius: var(--radius-md);
   background-color: var(--bg-surface);
@@ -1523,6 +1523,33 @@ a:hover {
   .search-input {
     padding: 6px 10px;
     font-size: 0.84rem;
+  }
+
+  /* 5. Data Tables: Fit all columns within 360-390px without horizontal scroll */
+  .data-table {
+    width: 100%;
+    table-layout: auto;
+    font-size: 0.72rem;
+  }
+
+  .data-table th,
+  .data-table td {
+    padding: 6px 3px;
+    white-space: normal;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+    width: auto !important;
+  }
+
+  .data-table th {
+    font-size: 0.7rem;
+    line-height: 1.25;
+  }
+
+  .data-table .badge {
+    font-size: 0.65rem;
+    padding: 1px 4px;
+    white-space: normal;
   }
 }
 
