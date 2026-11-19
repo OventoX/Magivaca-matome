@@ -264,11 +264,14 @@
       </div>
       <div class="modal-body">
         <p style="font-size:0.88rem; color:var(--text-secondary);">
-          進捗データ（JSON）をコピーして保存するか、過去のバックアップデータを貼り付けて復元できます。
+          進捗データをJSONファイルとして保存・復元するか、下のテキスト欄からコピー＆貼り付けでバックアップ／復元できます。
         </p>
         <textarea id="backup-textarea" class="modal-textarea" placeholder="JSONデータがここに表示されます"></textarea>
       </div>
       <div class="modal-footer">
+        <button type="button" class="btn" id="btn-download-backup">💾 ファイルで保存</button>
+        <button type="button" class="btn" id="btn-import-file">📂 ファイルから復元</button>
+        <input type="file" id="backup-file-input" accept=".json,application/json" style="display:none;">
         <button type="button" class="btn" id="btn-copy-backup">📋 コピー</button>
         <button type="button" class="btn btn-primary" id="btn-import-backup">📥 復元する</button>
       </div>

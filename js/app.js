@@ -4448,21 +4448,70 @@ let collapsedMaps = new Set();
     const exportTextarea = document.getElementById('backup-textarea');
     const copyBtn = document.getElementById('btn-copy-backup');
     const importBtn = document.getElementById('btn-import-backup');
+    const downloadBtn = document.getElementById('btn-download-backup');
+    const importFileBtn = document.getElementById('btn-import-file');
+    const importFileInput = document.getElementById('backup-file-input');
+
+    function buildBackupJson() {
+      const fullBackup = {
+        version: '2.0',
+        spirits: Array.from(checkedSpirits),
+        magicNotes: Array.from(checkedMagicNotes),
+        mimicCoins: Array.from(checkedMimicCoins),
+        records: Array.from(checkedRecords),
+        chests: Array.from(checkedChests),
+        timeline: Array.from(checkedTimeline)
+      };
+      return JSON.stringify(fullBackup, null, 2);
+    }
+
+    function importBackupJson(rawText) {
+      try {
+        const val = String(rawText || '').trim();
+        if (!val) {
+          alert('インポートするJSONデータを入力してください。');
+          return false;
+        }
+        const parsed = JSON.parse(val);
+
+        // 従来の配列形式（精霊IDの配列）の互換サポート
+        if (Array.isArray(parsed)) {
+          checkedSpirits = new Set(parsed);
+        } else if (typeof parsed === 'object' && parsed !== null) {
+          const hasKnownKey = ['spirits', 'magicNotes', 'mimicCoins', 'records', 'chests', 'timeline']
+            .some(k => Array.isArray(parsed[k]));
+          if (!hasKnownKey) {
+            alert('無効なデータ形式です。');
+            return false;
+          }
+          // 統合バックアップ形式
+          if (Array.isArray(parsed.spirits)) checkedSpirits = new Set(parsed.spirits);
+          if (Array.isArray(parsed.magicNotes)) checkedMagicNotes = new Set(parsed.magicNotes);
+          if (Array.isArray(parsed.mimicCoins)) checkedMimicCoins = new Set(parsed.mimicCoins);
+          if (Array.isArray(parsed.records)) checkedRecords = new Set(parsed.records);
+          if (Array.isArray(parsed.chests)) checkedChests = new Set(parsed.chests);
+          if (Array.isArray(parsed.timeline)) checkedTimeline = new Set(parsed.timeline);
+        } else {
+          alert('無効なデータ形式です。');
+          return false;
+        }
+
+        saveState();
+        updateUI();
+        if (modal) modal.classList.remove('active');
+        alert(`正常にインポートしました。\n・精霊: ${checkedSpirits.size}体\n・魔法の手帳: ${checkedMagicNotes.size}項目\n・ハズレコイン: ${checkedMimicCoins.size}枚\n・成績項目: ${checkedRecords.size}件\n・宝箱: ${checkedChests.size}個`);
+        return true;
+      } catch (err) {
+        alert('JSONの解析に失敗しました。正しいデータ形式か確認してください。');
+        return false;
+      }
+    }
 
     if (backupBtn && modal) {
       backupBtn.addEventListener('click', () => {
         modal.classList.add('active');
         if (exportTextarea) {
-          const fullBackup = {
-            version: '2.0',
-            spirits: Array.from(checkedSpirits),
-            magicNotes: Array.from(checkedMagicNotes),
-            mimicCoins: Array.from(checkedMimicCoins),
-            records: Array.from(checkedRecords),
-            chests: Array.from(checkedChests),
-            timeline: Array.from(checkedTimeline)
-          };
-          exportTextarea.value = JSON.stringify(fullBackup, null, 2);
+          exportTextarea.value = buildBackupJson();
         }
       });
     }
@@ -4489,39 +4538,51 @@ let collapsedMaps = new Set();
       });
     }
 
+    if (downloadBtn) {
+      downloadBtn.addEventListener('click', () => {
+        const jsonText = buildBackupJson();
+        const now = new Date();
+        const y = now.getFullYear();
+        const m = String(now.getMonth() + 1).padStart(2, '0');
+        const d = String(now.getDate()).padStart(2, '0');
+        const filename = `magivaca-backup-${y}${m}${d}.json`;
+
+        const blob = new Blob([jsonText], { type: 'application/json;charset=utf-8' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = filename;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        setTimeout(() => URL.revokeObjectURL(url), 1000);
+      });
+    }
+
+    if (importFileBtn && importFileInput) {
+      importFileBtn.addEventListener('click', () => {
+        importFileInput.value = '';
+        importFileInput.click();
+      });
+
+      importFileInput.addEventListener('change', (e) => {
+        const file = e.target.files && e.target.files[0];
+        if (!file) return;
+        const reader = new FileReader();
+        reader.onload = (ev) => {
+          const text = ev.target && ev.target.result;
+          importBackupJson(text);
+        };
+        reader.onerror = () => {
+          alert('ファイルの読み込みに失敗しました。');
+        };
+        reader.readAsText(file, 'utf-8');
+      });
+    }
+
     if (importBtn && exportTextarea) {
       importBtn.addEventListener('click', () => {
-        try {
-          const val = exportTextarea.value.trim();
-          if (!val) {
-            alert('インポートするJSONデータを入力してください。');
-            return;
-          }
-          const parsed = JSON.parse(val);
-
-          // 従来の配列形式（精霊IDの配列）の互換サポート
-          if (Array.isArray(parsed)) {
-            checkedSpirits = new Set(parsed);
-          } else if (typeof parsed === 'object' && parsed !== null) {
-            // 新しい統合バックアップ形式
-            if (Array.isArray(parsed.spirits)) checkedSpirits = new Set(parsed.spirits);
-            if (Array.isArray(parsed.magicNotes)) checkedMagicNotes = new Set(parsed.magicNotes);
-            if (Array.isArray(parsed.mimicCoins)) checkedMimicCoins = new Set(parsed.mimicCoins);
-            if (Array.isArray(parsed.records)) checkedRecords = new Set(parsed.records);
-            if (Array.isArray(parsed.chests)) checkedChests = new Set(parsed.chests);
-            if (Array.isArray(parsed.timeline)) checkedTimeline = new Set(parsed.timeline);
-          } else {
-            alert('無効なデータ形式です。');
-            return;
-          }
-
-          saveState();
-          updateUI();
-          modal.classList.remove('active');
-          alert(`正常にインポートしました。\n・精霊: ${checkedSpirits.size}体\n・魔法の手帳: ${checkedMagicNotes.size}項目\n・ハズレコイン: ${checkedMimicCoins.size}枚\n・成績項目: ${checkedRecords.size}件\n・宝箱: ${checkedChests.size}個`);
-        } catch (err) {
-          alert('JSONの解析に失敗しました。正しいデータ形式か確認してください。');
-        }
+        importBackupJson(exportTextarea.value);
       });
     }
   }
