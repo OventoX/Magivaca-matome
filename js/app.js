@@ -41,6 +41,14 @@
       .trim();
   }
 
+  // Helper: 表示用エリア・マップ名の括弧表記を全角括弧に統一（括弧内余分スペース除去）
+  function formatDisplayLabel(str) {
+    if (str === null || str === undefined) return '';
+    return String(str)
+      .replace(/\(\s*([^()]*?)\s*\)/g, '（$1）')
+      .replace(/（\s*([^（）]*?)\s*）/g, '（$1）');
+  }
+
   // Helper: 文字列から一意かつ再現可能な整数ハッシュ値を算出する関数
   function getDeterministicHash(str) {
     let hash = 0;
@@ -1096,6 +1104,9 @@ let collapsedMaps = new Set();
       if (filteredEquip.length > 0) {
         html += `
           <h3 style="font-size:1.05rem; color:var(--text-primary); margin-top:20px;">🛡️ 装備アイテム (${filteredEquip.length})</h3>
+          <p style="font-size:0.82rem; color:var(--text-secondary); margin:4px 0 8px;">
+            ※入手方法の略記：<strong>店</strong>＝道具屋で購入 ／ <strong>箱</strong>＝宝箱 ／ <strong>敵</strong>＝ドロップ
+          </p>
           <div class="data-table-container">
             <table class="data-table">
               <thead>
@@ -2961,7 +2972,7 @@ let collapsedMaps = new Set();
           <div class="chest-map-header">
             <div class="chest-map-title-row">
               <span class="badge-map-schematic">📐 エリア模式図</span>
-              <span class="chest-map-title-text">${escapeHtml(defn.title || areaName)}</span>
+              <span class="chest-map-title-text">${escapeHtml(formatDisplayLabel(defn.title || areaName))}</span>
             </div>
             <button type="button" class="btn btn-xs btn-outline" onclick="window.toggleMapCollapse('${areaKey}')">
               ${isMapCollapsed ? '🗺️ 模式図を表示' : '▲ 模式図を折りたたむ'}
@@ -3158,7 +3169,7 @@ let collapsedMaps = new Set();
             <div class="chest-area-header" onclick="window.toggleAreaCollapse('${areaKey}')">
               <div class="chest-area-title-group">
                 <span class="chest-area-toggle-icon">▼</span>
-                <h4 class="chest-area-title">${escapeHtml(areaName)}</h4>
+                <h4 class="chest-area-title">${escapeHtml(formatDisplayLabel(areaName))}</h4>
                 <span class="badge badge-normal" style="font-size:0.75rem;">${areaChests.length} 個表示中</span>
                 ${allChestsInArea.some(c => c.missable) ? '<span class="badge badge-missable" style="font-size:0.72rem;">⚠️ 期間限定あり</span>' : ''}
               </div>
@@ -3206,7 +3217,7 @@ let collapsedMaps = new Set();
                   ${c.shanilMark ? `<span class="badge badge-shanil-pos" title="相川ともき氏マップ上の対応位置: ${escapeHtml(c.shanilPlace || '')}">🗺️ マップ ${escapeHtml(c.shanilMark)}</span>` : ''}
                 </div>
                 <div class="chest-card-loc">
-                  <span class="loc-map">📍 ${escapeHtml(c.mapName)}</span>
+                  <span class="loc-map">📍 ${escapeHtml(formatDisplayLabel(c.mapName))}</span>
                   <span class="loc-coord">座標: <code>${escapeHtml(c.coord || '-')}</code></span>
                   ${c.shanilPlace ? `<span class="loc-shanil" title="相川ともき氏チャートでの場所表記">（マップ名: ${escapeHtml(c.shanilPlace)}）</span>` : ''}
                 </div>
@@ -4096,7 +4107,7 @@ let collapsedMaps = new Set();
       <div class="guide-section">
         <h2>⏰ 取り返しのつかない要素（時限要素）統合タイムライン</h2>
         <p style="font-size:0.92rem; color:var(--text-secondary); margin-bottom:14px;">
-          サイト内の<strong>「精霊（${spiritCount}件）」「宝箱（${chestCount}件）」「ストーリー選択肢・イベント（${eventCount}件）」</strong>に散らばっている取り返しのつかない要素（計<strong>${totalCount}件</strong>）を、ストーリー進行順のタイムラインで一括確認・現地チェックできるページです。
+          サイト内の<strong>「精霊（${spiritCount}件）」「宝箱（${chestCount}件）」「ストーリー選択肢・イベント（${eventCount}件）」</strong>に散らばっている取り返しのつかない要素（計<strong>${totalCount}件</strong>）を、ストーリー進行順のタイムラインで一括確認・現地チェック<span style="white-space:nowrap;">できます。</span>
         </p>
 
         <!-- Nintendo Switch Online 前提の注記 -->

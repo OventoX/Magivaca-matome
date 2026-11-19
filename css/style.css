@@ -1234,7 +1234,7 @@ a:hover {
 
 .story-choice-row {
   display: grid;
-  grid-template-columns: 140px 1fr;
+  grid-template-columns: minmax(160px, 210px) 1fr;
   gap: 12px;
   margin-bottom: 6px;
   font-size: 0.85rem;
@@ -1247,6 +1247,8 @@ a:hover {
 .story-choice-label {
   font-weight: 600;
   color: var(--text-secondary);
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
 
 .story-notes {
@@ -1612,6 +1614,12 @@ a:hover {
     padding: 1px 4px;
     white-space: normal;
   }
+
+  /* 6. Story Choice Row: Stack label above options on mobile */
+  .story-choice-row {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
 }
 
 /* ==========================================================================
@@ -1791,6 +1799,8 @@ a:hover {
   font-weight: 700;
   color: var(--text-primary);
   margin: 0;
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
 
 .chest-area-progress-group {
@@ -1938,6 +1948,11 @@ a:hover {
   gap: 8px;
 }
 
+.chest-card-loc .loc-map {
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
 .chest-card-loc code {
   background: var(--bg-subtle);
   padding: 1px 4px;
@@ -2013,6 +2028,8 @@ a:hover {
   font-size: 0.95rem;
   font-weight: 700;
   color: var(--text-primary);
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
 
 .badge-map-real {
@@ -2435,20 +2452,21 @@ a:hover {
 .monster-desc-box {
   background: var(--bg-subtle);
   border-left: 3px solid var(--border-light);
-  padding: 6px 10px;
-  font-size: 0.82rem;
+  padding: 8px 10px;
+  font-size: 0.88rem;
   color: var(--text-secondary);
   border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
-  line-height: 1.45;
+  line-height: 1.55;
 }
 
 .monster-drops-box {
-  font-size: 0.82rem;
+  font-size: 0.88rem;
   color: var(--success-color);
   background: var(--success-bg);
   border: 1px solid var(--success-border);
-  padding: 4px 8px;
+  padding: 5px 9px;
   border-radius: var(--radius-sm);
+  line-height: 1.5;
 }
 
 /* ==========================================================================
